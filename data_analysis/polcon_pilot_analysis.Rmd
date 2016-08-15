@@ -1,0 +1,197 @@
+---
+title: "polcon pilot data"
+author: "Erica Yoon & Oishi Banerjee"
+date: "July 25, 2016"
+output: html_document
+---
+
+```{r}
+# preprocess
+
+rm(list=ls())
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(langcog)
+# source("/Users/ericang/Documents/Research/trupol_GIT/data/version1/helper/useful.R")
+
+d1 <- read.csv("/Users/ericang/Documents/Research/polcon/polcon_data.csv") %>%
+  gather(trial, answer, trial1_1:trial12_2) %>%
+  select(subid, order, trial, answer)
+
+order <- read.csv("/Users/ericang/Documents/Research/polcon/order.csv")
+
+d1_1 <- left_join(d1, order) %>%
+  filter(order == "1") %>%
+  mutate(speaker = speaker_ord1,
+         request_type = request_type_ord1,
+         question_type = question_type_ord1,
+         correct = correct_ord1,
+         polite_speaker = polite_speaker_ord1) %>%
+  select(subid, order, trial, speaker, request_type,question_type, correct, polite_speaker, answer) %>%
+  mutate(correct = ifelse(correct == answer, 1, 0),
+         choose_polite = ifelse(polite_speaker == answer, 1, 0))
+
+d1_2 <- left_join(d1, order) %>%
+  filter(order == "2") %>%
+  mutate(speaker = speaker_ord2,
+         request_type = request_type_ord2,
+         question_type = question_type_ord2,
+         correct = correct_ord2,
+         polite_speaker = polite_speaker_ord2) %>%
+  select(subid, order, trial, speaker, request_type,question_type, correct, polite_speaker, answer) %>%
+  mutate(correct = ifelse(correct == answer, 1, 0),
+         choose_polite = ifelse(polite_speaker == answer, 1, 0))
+
+d1 <- rbind(d1_1, d1_2)
+
+log <- read.csv("/Users/ericang/Documents/Research/polcon/processed_log.csv")
+
+d1 <- left_join(d1, log)
+```
+
+# analysis
+
+```{r}
+ms <- d1 %>%
+  mutate(correct = as.numeric(as.character(correct))) %>%
+  group_by(age, request_type, question_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(age, request_type, question_type) %>%
+  multi_boot_standard(column = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         request_type = factor(request_type, levels=c("please", "idq", "please_idq")),
+         question_type = factor(question_type, levels=c("polite", "nice", "rude", "mean", "play_with", "compliance"))) %>%
+  mutate(request_type = factor(request_type, labels=c("please", "interrogative", "please + int")),
+         question_type = factor(question_type, labels=c("polite", "nice", "rude", "mean", "play with", "compliance")),
+         age = factor(age, labels=c("3-yr-olds", "4-yr-olds")))
+
+
+p <- ggplot(subset(ms, correct!="NA" & question_type != "play with" & question_type != "compliance"), 
+            aes(x=age, y=correct, fill=request_type))
+p + 
+  geom_bar(position=position_dodge(), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(.~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____?\"") +
+  scale_fill_discrete(guide = guide_legend(title = "Request type")) +
+  geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4)
+
+p <- ggplot(subset(ms, correct!="NA" & (question_type == "play with" | question_type == "compliance")), 
+            aes(x=age, y=correct, fill=request_type))
+p + 
+  geom_bar(position=position_dodge(), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(.~question_type) +
+  xlab("Age") +
+  ylab("Proportion choosing polite speaker") + 
+  ggtitle("Correct answers on questions \"Who would you rather play with?\" and \"Who [gets what they want]?\"") +
+  scale_fill_discrete(guide = guide_legend(title = "Request type")) +
+  geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4)
+
+
+
+```
+
+
+
+```{r}
+# jitter
+ms <- d1 %>%
+  mutate(correct = as.numeric(as.character(correct))) %>%
+  group_by(age, request_type, question_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%  
+  ungroup() %>%
+  mutate(
+         request_type = factor(request_type, levels=c("please", "idq", "please_idq")),
+         question_type = factor(question_type, levels=c("polite", "nice", "rude", "mean", "play_with", "compliance"))) %>%
+  mutate(request_type = factor(request_type, labels=c("please", "IDQ", "please + IDQ")),
+         question_type = factor(question_type, labels=c("polite", "nice", "rude", "mean", "play with", "compliance")))
+
+
+p <- ggplot(subset(ms, correct!="NA"), 
+            aes(x=question_type, y=correct, col= subid, fill=request_type))
+
+p + 
+geom_point(size = 1, position = position_jitterdodge(dodge.width = 0.5)) +
+  facet_grid(.~age) +
+  xlab("Question type") +
+  ylab("Proportion correct") + 
+  # ggtitle("Correct answers on questions \"Who was being more _____?\" and \"Who would you rather play with?\"") +
+  scale_color_discrete(guide = guide_legend(title = "Subject")) +
+    scale_fill_discrete(guide=FALSE)
+
+
+```
+
+```{r}
+ms <- d1 %>%
+  mutate(correct = as.numeric(as.character(correct))) %>%
+  group_by(sex, age, request_type, question_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(sex, age, request_type, question_type) %>%
+  multi_boot_standard(column = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         request_type = factor(request_type, levels=c("please", "idq", "please_idq")),
+         question_type = factor(question_type, levels=c("polite", "nice", "rude", "mean", "play_with", "compliance"))) %>%
+  mutate(request_type = factor(request_type, labels=c("please", "interrogative", "please + int")),
+         question_type = factor(question_type, labels=c("polite", "nice", "rude", "mean", "play with", "compliance")))
+
+
+p <- ggplot(subset(ms, correct!="NA" & question_type != "play with" & question_type != "compliance"), 
+            aes(x=sex, y=correct, fill=request_type))
+p + 
+  geom_bar(position=position_dodge(), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(age~question_type) +
+  xlab("Question type") +
+  ylab("Proportion choosing polite speaker") + 
+  ggtitle("Correct answers on questions \"Who was being more _____?\"") +
+  scale_fill_discrete(guide = guide_legend(title = "Request type")) +
+  geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4)
+```
+
+```{r}
+# visualize "choose polite"
+
+ms <- d1 %>%
+  mutate(choose_polite = as.numeric(as.character(choose_polite))) %>%
+  group_by(request_type, question_type, subid) %>%
+  summarize(
+    choose_polite = mean(choose_polite, na.rm=TRUE)
+  ) %>%
+  group_by(request_type, question_type) %>%
+  multi_boot_standard(column = "choose_polite", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(choose_polite = mean,
+         request_type = factor(request_type, levels=c("please", "idq", "please_idq")),
+         question_type = factor(question_type, levels=c("polite", "nice", "rude", "mean", "play_with")))
+
+
+p <- ggplot(subset(ms, choose_polite!="NA"), 
+            aes(x=request_type, y=choose_polite, fill=question_type))
+p + 
+  geom_bar(position=position_dodge(), stat = "identity") +
+  geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1))
+```
+
+```{r}
+subj <- d1 %>%
+    distinct(subid) %>%
+    group_by(age) %>%
+    summarise(count = n())
+subj
+```
