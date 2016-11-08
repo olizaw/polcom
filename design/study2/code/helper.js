@@ -11,3 +11,18 @@ function bgChange(bg) {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
 }
+
+//function changepic(picture)
+//{
+// document.document.getElementById(picture).style.top=2000 + "px";  
+//}
+
+jQuery(function(){
+
+   // Fade In
+   $("#myImage").fadeIn();
+
+   // Fade Out
+   $("#myImage").fadeOut();
+
+});

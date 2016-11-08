@@ -52,12 +52,14 @@ This stuff will vary by experiment.
     font-weight: bold;
 }
 
+/*
 .pic {
     max-width:150px;
     max-height:250px;
     width:auto;
     height:auto;
 }
+*/
 
 
 #instructions {

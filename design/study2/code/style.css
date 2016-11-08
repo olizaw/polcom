@@ -87,27 +87,3 @@ This stuff will vary by experiment.
     margin-top: 150px;
 }
 
-
-/*left pic and right pic are large but fit comfortably in the ipad window*/
-
-#leftPic {
-    width: 400px;
-    height: auto;
-}
-
-#rightPic {
-    width: 400px;
-    height: auto;
-}
-
-#fillerPic {
-    width: 900px;
-    height: auto;
-}
-
-.title {
-    text-align: center;
-    margin: auto auto;
-    margin-bottom: 1em;
-    font-size: 2em;
-}
