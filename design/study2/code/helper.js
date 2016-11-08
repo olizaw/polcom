@@ -8,5 +8,6 @@ function showSlide(id) {
 
 function bgChange(bg) {
     document.body.style.background = bg;
-    document.body.style.backgroundSize = "contain";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
 }
