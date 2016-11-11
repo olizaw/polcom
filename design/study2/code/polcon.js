@@ -24,25 +24,15 @@ var experiment = {
         experiment.speaker1 = "test1_speaker1";
         experiment.speaker2 = "test1_speaker2";
 
-        var characters_html = "";
-        //HTML for left
         leftname = "figs/" + experiment.speaker1 + ".png";
         centername = "figs/" + experiment.listener1 + ".png";
         rightname = "figs/" + experiment.speaker2 + ".png";
         
+        var characters_html = "";
         characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
         characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
         characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
 
-//        characters_html += '<table align = "center"><tr><td align="center"><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></td>';
-
-        //HTML for center
-//        characters_html += '<td align="center"><img class="pic" src="' + centername + '"alt="' + centername + '"  id= "centerPic"/></td>';
-
-        //HTML for right
-//        characters_html += '<td align="center"><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></td>';
-
-//        characters_html += '</tr></table>';
         $("#characters").html(characters_html);
 
         showSlide("stage");
@@ -55,7 +45,7 @@ var experiment = {
 //            document.getElementById("leftPic").style.top = 2000 + "px";
 //        }
 //        changepic();
-         $("#leftPic").fadeOut("slow");
+         $("#centerPic").fadeOut("slow");
 
     }
 }

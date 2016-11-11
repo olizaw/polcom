@@ -25,18 +25,21 @@
     <div class="slide" id="stage">
         <p class="block-text" id="prompt1"></p>
         <div id="characters">
-<!--
-            <table align = "center">
-                <tr>
-                    <td align="center"><img class="pic" src="figs/test1_listener1.png" alt="" id= "leftPic" style="height:250px"/></td>
-                    <td align="center"><img class="pic" src="figs/test1_speaker1.png"alt="" id= "centerPic" style="height:250px;"/></td>
-                    <td align="center"><img class="pic" src="figs/test1_speaker2.png" alt="" id= "rightPic" style="height:250px;"/></td>
-                </tr>
-            </table>
--->
-</div>
+        </div>
         <!--dynamically built in javascript-->
-        <button type="button" id="proceed" onClick="this.blur(); experiment.next2()">Start</button>
+        <div id="wrap">
+
+            <div id="main" class="clearfix">
+
+            </div>
+
+        </div>
+
+        <div id="enclose">
+            <div id="problem">
+                <button type="button" id="proceed" onClick="this.blur(); experiment.next2()">Next</button>
+            </div>
+        </div>
 
     </div>
 
