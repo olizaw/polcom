@@ -29,16 +29,20 @@ var experiment = {
         leftname = "figs/" + experiment.speaker1 + ".png";
         centername = "figs/" + experiment.listener1 + ".png";
         rightname = "figs/" + experiment.speaker2 + ".png";
+        
+        characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
+        characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
+        characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
 
-        characters_html += '<table align = "center"><tr><td align="center"><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></td>';
+//        characters_html += '<table align = "center"><tr><td align="center"><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></td>';
 
         //HTML for center
-        characters_html += '<td align="center"><img class="pic" src="' + centername + '"alt="' + centername + '"  id= "centerPic"/></td>';
+//        characters_html += '<td align="center"><img class="pic" src="' + centername + '"alt="' + centername + '"  id= "centerPic"/></td>';
 
         //HTML for right
-        characters_html += '<td align="center"><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></td>';
+//        characters_html += '<td align="center"><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></td>';
 
-        characters_html += '</tr></table>';
+//        characters_html += '</tr></table>';
         $("#characters").html(characters_html);
 
         showSlide("stage");

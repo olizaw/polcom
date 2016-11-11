@@ -87,3 +87,21 @@ This stuff will vary by experiment.
     margin-top: 150px;
 }
 
+#leftPic {
+    POSITION: absolute; 
+    BOTTOM: 10px; 
+    LEFT: 100px;
+}
+
+#centerPic {
+    POSITION: absolute; 
+    BOTTOM: 10px; 
+    LEFT: 400px;
+}
+
+#rightPic {
+    POSITION: absolute; 
+    BOTTOM: 10px; 
+    LEFT: 800px;
+}
+
