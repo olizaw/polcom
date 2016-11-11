@@ -5,12 +5,17 @@ for (i = 0; i < allimages.length; i++) {
     images[i].src = "figs/" + allimages[i];
 }
 
+//******for handling sound; see helper function playPrompt(word)
+var audioSprite = $("#sound_player")[0];
+var handler;
+
+
 showSlide("instructions");
 
 
 var experiment = {
     within_trial: 0,
-    
+
     checkInput: function () {
         //subject ID
         if (document.getElementById("subjectID").value.length < 1) {
@@ -48,6 +53,11 @@ var experiment = {
             $("#characters").html(characters_html);
             experiment.within_trial++;
 
+            $('#leftPic').bind('click touchstart', function (event) {
+                playPrompt("apple_pos");
+            });
+
+
         } else if (experiment.within_trial == 2) {
             var characters_html = "";
             characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic2"/></div>'
@@ -56,12 +66,15 @@ var experiment = {
 
             $("#characters").html(characters_html);
             experiment.within_trial++;
+            $('#rightPic').bind('click touchstart', function (event) {
+                playPrompt("apple_neg");
+            });
 
         } else if (experiment.within_trial == 3) {
-//            var characters_html = "";
-//            characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
-//            characters_html += '<div><img class="pic" src="' + centername2 + '"alt="' + centername2 + '" id= "centerPic"/></div>'
-//            characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
+            //            var characters_html = "";
+            //            characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
+            //            characters_html += '<div><img class="pic" src="' + centername2 + '"alt="' + centername2 + '" id= "centerPic"/></div>'
+            //            characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
             $("#centerPic").fadeOut("slow");
 
             $("#characters").html(characters_html);

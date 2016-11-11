@@ -6,17 +6,14 @@ function showSlide(id) {
     $("#" + id).show(); //jquery - element with given id - show
 }
 
+// background
 function bgChange(bg) {
     document.body.style.background = bg;
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
 }
 
-//function changepic(picture)
-//{
-// document.document.getElementById(picture).style.top=2000 + "px";  
-//}
-
+// fade in/out
 jQuery(function(){
 
    // Fade In
@@ -26,3 +23,17 @@ jQuery(function(){
    $("#myImage").fadeOut();
 
 });
+
+//Handles audio; indexes into the sprite to play the prompt associated with a critical word 
+playPrompt = function(word) {
+	audioSprite.removeEventListener('timeupdate', handler);
+	audioSprite.currentTime = spriteData[word].start;
+	audioSprite.play();
+
+	handler = function() {
+		if (this.currentTime >= spriteData[word].start + spriteData[word].length) {
+			this.pause();
+		}
+	};
+	audioSprite.addEventListener('timeupdate', handler, false);
+}

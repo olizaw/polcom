@@ -26,26 +26,25 @@
         <p class="block-text" id="prompt1"></p>
         <div id="characters">
         </div>
+        <audio id="sound_player">
+      <source src="neginhib_sprite.mp3" type="audio/mp3">
+      </audio>
         <!--dynamically built in javascript-->
         <div id="wrap">
-
             <div id="main" class="clearfix">
-
             </div>
-
         </div>
-
         <div id="enclose">
             <div id="problem">
                 <button type="button" id="proceed" onClick="this.blur(); experiment.next()">Next</button>
             </div>
         </div>
-
     </div>
 
 
     <script src="helper.js"></script>
     <script src="polcon.js"></script>
+    <script src="spriteData.js"></script>
 </body>
 
 </html>
