@@ -18,6 +18,9 @@ for (i = 1; i < 13; i++) {
 var audioSprite = $("#sound_player")[0];
 var handler;
 
+//amount of white space between trials
+var normalPause = 0; 
+
 showSlide("instructions");
 
 
@@ -38,15 +41,19 @@ var experiment = {
     },
 
     next: function () {
-        experiment.listener1 = listenerList[2*experiment.trial_num];
-        experiment.listener2 = listenerList[2*experiment.trial_num+1];
-        experiment.speaker1 = speakerList[2*experiment.trial_num];
-        experiment.speaker2 = speakerList[2*experiment.trial_num+1];
+        experiment.listener1 = listenerList[2 * experiment.trial_num];
+        experiment.listener2 = listenerList[2 * experiment.trial_num + 1];
+        experiment.speaker1 = speakerList[2 * experiment.trial_num];
+        experiment.speaker2 = speakerList[2 * experiment.trial_num + 1];
 
         leftname = "figs/" + experiment.speaker1 + ".png";
         centername = "figs/" + experiment.listener1 + ".png";
         centername2 = "figs/" + experiment.listener2 + ".png";
         rightname = "figs/" + experiment.speaker2 + ".png";
+
+        if (experiment.trial_num == 2) {
+            experiment.end();
+        } else {
 
         if (experiment.within_trial == 0) {
             var characters_html = "";
@@ -90,11 +97,19 @@ var experiment = {
                 playPrompt("apple_neg");
             });
             experiment.trial_num++;
-
         }
 
         showSlide("stage");
         bgChange("url('figs/practice1_background.png')");
+        }
 
-    }
+    },
+    
+    end: function() {
+    		setTimeout(function() {
+			$("#stage").fadeOut();
+		}, normalPause);
+		showSlide("finish");
+		document.body.style.background = "black";
+}
 }
