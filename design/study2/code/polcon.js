@@ -108,11 +108,28 @@ var experiment = {
                 experiment.within_trial++;
             } else if (experiment.within_trial == 4) {
                 var prompt_html = page5_script[experiment.trial_num]
-                experiment.within_trial++;
+                $('#leftPic2').unbind('click touchstart');
+                $('#rightPic').unbind('click touchstart');
+                $('#leftPic2').bind('click touchstart', function (event) {
+                    experiment.within_trial++;
+                    experiment.next();
+                });
+                $('#rightPic').bind('click touchstart', function (event) {
+                    experiment.within_trial++;
+                    experiment.next();
+                });
             } else if (experiment.within_trial == 5) {
                 var prompt_html = page6_script[experiment.trial_num]
-                experiment.trial_num++;
-                experiment.within_trial = 0;
+                $('#leftPic2').bind('click touchstart', function (event) {
+                    experiment.within_trial = 0;
+                    experiment.trial_num++;
+                    experiment.next();
+                });
+                $('#rightPic').bind('click touchstart', function (event) {
+                    experiment.within_trial = 0;
+                    experiment.trial_num++;
+                    experiment.next();
+                });
             }
 
             showSlide("stage");
@@ -128,6 +145,6 @@ var experiment = {
             $("#stage").fadeOut();
         }, normalPause);
         showSlide("finish");
-        document.body.style.background = "black";
+        document.body.style.background = "white";
     }
 }
