@@ -17,16 +17,9 @@ var images = new Array();
 for (i = 0; i < listenerList.length; i++) {
     images[i] = new Image();
     images[i].src = "figs/" + listenerList[i] + ".png";
-}
-for (i = 0; i < speakerList.length; i++) {
-    images[i] = new Image();
     images[i].src = "figs/" + speakerList[i] + ".png";
-}
-for (i = 0; i < backgroundList.length; i++) {
-    images[i] = new Image();
     images[i].src = "figs/" + backgroundList[i] + ".png";
 }
-
 
 // script
 var page1_script = ["Anne was in a room where the lights were on.", "Fred had some water.", "This is Rick’s room.", "This is Simon.", "Tasha had a bar of chocolate.", "One day Kathy was singing.", "Tom was running inside the house.", "Alice had some bread.", "Chris had scissors in his hand.", "Kate is good at solving puzzles.", "One day Miles was shouting.", "Lucy had a new game."];
@@ -84,7 +77,8 @@ var experiment = {
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
                 $("#characters").html(characters_html);
-                var prompt_html = page1_script[experiment.trial_num]
+                $("#centerPic").fadeIn("slow");
+               var prompt_html = page1_script[experiment.trial_num]
                 experiment.within_trial++;
 
             } else if (experiment.within_trial == 1) {
@@ -154,22 +148,15 @@ var experiment = {
                         $('#rightPic').css('border-width', '3px');
                     }
                     setTimeout(function () {
+                        $("#stage").hide();
                         experiment.within_trial = 0;
                         experiment.trial_num++;
-                        experiment.next();
+                        setTimeout(function () {
+                            experiment.next()
+                        }, normalPause);
                     }, normalPause);
 
                 });
-                //                $('#leftPic2').bind('click touchstart', function (event) {
-                //                    experiment.within_trial = 0;
-                //                    experiment.trial_num++;
-                //                    experiment.next();
-                //                });
-                //                $('#rightPic').bind('click touchstart', function (event) {
-                //                    experiment.within_trial = 0;
-                //                    experiment.trial_num++;
-                //                    experiment.next();
-                //                });
             }
 
             showSlide("stage");
