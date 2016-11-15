@@ -78,15 +78,18 @@ var experiment = {
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
                 $("#characters").html(characters_html);
                 $("#centerPic").fadeIn("slow");
-               var prompt_html = page1_script[experiment.trial_num]
+                var prompt_html = page1_script[experiment.trial_num]
                 experiment.within_trial++;
 
             } else if (experiment.within_trial == 1) {
+                clickDisabled = false;
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
                 $("#characters").html(characters_html);
                 $('#leftPic').bind('click touchstart', function (event) {
+                    if (clickDisabled) return;
+                    clickDisabled = true;
                     playPrompt("apple_pos"); //fixme
                 });
                 var prompt_html = page2_script[experiment.trial_num]
@@ -94,18 +97,22 @@ var experiment = {
 
 
             } else if (experiment.within_trial == 2) {
+                clickDisabled = false;
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic2"/></div>'
                 characters_html += '<div><img class="pic" src="' + centername2 + '"alt="' + centername2 + '" id= "centerPic"/></div>'
                 characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
                 $("#characters").html(characters_html);
                 $('#rightPic').bind('click touchstart', function (event) {
+                    if (clickDisabled) return;
+                    clickDisabled = true;
                     playPrompt("apple_neg"); //fixme
                 });
                 var prompt_html = page3_script[experiment.trial_num]
                 experiment.within_trial++;
 
             } else if (experiment.within_trial == 3) {
+                clickDisabled = false;
                 $("#centerPic").fadeOut("slow");
                 $("#characters").html(characters_html);
 
@@ -121,6 +128,7 @@ var experiment = {
                 $("#prompt").html(prompt_html);
                 experiment.within_trial++;
             } else if (experiment.within_trial == 4) {
+                clickDisabled = false;
                 var prompt_html = page5_script[experiment.trial_num]
                 $('.pic').unbind('click touchstart');
                 $('.pic').bind('click touchstart', function (event) {
@@ -130,6 +138,8 @@ var experiment = {
                     } else if (picID === "rightPic") {
                         $('#rightPic').css('border-width', '3px');
                     }
+                    if (clickDisabled) return;
+                    clickDisabled = true;
                     setTimeout(function () {
                         experiment.within_trial++;
                         experiment.next();
@@ -137,6 +147,7 @@ var experiment = {
 
                 });
             } else if (experiment.within_trial == 5) {
+                clickDisabled = false;
                 $('.pic').css('border-width', '0px');
                 var prompt_html = page6_script[experiment.trial_num]
                 $('.pic').unbind('click touchstart');
@@ -147,6 +158,8 @@ var experiment = {
                     } else if (picID === "rightPic") {
                         $('#rightPic').css('border-width', '3px');
                     }
+                    if (clickDisabled) return;
+                    clickDisabled = true;
                     setTimeout(function () {
                         $("#stage").hide();
                         experiment.within_trial = 0;
