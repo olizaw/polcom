@@ -1,24 +1,37 @@
-var allImages = ["test1_listener1", "test1_listener2", "test1_speaker1", "test1_speaker2"]
-var images = new Array();
-for (i = 0; i < allImages.length; i++) {
-    images[i] = new Image();
-    images[i].src = "figs/" + allImages[i] + ".png";
-}
-
-// listener and speaker
+// listener, speaker, background names
 var listenerList = [];
 var speakerList = [];
+var backgroundList = [];
 for (i = 1; i < 13; i++) {
     for (j = 1; j < 3; j++) {
         listenerList.push("test" + i + "_listener" + j);
         speakerList.push("test" + i + "_speaker" + j);
     }
 }
+for (i = 1; i < 13; i++) {
+        backgroundList.push("test" + i + "_background");
+}
+
+// load images
+var images = new Array();
+for (i = 0; i < listenerList.length; i++) {
+    images[i] = new Image();
+    images[i].src = "figs/" + listenerList[i] + ".png";
+}
+for (i = 0; i < speakerList.length; i++) {
+    images[i] = new Image();
+    images[i].src = "figs/" + speakerList[i] + ".png";
+}
+for (i = 0; i < backgroundList.length; i++) {
+    images[i] = new Image();
+    images[i].src = "figs/" + backgroundList[i] + ".png";
+}
+
 
 // script
 var page1_script = ["Anne was in a room where the lights were on.", "Fred had some water.", "This is Rick’s room.", "This is Simon.", "Tasha had a bar of chocolate.", "One day Kathy was singing.", "Tom was running inside the house.", "Alice had some bread.", "Chris had scissors in his hand.", "Kate is good at solving puzzles.", "One day Miles was shouting.", "Lucy had a new game."];
-var page2_script = ["Greg doesn’t like bright lights. Let's hear what he said!", "Jamie wanted more water in her cup. Let's hear what she said!"];
-var page3_script = ["Bob also doesn’t like bright lights. Let's hear what he said!", "Suzy also wanted more water in her cup. Let's hear what she said!"];
+var page2_script = ["Greg doesn\'t like bright lights. Let's hear what he said!", "Jamie wanted more water in her cup. Let's hear what she said!"];
+var page3_script = ["Bob also doesn\'t like bright lights. Let's hear what he said!", "Suzy also wanted more water in her cup. Let's hear what she said!"];
 var page4_script = ["Do you remember what Greg and Bob said? Let's hear them one more time!", "Do you remember what Jamie and Suzy said? Let's hear them one more time!"];
 var page5_script = ["Which one was being more polite?", "Which one was being nicer?"];
 var page6_script = ["Which one would you rather play with?", "Which one will Fred give water to?"];
@@ -65,34 +78,38 @@ var experiment = {
         if (experiment.trial_num == experiment.total_trial_num) {
             experiment.end();
         } else {
+            bgChange("url('figs/" + backgroundList[experiment.trial_num] + ".png')");
 
             if (experiment.within_trial == 0) {
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
-                var prompt_html = page1_script[experiment.trial_num]
+                $("#characters").html(characters_html);
+                var prompt_html = page1_script[experiment.trial_num]                
                 experiment.within_trial++;
 
             } else if (experiment.within_trial == 1) {
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic"/></div>'
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
-                var prompt_html = page2_script[experiment.trial_num]
-                experiment.within_trial++;
-
+                $("#characters").html(characters_html);
                 $('#leftPic').bind('click touchstart', function (event) {
                     playPrompt("apple_pos"); //fixme
                 });
+                var prompt_html = page2_script[experiment.trial_num]
+                experiment.within_trial++;
+
 
             } else if (experiment.within_trial == 2) {
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + leftname + '"alt="' + leftname + '" id= "leftPic2"/></div>'
                 characters_html += '<div><img class="pic" src="' + centername2 + '"alt="' + centername2 + '" id= "centerPic"/></div>'
                 characters_html += '<div><img class="pic" src="' + rightname + '"alt="' + rightname + '" id= "rightPic"/></div>'
-                var prompt_html = page3_script[experiment.trial_num]
-                experiment.within_trial++;
+                $("#characters").html(characters_html);
                 $('#rightPic').bind('click touchstart', function (event) {
                     playPrompt("apple_neg"); //fixme
                 });
+                var prompt_html = page3_script[experiment.trial_num]
+                experiment.within_trial++;
 
             } else if (experiment.within_trial == 3) {
                 $("#centerPic").fadeOut("slow");
@@ -133,10 +150,8 @@ var experiment = {
             }
 
             showSlide("stage");
-            bgChange("url('figs/practice1_background.png')");
-        }
-        $("#prompt").html(prompt_html);
-        $("#characters").html(characters_html);
+         $("#prompt").html(prompt_html);
+       }
 
     },
 
