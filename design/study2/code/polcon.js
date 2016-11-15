@@ -37,6 +37,9 @@ var handler;
 //amount of pause between questions
 var normalPause = 300;
 
+// answer border width
+var answer_border_width = "5px";
+
 showSlide("instructions");
 
 
@@ -134,9 +137,9 @@ var experiment = {
                 $('.pic').bind('click touchstart', function (event) {
                     var picID = $(event.currentTarget).attr('id');
                     if (picID === "leftPic2") {
-                        $('#leftPic2').css('border-width', '3px');
+                        $('#leftPic2').css('border-width', answer_border_width);
                     } else if (picID === "rightPic") {
-                        $('#rightPic').css('border-width', '3px');
+                        $('#rightPic').css('border-width', answer_border_width);
                     }
                     if (clickDisabled) return;
                     clickDisabled = true;
@@ -154,19 +157,19 @@ var experiment = {
                 $('.pic').bind('click touchstart', function (event) {
                     var picID = $(event.currentTarget).attr('id');
                     if (picID === "leftPic2") {
-                        $('#leftPic2').css('border-width', '3px');
+                        $('#leftPic2').css('border-width', answer_border_width);
                     } else if (picID === "rightPic") {
-                        $('#rightPic').css('border-width', '3px');
+                        $('#rightPic').css('border-width', answer_border_width);
                     }
                     if (clickDisabled) return;
                     clickDisabled = true;
                     setTimeout(function () {
-                        $("#stage").hide();
+                        $("#stage").fadeOut();
                         experiment.within_trial = 0;
                         experiment.trial_num++;
                         setTimeout(function () {
                             experiment.next()
-                        }, normalPause);
+                        }, 800);
                     }, normalPause);
 
                 });
