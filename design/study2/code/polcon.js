@@ -9,7 +9,7 @@ for (i = 1; i < 13; i++) {
     }
 }
 for (i = 1; i < 13; i++) {
-        backgroundList.push("test" + i + "_background");
+    backgroundList.push("test" + i + "_background");
 }
 
 // load images
@@ -41,8 +41,8 @@ var page6_script = ["Which one would you rather play with?", "Which one will Fre
 var audioSprite = $("#sound_player")[0];
 var handler;
 
-//amount of white space between trials
-var normalPause = 0;
+//amount of pause between questions
+var normalPause = 300;
 
 showSlide("instructions");
 
@@ -84,7 +84,7 @@ var experiment = {
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
                 $("#characters").html(characters_html);
-                var prompt_html = page1_script[experiment.trial_num]                
+                var prompt_html = page1_script[experiment.trial_num]
                 experiment.within_trial++;
 
             } else if (experiment.within_trial == 1) {
@@ -114,44 +114,67 @@ var experiment = {
             } else if (experiment.within_trial == 3) {
                 $("#centerPic").fadeOut("slow");
                 $("#characters").html(characters_html);
-                $('#leftPic2').bind('click touchstart', function (event) {
-                    playPrompt("apple_pos"); //fixme
-                });
-                $('#rightPic').bind('click touchstart', function (event) {
-                    playPrompt("apple_neg"); //fixme
+
+                $('.pic').bind('click touchstart', function (event) {
+                    var picID = $(event.currentTarget).attr('id');
+                    if (picID === "leftPic2") {
+                        playPrompt("apple_pos"); //fixme
+                    } else if (picID === "rightPic") {
+                        playPrompt("apple_neg"); //fixme
+                    }
                 });
                 var prompt_html = page4_script[experiment.trial_num]
                 $("#prompt").html(prompt_html);
                 experiment.within_trial++;
             } else if (experiment.within_trial == 4) {
                 var prompt_html = page5_script[experiment.trial_num]
-                $('#leftPic2').unbind('click touchstart');
-                $('#rightPic').unbind('click touchstart');
-                $('#leftPic2').bind('click touchstart', function (event) {
-                    experiment.within_trial++;
-                    experiment.next();
-                });
-                $('#rightPic').bind('click touchstart', function (event) {
-                    experiment.within_trial++;
-                    experiment.next();
+                $('.pic').unbind('click touchstart');
+                $('.pic').bind('click touchstart', function (event) {
+                    var picID = $(event.currentTarget).attr('id');
+                    if (picID === "leftPic2") {
+                        $('#leftPic2').css('border-width', '3px');
+                    } else if (picID === "rightPic") {
+                        $('#rightPic').css('border-width', '3px');
+                    }
+                    setTimeout(function () {
+                        experiment.within_trial++;
+                        experiment.next();
+                    }, normalPause);
+
                 });
             } else if (experiment.within_trial == 5) {
+                $('.pic').css('border-width', '0px');
                 var prompt_html = page6_script[experiment.trial_num]
-                $('#leftPic2').bind('click touchstart', function (event) {
-                    experiment.within_trial = 0;
-                    experiment.trial_num++;
-                    experiment.next();
+                $('.pic').unbind('click touchstart');
+                $('.pic').bind('click touchstart', function (event) {
+                    var picID = $(event.currentTarget).attr('id');
+                    if (picID === "leftPic2") {
+                        $('#leftPic2').css('border-width', '3px');
+                    } else if (picID === "rightPic") {
+                        $('#rightPic').css('border-width', '3px');
+                    }
+                    setTimeout(function () {
+                        experiment.within_trial = 0;
+                        experiment.trial_num++;
+                        experiment.next();
+                    }, normalPause);
+
                 });
-                $('#rightPic').bind('click touchstart', function (event) {
-                    experiment.within_trial = 0;
-                    experiment.trial_num++;
-                    experiment.next();
-                });
+                //                $('#leftPic2').bind('click touchstart', function (event) {
+                //                    experiment.within_trial = 0;
+                //                    experiment.trial_num++;
+                //                    experiment.next();
+                //                });
+                //                $('#rightPic').bind('click touchstart', function (event) {
+                //                    experiment.within_trial = 0;
+                //                    experiment.trial_num++;
+                //                    experiment.next();
+                //                });
             }
 
             showSlide("stage");
-         $("#prompt").html(prompt_html);
-       }
+            $("#prompt").html(prompt_html);
+        }
 
     },
 

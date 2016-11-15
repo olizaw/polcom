@@ -95,6 +95,7 @@ This stuff will vary by experiment.
     POSITION: absolute;
     BOTTOM: 10px;
     LEFT: 100px;
+    border: 0px solid #345678;
 }
 
 #centerPic {
@@ -124,6 +125,7 @@ This stuff will vary by experiment.
     -webkit-animation-duration: 1s;
     /* Safari 4.0 - 8.0 */
     animation-fill-mode: forwards;
+    border: 0px solid #345678;
 }
 
 @-webkit-keyframes appearFromLeft {
