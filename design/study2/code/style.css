@@ -101,13 +101,13 @@ This stuff will vary by experiment.
 #centerPic {
     POSITION: absolute;
     BOTTOM: 10px;
-    LEFT: 400px;
+    LEFT: 350px;
 }
 
 #centerPic2 {
     POSITION: absolute;
     BOTTOM: 10px;
-    LEFT: 400px;
+    LEFT: 350px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -119,7 +119,7 @@ This stuff will vary by experiment.
 #rightPic {
     POSITION: absolute;
     BOTTOM: 10px;
-    LEFT: 800px;
+    LEFT: 700px;
     -webkit-animation-name: appearFromRight;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s;
@@ -146,7 +146,7 @@ This stuff will vary by experiment.
     }
     to {
         display: inline;
-        LEFT: 800px;
+        LEFT: 700px;
     }
 }
 

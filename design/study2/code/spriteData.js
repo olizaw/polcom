@@ -1,312 +1,290 @@
 var spriteData = {
-	apple_pos: {
-		start: 0,
-		onset: 0,
-		length: 0.297
+	order1_test1_speaker1: 
+    {
+		start: 157.414,
+		onset: 157.414,
+		length: 1.736
 	},
-	apple_neg: { 
-		start: 16.787,
-		onset: 17.062,
-		length: 0.596
+order1_test1_speaker2:
+    {
+		start: 240.668,
+		onset: 240.668,
+		length: 1.075
 	},
-	apple_inhib: { // banana
-		start: 1.32,
-		onset: 1.32,
-		length: 0.379
+order1_test2_speaker1:
+    {
+		start: 6.378,
+		onset: 6.378,
+		length: 1.290
 	},
-	apple_implic: {
-		start: 0,
-		onset: 0,
-		length: 0.297
+order1_test2_speaker2:
+    {
+		start: 87.316,
+		onset: 87.316,
+		length: 1.568
 	},
-	apple_control: {
-		start: 0,
-		onset: 0,
-		length: 0.297
+order1_test3_speaker1:
+    {
+		start: 90.059,
+		onset: 90.059,
+		length: 1.646
 	},
-	car_pos: {
-		start: 5.547,
-		onset: 5.547,
-		length: 0.379
+order1_test3_speaker2:
+    {
+		start: 15.097,
+		onset: 15.097,
+		length: 1.538
 	},
-	car_neg: {
-		start: 23.461,
-		onset: 23.723,
-		length: 0.587
+order1_test4_speaker1:
+    {
+		start: 17.774,
+		onset: 17.774,
+		length: 1.424
 	},
-	car_inhib: { // bicycle
-		start: 2.726,
-		onset: 2.726,
-		length: 0.441
+order1_test4_speaker2:
+    {
+		start: 97.270,
+		onset: 97.270,
+		length: 2.508
 	},
-	car_implic: {
-		start: 5.547,
-		onset: 5.547,
-		length: 0.379
+order1_test5_speaker1:
+    {
+		start: 266.546,
+		onset: 266.546,
+		length: 1.902
 	},
-	car_control: {
-		start: 5.547,
-		onset: 5.547,
-		length: 0.379
+order1_test5_speaker2:
+    {
+		start: 181.225,
+		onset: 181.225,
+		length: 1.488
 	},
-	dog_pos: {
-		start: 10.872,
-		onset: 10.872,
-		length: 0.422
+order1_test6_speaker1:
+    {
+		start: 183.291,
+		onset: 183.291,
+		length: 1.240
 	},
-	dog_neg: {
-		start: 29.851,
-		onset: 29.851,
-		length: 0.689
+order1_test6_speaker2:
+    {
+		start: 275.474,
+		onset: 275.474,
+		length: 1.736
 	},
-	dog_inhib: { // cat
-		start: 6.952,
-		onset: 6.952,
-		length: 0.232
+order1_test7_speaker1:
+    {
+		start: 110.289,
+		onset: 110.289,
+		length: 1.571
 	},
-	dog_implic: {
-		start: 10.872,
-		onset: 10.872,
-		length: 0.422
+order1_test7_speaker2:
+    {
+		start: 35.819,
+		onset: 35.819,
+		length: 1.707
 	},
-	dog_control: {
-		start: 10.872,
-		onset: 10.872,
-		length: 0.422
+order1_test8_speaker1:
+    {
+		start: 285.974,
+		onset: 285.974,
+		length: 1.902
 	},
-	cat_pos: {
-		start: 6.952,
-		onset: 6.952,
-		length: 0.232
+order1_test8_speaker2:
+    {
+		start: 197.098,
+		onset: 197.098,
+		length: 1.736
 	},
-	cat_neg: {
-		start: 25.076,
-		onset: 25.366,
-		length: 0.541
+order1_test9_speaker1:
+    {
+		start: 44.128,
+		onset: 44.128,
+		length: 1.214
 	},
-	cat_inhib: { // bird
-		start: 4.191,
-		onset: 4.191,
-		length: 0.33
+order1_test9_speaker2:
+    {
+		start: 121.285,
+		onset: 121.285,
+		length: 2.150
 	},
-	cat_implic: {
-		start: 6.952,
-		onset: 6.952,
-		length: 0.232
+order1_test10_speaker1:
+    {
+		start: 205.366,
+		onset: 205.366,
+		length: 2.315
 	},
-	cat_control: {
-		start: 6.952,
-		onset: 6.952,
-		length: 0.232
+order1_test10_speaker2:
+    {
+		start: 302.509,
+		onset: 302.509,
+		length: 1.405
 	},
-	banana_pos: {
-		start: 1.32,
-		onset: 1.32,
-		length: 0.379
+order1_test11_speaker1:
+    {
+		start: 128.808,
+		onset: 128.808,
+		length: 1.405
 	},
-	banana_neg: {
-		start: 18.376,
-		onset: 18.631,
-		length: 0.725
+order1_test11_speaker2:
+    {
+		start: 56.840,
+		onset: 56.840,
+		length: 0.873
 	},
-	banana_inhib: { // cookie
-		start: 8.209,
-		onset: 8.209,
-		length: 0.289
+order1_test12_speaker1:
+    {
+		start: 311.769,
+		onset: 311.769,
+		length: 1.819
 	},
-	banana_implic: {
-		start: 1.32,
-		onset: 1.32,
-		length: 0.379
+order1_test12_speaker2:
+    {
+		start: 220.082,
+		onset: 220.082,
+		length: 2.315
 	},
-	banana_control: {
-		start: 1.32,
-		onset: 1.32,
-		length: 0.379
+order2_test1_speaker1:
+    {
+		start: 208.921,
+		onset: 208.921,
+		length: 1.984
 	},
-	bicycle_pos: {
-		start: 2.726,
-		onset: 2.726,
-		length: 0.441
+order2_test1_speaker2:
+    {
+		start: 298.789,
+		onset: 298.789,
+		length: 1.736
 	},
-	bicycle_neg: {
-		start: 19.965,
-		onset: 20.226,
-		length: 0.759
+order2_test2_speaker1:
+    {
+		start: 130.710,
+		onset: 130.710,
+		length: 1.075
 	},
-	bicycle_inhib: { // lamp
-		start: 13.851,
-		onset: 13.851,
-		length: 0.389
+order2_test2_speaker2:
+    {
+		start: 54.753,
+		onset: 54.753,
+		length: 1.252
 	},
-	bicycle_implic: {
-		start: 2.726,
-		onset: 2.726,
-		length: 0.441
+order2_test3_speaker1:
+    {
+		start: 112.604,
+		onset: 112.604,
+		length: 1.736
 	},
-	bicycle_control: {
-		start: 2.726,
-		onset: 2.726,
-		length: 0.441
+order2_test3_speaker2:
+    {
+		start: 33.580,
+		onset: 33.580,
+		length: 1.366
 	},
-	lamp_pos: {
-		start: 13.851,
-		onset: 13.851,
-		length: 0.389
+order2_test4_speaker1:
+    {
+		start: 289.777,
+		onset: 289.777,
+		length: 1.075
 	},
-	lamp_neg: {
-		start: 33.204,
-		onset: 33.462,
-		length: 0.584
+order2_test4_speaker2:
+    {
+		start: 194.287,
+		onset: 194.287,
+		length: 2.315
 	},
-	lamp_inhib: { // car
-		start: 5.547,
-		onset: 5.547,
-		length: 0.379
+order2_test5_speaker1:
+    {
+		start: 315.737,
+		onset: 315.737,
+		length: 1.819
 	},
-	lamp_implic: {
-		start: 13.851,
-		onset: 13.851,
-		length: 0.389
+order2_test5_speaker2:
+    {
+		start: 217.106,
+		onset: 217.106,
+		length: 1.984
 	},
-	lamp_control: {
-		start: 13.851,
-		onset: 13.851,
-		length: 0.389
+order2_test6_speaker1:
+    {
+		start: 46.747,
+		onset: 46.747,
+		length: 1.859
 	},
-	cup_pos: {
-		start: 9.526,
-		onset: 9.526,
-		length: 0.157
+order2_test6_speaker2:
+    {
+		start: 119.135,
+		onset: 119.135,
+		length: 1.488
 	},
-	cup_neg: {
-		start: 28.235,
-		onset: 28.499,
-		length: 0.59
+order2_test7_speaker1:
+    {
+		start: 185.606,
+		onset: 185.606,
+		length: 2.067
 	},
-	cup_inhib: { // flower
-		start: 12.378,
-		onset: 12.378,
-		length: 0.446
+order2_test7_speaker2:
+    {
+		start: 272.581,
+		onset: 272.581,
+		length: 1.157
 	},
-	cup_implic: {
-		start: 9.526,
-		onset: 9.526,
-		length: 0.157
+order2_test8_speaker1:
+    {
+		start: 269.935,
+		onset: 269.935,
+		length: 1.488
 	},
-	cup_control: {
-		start: 9.526,
-		onset: 9.526,
-		length: 0.157
+order2_test8_speaker2:
+    {
+		start: 178.662,
+		onset: 178.662,
+		length: 1.736
 	},
-	teddybear_pos: {
-		start: 15.268,
-		onset: 15.268,
-		length: 0.493
+order2_test9_speaker1:
+    {
+		start: 20.167,
+		onset: 20.167,
+		length: 1.937
 	},
-	teddybear_neg: {
-		start: 34.814,
-		onset: 35.124,
-		length: 0.755
+order2_test9_speaker2:
+    {
+		start: 95.232,
+		onset: 95.232,
+		length: 1.646
 	},
-	teddybear_inhib: { // cup
-		start: 9.526,
-		onset: 9.526,
-		length: 0.157
+order2_test10_speaker1:
+    {
+		start: 92.097,
+		onset: 92.097,
+		length: 1.724
 	},
-	teddybear_implic: {
-		start: 15.268,
-		onset: 15.268,
-		length: 0.493
+order2_test10_speaker2:
+    {
+		start: 12.248,
+		onset: 12.248,
+		length: 1.253
 	},
-	teddybear_control: {
-		start: 15.268,
-		onset: 15.268,
-		length: 0.493
+order2_test11_speaker1:
+    {
+		start: 8.846,
+		onset: 8.846,
+		length: 1.041 
 	},
-	flower_pos: {
-		start: 12.378,
-		onset: 12.378,
-		length: 0.446
+order2_test11_speaker2:
+    {
+		start: 84.867,
+		onset: 84.867,
+		length: 2.087 
 	},
-	flower_neg: {
-		start: 31.566,
-		onset: 31.865,
-		length: 0.614
+order2_test12_speaker1:
+    {
+		start: 159.977,
+		onset: 159.977,
+		length: 1.323
 	},
-	flower_inhib: { // teddybear
-		start: 15.268,
-		onset: 15.268,
-		length: 0.493
-	},
-	flower_implic: {
-		start: 12.378,
-		onset: 12.378,
-		length: 0.446
-	},
-	flower_control: {
-		start: 12.378,
-		onset: 12.378,
-		length: 0.446
-	},
-	cookie_pos: {
-		start: 8.209,
-		onset: 8.209,
-		length: 0.289
-	},
-	cookie_neg: {
-		start: 26.639,
-		onset: 26.909,
-		length: 0.569
-	},
-	cookie_inhib: { // apple
-		start: 0,
-		onset: 0,
-		length: 0.297
-	},
-	cookie_implic: {
-		start: 8.209,
-		onset: 8.209,
-		length: 0.289
-	},
-	cookie_control: {
-		start: 8.209,
-		onset: 8.209,
-		length: 0.289
-	},
-	bird_pos: {
-		start: 4.191,
-		onset: 4.191,
-		length: 0.33
-	},
-	bird_neg: {
-		start: 21.753,
-		onset: 22.102,
-		length: 0.684
-	},
-	bird_inhib: { // dog
-		start: 10.872,
-		onset: 10.872,
-		length: 0.422
-	},
-	bird_implic: {
-		start: 4.191,
-		onset: 4.191,
-		length: 0.33
-	},
-	bird_control: {
-		start: 4.191,
-		onset: 4.191,
-		length: 0.33
-	},
-	monkey: {
-		start: 36.698,
-		onset: 36.698,
-		length: 0.702
-	},	
-	lion: {
-		start: 38.408,
-		onset: 38.408,
-		length: 0.722
+order2_test12_speaker2:
+    {
+		start: 238.271,
+		onset: 238.271,
+		length: 1.405
 	}
-};
+}

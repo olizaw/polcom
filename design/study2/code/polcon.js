@@ -2,13 +2,13 @@
 var listenerList = [];
 var speakerList = [];
 var backgroundList = [];
-for (i = 1; i < 13; i++) {
+for (i = 0; i < 13; i++) {
     for (j = 1; j < 3; j++) {
         listenerList.push("test" + i + "_listener" + j);
         speakerList.push("test" + i + "_speaker" + j);
     }
 }
-for (i = 1; i < 13; i++) {
+for (i = 0; i < 13; i++) {
     backgroundList.push("test" + i + "_background");
 }
 
@@ -22,12 +22,89 @@ for (i = 0; i < listenerList.length; i++) {
 }
 
 // script
-var page1_script = ["Anne was in a room where the lights were on.", "Fred had some water.", "This is Rick’s room.", "This is Simon.", "Tasha had a bar of chocolate.", "One day Kathy was singing.", "Tom was running inside the house.", "Alice had some bread.", "Chris had scissors in his hand.", "Kate is good at solving puzzles.", "One day Miles was shouting.", "Lucy had a new game."];
-var page2_script = ["Greg doesn\'t like bright lights. Let's hear what he said!", "Jamie wanted more water in her cup. Let's hear what she said!"];
-var page3_script = ["Bob also doesn\'t like bright lights. Let's hear what he said!", "Suzy also wanted more water in her cup. Let's hear what she said!"];
-var page4_script = ["Do you remember what Greg and Bob said? Let's hear them one more time!", "Do you remember what Jamie and Suzy said? Let's hear them one more time!"];
-var page5_script = ["Which one was being more polite?", "Which one was being nicer?"];
-var page6_script = ["Which one would you rather play with?", "Which one will Fred give water to?"];
+var page1_script = ["Look, this is Carol.",
+                    "Anne was in a room where the lights were on.",
+                    "Fred had some water.",
+                    "This is Rick's room.",
+                    "This is Simon.",
+                    "Tasha had a bar of chocolate.",
+                    "One day Kathy was singing.",
+                    "Tom was running inside the house.",
+                    "Alice had some bread.",
+                    "Chris had scissors in his hand.",
+                    "Kate is good at solving puzzles.",
+                    "One day Miles was shouting.",
+                    "Lucy had a new game."];
+var page2_script = ["Drew kicked Carol.", 
+                    "Greg doesn\'t like bright lights. Let's hear what he said!",
+                    "Jamie wanted more water in her cup. Let's hear what she said!",
+                   "Millie thought Rick's room was too messy. Let's hear what she said!",
+                   "Carla wanted someone to go to the store with. Let's hear what she said!",
+                   "Louis wanted some chocolate. Let's hear what he said!",
+                   "Josh didn\'t like Kathy's song. Let's hear what he said!",
+                   "Marie wanted Tom to stop running. Let's hear what she said!",
+                   "Claude was hungry. Let's hear what he said!",
+                   "Jean wanted to use the scissors. Let's hear what she said!",
+                   "Scott needed help with his puzzle. Let's hear what he said!",
+                   "Jenny heard Miles shout. Let's hear what she said!",
+                  "Joe wanted to learn Lucy's game. Let's hear what he said!",
+                   ];
+var page3_script = ["Graham gave Carol a gift.",
+                    "Bob also doesn\'t like bright lights. Let's hear what he said!",
+                    "Suzy also wanted more water in her cup. Let's hear what she said!",
+                   "Franny also thought Rick's room was too messy. Let's hear what she said!",
+                   "Ashley also wanted someone to go to the store with. Let's hear what she said!",
+                   "Paul also wanted some chocolate. Let's hear what he said!",
+                   "Andy didn\'t like Kathy's song either. Let's hear what she said!",
+                   "Amy also wanted Tom to stop running. Let's hear what she said!",
+                   "Ernie was hungry too. Let's hear what he said!",
+                   "Mia also wanted to use the scissors. Let's hear what she said!",
+                   "Johnny also needed help with his puzzle. Let's hear what he said!",
+                   "Susie also heard Miles shout. Let's hear what she said!",
+                   "Sammy wanted to learn Lucy's game too. Let's hear what he said!",
+                   ];
+var page4_script = ["Remember, Drew kicked Carol. Graham gave her a gift.",
+                    "Do you remember what Greg and Bob said? Let's hear them one more time!",
+                    "Do you remember what Jamie and Suzy said? Let's hear them one more time!",
+                    "Do you remember what Millie and Franny said? Let's hear them one more time!",
+                    "Do you remember what Carla and Ashley said? Let's hear them one more time!",
+                    "Do you remember what Louis and Paul said? Let's hear them one more time!",
+                    "Do you remember what Josh and Andy said? Let's hear them one more time!",
+                    "Do you remember what Marie and Amy said? Let's hear them one more time!",
+                    "Do you remember what Claude and Ernie said? Let's hear them one more time!",
+                    "Do you remember what Jean and Mia said? Let's hear them one more time!",
+                    "Do you remember what Scott and Johnny said? Let's hear them one more time!",
+                    "Do you remember what Jenny and Susie said? Let's hear them one more time!",
+                    "Do you remember what Joe and Sammy said? Let's hear them one more time!",
+                   ];
+var page5_script = ["Which one was being meaner?",
+                    "Which one was being more polite?",
+                    "Which one was being nicer?",
+                    "Which one was being meaner?",
+                    "Which one was being nicer?",
+                    "Which one was being meaner?",
+                    "Which one was being more polite?",
+                    "Which one was being nicer?",
+                    "Which one was being meaner?",
+                    "Which one was being more rude?",
+                    "Which one was being more polite?",
+                    "Which one was being more rude?",
+                    "Which one was being more rude?",
+                   ];
+var page6_script = ["Which one was being nicer?",
+                    "Which one would you rather play with?",
+                    "Which one will Fred give water to?",
+                    "Which one would you rather play with?",
+                    "Which one will Simon go to store with?",
+                    "Which one will Tasha give chocolate to?",
+                    "Which one would you rather play with?",
+                    "Which one would you rather play with?",
+                    "Which one would you rather play with?",
+                    "Which one will Chris give the scissors to?",
+                    "Which one will Kate help with the puzzle?",
+                    "Which one would you rather play with?",
+                    "Which one will Lucy teach about the game?",
+                   ];
 
 
 //******for handling sound; see helper function playPrompt(word)
@@ -35,7 +112,7 @@ var audioSprite = $("#sound_player")[0];
 var handler;
 
 //amount of pause between questions
-var normalPause = 300;
+var normalPause = 800;
 
 // answer border width
 var answer_border_width = "5px";
@@ -45,7 +122,7 @@ showSlide("instructions");
 
 var experiment = {
     trial_num: 0,
-    total_trial_num: 2, // fixme
+    total_trial_num: 12, // fixme
     within_trial: 0,
     listenerList: listenerList,
     speakerList: speakerList,
@@ -93,7 +170,7 @@ var experiment = {
                 $('#leftPic').bind('click touchstart', function (event) {
                     if (clickDisabled) return;
                     clickDisabled = true;
-                    playPrompt("apple_pos"); //fixme
+                    playPrompt(experiment.speaker1); //fixme
                 });
                 var prompt_html = page2_script[experiment.trial_num]
                 experiment.within_trial++;
@@ -109,7 +186,7 @@ var experiment = {
                 $('#rightPic').bind('click touchstart', function (event) {
                     if (clickDisabled) return;
                     clickDisabled = true;
-                    playPrompt("apple_neg"); //fixme
+                    playPrompt(experiment.speaker2); //fixme
                 });
                 var prompt_html = page3_script[experiment.trial_num]
                 experiment.within_trial++;
@@ -121,11 +198,17 @@ var experiment = {
 
                 $('.pic').bind('click touchstart', function (event) {
                     var picID = $(event.currentTarget).attr('id');
+                    if (clickDisabled) return;
+                    clickDisabled = true;
+                    setTimeout(function () {
+                    clickDisabled = false;
+                    }, normalPause);
                     if (picID === "leftPic2") {
-                        playPrompt("apple_pos"); //fixme
+                        playPrompt(experiment.speaker1); //fixme
                     } else if (picID === "rightPic") {
-                        playPrompt("apple_neg"); //fixme
+                        playPrompt(experiment.speaker2); //fixme
                     }
+
                 });
                 var prompt_html = page4_script[experiment.trial_num]
                 $("#prompt").html(prompt_html);

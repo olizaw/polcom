@@ -4,6 +4,7 @@
     <title>Who's more polite?</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <div id="characters">
         </div>
         <audio id="sound_player">
-      <source src="neginhib_sprite.mp3" type="audio/mp3">
+      <source src="polcon_sprite.mp3" type="audio/mp3">
       </audio>
         <!--dynamically built in javascript-->
         <div id="wrap">
@@ -36,13 +37,13 @@
         </div>
         <div id="enclose">
             <div id="problem">
-                <button type="button" id="proceed" onClick="this.blur(); experiment.next()">Next</button>
+                <button type="button" id="proceed" style="float: right;" onClick="this.blur(); experiment.next()">Next</button>
             </div>
         </div>
     </div>
 
     <div class="slide" id="finish">
-      <img src="images/finish.png" alt="FINISHED!">
+        <img src="images/finish.png" alt="FINISHED!">
     </div>
 
 
