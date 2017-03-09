@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Who's more polite?</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="slide" id="instructions">
+        <img src="images/stanford.png" alt="Stanford University">
+        <p id='logo-text'>Stanford Language and Cognition Lab</p>
+        <p class="block-text">Welcome to the politeness study. Enter relevant information below:</p>
+        <p>
+            subject ID: <br>
+            <input type="text" id="subjectID" name="subjectID" size="30">
+        </p>
+<!--
+        <p>
+            order: <br>
+            <input type="text" id="order" name="condition" size="30">
+        </p>
+-->
+
+        <button type="button" id="beforeStudy" onClick="this.blur(); experiment.checkInput()">Start</button>
+
+        <div id="checkMessage"> </div>
+        <!--dynamically built in javascript-->
+    </div>
+
+    <div class="slide" id="stage">
+        <p class="block-text" id="prompt"></p>
+        <div id="characters">
+        </div>
+        <audio id="sound_player">
+      <source src="polcon_sprite.mp3" type="audio/mp3">
+      </audio>
+        <!--dynamically built in javascript-->
+        <div id="wrap">
+            <div id="main" class="clearfix">
+            </div>
+        </div>
+        <div id="enclose">
+            <div id="problem">
+                <button type="button" id="proceed" style="float: right;" onClick="this.blur(); experiment.next()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="finish">
+        <img src="images/finish.png" alt="FINISHED!">
+    </div>
+
+
+
+    <script src="helper.js"></script>
+    <script src="polcon.js"></script>
+    <script src="spriteData.js"></script>
+</body>
+
+</html>
