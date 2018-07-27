@@ -1,0 +1,51 @@
+speaker_voice,Item_simple,Politeness,Intensity,Mean Pitch,Max Pitch,order,trial,speaker,Syntax,Item,Listener,Speaker,audio_start,audio_lengthj,OLD_audio_start_time,OLD_audio_length,incorrect iPad audio,,sound_file_name
+benny,light,Polite,67.05692752,135.3169322,296.607584,1,1,1,Please,turn off light,Anne,Greg,0,1.428,16.711,1.178,"""ff the light. Please tur""",,order1_test8_speaker2
+kyle,light,Direct,72.90828324,135.3392379,338.255503,1,1,2,Imp,turn off light,Anne,Bob,3.518,1.091,95.908,0.88,"""ow to play your game""",,order2_test4_speaker2
+kara,water,Polite,58.96547743,205.8960959,258.1877046,1,2,1,Please,pour water,Fred,Jamie,6.757,1.463,78.292,1.742,"""pick up the toys. Pour me more""",,order1_test5_speaker2
+danielle,water,Direct,68.18221067,254.3244009,321.1654857,1,2,2,Imp,pour water,Fred,Suzy,10.449,1.474,50.529,1.339,"""Can you pick up""",,order2_test8_speaker2
+danielle,toys,Direct,69.98148422,249.7660284,372.5046697,1,3,1,Imp,pick up toys,Rick,Millie,14.025,1.428,46.178,1.277,"""an you please come to the store w""",,order2_test5_speaker2
+kara,toys,Polite,61.16538127,199.8042681,267.2868862,1,3,2,IDQ,pick up toys,Rick,Franny,17.578,1.556,75.137,1.519,"""ith the store with me? Pick up""",,order1_test12_speaker2
+kara,store,Direct,74.22614043,291.0345454,316.0425094,1,4,1,Imp,go to store,Simon,Carla,20.978,2.052,69.651,1.481,"""on't shout. Please don't""",,order2_test12_speaker1
+danielle,store,Polite,67.01374115,261.2062104,314.7086544,1,4,2,Please IDQ,go to store,Simon,Ashley,24.619,2.872,43.29,2.231,"""Come to the store with me""",,order1_test1_speaker1
+kyle,chocolate,Polite,71.69871109,234.2435582,301.0872846,1,5,1,Please,give chocolate,Tasha,Louis,29.133,1.949,90.205,1.215,"""ve me some chocolate""",,order2_test1_speaker1
+benny,chocolate,Direct,65.15799039,138.7559952,179.195419,1,5,2,Imp,give chocolate,Tasha,Paul,32.672,1.795,7.258,1.227,"""ocolate. Please g""",,order1_test10_speaker1
+benny,singing,Direct,64.66279914,135.7606289,167.9411983,1,6,1,Imp,stop singing,Kathy,Josh,36.16,1.641,22.395,1.24,"""Help me with this puzzle""",,order1_test6_speaker1
+kyle,singing,Polite,69.40390219,222.9734578,315.9813079,1,6,2,Please IDQ,stop singing,Kathy,Andy,39.494,2.103,104.015,1.19,"""Stop singing""",,order2_test7_speaker1
+danielle,run,Direct,67.4757409,223.3770287,295.2293303,1,7,1,Imp,don't run inside,Tom,Marie,43.34,2.154,29.969,1.5,silence,,order1_test7_speaker1
+kara,run,Polite,59.93988443,191.9500499,257.229012,1,7,2,IDQ,don't run inside,Tom,Amy,47.187,2.462,60.85,1.915,"""top running inside. Could y""",,order2_test3_speaker1
+kyle,bread,Polite,68.82029174,101.4897159,161.2166359,1,8,1,Please IDQ,give bread,Alice,Claude,51.342,2.103,86.462,1.767,"""bread? Can you please give m""",,order2_test6_speaker2
+benny,bread,Direct,67.15629619,117.5413451,167.2574517,1,8,2,Imp,give bread,Alice,Ernie,55.188,1.795,3.818,1.153,"""Can you please give me mo""",,order1_test9_speaker2
+kara,scissors,Direct,59.46564917,168.6539429,260.3973452,1,9,1,Imp,hand over scissors,Chris,Jean,58.676,1.795,63.05,1.364,"""Stop running inside""",,order2_test2_speaker1
+danielle,scissors,Polite,70.43549302,263.5297873,378.4456907,1,9,2,Please IDQ,hand over scissors,Chris,Mia,62.113,2.667,35.529,1.946,"""Hand me the scissors. Could you pl""",,order1_test11_speaker1
+benny,puzzle,Polite,65.34033791,148.4866505,184.5746222,1,10,1,IDQ,help with puzzle,Kate,"Scott
+",66.524,2.205,20.145,1.729,""" me with this puzzle. Could y""",,order2_test9_speaker2
+kyle,puzzle,Direct,72.68641728,179.6501888,257.687076,1,10,2,Imp,help with puzzle,Kate,Johnny,70.268,2.103,98.988,1.097,"""Please turn off the light""",,order1_test4_speaker2
+danielle,shout,Polite,70.26361686,252.6907465,375.4874311,1,11,1,Please,don't shout,Miles,Jenny,74.114,1.898,39.155,1.339,"""Don't shout. Pl""",,order1_test3_speaker1
+kara,shout,Direct,70.95023129,220.1016305,269.2855111,1,11,2,Imp,don't shout,Miles,Zoe,77.551,1.487,67.141,0.862,"""- please hand me """,,order2_test10_speaker1
+kyle,game,Direct,68.16844444,136.6715604,286.7427283,1,12,1,Imp,play game,Lucy,Joe,80.731,2.205,91.978,1.252,"""some chocolate""",,order1_test2_speaker2
+benny,game,Polite,62.6720081,120.0599354,173.1291749,1,12,2,IDQ,play game,Lucy,Sammy,84.475,2.565,13.122,1.909,"""Can you teach me how to play your ga""",,order2_test11_speaker2
+benny,puzzle,Direct,63.43018019,137.5677021,179.3989091,2,1,1,Imp,help with puzzle,Kate,Johnny,88.732,2,18.254,1.419,"""light""",,order2_test3_speaker2
+kyle,puzzle,Polite,71.24840898,193.2618645,290.580543,2,1,2,IDQ,help with puzzle,Kate,"Scott
+",92.323,2.462,100.606,1.388,"""help me with this puzzle""",,order1_test7_speaker2
+danielle,shout,Direct,72.82283568,236.3847792,307.9722192,2,2,1,Imp,don't shout,Miles,Zoe,96.426,1.385,37.878,0.924,"""ease hand me the sciss""",,order1_test9_speaker1
+kara,shout,Polite,70.07769927,228.1798575,271.1779059,2,2,2,Please,don't shout,Miles,Jenny,99.503,1.795,68.331,1.116,"""the scissors. Don't""",,order2_test6_speaker1
+danielle,run,Polite,68.15545397,203.8982775,292.4811286,2,3,1,IDQ,don't run inside,Tom,Amy,102.94,2.359,31.99,1.692,"""nside. Could you stop'",,order1_test11_speaker2
+kara,run,Direct,58.73491213,183.2422803,230.8162134,2,3,2,Imp,don't run inside,Tom,Marie,106.889,2.103,58.885,1.525,silence,,order2_test2_speaker2
+kyle,bread,Direct,71.14437844,132.2327248,215.0084729,2,4,1,Imp,give bread,Alice,Ernie,110.582,1.693,84.72,1.06,silence,,order1_test4_speaker1
+benny,bread,Polite,71.95631075,120.5118633,205.9590033,2,4,2,Please IDQ,give bread,Alice,Claude,113.916,2.565,5.269,1.686,"""Bread. Give me some choc""",,order2_test9_speaker1
+kyle,game,Polite,68.36193948,138.9715364,305.810522,2,5,1,IDQ,play game,Lucy,Sammy,118.224,2.411,93.726,1.593,"""how to play your game. Can you t""",,order2_test10_speaker2
+benny,game,Direct,62.20848564,131.5979242,218.422163,2,5,2,Imp,play game,Lucy,Joe,122.276,2.257,10.996,1.661,"""me how to play your game""",,order1_test3_speaker2
+kara,scissors,Polite,64.04841263,257.5798745,309.6489,2,6,1,Please IDQ,hand over scissors,Chris,Mia,126.174,2.411,64.761,2.052,"""Hand me the scissors. Cou""",,order2_test11_speaker1
+danielle,scissors,Direct,69.38496757,268.8474338,337.2838485,2,6,2,Imp,hand over scissors,Chris,Jean,130.277,2.052,33.961,1.314,"""running inside. Han""",,order1_test2_speaker1
+benny,singing,Polite,62.84043874,136.4318704,176.3509653,2,7,1,Please IDQ,stop singing,Kathy,Andy,133.919,2.205,23.951,1.605,"""stop singing""",,order2_test4_speaker1
+kyle,singing,Direct,69.03038765,204.0938772,263.2532963,2,7,2,Imp,stop singing,Kathy,Josh,137.817,1.539,102.584,0.855,"""elp me with this puzzle?""",,order1_test8_speaker1
+kyle,chocolate,Direct,69.95471584,228.6819489,343.8957874,2,8,1,Imp,give chocolate,Tasha,Paul,140.997,1.795,88.687,1.085,"""more bread""",,order2_test8_speaker1
+benny,chocolate,Polite,65.11442571,135.9773928,168.4877813,2,8,2,Please,give chocolate,Tasha,Louis,144.485,2,8.92,1.723,"""e some chocolate. Teach me""",,order1_test5_speaker1
+kara,store,Polite,74.72271679,303.4036344,308.1827089,2,9,1,Please IDQ,go to store,Simon,Ashley,148.178,2.565,71.35,2.219,"""shout. Come to the store with me""",,order1_test12_speaker1
+danielle,store,Direct,69.39211479,273.1050038,332.0303699,2,9,2,Imp,go to store,Simon,Carla,152.435,2.205,40.934,1.605,"""Please don't shout""",,order2_test5_speaker1
+danielle,toys,Polite,69.14065176,224.494642,312.6019973,2,10,1,IDQ,pick up toys,Rick,Franny,156.282,2.257,48.18,1.636,"""ee. Pick up the toys""",,order1_test1_speaker2
+kara,toys,Direct,61.95281094,202.8490928,257.6534413,2,10,2,Imp,pick up toys,Rick,Millie,160.231,1.59,73.848,1.097,"""Can you please come to """,,order2_test12_speaker2
+kara,water,Direct,59.87928071,184.0502518,245.8413005,2,11,1,Imp,pour water,Fred,Suzy,163.616,1.693,76.829,1.283,"""p the toys. Can you pi""",,order1_test10_speaker2
+danielle,water,Polite,70.29972965,236.2479296,295.9367955,2,11,2,Please,pour water,Fred,Jamie,166.847,2.103,52.445,1.86,"""toys. Pour me more""",,order2_test1_speaker2
+benny,light,Direct,64.69033543,110.1833095,148.1042208,2,12,1,Imp,turn off light,Anne,Bob,170.54,1.795,15.471,1.023,"""ame. Turn off th""",,order2_test7_speaker2
+kyle,light,Polite,70.96523888,113.7068992,212.4304301,2,12,2,Please,turn off light,Anne,Greg,174.079,1.502,97.327,1.097,"""Turn off the light?""",,order1_test6_speaker2

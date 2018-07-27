@@ -1,0 +1,19 @@
+speaker_voice,Item_simple,Politeness,Intensity,Mean Pitch,Max Pitch,order,trial,speaker,Syntax,Item,Listener,Speaker,audio_start,audio_lengthj,OLD_audio_start_time,OLD_audio_length,incorrect iPad audio,,sound_file_name
+benny,light,Polite,67.05692752,135.3169322,296.607584,1,1,1,Please,turn off light,Anne,Greg,0,1.428,16.711,1.178,"""ff the light. Please tur""",,order1_test8_speaker2
+kyle,light,Direct,72.90828324,135.3392379,338.255503,1,1,2,Imp,turn off light,Anne,Bob,3.518,1.091,95.908,0.88,"""ow to play your game""",,order2_test4_speaker2
+kara,water,Polite,58.96547743,205.8960959,258.1877046,1,2,1,Please,pour water,Fred,Jamie,6.757,1.463,78.292,1.742,"""pick up the toys. Pour me more""",,order1_test5_speaker2
+danielle,water,Direct,68.18221067,254.3244009,321.1654857,1,2,2,Imp,pour water,Fred,Suzy,10.449,1.474,50.529,1.339,"""Can you pick up""",,order2_test8_speaker2
+danielle,toys,Direct,69.98148422,249.7660284,372.5046697,1,3,1,Imp,pick up toys,Rick,Millie,14.025,1.428,46.178,1.277,"""an you please come to the store w""",,order2_test5_speaker2
+kara,toys,Polite,61.16538127,199.8042681,267.2868862,1,3,2,IDQ,pick up toys,Rick,Franny,17.578,1.556,75.137,1.519,"""ith the store with me? Pick up""",,order1_test12_speaker2
+benny,puzzle,Polite,65.34033791,148.4866505,184.5746222,1,4,1,IDQ,help with puzzle,Kate,"Scott
+",66.524,2.205,20.145,1.729,""" me with this puzzle. Could y""",,order2_test9_speaker2
+kyle,puzzle,Direct,72.68641728,179.6501888,257.687076,1,4,2,Imp,help with puzzle,Kate,Johnny,70.268,2.103,98.988,1.097,"""Please turn off the light""",,order1_test4_speaker2
+benny,puzzle,Direct,63.43018019,137.5677021,179.3989091,2,1,1,Imp,help with puzzle,Kate,Johnny,88.732,2,18.254,1.419,"""light""",,order2_test3_speaker2
+kyle,puzzle,Polite,71.24840898,193.2618645,290.580543,2,1,2,IDQ,help with puzzle,Kate,"Scott
+",92.323,2.462,100.606,1.388,"""help me with this puzzle""",,order1_test7_speaker2
+danielle,toys,Polite,69.14065176,224.494642,312.6019973,2,2,1,IDQ,pick up toys,Rick,Franny,156.282,2.257,48.18,1.636,"""ee. Pick up the toys""",,order1_test1_speaker2
+kara,toys,Direct,61.95281094,202.8490928,257.6534413,2,2,2,Imp,pick up toys,Rick,Millie,160.231,1.59,73.848,1.097,"""Can you please come to """,,order2_test12_speaker2
+kara,water,Direct,59.87928071,184.0502518,245.8413005,2,3,1,Imp,pour water,Fred,Suzy,163.616,1.693,76.829,1.283,"""p the toys. Can you pi""",,order1_test10_speaker2
+danielle,water,Polite,70.29972965,236.2479296,295.9367955,2,3,2,Please,pour water,Fred,Jamie,166.847,2.103,52.445,1.86,"""toys. Pour me more""",,order2_test1_speaker2
+benny,light,Direct,64.69033543,110.1833095,148.1042208,2,4,1,Imp,turn off light,Anne,Bob,170.54,1.795,15.471,1.023,"""ame. Turn off th""",,order2_test7_speaker2
+kyle,light,Polite,70.96523888,113.7068992,212.4304301,2,4,2,Please,turn off light,Anne,Greg,174.079,1.502,97.327,1.097,"""Turn off the light?""",,order1_test6_speaker2
