@@ -56,6 +56,12 @@ This stuff will vary by experiment.
     text-align: center;
 }
 
+#beginTest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #proceed {
     background: url(images/button-gradient.png);
     border: 1px solid #999;

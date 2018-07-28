@@ -201,7 +201,8 @@ var experiment = {
 						//document.body.style.background = "black";
 						setTimeout(function() {
 //							showSlide("prestudy");
-							experiment.next();
+//							experiment.next();
+                            showSlide("begintest");
 						}, normalpause);
 					}
 				}, normalpause);
