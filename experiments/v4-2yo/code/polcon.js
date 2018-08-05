@@ -8,23 +8,23 @@ var listenerList = [];
 var speakerList = [];
 var backgroundList = [];
 if (cond == 1) {
-    for (i = 0; i < 13; i++) {
+    for (i = 0; i < 5; i++) {
         for (j = 1; j < 3; j++) {
             listenerList.push("order1_" + "test" + i + "_listener" + j);
             speakerList.push("order1_" + "test" + i + "_speaker" + j);
         }
     }
-    for (i = 0; i < 13; i++) {
+    for (i = 0; i < 5; i++) {
         backgroundList.push("order1_" + "test" + i + "_background");
     }
 } else {
-    for (i = 0; i < 13; i++) {
+    for (i = 0; i < 5; i++) {
         for (j = 1; j < 3; j++) {
             listenerList.push("order2_" + "test" + i + "_listener" + j);
             speakerList.push("order2_" + "test" + i + "_speaker" + j);
         }
     }
-    for (i = 0; i < 13; i++) {
+    for (i = 0; i < 5; i++) {
         backgroundList.push("order2_" + "test" + i + "_background");
     }
 }
