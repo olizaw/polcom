@@ -65,3 +65,35 @@ getCurrentTime = function () {
     if (minutes < 10) minutes = "0" + minutes;
     return (hours + ":" + minutes);
 }
+
+// shake
+function shake(thing) {
+  var interval = 100;
+  var distance = 10;
+  var times = 6;
+
+  for (var i = 0; i < (times + 1); i++) {
+    $(thing).animate({
+      left:
+        (i % 2 == 0 ? distance : distance * -1)
+    }, interval);
+  }
+}
+
+// bounce
+//function bounce(thing) {
+//  var interval = 1;
+//  var distance = 100;
+//  var times = 1;
+//  var damping = 100;
+//
+//  for (var i = 0; i < (times + 1); i++) {
+//    var amt = Math.pow(-1, i) * distance / (i * damping);
+//    $(thing).animate({
+//      top: amt
+//    }, 1);
+//  }
+//  $(thing).animate({
+//    top: 100
+//  }, interval);
+//}

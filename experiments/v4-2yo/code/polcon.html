@@ -4,6 +4,9 @@
     <title>Who's more polite?</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -16,12 +19,6 @@
             subject ID: <br>
             <input type="text" id="subjectID" name="subjectID" size="30">
         </p>
-<!--
-        <p>
-            order: <br>
-            <input type="text" id="order" name="condition" size="30">
-        </p>
--->
 
         <button type="button" id="beforeStudy" onClick="this.blur(); experiment.checkInput(); document.getElementById('block').hidden=true">Start</button>
 
@@ -55,7 +52,7 @@
                 <button type="button" id="proceed" onClick="this.blur(); 
                                                                                   if (experiment.within_trial == 4 || experiment.within_trial == 5)        {document.getElementById('proceed').hidden=true} else {document.getElementById('proceed').hidden=false};
                                                                                   experiment.next()">Next</button>
-                <button type="button" id="block"></button>
+<!--                <button type="button" id="block"></button>-->
             </div>
         </div>
     </div>

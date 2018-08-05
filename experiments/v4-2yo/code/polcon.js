@@ -3,10 +3,6 @@
 var cond = random(2) + 1;
 //var cond = document.getElementById("order").value
 
-//amount of white space between trials
-var normalpause = 1500;
-
-
 // listener, speaker, background names
 var listenerList = [];
 var speakerList = [];
@@ -51,55 +47,55 @@ for (i = 0; i < speakerList.length; i++) {
 }
 
 //dot game
-createDot = function(dotx, doty, i, tag) {
-	var dots;
-	if (tag === "smiley") {
-		dots = ["smiley1", "smiley2", "smiley3", "smiley4", "smiley5"];
-	} else {
-		dots = [1, 2, 3, 4, 5];
-	}
+createDot = function (dotx, doty, i, tag) {
+    var dots;
+    if (tag === "smiley") {
+        dots = ["smiley1", "smiley2", "smiley3", "smiley4", "smiley5"];
+    } else {
+        dots = [1, 2, 3, 4, 5];
+    }
 
-	var dot = document.createElement("img");
-	dot.setAttribute("class", "dot");
-	dot.id = "dot_" + dots[i];
-	if (tag === "smiley") {
-		dot.src = "dots/dot_" + "smiley" + ".jpg";
-	} else {
-		dot.src = "dots/dot_" + dots[i] + ".jpg";
-	}
+    var dot = document.createElement("img");
+    dot.setAttribute("class", "dot");
+    dot.id = "dot_" + dots[i];
+    if (tag === "smiley") {
+        dot.src = "dots/dot_" + "smiley" + ".jpg";
+    } else {
+        dot.src = "dots/dot_" + dots[i] + ".jpg";
+    }
 
-    var x = Math.floor(Math.random()*950);
-    var y = Math.floor(Math.random()*540);
+    var x = Math.floor(Math.random() * 950);
+    var y = Math.floor(Math.random() * 540);
 
     var invalid = "true";
 
     //make sure dots do not overlap
     while (true) {
-    	invalid = "true";
-	   	for (j = 0; j < dotx.length ; j++) {
-    		if (Math.abs(dotx[j] - x) + Math.abs(doty[j] - y) < 250) {
-    			var invalid = "false";
-    			break; 
-    		}
-		}
-		if (invalid === "true") {
- 			dotx.push(x);
-  		  	doty.push(y);
-  		  	break;	
-  	 	}
-  	 	x = Math.floor(Math.random()*400);
-   		y = Math.floor(Math.random()*400);
-	}
+        invalid = "true";
+        for (j = 0; j < dotx.length; j++) {
+            if (Math.abs(dotx[j] - x) + Math.abs(doty[j] - y) < 250) {
+                var invalid = "false";
+                break;
+            }
+        }
+        if (invalid === "true") {
+            dotx.push(x);
+            doty.push(y);
+            break;
+        }
+        x = Math.floor(Math.random() * 400);
+        y = Math.floor(Math.random() * 400);
+    }
 
-    dot.setAttribute("style","position:absolute;left:"+x+"px;top:"+y+"px;");
-   	training.appendChild(dot);
+    dot.setAttribute("style", "position:absolute;left:" + x + "px;top:" + y + "px;");
+    training.appendChild(dot);
 }
 
 //for dot game
 var dots = ["dot_1", "dot_2", "dot_3", "dot_4", "dot_5", "x", "dot_smiley"];
-for (i = 0; i<dots.length; i++) {
-	images[i] = new Image();
-	images[i].src = "dots/" + dots[i] + ".jpg";
+for (i = 0; i < dots.length; i++) {
+    images[i] = new Image();
+    images[i].src = "dots/" + dots[i] + ".jpg";
 }
 
 
@@ -109,10 +105,22 @@ var audioSprite = $("#sound_player")[0];
 var handler;
 
 //amount of pause between questions
-var normalPause = 1800;
+var normalPause = 1200;
 
 // answer border width
 var answer_border_width = "5px";
+
+
+// bounce animation
+customBounce = function (thing) {
+    setTimeout(function () {
+        thing.effect("bounce", {
+            times: 2,
+            distance: 13
+        }, "slow");
+    }, 100);
+
+}
 
 showSlide("instructions");
 
@@ -143,72 +151,72 @@ var experiment = {
             return;
         }
         experiment.subid = document.getElementById("subjectID").value;
-//        experiment.next();
+        //        experiment.next();
         experiment.training(0);
 
     },
-    
-    	//sets up and allows participants to play "the dot game"
-	training: function(dotgame) {
-		var allDots = ["dot_1", "dot_2", "dot_3", "dot_4", "dot_5", 
-						"dot_smiley1", "dot_smiley2", "dot_smiley3", 
+
+    //sets up and allows participants to play "the dot game"
+    training: function (dotgame) {
+        var allDots = ["dot_1", "dot_2", "dot_3", "dot_4", "dot_5",
+						"dot_smiley1", "dot_smiley2", "dot_smiley3",
 						"dot_smiley4", "dot_smiley5"];
-		var xcounter = 0;
-		var dotCount = 5;
+        var xcounter = 0;
+        var dotCount = 5;
 
-		//preload sound
-		if (dotgame === 0) {
-			audioSprite.play();
-			audioSprite.pause();
-		}
+        //preload sound
+        if (dotgame === 0) {
+            audioSprite.play();
+            audioSprite.pause();
+        }
 
-		var dotx = [];
-		var doty = [];
+        var dotx = [];
+        var doty = [];
 
-		if (dotgame === 0) {
-			for (i = 0; i < dotCount; i++) {
-				createDot(dotx, doty, i, "");
-			}
-		} else {
-			for (i = 0; i < dotCount; i++) {
-				createDot(dotx, doty, i, "smiley");
-			}
-		}
-		showSlide("training");
-		$('.dot').bind('click touchstart', function(event) {
-	    	var dotID = $(event.currentTarget).attr('id');
+        if (dotgame === 0) {
+            for (i = 0; i < dotCount; i++) {
+                createDot(dotx, doty, i, "");
+            }
+        } else {
+            for (i = 0; i < dotCount; i++) {
+                createDot(dotx, doty, i, "smiley");
+            }
+        }
+        showSlide("training");
+        $('.dot').bind('click touchstart', function (event) {
+            var dotID = $(event.currentTarget).attr('id');
 
-	    	//only count towards completion clicks on dots that have not yet been clicked
-	    	if (allDots.indexOf(dotID) === -1) {
-	    		return;
-	    	}
-	    	allDots.splice(allDots.indexOf(dotID), 1);
-	    	document.getElementById(dotID).src = "dots/x.jpg";
-	    	xcounter++
-	    	if (xcounter === dotCount) {
-	    		setTimeout(function () {
-	    			$("#training").hide();
-	    			if (dotgame === 0) {		
-	    				//hide old x marks before game begins again
-	    				var dotID;
-	    				for (i = 1; i <= dotCount; i++) {
-	    					dotID = "dot_" + i;
-	    					training.removeChild(document.getElementById(dotID));
-	    				}
-						experiment.training();
-						dotgame++; 
-					} else {
-						//document.body.style.background = "black";
-						setTimeout(function() {
-//							showSlide("prestudy");
-//							experiment.next();
+            //only count towards completion clicks on dots that have not yet been clicked
+            if (allDots.indexOf(dotID) === -1) {
+                return;
+            }
+            allDots.splice(allDots.indexOf(dotID), 1);
+            document.getElementById(dotID).src = "dots/x.jpg";
+            xcounter++
+            if (xcounter === dotCount) {
+                setTimeout(function () {
+                    $("#training").hide();
+                    if (dotgame === 0) {
+                        //hide old x marks before game begins again
+                        var dotID;
+                        for (i = 1; i <= dotCount; i++) {
+                            dotID = "dot_" + i;
+                            training.removeChild(document.getElementById(dotID));
+                        }
+                        experiment.training();
+                        dotgame++;
+                    } else {
+                        //document.body.style.background = "black";
+                        setTimeout(function () {
+                            //							showSlide("prestudy");
+                            //							experiment.next();
                             showSlide("begintest");
-						}, normalpause);
-					}
-				}, normalpause);
-			}
-	    });	   
-	},
+                        }, normalpause);
+                    }
+                }, normalpause);
+            }
+        });
+    },
 
 
     next: function () {
@@ -224,7 +232,7 @@ var experiment = {
 
         if (experiment.trial_num == experiment.total_trial_num) {
             experiment.end();
-//              showSlide("finish");
+            //              showSlide("finish");
 
         } else {
             bgChange("url('figs/" + backgroundList[experiment.trial_num] + ".png')");
@@ -235,7 +243,7 @@ var experiment = {
 
 
             if (experiment.within_trial == 0) {
-                document.getElementById('proceed').hidden=false;
+                document.getElementById('proceed').hidden = false;
                 var characters_html = "";
                 characters_html += '<div><img class="pic" src="' + centername + '"alt="' + centername + '" id= "centerPic"/></div>'
                 $("#characters").html(characters_html);
@@ -252,11 +260,16 @@ var experiment = {
                 $('#leftPic').bind('click touchstart', function (event) {
                     if (clickDisabled) return;
                     clickDisabled = true;
+
+                    // hear utterance from speaker1
                     playPrompt(experiment.speaker1); //fixme
+                    
+                    // bounce
+                    customBounce($('#leftPic'))
                 });
+                
                 var prompt_html = page2_script[experiment.trial_num]
                 experiment.within_trial++;
-
 
             } else if (experiment.within_trial == 2) {
                 clickDisabled = false;
@@ -269,7 +282,9 @@ var experiment = {
                     if (clickDisabled) return;
                     clickDisabled = true;
                     playPrompt(experiment.speaker2); //fixme
-                });
+                     // bounce
+                    customBounce($('#rightPic'))
+               });
                 var prompt_html = page3_script[experiment.trial_num]
                 experiment.within_trial++;
 
@@ -287,12 +302,17 @@ var experiment = {
                     if (clickDisabled) return;
                     clickDisabled = true;
                     setTimeout(function () {
-                    clickDisabled = false;
+                        clickDisabled = false;
                     }, normalPause);
-					if (picID === "rightPic2") {
+                    if (picID === "rightPic2") {
                         playPrompt(experiment.speaker2); //fixme
+                     // bounce
+                    customBounce($('#rightPic2'))
+                        
                     } else if (picID === "leftPic2") {
                         playPrompt(experiment.speaker1); //fixme
+                     // bounce
+                    customBounce($('#leftPic2'))
                     }
 
                 });
@@ -304,16 +324,16 @@ var experiment = {
                 var prompt_html = page5_script[experiment.trial_num]
                 experiment.question1 = question1[experiment.trial_num]
                 $('.pic').unbind('click touchstart');
-                
+
                 $('.pic').bind('click touchstart', function (event) {
                     var picID = $(event.currentTarget).attr('id');
                     if (picID === "leftPic2") {
                         $('#leftPic2').css('border-width', answer_border_width);
-				        experiment.side1 = "L";
+                        experiment.side1 = "L";
                     } else if (picID === "rightPic2") {
                         $('#rightPic2').css('border-width', answer_border_width);
- 				       experiment.side1 = "R";
-                   }
+                        experiment.side1 = "R";
+                    }
                     if (clickDisabled) return;
                     clickDisabled = true;
                     setTimeout(function () {
@@ -323,116 +343,116 @@ var experiment = {
 
                 });
             } else if (experiment.within_trial == 5) {
-            	if (experiment.trial_num == 0) {
-                clickDisabled = false;
-                $('.pic').css('border-width', '0px');
-                var prompt_html = page6_script[experiment.trial_num]
-                experiment.question2 = question2[experiment.trial_num]
-                $('.pic').unbind('click touchstart');
+                if (experiment.trial_num == 0) {
+                    clickDisabled = false;
+                    $('.pic').css('border-width', '0px');
+                    var prompt_html = page6_script[experiment.trial_num]
+                    experiment.question2 = question2[experiment.trial_num]
+                    $('.pic').unbind('click touchstart');
 
-                $('.pic').bind('click touchstart', function (event) {
-                    var picID = $(event.currentTarget).attr('id');
-                    if (picID === "leftPic2") {
-                        $('#leftPic2').css('border-width', answer_border_width);
-				        experiment.side2 = "L";
-                    } else if (picID === "rightPic2") {
-                        $('#rightPic2').css('border-width', answer_border_width);
- 				       experiment.side2 = "R";
-                   }
-                    if (clickDisabled) return;
-                    clickDisabled = true;
-                    setTimeout(function () {
-                        experiment.within_trial++;
-                        experiment.next();
-                    }, normalPause);
-                });
+                    $('.pic').bind('click touchstart', function (event) {
+                        var picID = $(event.currentTarget).attr('id');
+                        if (picID === "leftPic2") {
+                            $('#leftPic2').css('border-width', answer_border_width);
+                            experiment.side2 = "L";
+                        } else if (picID === "rightPic2") {
+                            $('#rightPic2').css('border-width', answer_border_width);
+                            experiment.side2 = "R";
+                        }
+                        if (clickDisabled) return;
+                        clickDisabled = true;
+                        setTimeout(function () {
+                            experiment.within_trial++;
+                            experiment.next();
+                        }, normalPause);
+                    });
                 } else {
-                 	 experiment.side2 = "NA";
+                    experiment.side2 = "NA";
 
-                     setTimeout(function () {
+                    setTimeout(function () {
                         experiment.within_trial++;
                         experiment.next();
                     }, 30);
                 }
-                } else if (experiment.within_trial == 6) {
-                                                         
-if (
-(cond == 1 && experiment.trial_num == 0 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 1 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 2 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 3 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 4 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 5 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 6 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 7 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 8 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 9 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 10 && experiment.side1 == "L") ||
-(cond == 1 && experiment.trial_num == 11 && experiment.side1 == "R") ||
-(cond == 1 && experiment.trial_num == 12 && experiment.side1 == "L") ||
-(cond == 2 && experiment.trial_num == 0 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 1 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 2 && experiment.side1 == "L") ||
-(cond == 2 && experiment.trial_num == 3 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 4 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 5 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 6 && experiment.side1 == "L") ||
-(cond == 2 && experiment.trial_num == 7 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 8 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 9 && experiment.side1 == "R") ||
-(cond == 2 && experiment.trial_num == 10 && experiment.side1 == "L") ||
-(cond == 2 && experiment.trial_num == 11 && experiment.side1 == "L") ||
-(cond == 2 && experiment.trial_num == 12 && experiment.side1 == "R")
-) {
-                    	experiment.answer1 = 1;
-                    } else {
-                    	experiment.answer1 = 0;
-                    }
+            } else if (experiment.within_trial == 6) {
 
-if (
-(cond == 1 && experiment.trial_num == 0 && experiment.side2 == "R") ||
-(cond == 2 && experiment.trial_num == 0 && experiment.side2 == "L")
-) { 
-experiment.answer2 = 1;
-} else if (experiment.side2 == "NA") {
-experiment.answer2 = "NA";
-} else {
-experiment.answer2 = 0;
-}     
+                if (
+                    (cond == 1 && experiment.trial_num == 0 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 1 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 2 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 3 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 4 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 5 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 6 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 7 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 8 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 9 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 10 && experiment.side1 == "L") ||
+                    (cond == 1 && experiment.trial_num == 11 && experiment.side1 == "R") ||
+                    (cond == 1 && experiment.trial_num == 12 && experiment.side1 == "L") ||
+                    (cond == 2 && experiment.trial_num == 0 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 1 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 2 && experiment.side1 == "L") ||
+                    (cond == 2 && experiment.trial_num == 3 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 4 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 5 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 6 && experiment.side1 == "L") ||
+                    (cond == 2 && experiment.trial_num == 7 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 8 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 9 && experiment.side1 == "R") ||
+                    (cond == 2 && experiment.trial_num == 10 && experiment.side1 == "L") ||
+                    (cond == 2 && experiment.trial_num == 11 && experiment.side1 == "L") ||
+                    (cond == 2 && experiment.trial_num == 12 && experiment.side1 == "R")
+                ) {
+                    experiment.answer1 = 1;
+                } else {
+                    experiment.answer1 = 0;
+                }
+
+                if (
+                    (cond == 1 && experiment.trial_num == 0 && experiment.side2 == "R") ||
+                    (cond == 2 && experiment.trial_num == 0 && experiment.side2 == "L")
+                ) {
+                    experiment.answer2 = 1;
+                } else if (experiment.side2 == "NA") {
+                    experiment.answer2 = "NA";
+                } else {
+                    experiment.answer2 = 0;
+                }
+                setTimeout(function () {
+                    $("#stage").fadeOut();
+                    experiment.processOneRow();
+                    experiment.within_trial = 0;
+                    experiment.trial_num++;
                     setTimeout(function () {
-                        $("#stage").fadeOut();
-                        experiment.processOneRow();
-                        experiment.within_trial = 0;
-                        experiment.trial_num++;
-                        setTimeout(function () {
-                            experiment.next()
-                        }, normalPause);
-                    }, 800);
+                        experiment.next()
+                    }, normalPause);
+                }, 500);
 
-                };
+            };
             showSlide("stage");
             $("#prompt").html(prompt_html);
-            }
+        }
 
-        },
+    },
 
 
     //concatenates all experimental variables into a string which represents one "row" of data in the eventual csv, to live in the server
-	processOneRow: function() {        
+    processOneRow: function () {
         var dataforRound = experiment.subid;
-		dataforRound += "," + experiment.order
-		dataforRound += "," + experiment.trial_num
-		dataforRound += "," + experiment.side1
-		dataforRound += "," + experiment.side2
-		dataforRound += "," + experiment.question1
-		dataforRound += "," + experiment.question2
-		dataforRound += "," + experiment.answer1
-		dataforRound += "," + experiment.answer2
-		dataforRound += "," + experiment.date + "," + experiment.timestamp + "\n";
-		$.post("https://langcog.stanford.edu/cgi-bin/EJY/polcon/polconstudysave.php", {
-			postresult_string: dataforRound
-		});
-	},
+        dataforRound += "," + experiment.order
+        dataforRound += "," + experiment.trial_num
+        dataforRound += "," + experiment.side1
+        dataforRound += "," + experiment.side2
+        dataforRound += "," + experiment.question1
+        dataforRound += "," + experiment.question2
+        dataforRound += "," + experiment.answer1
+        dataforRound += "," + experiment.answer2
+        dataforRound += "," + experiment.date + "," + experiment.timestamp + "\n";
+        $.post("https://langcog.stanford.edu/cgi-bin/EJY/polcon/polconstudysave.php", {
+            postresult_string: dataforRound
+        });
+    },
     end: function () {
         showSlide("finish");
     }
