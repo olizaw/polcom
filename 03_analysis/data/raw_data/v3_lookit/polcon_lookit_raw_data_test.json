@@ -1,0 +1,1166 @@
+{
+    "response": {
+        "id": 1300,
+        "uuid": "96a10698-4c15-46e0-9867-46d0468ec1a1",
+        "sequence": [
+            "0-0-video-config",
+            "1-1-video-consent",
+            "2-2-study-overview",
+            "3-3-final-instructions",
+            "4-4-introduction",
+            "5-5-practice-trial",
+            "6-6-practice-trial",
+            "7-7-practice-trial",
+            "8-8-practice-trial",
+            "9-9-practice-trial",
+            "10-10-practice-trial",
+            "11-11-practice-trial",
+            "12-12-nested-trials",
+            "13-13-nested-trials",
+            "14-14-nested-trials",
+            "15-15-nested-trials",
+            "16-16-nested-trials",
+            "17-17-nested-trials",
+            "18-18-nested-trials",
+            "19-19-nested-trials",
+            "20-20-nested-trials",
+            "21-21-nested-trials",
+            "22-22-nested-trials",
+            "23-23-nested-trials",
+            "84-84-exit-survey",
+            "84-84-exit-survey"
+        ],
+        "conditions": {
+            "4-introduction": {
+                "conditionNum": 1,
+                "parameterSet": {
+                    "INTROAUDIO": "intro",
+                    "SPEAKER1IMG": "order2_test10_speaker1.png",
+                    "SPEAKER2IMG": "order2_test10_speaker2.png",
+                    "BACKGROUNDIMG": "order2_test10_background.png",
+                    "PROTAGONISTFACELEFT": "order2_test10_listener1.png"
+                }
+            },
+            "6-nested-trials": {
+                "conditionNum": 1,
+                "parameterSet": {
+                    "INTROAUDIO_1": "order2_test1_intro0",
+                    "INTROAUDIO_2": "order2_test2_intro0",
+                    "INTROAUDIO_3": "order2_test3_intro0",
+                    "INTROAUDIO_4": "order2_test4_intro0",
+                    "INTROAUDIO_5": "order2_test5_intro0",
+                    "INTROAUDIO_6": "order2_test6_intro0",
+                    "INTROAUDIO_7": "order2_test7_intro0",
+                    "INTROAUDIO_8": "order2_test8_intro0",
+                    "INTROAUDIO_9": "order2_test9_intro0",
+                    "INTROAUDIO_10": "order2_test10_intro0",
+                    "INTROAUDIO_11": "order2_test11_intro0",
+                    "INTROAUDIO_12": "order2_test12_intro0",
+                    "SPEAKER1IMG_1": "order2_test1_speaker1.png",
+                    "SPEAKER1IMG_2": "order2_test2_speaker1.png",
+                    "SPEAKER1IMG_3": "order2_test3_speaker1.png",
+                    "SPEAKER1IMG_4": "order2_test4_speaker1.png",
+                    "SPEAKER1IMG_5": "order2_test5_speaker1.png",
+                    "SPEAKER1IMG_6": "order2_test6_speaker1.png",
+                    "SPEAKER1IMG_7": "order2_test7_speaker1.png",
+                    "SPEAKER1IMG_8": "order2_test8_speaker1.png",
+                    "SPEAKER1IMG_9": "order2_test9_speaker1.png",
+                    "SPEAKER2IMG_1": "order2_test1_speaker2.png",
+                    "SPEAKER2IMG_2": "order2_test2_speaker2.png",
+                    "SPEAKER2IMG_3": "order2_test3_speaker2.png",
+                    "SPEAKER2IMG_4": "order2_test4_speaker2.png",
+                    "SPEAKER2IMG_5": "order2_test5_speaker2.png",
+                    "SPEAKER2IMG_6": "order2_test6_speaker2.png",
+                    "SPEAKER2IMG_7": "order2_test7_speaker2.png",
+                    "SPEAKER2IMG_8": "order2_test8_speaker2.png",
+                    "SPEAKER2IMG_9": "order2_test9_speaker2.png",
+                    "SPEAKER1IMG_10": "order2_test10_speaker1.png",
+                    "SPEAKER1IMG_11": "order2_test11_speaker1.png",
+                    "SPEAKER1IMG_12": "order2_test12_speaker1.png",
+                    "SPEAKER2IMG_10": "order2_test10_speaker2.png",
+                    "SPEAKER2IMG_11": "order2_test11_speaker2.png",
+                    "SPEAKER2IMG_12": "order2_test12_speaker2.png",
+                    "BACKGROUNDIMG_1": "order2_test1_background.png",
+                    "BACKGROUNDIMG_2": "order2_test2_background.png",
+                    "BACKGROUNDIMG_3": "order2_test3_background.png",
+                    "BACKGROUNDIMG_4": "order2_test4_background.png",
+                    "BACKGROUNDIMG_5": "order2_test5_background.png",
+                    "BACKGROUNDIMG_6": "order2_test6_background.png",
+                    "BACKGROUNDIMG_7": "order2_test7_background.png",
+                    "BACKGROUNDIMG_8": "order2_test8_background.png",
+                    "BACKGROUNDIMG_9": "order2_test9_background.png",
+                    "FIRSTQUESTION_1": "order2_test1_question1",
+                    "FIRSTQUESTION_2": "order2_test2_question1",
+                    "FIRSTQUESTION_3": "order2_test3_question1",
+                    "FIRSTQUESTION_4": "order2_test4_question1",
+                    "FIRSTQUESTION_5": "order2_test5_question1",
+                    "FIRSTQUESTION_6": "order2_test6_question1",
+                    "FIRSTQUESTION_7": "order2_test7_question1",
+                    "FIRSTQUESTION_8": "order2_test8_question1",
+                    "FIRSTQUESTION_9": "order2_test9_question1",
+                    "BACKGROUNDIMG_10": "order2_test10_background.png",
+                    "BACKGROUNDIMG_11": "order2_test11_background.png",
+                    "BACKGROUNDIMG_12": "order2_test12_background.png",
+                    "FIRSTQUESTION_10": "order2_test10_question1",
+                    "FIRSTQUESTION_11": "order2_test11_question1",
+                    "FIRSTQUESTION_12": "order2_test12_question1",
+                    "SECONDQUESTION_1": "order2_test1_question2",
+                    "SECONDQUESTION_2": "order2_test2_question2",
+                    "SECONDQUESTION_3": "order2_test3_question2",
+                    "SECONDQUESTION_4": "order2_test4_question2",
+                    "SECONDQUESTION_5": "order2_test5_question2",
+                    "SECONDQUESTION_6": "order2_test6_question2",
+                    "SECONDQUESTION_7": "order2_test7_question2",
+                    "SECONDQUESTION_8": "order2_test8_question2",
+                    "SECONDQUESTION_9": "order2_test9_question2",
+                    "QUESTION_REVIEW_1": "order2_test1_review",
+                    "QUESTION_REVIEW_2": "order2_test2_review",
+                    "QUESTION_REVIEW_3": "order2_test3_review",
+                    "QUESTION_REVIEW_4": "order2_test4_review",
+                    "QUESTION_REVIEW_5": "order2_test5_review",
+                    "QUESTION_REVIEW_6": "order2_test6_review",
+                    "QUESTION_REVIEW_7": "order2_test7_review",
+                    "QUESTION_REVIEW_8": "order2_test8_review",
+                    "QUESTION_REVIEW_9": "order2_test9_review",
+                    "SECONDQUESTION_10": "order2_test10_question2",
+                    "SECONDQUESTION_11": "order2_test11_question2",
+                    "SECONDQUESTION_12": "order2_test12_question2",
+                    "QUESTION_REVIEW_10": "order2_test10_review",
+                    "QUESTION_REVIEW_11": "order2_test11_review",
+                    "QUESTION_REVIEW_12": "order2_test12_review",
+                    "SPEAKER1UTTERANCE_1": "order2_test1_speaker1",
+                    "SPEAKER1UTTERANCE_2": "order2_test2_speaker1",
+                    "SPEAKER1UTTERANCE_3": "order2_test3_speaker1",
+                    "SPEAKER1UTTERANCE_4": "order2_test4_speaker1",
+                    "SPEAKER1UTTERANCE_5": "order2_test5_speaker1",
+                    "SPEAKER1UTTERANCE_6": "order2_test6_speaker1",
+                    "SPEAKER1UTTERANCE_7": "order2_test7_speaker1",
+                    "SPEAKER1UTTERANCE_8": "order2_test8_speaker1",
+                    "SPEAKER1UTTERANCE_9": "order2_test9_speaker1",
+                    "SPEAKER2UTTERANCE_1": "order2_test1_speaker2",
+                    "SPEAKER2UTTERANCE_2": "order2_test2_speaker2",
+                    "SPEAKER2UTTERANCE_3": "order2_test3_speaker2",
+                    "SPEAKER2UTTERANCE_4": "order2_test4_speaker2",
+                    "SPEAKER2UTTERANCE_5": "order2_test5_speaker2",
+                    "SPEAKER2UTTERANCE_6": "order2_test6_speaker2",
+                    "SPEAKER2UTTERANCE_7": "order2_test7_speaker2",
+                    "SPEAKER2UTTERANCE_8": "order2_test8_speaker2",
+                    "SPEAKER2UTTERANCE_9": "order2_test9_speaker2",
+                    "SPEAKER1UTTERANCE_10": "order2_test10_speaker1",
+                    "SPEAKER1UTTERANCE_11": "order2_test11_speaker1",
+                    "SPEAKER1UTTERANCE_12": "order2_test12_speaker1",
+                    "SPEAKER2UTTERANCE_10": "order2_test10_speaker2",
+                    "SPEAKER2UTTERANCE_11": "order2_test11_speaker2",
+                    "SPEAKER2UTTERANCE_12": "order2_test12_speaker2",
+                    "FIRSTQUESTION_INTRO_1": "order2_test1_intro1",
+                    "FIRSTQUESTION_INTRO_2": "order2_test2_intro1",
+                    "FIRSTQUESTION_INTRO_3": "order2_test3_intro1",
+                    "FIRSTQUESTION_INTRO_4": "order2_test4_intro1",
+                    "FIRSTQUESTION_INTRO_5": "order2_test5_intro1",
+                    "FIRSTQUESTION_INTRO_6": "order2_test6_intro1",
+                    "FIRSTQUESTION_INTRO_7": "order2_test7_intro1",
+                    "FIRSTQUESTION_INTRO_8": "order2_test8_intro1",
+                    "FIRSTQUESTION_INTRO_9": "order2_test9_intro1",
+                    "PROTAGONISTFACELEFT_1": "order2_test1_listener1.png",
+                    "PROTAGONISTFACELEFT_2": "order2_test2_listener1.png",
+                    "PROTAGONISTFACELEFT_3": "order2_test3_listener1.png",
+                    "PROTAGONISTFACELEFT_4": "order2_test4_listener1.png",
+                    "PROTAGONISTFACELEFT_5": "order2_test5_listener1.png",
+                    "PROTAGONISTFACELEFT_6": "order2_test6_listener1.png",
+                    "PROTAGONISTFACELEFT_7": "order2_test7_listener1.png",
+                    "PROTAGONISTFACELEFT_8": "order2_test8_listener1.png",
+                    "PROTAGONISTFACELEFT_9": "order2_test9_listener1.png",
+                    "FIRSTQUESTION_INTRO_10": "order2_test10_intro1",
+                    "FIRSTQUESTION_INTRO_11": "order2_test11_intro1",
+                    "FIRSTQUESTION_INTRO_12": "order2_test12_intro1",
+                    "PROTAGONISTFACELEFT_10": "order2_test10_listener1.png",
+                    "PROTAGONISTFACELEFT_11": "order2_test11_listener1.png",
+                    "PROTAGONISTFACELEFT_12": "order2_test12_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order2_test1_listener2.png",
+                    "PROTAGONISTFACERIGHT_2": "order2_test2_listener2.png",
+                    "PROTAGONISTFACERIGHT_3": "order2_test3_listener2.png",
+                    "PROTAGONISTFACERIGHT_4": "order2_test4_listener2.png",
+                    "PROTAGONISTFACERIGHT_5": "order2_test5_listener2.png",
+                    "PROTAGONISTFACERIGHT_6": "order2_test6_listener2.png",
+                    "PROTAGONISTFACERIGHT_7": "order2_test7_listener2.png",
+                    "PROTAGONISTFACERIGHT_8": "order2_test8_listener2.png",
+                    "PROTAGONISTFACERIGHT_9": "order2_test9_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order2_test1_intro2",
+                    "SECONDQUESTION_INTRO_2": "order2_test2_intro2",
+                    "SECONDQUESTION_INTRO_3": "order2_test3_intro2",
+                    "SECONDQUESTION_INTRO_4": "order2_test4_intro2",
+                    "SECONDQUESTION_INTRO_5": "order2_test5_intro2",
+                    "SECONDQUESTION_INTRO_6": "order2_test6_intro2",
+                    "SECONDQUESTION_INTRO_7": "order2_test7_intro2",
+                    "SECONDQUESTION_INTRO_8": "order2_test8_intro2",
+                    "SECONDQUESTION_INTRO_9": "order2_test9_intro2",
+                    "PROTAGONISTFACERIGHT_10": "order2_test10_listener2.png",
+                    "PROTAGONISTFACERIGHT_11": "order2_test11_listener2.png",
+                    "PROTAGONISTFACERIGHT_12": "order2_test12_listener2.png",
+                    "SECONDQUESTION_INTRO_10": "order2_test10_intro2",
+                    "SECONDQUESTION_INTRO_11": "order2_test11_intro2",
+                    "SECONDQUESTION_INTRO_12": "order2_test12_intro2"
+                }
+            },
+            "5-practice-trial": {
+                "conditionNum": 1,
+                "parameterSet": {
+                    "INTROAUDIO_1": "order2_practice1_intro0",
+                    "SPEAKER1IMG_1": "order2_practice1_speaker1.png",
+                    "SPEAKER2IMG_1": "order2_practice1_speaker2.png",
+                    "BACKGROUNDIMG_1": "order2_practice1_background.png",
+                    "FIRSTQUESTION_1": "order2_practice1_question1",
+                    "SECONDQUESTION_1": "order2_practice1_question2",
+                    "QUESTION_REVIEW_1": "order2_practice1_review",
+                    "FIRSTQUESTION_INTRO_1": "order2_practice1_intro1",
+                    "PROTAGONISTFACELEFT_1": "order2_practice1_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order2_practice1_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order2_practice1_intro2"
+                }
+            }
+        },
+        "exp_data": {
+            "0-0-video-config": {
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_0-video-config_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926221079_126",
+                        "eventType": "exp-video-config:recorderReady",
+                        "timestamp": "2018-07-18T15:03:41.099Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": "",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_0-video-config_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926221079_126",
+                        "eventType": "exp-video-config:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:03:43.388Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_0-video-config_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926221079_126",
+                        "eventType": "exp-video-config:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:03:46.161Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_0-video-config_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926221079_126",
+                        "eventType": "exp-video-config:destroyingRecorder",
+                        "timestamp": "2018-07-18T15:04:41.220Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_0-video-config_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926221079_126",
+                        "eventType": "exp-video-config:nextFrame",
+                        "timestamp": "2018-07-18T15:04:41.221Z",
+                        "streamTime": 0
+                    }
+                ]
+            },
+            "4-4-introduction": {
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:enteredFullscreen",
+                        "timestamp": "2018-07-18T15:06:04.061Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:06:27.627Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:06:31.362Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "1-1-video-consent": {
+                "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                "videoList": [
+                    "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146"
+                ],
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:recorderReady",
+                        "timestamp": "2018-07-18T15:04:41.692Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:04:42.661Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:04:42.804Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "YRBtHaIe7TJfLIKHYTvnXoWt03qrsiGN",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:startRecording",
+                        "timestamp": "2018-07-18T15:04:59.259Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "YRBtHaIe7TJfLIKHYTvnXoWt03qrsiGN",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:stoppingCapture",
+                        "timestamp": "2018-07-18T15:05:09.120Z",
+                        "streamTime": 8.8
+                    },
+                    {
+                        "pipeId": "YRBtHaIe7TJfLIKHYTvnXoWt03qrsiGN",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_1-video-consent_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926281687_146",
+                        "eventType": "exp-video-consent:nextFrame",
+                        "timestamp": "2018-07-18T15:05:09.229Z",
+                        "streamTime": 8.8
+                    }
+                ]
+            },
+            "84-84-exit-survey": {
+                "feedback": "Sorry she couldn't sit through the whole thing!",
+                "birthDate": "2016-01-03T16:12:40.298Z",
+                "useOfMedia": "scientific",
+                "withdrawal": false,
+                "eventTimings": [
+                    {
+                        "eventType": "exp-lookit-exit-survey:nextFrame",
+                        "timestamp": "2018-07-18T15:13:35.215Z"
+                    }
+                ],
+                "databraryShare": "yes"
+            },
+            "2-2-study-overview": {
+                "eventTimings": [
+                    {
+                        "eventType": "exp-lookit-text:nextFrame",
+                        "timestamp": "2018-07-18T15:05:32.346Z"
+                    }
+                ]
+            },
+            "5-5-practice-trial": {
+                "nPhase": 0,
+                "nTrial": 0,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:06:34.068Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:06:38.064Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "6-6-practice-trial": {
+                "nPhase": 1,
+                "nTrial": 0,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:06:40.792Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:06:43.493Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "7-7-practice-trial": {
+                "nPhase": 2,
+                "nTrial": 0,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:06:45.669Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:06:49.457Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "8-8-practice-trial": {
+                "nPhase": 3,
+                "nTrial": 0,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:06:54.626Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:06:56.583Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "9-9-practice-trial": {
+                "nPhase": 4,
+                "nTrial": 0,
+                "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                "videoList": [
+                    "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776"
+                ],
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:recorderReady",
+                        "timestamp": "2018-07-18T15:06:56.600Z",
+                        "streamTime": 8.8
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:06:57.454Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:startRecording",
+                        "timestamp": "2018-07-18T15:06:57.575Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:06:57.601Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:07:03.484Z",
+                        "streamTime": 4.9
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "imageId": "speaker2",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:clickSpeaker",
+                        "timestamp": "2018-07-18T15:07:08.781Z",
+                        "streamTime": 10.2
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:stoppingCapture",
+                        "timestamp": "2018-07-18T15:07:11.481Z",
+                        "streamTime": 12.9
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:destroyingRecorder",
+                        "timestamp": "2018-07-18T15:07:11.587Z",
+                        "streamTime": 12.9
+                    },
+                    {
+                        "pipeId": "kSL04bzF0DbPS4Y4H2yOUrDMH5WoSLAc",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_9-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926416597_776",
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:07:11.590Z",
+                        "streamTime": 12.9
+                    }
+                ],
+                "currentlyHighlighted": "speaker2"
+            },
+            "12-12-nested-trials": {
+                "nPhase": 0,
+                "nTrial": 1,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:08:38.150Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:08:47.456Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:08:49.400Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "13-13-nested-trials": {
+                "nPhase": 1,
+                "nTrial": 1,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:08:54.360Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:02.279Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:02.280Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:09:07.425Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "14-14-nested-trials": {
+                "nPhase": 2,
+                "nTrial": 1,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:09:12.605Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:15.049Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:15.050Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:09:19.486Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "15-15-nested-trials": {
+                "nPhase": 3,
+                "nTrial": 1,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:09:25.385Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:29.208Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:29.209Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:38.160Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:09:38.161Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:09:43.259Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "16-16-nested-trials": {
+                "nPhase": 4,
+                "nTrial": 1,
+                "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                "videoList": [
+                    "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672"
+                ],
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:recorderReady",
+                        "timestamp": "2018-07-18T15:09:43.276Z",
+                        "streamTime": 45.6
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:09:44.212Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:09:44.386Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:startRecording",
+                        "timestamp": "2018-07-18T15:09:44.395Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:09:51.158Z",
+                        "streamTime": 5.7
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "imageId": "speaker1",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:clickSpeaker",
+                        "timestamp": "2018-07-18T15:10:20.220Z",
+                        "streamTime": 34.8
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:stoppingCapture",
+                        "timestamp": "2018-07-18T15:10:22.049Z",
+                        "streamTime": 36.6
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:stoppingCapture",
+                        "timestamp": "2018-07-18T15:10:22.056Z",
+                        "streamTime": 36.6
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:destroyingRecorder",
+                        "timestamp": "2018-07-18T15:10:22.161Z",
+                        "streamTime": 36.6
+                    },
+                    {
+                        "pipeId": "f8Bxm3hR6PFePRgyZd9WrKJ8UwFMhC5P",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_16-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926583274_672",
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:10:22.163Z",
+                        "streamTime": 36.6
+                    }
+                ],
+                "currentlyHighlighted": "speaker1"
+            },
+            "17-17-nested-trials": {
+                "nPhase": 5,
+                "nTrial": 1,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:10:27.411Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:10:30.216Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "18-18-nested-trials": {
+                "nPhase": 0,
+                "nTrial": 2,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:10:32.836Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:10:42.296Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "19-19-nested-trials": {
+                "nPhase": 1,
+                "nTrial": 2,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:10:47.038Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:10:53.889Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:10:53.895Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:10:59.355Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:10:59.358Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:11:02.497Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "20-20-nested-trials": {
+                "nPhase": 2,
+                "nTrial": 2,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:11:07.576Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:11.218Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:11.226Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:14.836Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:14.841Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:11:21.493Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "21-21-nested-trials": {
+                "nPhase": 3,
+                "nTrial": 2,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:11:27.557Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:29.886Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:29.890Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:34.401Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:34.407Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:39.142Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:39.146Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:41.950Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker1",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:41.952Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:startSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:44.130Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "imageId": "speaker2",
+                        "eventType": "exp-lookit-dialogue-page:playSpeakerAudio",
+                        "timestamp": "2018-07-18T15:11:44.132Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:11:48.640Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "22-22-nested-trials": {
+                "nPhase": 4,
+                "nTrial": 2,
+                "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                "videoList": [
+                    "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340"
+                ],
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:recorderReady",
+                        "timestamp": "2018-07-18T15:11:48.657Z",
+                        "streamTime": 36.6
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:11:49.500Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:11:49.633Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:startRecording",
+                        "timestamp": "2018-07-18T15:11:49.638Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:11:56.251Z",
+                        "streamTime": 5.6
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "imageId": "speaker1",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:clickSpeaker",
+                        "timestamp": "2018-07-18T15:12:18.190Z",
+                        "streamTime": 27.51
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:stoppingCapture",
+                        "timestamp": "2018-07-18T15:12:19.894Z",
+                        "streamTime": 29.21
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:destroyingRecorder",
+                        "timestamp": "2018-07-18T15:12:20.007Z",
+                        "streamTime": 29.21
+                    },
+                    {
+                        "pipeId": "lgRMGsyXvcBco8nPlzU0vN2tAoXSBnEL",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_22-nested-trials_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926708655_340",
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:12:20.009Z",
+                        "streamTime": 29.21
+                    }
+                ],
+                "currentlyHighlighted": "speaker1"
+            },
+            "23-23-nested-trials": {
+                "nPhase": 5,
+                "nTrial": 2,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:12:25.275Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:12:28.321Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "10-10-practice-trial": {
+                "nPhase": 5,
+                "nTrial": 0,
+                "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                "videoList": [
+                    "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255"
+                ],
+                "eventTimings": [
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:recorderReady",
+                        "timestamp": "2018-07-18T15:07:11.648Z",
+                        "streamTime": 12.9
+                    },
+                    {
+                        "pipeId": "",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:recorder.hasCamAccess",
+                        "timestamp": "2018-07-18T15:07:12.483Z",
+                        "streamTime": 0,
+                        "hasCamAccess": "true"
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:startRecording",
+                        "timestamp": "2018-07-18T15:07:12.643Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "status": "connected",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:videoStreamConnection",
+                        "timestamp": "2018-07-18T15:07:12.703Z",
+                        "streamTime": 0
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:07:18.092Z",
+                        "streamTime": 4.4
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "imageId": "speaker2",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:clickSpeaker",
+                        "timestamp": "2018-07-18T15:07:57.675Z",
+                        "streamTime": 44
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:stoppingCapture",
+                        "timestamp": "2018-07-18T15:07:59.318Z",
+                        "streamTime": 45.6
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:destroyingRecorder",
+                        "timestamp": "2018-07-18T15:07:59.428Z",
+                        "streamTime": 45.6
+                    },
+                    {
+                        "pipeId": "9N6vsU5uHQr4YGm83JG0ocPvXDjKbeHR",
+                        "videoId": "videoStream_b40b6731-2fec-4df4-a12f-d38c7be3015e_10-practice-trial_96a10698-4c15-46e0-9867-46d0468ec1a1_1531926431640_255",
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:07:59.430Z",
+                        "streamTime": 45.6
+                    }
+                ],
+                "currentlyHighlighted": "speaker2"
+            },
+            "11-11-practice-trial": {
+                "nPhase": 6,
+                "nTrial": 0,
+                "eventTimings": [
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:completeMainAudio",
+                        "timestamp": "2018-07-18T15:08:05.074Z",
+                        "streamTime": null
+                    },
+                    {
+                        "pipeId": null,
+                        "eventType": "exp-lookit-dialogue-page:destroyingElement",
+                        "timestamp": "2018-07-18T15:08:35.000Z",
+                        "streamTime": null
+                    }
+                ]
+            },
+            "3-3-final-instructions": {
+                "showWarning": false,
+                "eventTimings": [],
+                "didFinishSound": true
+            }
+        },
+        "global_event_timings": [
+            {
+                "exitType": "manualInterrupt",
+                "eventType": "exitEarly",
+                "timestamp": "2018-07-18T15:12:35.656Z",
+                "lastPageSeen": 25
+            }
+        ],
+        "completed": true
+    },
+    "study": {
+        "id": 3,
+        "uuid": "b40b6731-2fec-4df4-a12f-d38c7be3015e"
+    },
+    "participant": {
+        "id": 3399,
+        "uuid": "224963b9-8e45-470c-8668-818b637b71e0",
+        "nickname": "LCoil2002"
+    },
+    "child": {
+        "id": 4220,
+        "uuid": "55b6dae4-767e-4466-b2cc-1a22ad6d27bf",
+        "name": "Ivy",
+        "birthday": "2016-01-03",
+        "gender": "f",
+        "age_at_birth": "40&gt;",
+        "additional_information": ""
+    }
+}

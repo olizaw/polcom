@@ -1,0 +1,69 @@
+﻿subid,initials,dot,dob,age,gender,ethnicity,experimenter,keepdrop,comments
+180417-01,OM,4/17/18,7/30/14,3.713888889,M,"A, C",ES,,Answer for first trial was accidentally selected too soon
+180417-02,MG,4/17/18,7/27/14,3.722222222,F,H,ES,,
+180417-03,LT,4/17/18,1/16/14,4.252777778,M,"A, F",ES,,
+180419-01,DD,4/19/18,7/10/13,4.775,M,C,ES,,Sound didn't work on first test trial; had to start game over (and then it worked)
+180419-02,GNM,4/19/18,2/7/14,4.2,M,"Af, C",ES,,Very impatient to proceed with game in general; selected answer before hearing question on trials 8 and 12; tried to select both answers on trials 7 and 9
+180424-01,AM,4/24/18,7/30/14,3.733333333,F,"C, A",ES,,Seemed to always select which one was more polite
+180424-02,AAL,4/24/18,9/10/13,4.622222222,F,C,ES,,
+180426-01,OS,4/26/18,6/22/13,4.844444444,M,"C, A/",ES,,Camera ran out of battery about 2 minutes in; everything was normal other than that
+180426-02,KC,4/26/18,7/8/14,3.8,F,C,ES,,
+180426-03,OL,4/26/18,5/16/14,3.944444444,F,C,ES,,
+180501-01,AC,5/1/18,3/18/14,4.119444444,F,Aj,ES,,
+180501-02,TH,5/1/18,7/7/13,4.816666667,F,C,ES,,Asked to go back to classroom before end of game
+180503-01,LD,5/3/18,5/28/14,3.930555556,M,"A, F",ES,,
+180503-02,JT,5/3/18,8/28/13,4.680555556,M,"C, NA",ES,,"On trial 8, tried to press both answers at once"
+180507-01,RT,5/7/18,3/1/14,4.183333333,M,"C, I",ES,,
+180517-01,IAE,5/17/18,10/2/13,4.625,F,"F, H",ES,,Very distracted by people outside; asked to back to classroom before end of game
+180517-02,ZR,5/17/18,6/8/14,3.941666667,M,C,ES, ,"On last trial, it seemed like both choices were saying the same thing (?)"
+180517-03,FC,5/17/18,10/4/13,4.619444444,M,"C, A",ES,,"On trial 5, pressed answer before hearing question"
+180522-01,SC,5/22/18,10/4/13,4.633333333,M,"A, C",ES,,
+180522-02,EB,5/22/18,3/23/14,4.163888889,F,Cj,ES,,
+180501pm-01,MD,5/1/18,11/11/14,3.472222222,F,Cau,KS,,video recording cut off due to camera
+180501pm-02,AL,5/1/18,6/9/13,4.894444444,F,Cau,KS,,
+180501pm-03,CH,5/1/18,1/6/14,4.319444444,M,Not on class sheet,KS,,
+180517pm-01,VB,5/17/18,7/4/13,4.869444444,F,"Cau, H",KS,,
+180517pm-02,FH,5/17/18,8/27/13,4.722222222,M,"Cau, H",KS,,practice round: his hand accidentally clicked on a person
+180517pm-03,EG,5/17/18,10/7/13,4.611111111,F,"A, Cj",KS,,"practice round: she accidentally clicked on a person multiple times, making the practice round answers both the same"
+180709-01,MG,7/9/18,7/27/14,3.95,F,,IR,drop,PILOT
+180709-02,GNM,7/9/18,2/7/14,4.42,M,,IR,keep,"Enthusiastic, hard to keep his focus, attempted to press on multiple buttons at once"
+180709-03,OA,7/9/18,4/4/14,4.26,F,,IR,keep,Patient throughout extent of the game
+180709-04,VS,7/9/18,10/20/14,3.72,F,,IR,drop,Did not complete the game
+180709-05,ZE,7/9/18,11/30/13,4.61,M,,IR,keep,Attempted to Double Press
+180709-06,HH,7/9/18,3/6/14,4.34,F,,IR,keep,Attempted to Double Press
+180709-07,MA,7/9/18,3/15/12,5.32,M,,IR,drop,5 years old
+180711-01,KCV,7/11/18,8/20/14,3.89,M,,IR,keep,
+180711-02,SK,7/11/18,4/29/14,4.2,F,,IR,keep,
+180711-03,RMD,7/11/18,1/18/14,4.48,F,,IR,keep,
+180711-04,ES,7/11/18,11/8/14,3.67,F,,IR,keep,"Clicked on both at the same time for two of the trials, unsure how the data was affected"
+180711-05,LM,7/11/18,1/10/15,3.5,F,,IR,keep,Really good focus even through outside noises
+180711-06,SL,7/11/18,3/5/14,4.35,F,,IR,keep,"At some points looked at me to decide If she had done it right or wrong, I maintained my focus on the screen, children yelling in other rooom"
+180711-07,ZL,7/11/18,8/30/13,4.86,M,,IR,keep,"Children were yelling in the other room which made it more difficult to hear, I turned up the volume, child maintained a good focus"
+180711-08,OL,7/11/18,2/6/14,4.42,M,,IR,keep,"Good focus, got the hang of the game quickly"
+180713-01,OM,7/13/18,7/30/14,3.95,M,,IR,keep,Children outside of room were being lound so I closed the door more and asked him to listen to both people again
+180713-02,AM,7/13/18,7/30/14,3.95,F,,IR,keep,
+180713-03,ZC,7/13/18,11/28/14,3.62,M,,IR,keep,
+180713-04,AB,7/13/18,3/9/13,5.34,M,,IR,drop,five years old! told me he was 4 and I did not think to check
+180713-05,AQ,7/13/18,11/6/13,3.33,M,,IR,keep,
+180713-06,HT,7/13/18,3/13/15,4.68,F,,IR,keep,
+180716-01,VAD,7/16/18,5/14/14,4.17,F,,IR,keep,
+180716-02,BC,7/16/18,5/10/15,3.18,M,,IR,keep,"One distraction from outside during a trial, still was able to choose pretty fluidly"
+180716-03,AR,7/16/18,7/7/14,4.02,F,,IR,keep,
+180718-01,EL,7/18/18,6/23/14,4.07,M,,IR,keep,
+180718-02,AZ,7/18/18,2/5/14,4.45,M,,IR,keep,
+180718-03,MD,7/18/18,9/23/14,3.82,F,,IR,keep,
+180718-04,EC,7/18/18,8/22/14,3.26,F,,IR,keep,
+180718-05,SD,7/18/18,4/15/15,3.9,F,,IR,keep,
+180723-01,CH,7/23/18,8/7/14,3.96,M,,IR,keep,Provided unprompted reasons for his character selection after some questions
+180727-01,BP,7/27/18,1/10/15,3.54,M,,IR,keep,
+180727-02,ZD,7/27/18,7/4/14,4.06,F,,IR,drop,"Got extremeley upset when I said that my game was only for 3 year olds because she just had her birthday, provided explanations for many of her answer choices"
+180727-03,TA,7/27/18,7/8/15,3.05,M,,IR,keep,"Video recording did not start because SD slot was not closed completely, nothing unsusual happened, I followed the script and he completed the full 12 trials easily"
+180730-01,NW,7/30/18,1/14/15,3.54,F,,IR,keep,Failed the first nice/mean test
+180730-02,AC,7/30/18,4/2/15,3.33,M,,IR,keep,"Trial 5 (?) did not wait for me to finish saying the question before choosing an answer, seemed to consistently choose the character on the left regardless of question posed"
+180801-01,BP,8/1/18,11/9/14,3.73,M,,IR,keep,I had to reboot the app three times but after the third time it started to work and ran smoothly throughout the game
+180803-01,JL,8/3/18,1/7/15,3.57,F,,IR,drop,"Insisted that her sister and a teacher be in the room during the experiment, they said nothing at all throughout"
+180803-02,LL,8/3/18,1/7/15,3.57,F,,IR,drop,Already watched her sister perform the task once
+180803-03,AP,8/3/18,10/26/12,5.77,F,,IR,drop,
+180806-01,EG,8/6/18,1/14/15,3.56,F,,IR,keep,
+180806-02,PG,8/6/18,1/14/15,3.56,M,,IR,keep,
+180806-03,CG,8/6/18,2/2/13,5.51,F,,IR,drop,"5 year old, super interested in the game/game room"

@@ -1,0 +1,4 @@
+test_180131,1,0,L,R,mean,nice,1,1,1/31/2018,22:59
+test_180131,1,1,R,NA,polite,nice,0,NA,1/31/2018,22:59
+test_180131,1,11,R,NA,rude,nice,1,NA,1/31/2018,22:59
+test_180131,1,12,R,NA,rude,nice,0,NA,1/31/2018,22:59
