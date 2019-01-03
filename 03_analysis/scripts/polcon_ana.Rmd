@@ -1,0 +1,343 @@
+---
+title: "polcon_ana_all_versions"
+author: "Erica Yoon"
+date: "8/27/2018"
+output: 
+  html_document:
+      toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width = 10)
+library(tidyverse)
+library(knitr)
+library(langcog)
+library(ggthemes)
+library(lme4)
+library(here)
+library(brms)
+library(gghighlight)
+```
+
+load data.
+
+```{r}
+d <- read_csv(here::here("../data/processed_data/polcon_all_data.csv"))
+```
+
+
+# Version descriptions
+
+- v1: facial expressions, voicing cues, and syntactic markers (please/can you). presented in storybook by an experimenter who read it aloud.
+
+- v2: recorded voiceovers on tablet. voicing cues and syntactic markers.
+
+- v3: same as v2 but no voicing cue, and syntactic markers only (sentences were read in the same way except for markers please/can you).
+
+- v3_lookit: same as v3 but presented online. participants went through the study with their parents.
+
+# sample sizes
+
+```{r}
+d %>% 
+  group_by(expt, age_fct, subid) %>%
+  summarise(n=n()) %>%
+  group_by(expt, age_fct) %>%
+  summarise(n=n()) %>%
+  kable(.)
+```
+
+# main effect
+
+<details>
+<summary>click for main effect plots</summary>
+
+correct ~ question type x age.
+
+```{r}
+ms <- d %>%
+  group_by(expt, age_fct, question_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(expt, age_fct, question_type) %>%
+  multi_boot_standard(col = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         age_fct = factor(age_fct, labels=c("2-yr-olds", "3-yr-olds", "4-yr-olds")))
+```
+
+```{r}
+p <- ggplot(subset(ms, correct!="NA" & (question_type != "play" & question_type != "comp")), 
+            aes(x=age_fct, y=correct, col=expt))
+p + 
+  geom_point(position=position_dodge(width=.3), stat = "identity") +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), position=position_dodge(width=.3), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(.~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  scale_fill_ptol(guide = "none") +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few()
+
+```
+
+
+
+correct ~ request type x age.
+
+```{r}
+ms <- d %>%
+  filter(question_type != "play" & question_type != "comp") %>%
+  group_by(expt, age_fct, request_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(expt, age_fct, request_type) %>%
+  multi_boot_standard(col = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         age_fct = factor(age_fct, labels=c("2-yr-olds", "3-yr-olds", "4-yr-olds")))
+```
+
+```{r}
+p <- ggplot(subset(ms, correct!="NA"), 
+            aes(x=age_fct, y=correct, col=expt))
+p + 
+  geom_point(position=position_dodge(width=.3), stat = "identity") +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), position=position_dodge(width=.3), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(.~request_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions by polite marker type") +
+  scale_fill_ptol(guide = "none") +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few()
+
+```
+
+</details>
+
+# interaction
+
+## correct ~ question type x request type x age
+
+```{r}
+ms <- d %>%
+  filter(question_type != "play" & question_type != "comp") %>%
+  group_by(expt, age_fct, question_type, request_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(expt, age_fct, question_type, request_type) %>%
+  multi_boot_standard(col = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean) %>%
+  mutate(age_fct = factor(age_fct, labels=c("2-yr", "3-yr", "4-yr")))
+```
+
+```{r}
+p <- ggplot(ms %>% 
+              # filter(expt %in% c("v1", "v2")) %>%
+              filter(question_type %in% c("polite", "rude")) %>%
+              filter(correct!="NA") %>%
+              mutate(expt = fct_recode(expt, "markers+prosody+face" = "v1", 
+                                       "markers+prosody" = "v2",
+                                       "markers" = "v3",
+                                       "markers (online)" = "v3_lookit")),
+            aes(x=age_fct, y=correct, col=expt))
+            # aes(x=age_fct, y=correct, col=expt, alpha=expt))
+
+p_interaction <- 
+  p + 
+  geom_point(position=position_dodge(width=.3), stat = "identity") +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), position=position_dodge(width=.3), stat = "identity") +
+  facet_grid(request_type~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  # scale_colour_manual(values=c("#4477AA", "#117733"), name = "Study") +
+  # scale_alpha_manual(values=c(1, 0)) +
+  scale_colour_ptol(name = "Study") +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few() +
+  theme(legend.position = "bottom") +
+  ylim(0, 1)
+
+p_interaction
+
+# ggsave("polcon-all-interaction_polrude.png", plot = p_interaction, width = 8, height = 5,
+ggsave("polcon-v1and2-interaction_polrude.png", plot = p_interaction, width = 7, height = 5,
+       path = here::here("../figures"))
+```
+
+```{r}
+p <- ggplot(d %>% filter(correct!="NA", !question_type %in% c("comp", "play")) %>%
+              mutate(request_type = recode(request_type, 
+                               idq = "can you~",
+                               please_idq = "can you please~")), 
+            aes(x=age_fct, y=correct, col=expt))
+
+p_int_agecont <- p + 
+  # geom_violin(position = position_dodge(width = 1), scale = "width", size = 1,
+              # draw_quantiles = c(0.5), alpha = 0.3) +
+  geom_jitter(alpha=.2, size=.5) +
+  geom_smooth(size=.5, alpha=.2) +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(question_type~request_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  scale_colour_ptol() +
+  scale_fill_ptol() +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few() +
+  theme(legend.position = "bottom")
+
+
+ggsave("polcon-all-interaction_agecont.png", plot = p_int_agecont, width = 6, height = 5,
+       path = here::here("../figures"))
+```
+
+
+Take-aways:
+
+* With age, children improve in correctly saying that a speaker who used a polite word is "polite" and "nice", whereas a speaker who did not use a polite word is "rude" and "mean".
+
+* Children benefit from facial expression and voicing cue for utterances with "can you~" or "can you please", but not much for utterances with "please". This may indicate the strong association between the word "please" and its politeness/niceness that is learned from early on.
+
+# play / compliance questions
+
+```{r}
+ms <- d %>%
+  filter(question_type == "play" | question_type == "comp") %>%
+  group_by(expt, age_fct, question_type, request_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(expt, age_fct, question_type, request_type) %>%
+  multi_boot_standard(col = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         age_fct = factor(age_fct, labels=c("3-yr-olds", "4-yr-olds")),
+         question_type = fct_recode(question_type,
+           "who would you rather play with?" = "play",
+           "who will [get what they want]?" = "comp"
+         ))
+```
+
+```{r}
+p <- ggplot(ms %>%
+              # filter(expt == "v1") %>%
+              filter(correct!="NA") %>%
+              mutate(expt = fct_recode(expt, "markers+prosody+face" = "v1", 
+                                       "markers+prosody" = "v2",
+                                       "markers" = "v3",
+                                       "markers (online)" = "v3_lookit")),
+            # aes(x=age_fct, y=correct, col=expt, alpha=expt))
+            aes(x=age_fct, y=correct, col=expt))
+p_play <- p + 
+  geom_point(position=position_dodge(width=.3), stat = "identity") +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), position=position_dodge(width=.3), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(request_type~question_type) +
+  # facet_grid(.~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  # ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  # scale_colour_ptol(name = "polite marker") +
+  scale_colour_manual(values=c("#4477AA", "#117733"), name = "Study") +
+  # scale_alpha_manual(values = c(1, 0)) +
+  # scale_fill_ptol(guide = "none") +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few() +
+  ylim(0,1) +
+  theme(legend.position = "bottom")
+
+
+ggsave("polcon-v1and2-play.png", plot = p_play, width = 7, height = 6,
+       path = here::here("../figures"))
+```
+Even three year olds were mostly able to answer that the polite speaker is a more desirable play partner and will likely get what they want. Four year olds were able to answer the question more consistently.
+
+# tablet vs. lookit comparison
+
+```{r}
+ms <- d %>%
+  filter(expt %in% c("v3", "v3_lookit")) %>%
+  filter(question_type != "play" & question_type != "comp") %>%
+  group_by(expt, age_fct, question_type, request_type, subid) %>%
+  summarize(
+    correct = mean(correct, na.rm=TRUE)
+  ) %>%
+  group_by(expt, age_fct, question_type, request_type) %>%
+  multi_boot_standard(col = "correct", na.rm=TRUE) %>%
+  ungroup() %>%
+  mutate(correct = mean,
+         age_fct = factor(age_fct, labels=c("2-yr-olds", "3-yr-olds", "4-yr-olds")))
+```
+
+```{r}
+p <- ggplot(subset(ms, correct!="NA"), 
+            aes(x=age_fct, y=correct, col=expt))
+p_int_v3 <- p + 
+  geom_point(position=position_dodge(width=.3), stat = "identity") +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), position=position_dodge(width=.3), stat = "identity") +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(request_type~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  scale_colour_ptol(guide = "none") +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few()
+
+ggsave("polcon-v3-interaction.png", plot = p_int_v3, width = 8, height = 5,
+       path = here::here("../figures"))
+
+```
+
+Except for the "rude" x "please" responses, responses on lookit look very comparable to responses yielded on tablet by an experimenter!
+
+```{r}
+p <- ggplot(d %>% filter(correct!="NA", !question_type %in% c("comp", "play"), expt %in% c("v3", "v3_lookit")) %>%
+              mutate(expt = fct_recode(expt, "1A" = "v1", 
+                                       "1B" = "v2",
+                                       "1C" = "v3",
+                                       "1C-online" = "v3_lookit")) %>% 
+              mutate(request_type = recode(request_type, 
+                               idq = "can you~",
+                               please_idq = "can you please~")), 
+            aes(x=age_fct, y=correct, col=expt))
+
+p_int_v3_agecont <- p + 
+  # geom_violin(position = position_dodge(width = 1), scale = "width", size = 1,
+              # draw_quantiles = c(0.5), alpha = 0.3) +
+  geom_jitter(alpha=.2, size=.5) +
+  geom_smooth(size=.5, alpha=.2) +
+#   geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+  facet_grid(request_type~question_type) +
+  xlab("Age") +
+  ylab("Proportion correct") + 
+  ggtitle("Correct answers on questions \"Who was being more _____ ?\"") +
+  scale_colour_ptol() +
+  scale_fill_ptol() +
+  # geom_errorbar(position=position_dodge(.9), aes(ymin=ci_lower,ymax=ci_upper,width=.1)) +
+    geom_hline(yintercept=.50,lty=4) + 
+  theme_few() +
+  theme(legend.position = "bottom")
+
+
+ggsave("polcon-v3-interaction_agecont.png", plot = p_int_v3_agecont, width = 5, height = 6,
+       path = here::here("../figures"))
+```
+
