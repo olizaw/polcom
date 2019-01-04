@@ -32,9 +32,10 @@ d1_1 <- left_join(d1, order) %>%
   mutate(speaker = speaker_ord1,
          request_type = request_type_ord1,
          question_type = question_type_ord1,
+         item = item_ord1,
          correct = correct_ord1,
          polite_speaker = polite_speaker_ord1) %>%
-  select(subid, order, trial, speaker, request_type,question_type, correct, polite_speaker, answer) %>%
+  select(subid, order, trial, speaker, request_type,question_type, item, correct, polite_speaker, answer) %>%
   mutate(correct = ifelse(correct == answer, 1, 0),
          choose_polite = ifelse(polite_speaker == answer, 1, 0))
 
@@ -43,9 +44,10 @@ d1_2 <- left_join(d1, order) %>%
   mutate(speaker = speaker_ord2,
          request_type = request_type_ord2,
          question_type = question_type_ord2,
+         item = item_ord2,
          correct = correct_ord2,
          polite_speaker = polite_speaker_ord2) %>%
-  select(subid, order, trial, speaker, request_type,question_type, correct, polite_speaker, answer) %>%
+  select(subid, order, trial, speaker, request_type,question_type, item, correct, polite_speaker, answer) %>%
   mutate(correct = ifelse(correct == answer, 1, 0),
          choose_polite = ifelse(polite_speaker == answer, 1, 0))
 
@@ -91,11 +93,6 @@ for (file.name in files) {
   all.data <- rbindlist(list(all.data, d))
 }
 
-## WRITE DATA OUT TO CSV FOR EASY ACCESS
-# write.csv(all.data,paste(processed.data.path,
-#                          "polcon_v2.csv",sep=""),
-#           row.names=FALSE) 
-
 d1 <- all.data %>%
   gather(var, question_type, qtype1:qtype2) %>%
   mutate(trial = trial_num) %>%
@@ -118,14 +115,16 @@ order <- read.csv(here::here("03_analysis/data/info/v1/v1_order.csv")) %>%
   separate(trial, c("trial", "var"))
 
 d1_1 <- left_join(filter(d1, order == "1"), 
-                  select(order, trial, var, request_type_ord1)) %>%
-  mutate(request_type = request_type_ord1) %>%
-  select(subid, order, trial, request_type,question_type, correct)
+                  select(order, trial, var, request_type_ord1, item_ord1)) %>%
+  mutate(request_type = request_type_ord1,
+         item = item_ord1) %>%
+  select(subid, order, trial, request_type,question_type, item, correct)
 
 d1_2 <- left_join(filter(d1, order == "2"), 
-                  select(order, trial, var, request_type_ord2)) %>%
-  mutate(request_type = request_type_ord2) %>%
-  select(subid, order, trial, request_type,question_type, correct)
+                  select(order, trial, var, request_type_ord2, item_ord2)) %>%
+  mutate(request_type = request_type_ord2,
+         item = item_ord2) %>%
+  select(subid, order, trial, request_type,question_type, item, correct)
 
 d1 <- rbind(d1_1, d1_2) %>%
     mutate(valence = ifelse(question_type %in% c("polite","nice"), 
@@ -149,13 +148,6 @@ d1 <- d1 %>%
 # drop age other than 3 and 4, and age_fct NA
 d1 <- d1 %>%
    filter(age_fct %in% c(3, 4))
-
-# drop those who failed practice trials
-# subj_failed_practice <- filter(d1, (trial == "0" & correct == "0"))
-# d1 <- d1 %>%
-#   filter(!subid %in% subj_failed_practice$subid) %>%
-#   filter(trial != "0") %>% 
-#   filter(age_fct %in% c(3, 4))
 
 d_v2 <- d1
 
@@ -194,11 +186,6 @@ for (file.name in files) {
   all.data <- rbindlist(list(all.data, d))
 }
 
-## WRITE DATA OUT TO CSV FOR EASY ACCESS
-# write.csv(all.data,paste(processed.data.path,
-#                          "polcon_v3.csv",sep=""),
-#           row.names=FALSE) 
-
 d1 <- all.data %>%
   gather(var, question_type, qtype1:qtype2) %>%
   mutate(trial = trial_num) %>%
@@ -221,21 +208,20 @@ order <- read.csv(here::here("03_analysis/data/info/v1/v1_order.csv")) %>%
   separate(trial, c("trial", "var"))
 
 d1_1 <- left_join(filter(d1, order == "1"), 
-                  select(order, trial, var, request_type_ord1)) %>%
-  mutate(request_type = request_type_ord1) %>%
-  select(subid, order, trial, request_type,question_type, correct)
+                  select(order, trial, var, request_type_ord1, item_ord1)) %>%
+  mutate(request_type = request_type_ord1,
+         item = item_ord1) %>%
+  select(subid, order, trial, request_type,question_type, item, correct)
 
 d1_2 <- left_join(filter(d1, order == "2"), 
-                  select(order, trial, var, request_type_ord2)) %>%
-  mutate(request_type = request_type_ord2) %>%
-  select(subid, order, trial, request_type,question_type, correct)
+                  select(order, trial, var, request_type_ord2, item_ord2)) %>%
+  mutate(request_type = request_type_ord2,
+         item = item_ord2) %>%
+  select(subid, order, trial, request_type,question_type, item, correct)
 
 
 
 d1 <- rbind(d1_1, d1_2)
-#     mutate(valence = ifelse(question_type %in% c("polite","nice"), 
-#                           "positive", "negative"), 
-#          adjective = ifelse(question_type %in% c("nice","mean"), "easy","hard")) 
 
 # log sheet with subj info
 log <- read.csv(here::here("03_analysis/data/info/v3/subject_log_v3.csv"))
@@ -261,12 +247,6 @@ subj <- d1 %>%
     summarise(count = n())
 subj
 
-# drop those who failed practice trials
-# subj_failed_practice <- filter(d1, (trial == "0" & correct == "0"))
-# d1 <- d1 %>%
-#   filter(!subid %in% subj_failed_practice$subid) %>%
-#   filter(trial != "0")
-
 # change question_type
 # v3 had just polite vs. rude, but this was not reflected in the logging system 
 
@@ -278,9 +258,6 @@ d1 <- d1 %>%
   mutate(age_fct = floor(age)) %>%
   filter(question_type != "comp") %>%
   select(-keepdrop, -initials, -dot, -dob)
-
-# write.csv(d1,paste("03_analysis/data/processed_data/polcon_v3_ready_for_ana.csv",sep=""),
-#            row.names=FALSE) 
 
 d_v3 <- d1
 
@@ -436,16 +413,16 @@ d_v3_lookit <- d_v3_lookit %>%
   rename(trial = trial_num, question_type = question)
 
 d <- rbind(
-  d_v1 %>% rename(gender = sex) %>% select(subid, expt, age, gender, order, trial, request_type, question_type, correct) %>%
+  d_v1 %>% rename(gender = sex) %>% select(subid, expt, age, gender, order, trial, request_type, question_type, item, correct) %>%
     mutate(subid = as.character(subid)),
   d_v2 %>% 
-    select(subid, expt, age, gender, order, trial, request_type, question_type, correct) %>%
+    select(subid, expt, age, gender, order, trial, request_type, question_type, item, correct) %>%
     mutate(subid = as.character(subid)),
-  d_v3 %>% select(subid, expt, age, gender, order, trial, request_type, question_type, correct) %>%
+  d_v3 %>% select(subid, expt, age, gender, order, trial, request_type, question_type, item, correct) %>%
     mutate(subid = as.character(subid)),
   d_v3_lookit %>% 
     mutate(gender = fct_recode(child_gender, "M" = "m", "F" = "f", "NA" = "na")) %>%
-    select(subid, expt, age, gender, order, trial, request_type, question_type, correct)
+    select(subid, expt, age, gender, order, trial, request_type, question_type, item, correct)
 ) %>%
   mutate_if(is.character, as.factor) %>%
   mutate(subid = as.character(subid)) %>%

@@ -194,15 +194,23 @@ An additional 3 children were tested but excluded due to failure on the practice
 
 The experimenter presented to the child a storybook with a total of thirteen stories about different characters. In the *practice* phase, the child heard a story with one clearly mean character (*Drew kicked Carol*) and one clearly nice character (*Graham gave Carol a gift*). After a reminder of what each character did, the experimenter asked the participant: *Which one was being meaner?* and *Which one was being nicer?* If the child answered the question wrong the first time, the experimenter read the story one more time, saying, "Let's think about the story one more time." Only children who correctly answered both questions in the first or second attempt were included in the analyses.
 
-In the *test* phase, the child heard twelve stories, in each of which they saw one speaker who decided to speak politely (*Jean wanted more water in her cup. Jean said to Fred, "Please pour me more water"*) and another speaker who spoke impolitely (*Suzy also wanted more water in her cup. Suzy said to Fred, "Pour me more water."*). After a reminder about what each speaker said, the child was asked a total of two questions. For the first question, the experimenter asked one out of four possible questions: "Which one was being more polite [more rude/nicer/meaner]?" For the second question, the experimenter either asked about play partner choice (*Which one would you rather play with?*) or likelihood of compliance (e.g., *Which one will Fred give water to?*). The order of story types and question types was counterbalanced.
+In the *test* phase, the child heard twelve stories, in each of which they saw one speaker who decided to speak politely (*Jean wanted more water in her cup. Jean said to Fred, "Please pour me more water"*) and another speaker who spoke impolitely (*Suzy also wanted more water in her cup. Suzy said to Fred, "Pour me more water."*). After a reminder about what each speaker said, the child was asked a total of two questions. For the first question, the experimenter asked one out of four possible questions: "Which one was being more polite [more rude/nicer/meaner]?" For the second question, the experimenter either asked about play partner choice ("Which one would you rather play with?") or likelihood of compliance (e.g., "Which one will Fred give water to?"). The order of story types and question types was counterbalanced.
 
 ## Results and Discussion
 
 ```{r v1_results}
-load(here("03_analysis/data/brm_v1.Rds"))
+brm_v1 <- d %>% 
+  filter(expt == "v1") %>%
+  filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
+  mutate(age = scale(age)) %>%
+  mutate(question_type = fct_relevel(question_type, "polite")) %>%
+  mutate(request_type = fct_relevel(request_type, "please", "can you~")) %>%
+  brm(data=., correct ~ age * question_type * request_type + (age | item) + (request_type + question_type | subid),
+      family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
+
+save(brm_v1, file=here("03_analysis/data/brm_v1.Rds"))
 ```
 
-In sum, in Experiment 1, we confirmed that children were able to use some combination of cues (markers, prosody and facial expressions) to politeness to reason about which speaker is nicer/meaner or more polite/rude, and which speaker is more likely to be a better play partner and to have their needs met. But in this initial task, the experimenter produced the utterances and was not blind to the condition, which could have biased her presentation of the stories and therefore participants' performances. In Experiment 2, we presented pre-recorded voiceovers for speakers' utterances to address this concern, but 
 
 # Experiment 2
 
