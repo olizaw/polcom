@@ -19,6 +19,9 @@ output: cogsci2016::cogsci_paper
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(fig.width=3, fig.height=3, fig.crop = F, fig.pos = "tb", fig.path='figs/',
                       echo=F, warning=F, cache=F, message=F, sanitize = T)
+
+image_path <- "04_writing/cogsci2019/figs/"
+
 ```
 
 ```{r, libraries}
@@ -29,6 +32,7 @@ library(xtable)
 library(tidyverse)
 library(lme4)
 library(brms)
+library(ggthemes)
 
 library(here)
 library(langcog)
@@ -102,13 +106,14 @@ subj_v3_too_few_trials <- d %>%
 subj_v3_too_few_trials_count <- subj_v3_too_few_trials %>% 
   count(.)
 
-# filter out participant id from above
+# filter out participant id from above, and also drop trial 0 (practice)
 d <- d %>% 
   filter(!subid %in% subj_v1_too_few_trials$subid) %>%
   filter(!subid %in% subj_v2_failed_practice$subid) %>%
   filter(!subid %in% subj_v2_too_few_trials$subid) %>%
   filter(!subid %in% subj_v3_failed_practice$subid) %>%
-  filter(!subid %in% subj_v3_too_few_trials$subid)
+  filter(!subid %in% subj_v3_too_few_trials$subid) %>%
+  filter(trial != "0")
 ```
 
 ```{r participant_exclusion_v3_online}
@@ -198,11 +203,75 @@ In the *test* phase, the child heard twelve stories, in each of which they saw o
 
 ## Results and Discussion
 
-```{r v1_results}
-load(here("03_analysis/data/brm_v1.Rds"))
+```{r}
+# set up data before visualization and ana
+breaks = c(2, 2.5, 3, 3.5, 4, 4.5, 5)
+d <- d %>%
+  mutate(age_halfbin = cut(age, breaks),
+         age_halfbin = as.numeric(as.character(fct_recode(age_halfbin,
+                                  "2" = "(2,2.5]",
+                                  "2.5" = "(2.5,3]",
+                                  "3" = "(3,3.5]",
+                                  "3.5" = "(3.5,4]",
+                                  "4" = "(4,4.5]",
+                                  "4.5" = "(4.5,5]"
+                                  )))) %>%
+  mutate(request_type = fct_relevel(request_type, "please", "can you~")) %>%
+  mutate(question_type = fct_relevel(question_type, "polite", "rude", "nice", "mean", "play", "comp"),
+         question_type = fct_recode(question_type,
+                                    "Which one was \nmore polite?" = "polite",
+                                    "Which one was \nmore rude?" = "rude",
+                                    "Which one was \nnicer?" = "nice",
+                                    "Which one was \nmeaner?" = "mean",
+                                    "Which one would you \nrather play with?" = "play",
+                                    "Which one [will get \nwhat they want]?" = "comp"
+                                    )) %>%
+  mutate(expt = fct_recode(expt, 
+                           "1" = "v1",
+                           "2" = "v2", 
+                           "3 (nursery school)" = "v3",
+                           "3 (online)" = "v3_lookit"))
+  
 ```
 
-In sum, in Experiment 1, we confirmed that children were able to use some combination of cues (markers, prosody and facial expressions) to politeness to reason about which speaker is nicer/meaner or more polite/rude, and which speaker is more likely to be a better play partner and to have their needs met. But in this initial task, the experimenter produced the utterances and was not blind to the condition, which could have biased her presentation of the stories and therefore participants' performances. In Experiment 2, we presented pre-recorded voiceovers for speakers' utterances to address this concern, but 
+
+```{r v1_results}
+# load(here("03_analysis/data/brm_v1.Rds"))
+```
+
+```{r fig_results}
+d_plot <- d %>%
+  group_by(expt, age_fct, request_type, question_type, subid) %>%
+  summarise(correct = mean(correct, na.rm = T)) %>%
+  group_by(expt, age_fct, request_type, question_type) %>%
+  multi_boot_standard(col = "correct", na.rm = T) %>%
+  rename(correct = mean)
+
+p_all <- ggplot(data=d_plot,
+       aes(x=age_fct, y=correct, col=expt, group=expt)) +
+  geom_line() +
+  geom_pointrange(aes(ymin = ci_lower, ymax = ci_upper),
+                  position = position_dodge(width = .1)) +
+  facet_grid(question_type~request_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") + 
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(0,1)) +
+  theme(strip.text.x = element_text(angle=0),
+        legend.position="top") +
+  labs(color="Experiment")
+
+ggsave(p_all, file=here::here("04_writing/cogsci2019/figs/fig_results.png"), width=6, height=10)
+```
+
+```{r fig_results_placement, fig.env = "figure*", fig.pos = "h", fig.width=6, fig.height=8, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Proportion of correct responses to questions comparing between a speaker who used a polite marker (indicated at the top of each column) versus a speaker who did not. Data are binned into one-year age groups for visualization purposes (all analyses are conducted on continuous data). Different colors represent responses from different Experiments (see legend at the top). Rows represent different questions asked (indicated on the right). Dashed line represents chance level at 50\\% (i.e., if participant were guessing at random)."}
+png::readPNG(here::here(image_path, "fig_results.png")) %>%
+  grid::grid.raster()
+```
+
+In sum, in Experiment 1, we confirmed that children were able to use some combination of cues (markers, prosody and facial expressions) to politeness to reason about which speaker is nicer/meaner or more polite/rude, and which speaker is more likely to be a better play partner and to have their needs met. But in this initial task, the experimenter produced the utterances and was not blind to the condition, which could have biased her presentation of the stories and therefore participants' performances. In Experiment 2, we presented pre-recorded voiceovers for speakers' utterances to address this concern.
 
 # Experiment 2
 

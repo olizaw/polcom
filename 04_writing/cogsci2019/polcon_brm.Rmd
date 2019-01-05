@@ -199,18 +199,56 @@ In the *test* phase, the child heard twelve stories, in each of which they saw o
 ## Results and Discussion
 
 ```{r v1_results}
-brm_v1 <- d %>% 
+# brm_v1 <- d %>% 
+#   filter(expt == "v1") %>%
+#   filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
+#   mutate(age = scale(age)) %>%
+#   mutate(question_type = fct_relevel(question_type, "rude")) %>%
+#   mutate(request_type = fct_relevel(request_type, "can you~", "please")) %>%
+#   brm(data=., correct ~ age * question_type * request_type + (age | item) + (request_type + question_type | subid),
+#       family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
+# 
+# save(brm_v1, file=here::here("03_analysis/data/brm_v1.Rds"))
+# 
+
+d_v1 <- d %>%
   filter(expt == "v1") %>%
   filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
   mutate(age = scale(age)) %>%
-  mutate(question_type = fct_relevel(question_type, "polite")) %>%
-  mutate(request_type = fct_relevel(request_type, "please", "can you~")) %>%
-  brm(data=., correct ~ age * question_type * request_type + (age | item) + (request_type + question_type | subid),
-      family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
+  mutate(question_type = fct_relevel(question_type, "rude")) %>%
+  mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
 
-save(brm_v1, file=here("03_analysis/data/brm_v1.Rds"))
+d_v3_lookit <- d %>%
+  filter(expt == "v3_lookit") %>%
+  filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
+  mutate(age = scale(age)) %>%
+  mutate(question_type = fct_relevel(question_type, "rude")) %>%
+  mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
+
+# lmer_v1 <- glm(data=d_v1, correct ~ age * question_type * request_type,
+#       family="binomial")
+
+# brm_v1_test <- brm(data=d_v1, family="bernoulli", correct ~ age * question_type * request_type + (age | item) + (request_type + question_type | subid))
+
+# brm_v3_test <- brm(data=d_v3_lookit, family="bernoulli", correct ~ age  + (age | item))
+# 
+# 
+# brm_all_test <- brm(data=d, family="bernoulli", correct ~ age  + (age | item) + (1 | subid))
+
+# glmer_all <- glmer(data=d %>%
+#                      mutate(question_type = fct_relevel(question_type, "rude"),
+#                             request_type = fct_relevel(request_type, "can you~")), family = "binomial", correct ~ expt + scale(age) + question_type + request_type + (1|item))
+# 
+brm_all <- brm(data=d %>%
+                     mutate(question_type = fct_relevel(question_type, "rude"),
+                            request_type = fct_relevel(request_type, "can you~")),
+               correct ~ expt + scale(age) + question_type + request_type + 
+                 (expt + scale(age)|item) + (question_type + request_type | subid),
+       family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
+
 ```
 
+In this Experiment we wanted to make sure that 
 
 # Experiment 2
 
