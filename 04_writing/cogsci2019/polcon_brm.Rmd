@@ -208,22 +208,22 @@ In the *test* phase, the child heard twelve stories, in each of which they saw o
 #   brm(data=., correct ~ age * question_type * request_type + (age | item) + (request_type + question_type | subid),
 #       family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
 # 
-# save(brm_v1, file=here::here("03_analysis/data/brm_v1.Rds"))
+# save(brm_all, file=here::here("03_analysis/data/brm_all.Rds"))
+# # 
 # 
-
-d_v1 <- d %>%
-  filter(expt == "v1") %>%
-  filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
-  mutate(age = scale(age)) %>%
-  mutate(question_type = fct_relevel(question_type, "rude")) %>%
-  mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
-
-d_v3_lookit <- d %>%
-  filter(expt == "v3_lookit") %>%
-  filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
-  mutate(age = scale(age)) %>%
-  mutate(question_type = fct_relevel(question_type, "rude")) %>%
-  mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
+# d_v1 <- d %>%
+#   filter(expt == "v1") %>%
+#   filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
+#   mutate(age = scale(age)) %>%
+#   mutate(question_type = fct_relevel(question_type, "rude")) %>%
+#   mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
+# 
+# d_v3_lookit <- d %>%
+#   filter(expt == "v3_lookit") %>%
+#   filter(question_type %in% c( "polite", "rude", "nice", "mean")) %>%
+#   mutate(age = scale(age)) %>%
+#   mutate(question_type = fct_relevel(question_type, "rude")) %>%
+#   mutate(request_type = fct_relevel(request_type, "can you~", "please")) 
 
 # lmer_v1 <- glm(data=d_v1, correct ~ age * question_type * request_type,
 #       family="binomial")
@@ -239,14 +239,40 @@ d_v3_lookit <- d %>%
 #                      mutate(question_type = fct_relevel(question_type, "rude"),
 #                             request_type = fct_relevel(request_type, "can you~")), family = "binomial", correct ~ expt + scale(age) + question_type + request_type + (1|item))
 # 
-brm_all <- brm(data=d %>%
-                     mutate(question_type = fct_relevel(question_type, "rude"),
-                            request_type = fct_relevel(request_type, "can you~")),
-               correct ~ expt + scale(age) + question_type + request_type + 
-                 (expt + scale(age)|item) + (question_type + request_type | subid),
+brm_2_noint <- brm(data=d %>%
+                   filter(expt == "v2") %>%
+                     mutate(question_type = fct_relevel(question_type, "polite"),
+                            request_type = fct_relevel(request_type, "please")),
+               correct ~ scale(age) + question_type + request_type +
+                 (scale(age)|item) + (question_type + request_type | subid),
        family="bernoulli", iter=3000, control = list(adapt_delta = 0.99, max_treedepth = 15))
 
+# save(brm_2_int, file=here::here("03_analysis/data/brm_2_int.Rds"))
+save(brm_2_noint, file=here::here("03_analysis/data/brm_2_noint.Rds"))
+
+d_test <- d %>% 
+  mutate(cont1 = as.numeric(case_when(
+  question_type %in% c("polite", "rude", "nice", "mean") ~ "-1",
+  question_type %in% c("play", "comp") ~ "1"
+  ))) %>%
+  mutate(cont2 = as.numeric(case_when(
+  question_type %in% c("polite", "rude") ~ "-1",
+  question_type %in% c("nice", "mean") ~ "1",
+  TRUE ~ "0"
+  )))
+
+brm_2_test <- brm(data=d_test %>%
+                   filter(expt == "v2"),
+               correct ~ cont1 / cont2,
+       family="bernoulli")
+
 ```
+
+```{r}
+#lmer test
+
+```
+
 
 In this Experiment we wanted to make sure that 
 
