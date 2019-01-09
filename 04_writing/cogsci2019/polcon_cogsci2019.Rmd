@@ -8,7 +8,7 @@ author-information: >
     \author{{\large \bf } \\ \texttt{} \\  \\}
 
 abstract: 
-    "Here we show that, with an improvement over the age of 2 to 4 years, English-speaking preschool children understand implications of simple polite markers: They understand that it is more polite and nicer (and less rude and mean) to use polite markers such as \"please\" and \"can you ~\" when making requests, and that the use of these polite markers indicates that the speaker is more socially likeable and is more likely to gain compliance from their conversational partners."
+    "What do children understand about polite speech? Here we show that, with an improvement over the age of 2 to 4 years, English-speaking preschool children understand implications of simple polite markers: They understand that it is more polite and nicer (and less rude and mean) to use polite markers such as \"please\" and \"can you ~\" when making requests, and that the use of these polite markers indicates that the speaker is more socially likeable and is more likely to gain compliance from their conversational partners. This work can help lay the foundation for future work on children's understanding of polite speech."
     
 keywords:
     "Politeness, pragmatic development, online experiment"
@@ -56,13 +56,13 @@ d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv"))
 # Introduction
 
 We use and hear polite speech on a daily basis: polite utterances range from simple words of apology (“sorry”) or gratitude (“thanks”) to compliments (“I love your dress!”) to ways of making requests (“Can you please open the window?”). 
-Indeed, adults use politeness strategies even while arguing [@holtgraves1997] and risking high-stakes misunderstandings [@bonnefon2011]. 
 Yet polite utterances are seemingly inefficient and even misinformative: speakers say “Can you please~” when it should suffice to say, “Open the window.”
  This creates a mystery for classical views of language as information transfer [@buhler1934; @jakobson1960; @shannon1948; @goodman2013]: If language is a tool for transferring information, speakers should be as efficient as possible in their communication to prioritize informativity. 
+Nonetheless, speakers use politeness strategies even while arguing [@holtgraves1997] and risking high-stakes misunderstandings [@bonnefon2011]. 
 
 So why do people speak politely? 
 Linguistic theories assume that people’s utterance choices are motivated by social concerns, 
-framed as either maxims [@leech1983], social norms [@ide1989], or listener’s and/or speaker’s public identity [face; @brown1987]. For example, face-based theories predict that a speaker’s intended meaning contains a threat to the listener’s face or self-image, the speaker’s utterance will be less direct and informative. Thus, because saying “open the window” might give an impression that the speaker is assuming to be in a position to give orders to the listener, she would say instead, “Can you please open the window?” Conveying the message in a more indirect form of request gives the other person a sense of autonomy or freedom from imposition.
+framed as either maxims [@leech1983], social norms [@ide1989], or listener’s and/or speaker’s public identity [face; @brown1987]. For example, face-based theories predict that a speaker’s intended meaning contains a threat to the listener’s face or self-image, the speaker’s utterance will be less direct and informative. Thus, because saying “open the window” might give an impression that the speaker is assuming to be in a position to give orders to the listener, she would say instead, “Can you please open the window?” since conveying the message in a more indirect form of request gives the other person a sense of autonomy or freedom from imposition [@clark1980].
 Thus, while it may hinder the goals of efficient information transfer, using polite speech can help the listener save his face and feel good about himself, while inferring that the speaker had kind motives as well [@yoon2017]. 
 
 Do children speak politely, and if so what do they understand about polite speech?
@@ -74,7 +74,7 @@ For example, by three years children are able to vary their utterances based on 
 By two years, children are able to modify their requests to make them more polite [“ask in the nicest way possible”; @bates1977].
 Hence children’s *production* of polite speech seems to parallel adult speakers’ desires to produce utterances with appropriate levels of face-saving. 
 
-But do children truly *understand* a speaker’s intentions behind polite speech, and make inferences about the speaker accordingly? 
+But do children *understand* a speaker’s intentions behind polite speech? 
 For example, upon hearing someone making a request (“Please pour me more water”), how might children evaluate this speaker?
 The question of how children reason about politeness has numerous sub-questions to be considered.
 First, do children know the word “polite” should be associated with politeness rules people abide by (e.g., saying “please”)?
@@ -86,9 +86,13 @@ Evidence for children’s comprehension of polite speech is much sparser compare
 Though there was some initial evidence to suggest that producing a request with “please” is judged to be polite by thee years of age [@bates1976; @bates1977], in a later study, the judgment of “please” as being polite was only replicated starting at five years of age, but not younger [@nippold1982]. 
 These initial studies also have additional unresolved issues, including the lack of statistical tests to assess each age group’s performance, and lack of systematic manipulation of cues other than linguistic markers (e.g., prosody or facial expressions). 
 
-In this current work, we sought to test what 2- to 4-year-old children understand about polite speech. Specifically, we asked whether children are sensitive to speakers' use of polite markers such as "please" and "can you," and whether they: (1) reason about which speaker is being more "polite" or "rude" (or "nice" or "mean"); (2) reason about social implications (e.g., play partner choice); and (3) show improvement in their reasoning with increasing age. 
-
-Across three Experiments, we presented stories about speakers who decided to speak politely (e.g., "Please pour me more water") or impolitely (e.g., "Pour me more water") and asked child participants to compare between the two speakers. In Experiment 1 and 2, we found that 3- to 4-year-old children were able to reason that a speaker who used polite markers was more polite and nicer than a speaker who did not, and that the polite speaker is more socially likeable and is more likely to gain what they want, given facial expression and prosodic cues. In Experiment 3, we recruited two samples (one from a local nursery school and the other from an online platform) and found that children were able to reason correctly about polite speech even when the supportive facial and prosodic cues were removed, and this reasoning improves from 2 to 4 years of age.
+In this current work, we sought to test what 2- to 4-year-old children understand about polite speech. 
+Across three Experiments, we presented stories about speakers who decided to speak politely (e.g., "Please pour me more water") or impolitely (e.g., "Pour me more water") and asked child participants to compare between the two speakers. 
+We were interested to know if children were sensitive to a speaker’s use of simple polite markers (e.g., “please”) and examined whether:
+(1) children are able to reason about speakers using polite speech as being “polite” and “nice” and not “rude” or “mean”;
+(2) they can reason about social implications of using polite speech (e.g., politeness as a sign of a nice play partner)
+(3) they show improvement with age for these lines of reasoning 
+(4) they have to rely on other additional cues such as facial expressions (Expt 1) or prosodic cues (Expt 2), or they can make use of linguistic markers alone (Expt 3) to make appropriate inferences about the speaker.
 
 # Experiment 1
 
@@ -223,11 +227,16 @@ d_ana <- d %>%
                            "Expt 2" = "v2", 
                            "Expt 3\n(nursery school)" = "v3",
                            "Expt 3\n(online)" = "v3_lookit")) %>%
+  # mutate(expt_regrp = fct_recode(expt, 
+  #                          "Expt 1\n(markers, prosody, face)" = "Expt 1",
+  #                          "Expt 2\n(markers, prosody)" = "Expt 2",
+  #                          "Expt 3\n(markers only)" = "Expt 3\n(nursery school)", 
+  #                          "Expt 3\n(markers only)" = "Expt 3\n(online)"))
   mutate(expt_regrp = fct_recode(expt, 
-                           "Expt 1\n(markers, prosody, face)" = "Expt 1",
-                           "Expt 2\n(markers, prosody)" = "Expt 2",
-                           "Expt 3\n(markers only)" = "Expt 3\n(nursery school)", 
-                           "Expt 3\n(markers only)" = "Expt 3\n(online)"))
+                           "Expt 1" = "Expt 1",
+                           "Expt 2" = "Expt 2",
+                           "Expt 3" = "Expt 3\n(nursery school)", 
+                           "Expt 3" = "Expt 3\n(online)"))
   
 ```
 
@@ -251,7 +260,7 @@ p_all <- ggplot(data=d_plot,
   xlab("Age (years)") +
   scale_color_ptol() +
   geom_hline(yintercept =.5, lty=2) +
-  ylim(c(0,1)) +
+  ylim(c(.25,1)) +
   theme(
         legend.position="top",
         legend.box = "vertical") +
@@ -283,7 +292,7 @@ p_all <- ggplot(data=d_plot,
 #        shape = NULL)
 
 
-ggsave(p_all, file=here::here("04_writing/cogsci2019/figs/fig_results.png"), width=12, height=7)
+ggsave(p_all, file=here::here("04_writing/cogsci2019/figs/fig_results.png"), width=9, height=5)
 ```
 
 ```{r fig_results_placement, fig.env = "figure*", fig.pos = "h", fig.width=7, fig.height=5, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Bottom right: Story example. Top, left: Results. Proportion of correct responses to questions comparing between a speaker who used a polite marker (where blue indicates \"please\", yellow \"can you\", and red \"can you please\") versus a speaker who did not. Data are binned into one-year age groups. Each row represents data from a different Experiment. Columns represent different questions asked. Dashed line represents chance level at 50\\% (i.e., if participant were guessing at random)."}
