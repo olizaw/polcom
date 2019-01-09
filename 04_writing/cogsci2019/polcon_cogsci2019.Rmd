@@ -55,13 +55,29 @@ d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv"))
 
 # Introduction
 
-As adults, we use polite speech all the time.
+We use and hear polite speech on a daily basis: polite utterances range from simple words of apology (“sorry”) or gratitude (“thanks”) to compliments (“I love your dress!”) to ways of making requests (“Can you please open the window?”). 
+Indeed, adults use politeness strategies even while arguing (Holtgraves 1997) and risking high-stakes misunderstandings (Bonnefon 2011). 
+Yet polite utterances are seemingly inefficient and even misinformative: speakers say “Can you please~” when it should suffice to say, “Open the window.”
+ This creates a mystery for classical views of language as information transfer (buhler 1934; Jakobson 1960; Shannon 1948; goodman 2012): If language is a tool for transferring information, speakers should be as efficient as possible in their communication to prioritize informativity. 
 
-Children produce polite speech early on.
+So why do people speak politely? Linguistic theories assume that people’s utterance choices are motivated by social concerns, framed as either maxims (leech1983), social norms (ide1989), or listener’s and/or speaker’s public identity (face; brown1987). For example, face-based theories predict that a speaker’s intended meaning contains a threat to the listener’s face or self-image, the speaker’s utterance will be less direct and informative. Thus, because saying “open the window” might give an impression that the speaker is assuming to be in a position to give orders to the listener, she would say instead, “Can you please open the window?” Conveying the message in a more indirect form of request gives the other person a sense of autonomy or freedom from imposition.
+Thus, while it may hinder the goals of efficient information transfer, using polite speech can help the listener save his face and feel good about himself, while inferring that the speaker had kind motives as well (yoon2017). 
 
-Less work has looked at children's comprehension of polite speech.
+Do children speak politely, and if so what do they understand about polite speech?
+Children begin producing polite speech early on; 
+They start producing the simple polite marker “please” at 2.5 years (read 1978),
+And request forms increase in their variety and frequency with age (bates… all the refs from cada). 
+Young children learn to produce different forms of requests depending on context: 
+For example, by three years children are able to vary their utterances based on whether they are instructed to “tell” versus “ask” an addressee to given them a puzzle piece (bock1981);
+By two years, children are able to modify their requests to make them more polite (“ask in the nicest way possible”; bock1977).
+Hence children’s *production* of polite speech seems to parallel adult speakers’ desires to produce utterances with appropriate levels of face-saving. 
 
-For example, @nippold1982 looked at...
+But do children truly *understand* a speaker’s intentions behind polite speech, and make inferences about the speaker accordingly? 
+For example, upon hearing someone making a request (“Please pour me more water”), how might children evaluate this speaker?
+The question of how children reason about politeness has numerous sub-questions to be considered.
+First, do children know the word “polite” that should be associated with politeness rules people abide by (e.g., saying “please”)?
+Second, do children recognize polite speech as positively valenced, such that they think it is better and nicer to say polite things? 
+Evidence for children’s comprehension of polite speech is much sparser compared to production, thought there was some initial evidence to suggest that producing a request with “please” is judged to be 
 
 In this current work, we sought to test what 2- to 4-year-old children understand about polite speech. Specifically, we asked whether children are sensitive to speakers' use of polite markers such as "please" and "can you," and whether they: (1) reason about which speaker is being more "polite" or "rude" (or "nice" or "mean"); (2) reason about social implications (e.g., play partner choice); and (3) show improvement in their reasoning with increasing age. 
 
@@ -323,20 +339,23 @@ v1_lmer_coeff <- lmer_v1 %>%
          estimate = round(estimate, 2))
 ```
 
-We looked at the proportion of correct responses to various questions to compare between a speaker who used a polite marker and spoke kindly, versus a speaker who did not use a polite marker and spoke meanly (Figure \ \ref{fig:fig_results_placement}, first row). Both 3- and 4-year-olds overall gave correct answers when asked to compare between a speaker who said "Can you please~" and a speaker who did not (all $t<$.05 except 3-year-olds not answering the *polite* questions correctly, see below), which suggested that children at this age do pay attention to how the speakers make requests and determine their attributes ("Because Jean said "please", Jean was nicer than Suzy") and social implications of their actions ("Fred will pour water in Jean's cup"). 
+We looked at the proportion of correct responses to various questions to compare between a speaker who used a polite marker and spoke kindly, versus a speaker who did not use a polite marker and spoke meanly (Figure\ \ref{fig:fig_results_placement}, first row). Both 3- and 4-year-olds overall gave correct answers when asked to compare between a speaker who said "Can you please~" and a speaker who did not (all $t<$.05 except 3-year-olds not answering the *polite* questions correctly, see below), which suggested that children at this age do pay attention to how the speakers make requests and determine their attributes ("Because Jean said "please", Jean was nicer than Suzy") and social implications of their actions ("Fred will pour water in Jean's cup"). 
 
 For other markers, the performance varied depending on the age and type of question asked. Both 3- and 4-year-olds overall seemed to struggle with the *polite* question ("Which one was more polite?"), though 4-year-olds did successfully answer that a speaker who said "Can you please~" was more polite. 3-year-olds also struggled with the *compliance* question ("which one will [get what they want]?"), whereas they accurately answered the *play partner* question ("Which one would you rather play with?"; all $t<$.05), suggesting that at 3 years children already become sensitive to some social implications of speaking politely. Improvement over age was clear, however, as 4-year-olds answered questions more accurately overall for most of the question types. 
 
-A mixed-effects logistic regression predicting accuracy based on age, question type and marker type^[for each experiment, we use this model structure: `accuracy ~ age x question type x marker type + (1 | item)`, where age is centered and scaled. All categorical variables were deviation coded, with specified contrasts of interest for the question type. Significance was calculated using the standard normal approximation to the $t$ distribution [@barr2013].] confirmed there was an improvement with age ($\beta$ = `r v1_lmer_coeff$estimate[2]`, $p =$ `r v1_lmer_coeff$p.val.clean[2]`) and questions were answered more accurately for "can you please" compared to "please" ($\beta$ = `r v1_lmer_coeff$estimate[7]`, $p =$ `r v1_lmer_coeff$p.val.clean[7]`).
-Additionally, some 
+A mixed-effects logistic regression predicting accuracy based on age, question type and marker type^[for Experiments 1 and 2, we use this model structure: `accuracy ~ age x question type x marker type + (1 | item)`, where age is centered and scaled. All categorical variables were deviation coded, with specified contrasts of interest for the question type. Significance was calculated using the standard normal approximation to the $t$ distribution [@barr2013].] confirmed that there was an improvement with age ($\beta$ = `r v1_lmer_coeff$estimate[2]`, $p =$ `r v1_lmer_coeff$p.val.clean[2]`), and that children answered questions more accurately about a speaker who used "can you please" compared to "please" ($\beta$ = `r v1_lmer_coeff$estimate[7]`, $p =$ `r v1_lmer_coeff$p.val.clean[7]`).
+
+The regression model also confirmed that children seemed to find some question types easier than others: Responses to *nice* and *mean* questions were more accurate than to *polite* and *rude* questions ($\beta$ = `r v1_lmer_coeff$estimate[4]`, $p =$ `r v1_lmer_coeff$p.val.clean[4]`), whereas social implication questions (*play partner* and *compliance*) were overall more difficult compared to speaker attribute questions (*polite*, *rude*, *nice*, and *mean*; $\beta$ = `r v1_lmer_coeff$estimate[3]`, $p =$ `r v1_lmer_coeff$p.val.clean[3]`). 
 
 In sum, in this first experiment, we saw preliminary evidence that children pay attention to and understand some cues to politeness and are able to use these cues to infer whether speakers are relatively polite, rude, nice or mean, and whether speakers are good play partners and are likely to gain what they wanted from their addressees. 4-year-olds answered questions accurately more often compared to 3-year-olds, but both age groups tended to be accurate when all the possible cuess were used to signal that one speaker was polite (used "can you please~", spoke with a kind tone and face) and the other speaker wasn't (did not use a polite marker, spoke with an angry tone and face). 
 
-However, one possible explanation for the finding in Experiment 1 is that children are not using the linguistic polite markers (e.g., "please") per se, and rather prosodic and facial cues that accompany these markers. That is, children may have relied on the speaker's kind voice and face rather than their use of "please" to evaluate their niceness or likeability as a play partner. Another potential concern is that the experimenter was aware of the manipulations (i.e., they knew which speaker was supposed to be "polite") and thus could have affected the presentation of these speakers in ways that are not consistent across all participants. In our next two experiments, we sought to address these issue, and remove potentially confounding cues. 
+However, one possible explanation for the finding in Experiment 1 is that children are not using the linguistic polite markers (e.g., "please") per se, and rather prosodic and facial cues that accompany these markers. That is, children may have relied on the speaker's kind voice and face rather than their use of "please" to evaluate their niceness or likeability as a play partner.
+Similarly, greater accuracy for some questions over others (e.g., "nice" > "polite") may have been due to greater association between some of the words and prosodic and facial cues (e.g., a kind face may be seen to signal niceness more than politeness), not due to greater understanding for those words or concepts.
+Another potential concern is that the experimenter was aware of the manipulations (i.e., they knew which speaker was supposed to be "polite") and thus could have affected the presentation of these speakers in ways that are not consistent across all participants. In our next two experiments, we sought to address these issue, and remove potentially confounding cues. 
 
 # Experiment 2
 
-In Experiment 1, we saw initial evidence that children are able to use some combinations of linguistic, prosodic, and facial cues to politeness. In Experiment 2, we examined whether children are able to make similar judgments using linguistic and prosodic cues only, without facial expressions. For this, we used pre-recorded voiceovers to present speaker utterances, so that (1) we could look at children's judgments based on linguistic markers and prosodic cues only, and (2) we could remove the role of potential bias of the experimenter in presenbtation of these utterances. 
+In Experiment 1, we saw initial evidence that children are able to use some combinations of linguistic, prosodic, and facial cues to politeness. In Experiment 2, we examined whether children are able to make similar judgments using linguistic and prosodic cues only, without facial expressions. For this, we used pre-recorded voiceovers to present speaker utterances, so that (1) we could look at children's judgments based on linguistic markers and prosodic cues only, and (2) we could remove the role of potential bias of the experimenter in presentation of these utterances. 
 
 ## Methods
 
@@ -363,8 +382,28 @@ lmer_v2 <- d %>%
        contrasts=list(question_type = mat),
        family="binomial",
        data = .)
+
+v2_lmer_coeff <- lmer_v2 %>%
+  broom::tidy() %>%
+  filter(group == "fixed") %>%
+  mutate(p.val.clean = ifelse(p.value < .001, "< .001", round(p.value, 3)),
+         statistic = round(statistic, 2),
+         estimate = round(estimate, 2))
 ```
 
+Overall we saw similar patterns of results in Experiment 2 compared to 1 (Figure\ \ref{fig:fig_results_placement}, second row). 
+
+Children made accurate judgments more often when the marker used was "can you please" compared to "please" ($\beta$ = `r v2_lmer_coeff$estimate[7]`, $p =$ `r v2_lmer_coeff$p.val.clean[7]`)
+
+There was an effect of age ($\beta$ = `r v2_lmer_coeff$estimate[2]`, $p =$ `r v2_lmer_coeff$p.val.clean[2]`).
+
+There was no main effect of question type, but there was an interaction between age and question type such that performance for *nice* and *mean* questions saw greater improvement with age than for *polite* and *rude* questions ($\beta$ = `r v2_lmer_coeff$estimate[10]`, $p =$ `r v2_lmer_coeff$p.val.clean[10]`). 
+
+In sum, across Experiments 1 and 2, we were able to confirm that, 
+as they get older, children get better in their use of politeness cues to respond to questions about speaker attributes and social implications, and that
+children make more accurate judgment to compare between speakers based on their use of "can you please" compared to "please."
+
+Next, we wanted to see whether children are able to evaluate speakers based on linguistic markers only, without any other supporting cues such as prosodic cues or facial expressions.
 
 # Experiment 3
 
@@ -372,9 +411,19 @@ lmer_v2 <- d %>%
 
 ### Participants
 
+We recruited two samples of participants: one from the same local nursery school as Experiments 1 and 2, and the other from Lookit (\url{https://lookit.mit.edu/}), an online platform for child research participation, in which parents and their children can participate together. The nursery school sample consisted of 3-year-old  ($n=$ `r filter(ms_demog, expt_age == "v3_3")$n`; `r filter(ms_demog, expt_age == "v3_3")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v3_3")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v3_3")$sd_age`) and 4-year-old children ($n=$ `r filter(ms_demog, expt_age == "v3_4")$n`; `r filter(ms_demog, expt_age == "v3_4")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v3_4")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v3_4")$sd_age`). An additional `r subj_v3_failed_practice_count$n` children were tested but excluded due to failure on the practice questions.
+
+The online sample consisted of 2-year-old  ($n=$ `r filter(ms_demog, expt_age == "v3_lookit_2")$n`; `r filter(ms_demog, expt_age == "v3_lookit_2")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_2")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_2")$sd_age`), 3-year-old  ($n=$ `r filter(ms_demog, expt_age == "v3_lookit_3")$n`; `r filter(ms_demog, expt_age == "v3_lookit_3")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_3")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_3")$sd_age`) and 4-year-old children ($n=$ `r filter(ms_demog, expt_age == "v3_lookit_4")$n`; `r filter(ms_demog, expt_age == "v3_lookit_4")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_4")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v3_lookit_4")$sd_age`). An additional `r v3_online_excl_failed_practice$n + v3_online_excl_few_trials$n` children were tested but excluded due to failure on the practice questions ($n=$ `r v3_online_excl_failed_practice$n`) or completion of fewer than half of the test trials ($n=$ `r v3_online_excl_few_trials$n`).
+
 ### Stimuli
 
+For the nursery school sample, stimuli were identical to Experiment 2 except that the voiceovers for all utterances had the same prosody: All utterances ended with a rising intonation. 
+For the online sample, stimuli were identical to what the nusery school participants saw except that the story narration (other than speaker utterances) were also pre-recorded such that parents did not need to read the stories aloud themselves. 
+
 ### Procedure
+
+For the nursery school sample, the procedure was identical to Experiment 2. 
+For the online sample, the procedure was similar except that parents and children participated together at home and there was no experimenter present. Parents accessed the webpage for the study and gave their consent for participation, and then read instructions to proceed through the different stories, which specified with an emphasis to not help their children answer the questions. 
 
 ## Results and Discussion
 
@@ -419,8 +468,16 @@ lmer_all <- d_all %>%
   
 ```
 
+Consistent with the two previous experiments, children's responses became more accurate with age (Figure\ \ref{fig:fig_results_placement}, third row, bottom left). All of two-year-olds' and most of three-year-olds' responses did not differ from chance level, whereas the mean accuracy for four-year-olds were above chance for almost all the question and marker types. A mixed-effects logistic regression predicting accuracy based on age, question type and marker type, controlling for sample^[Model structure: `accuracy ~ sample + age x question type x marker type + (1 | item)`] showed improvement with age in accurately responding to the questions.
+
+One finding that deviated from the two previous experiments was that three-year-olds reliably made correct judgments to indicate a "polite" speaker when the speaker used "please." This is initially surprising because three-year-olds previously failed at this judgment given *more* cues (prosody and facial expressions), and they also failed to accurately respond to the marker "can you please" in this same experiment. 
+(fixme: though overall "can you please" was judged more accurately than "please", and "please" was more accurate than "can you")
+
+One possible explanation is that controlling for prosodic cues actually made it *easier* to compare the presence and absence of the marker "please."
 
 # General Discussion
+
+Using these simple markers, 4-year-olds were consistently able to make a correct comparison between speakers regarding their relative attributes (politeness, rudeness, niceness and meanness) and social implicationss (preference for a play partner and likelihood of compliance from the addressee). 3-year-olds showed understanding of these markers in some contexts as well. 
 
 # References 
 
