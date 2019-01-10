@@ -33,7 +33,10 @@
 \newenvironment{CodeChunk}{}{}
 
 % cite package, to clean up citations in the main text. Do not remove.
-\usepackage{cite}
+\usepackage{apacite}
+
+% KM added 1/4/18 to allow control of blind submission
+
 
 \usepackage{color}
 
@@ -248,7 +251,7 @@ to?}). The order of story types and question types was counterbalanced.
 \subsection{Results and Discussion}\label{results-and-discussion}
 
 \begin{CodeChunk}
-\captionsetup{width=0.8\textwidth}\begin{figure*}[h]
+\begin{figure*}[h]
 
 {\centering \includegraphics{figs/fig_results_placement-1} 
 
@@ -683,5 +686,8 @@ Yoon, E. J., Tessler, M. H., Goodman, N. D., \& Frank, M. C. (2017). ``I
 won't lie, it wasn't amazing": Modeling polite indirect speech. In
 \emph{Proceedings of the thirty-ninth annual conference of the Cognitive
 Science Society}.
+
+\bibliographystyle{apacite}
+
 
 \end{document}

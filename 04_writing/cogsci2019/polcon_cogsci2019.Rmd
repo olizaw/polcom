@@ -14,6 +14,7 @@ keywords:
     "Politeness, pragmatic development, online experiment"
     
 output: cogsci2016::cogsci_paper
+#final-submission: \cogscifinalcopy
 ---
 
 ```{r global_options, include=FALSE}
@@ -530,6 +531,7 @@ Across all three experiments, we saw a clear developmental trend such that child
 
 Finally, though there were variations in children's performances across the three experiments, there weren't consistent trends that indicated having more cues to politeness is necessarily more helpful for children.
 In fact, Experiment 3 with no facial or prosodic cues showed greatest success by 3-year-olds to questions about who was more polite/rude, which suggests that the presence of a polite marker is enough to signal speaker attributes to children. 
+
 
 There are limitations to the current work that present opportunities for future research. 
 First, because this work looked only at the behaviors of English-speaking children in the US, it is an open question how children with different language and cultural background may develop understanding of polite speech.
