@@ -59,35 +59,34 @@ d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv"))
 We use and hear polite speech on a daily basis: polite utterances range from simple words of apology (“sorry”) or gratitude (“thanks”) to compliments (“I love your dress!”) to ways of making requests (“Can you please open the window?”). 
 Yet polite utterances are seemingly inefficient and even misinformative: speakers say “Can you please~” when it should suffice to say, “Open the window.”
  This creates a mystery for classical views of language as information transfer [@buhler1934; @jakobson1960; @shannon1948; @goodman2013]: If language is a tool for transferring information, speakers should be as efficient as possible in their communication to prioritize informativity. 
-Nonetheless, speakers use politeness strategies even while arguing [@holtgraves1997] and risking high-stakes misunderstandings [@bonnefon2011]. 
+Nonetheless, speakers use politeness strategies often, even while arguing [@holtgraves1997], though polite language (indirect speech or white lies) may lead to misunderstandings [@bonnefon2011]. 
 
 So why do people speak politely? 
 Linguistic theories assume that people’s utterance choices are motivated by social concerns, 
-framed as either maxims [@leech1983], social norms [@ide1989], or listener’s and/or speaker’s public identity [face; @brown1987]. For example, face-based theories predict that a speaker’s intended meaning contains a threat to the listener’s face or self-image, the speaker’s utterance will be less direct and informative. Thus, because saying “open the window” might give an impression that the speaker is assuming to be in a position to give orders to the listener, she would say instead, “Can you please open the window?” since conveying the message in a more indirect form of request gives the other person a sense of autonomy or freedom from imposition [@clark1980].
+framed as either maxims [@leech1983], social norms [@ide1989], or listener’s and/or speaker’s public identity [*face*; @brown1987]. For example, @brown1987's theory predicts that a speaker’s intended meaning contains a threat to the listener’s face or self-image, the speaker’s utterance will be less direct and informative. Thus, because saying “open the window” might give an impression that the speaker assumes she is in a position to give orders to the listener, she would say instead, “Can you please open the window?” since conveying the message in a more indirect form of request gives the other person a sense of autonomy or freedom from imposition [@clark1980].
 Thus, while it may hinder the goals of efficient information transfer, using polite speech can help the listener save his face and feel good about himself, while inferring that the speaker had kind motives as well [@yoon2017]. 
 
 Do children speak politely, and if so what do they understand about polite speech?
 Children begin producing polite speech early on; 
 They start producing the simple polite marker “please” at 2.5 years [@read1978],
-And request forms increase in their variety and frequency with age [@bates1976; @bates1977; @ervin1982; @bock1981; @nippold1982].
+and request forms increase in their variety and frequency with age [@bates1976; @bates1977; @ervin1982; @bock1981; @nippold1982].
 Young children learn to produce different forms of requests depending on context: 
-For example, by three years children are able to vary their utterances based on whether they are instructed to “tell” versus “ask” an addressee to given them a puzzle piece [@bock1981];
+For example, by three years children are able to vary their utterances based on whether they are instructed to “tell” versus “ask” an addressee to given them a puzzle piece [@bock1981].
 By two years, children are able to modify their requests to make them more polite [“ask in the nicest way possible”; @bates1977].
 Hence children’s *production* of polite speech seems to parallel adult speakers’ desires to produce utterances with appropriate levels of face-saving. 
 
-But do children *understand* a speaker’s intentions behind polite speech? 
+Evidence for children’s *comprehension* of polite speech, on the other hand, is much sparser compared to production, and have been largely inconclusive.
 For example, upon hearing someone making a request (“Please pour me more water”), how might children evaluate this speaker?
-The question of how children reason about politeness has numerous sub-questions to be considered.
-First, do children know the word “polite” should be associated with politeness rules people abide by (e.g., saying “please”)?
-Second, do children recognize polite speech as being positively valenced, such that they think it is better and nicer to say polite things? 
-Third, do children understand social implications of speaking politely, such that people who are polite may be more likely to get their wishes granted (“I will pour him more water because he was nice”) and may be better social partners compared to those who are impolite.
-Fourth, what cues to politeness do children recognize? Do they recognize linguistic markers such as “please,” or “can you,” or both? Or do they rely on prosodic cues that make utterances sound more respectful, or on facial expressions that make a person look kind?
-
-Evidence for children’s comprehension of polite speech is much sparser compared to production, and have been inconclusive regarding these questions mentioned.
-Though there was some initial evidence to suggest that producing a request with “please” is judged to be polite by thee years of age [@bates1976; @bates1977], in a later study, the judgment of “please” as being polite was only replicated starting at five years of age, but not younger [@nippold1982]. 
+Though there was some initial evidence to suggest that producing a request with “please” is judged to be polite by three years of age [@bates1976; @bates1977], in a later study, the judgment of “please” as being polite was only replicated starting at five years of age, but not younger [@nippold1982]. 
 These initial studies also have additional unresolved issues, including the lack of statistical tests to assess each age group’s performance, and lack of systematic manipulation of cues other than linguistic markers (e.g., prosody or facial expressions). 
 
-In this current work, we sought to test what 2- to 4-year-old children understand about polite speech. 
+Thus, there are many open questions about children's understanding of a speaker’s intentions behind polite speech.
+For example, do children know the word “polite” should be associated with politeness rules people abide by (e.g., saying “please”)?
+Relatedly, do children recognize polite speech as being positively valenced, such that they think it is better and nicer to say polite things? 
+Also, do children understand social implications of speaking politely, such that people who are polite may be more likely to get their wishes granted (“I will pour him more water because he was nice”) and may be better social partners compared to those who are impolite.
+Finally, what cues to politeness do children recognize? Do they recognize linguistic markers such as “please,” or “can you,” or both? Or do they rely on prosodic cues that make utterances sound more respectful, or on facial expressions that make a person look kind?
+
+In this current work, we sought to answer these questions, and test what 2- to 4-year-old children understand about polite speech. 
 Across three Experiments, we presented stories about speakers who decided to speak politely (e.g., "Please pour me more water") or impolitely (e.g., "Pour me more water") and asked child participants to compare between the two speakers. 
 We were interested to know if children were sensitive to a speaker’s use of simple polite markers (e.g., “please”) and examined whether:
 (1) children are able to reason about speakers using polite speech as being “polite” and “nice” and not “rude” or “mean”;
