@@ -58,7 +58,7 @@ d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv"))
 
 We use and hear polite speech on a daily basis: polite utterances range from simple words of apology (“sorry”) or gratitude (“thanks”) to compliments (“I love your dress!”) and requests (“Can you please open the window?”). 
 Yet polite utterances are seemingly inefficient and even misinformative: speakers say “Can you please~” when it should suffice to say, “Open the window.”
-These facts are a mystery for classical views of language as information transfer [@buhler1934; @jakobson1960; @shannon1948; @goodman2013]: If language is a tool for transferring information, speakers should be as efficient as possible in their communication to prioritize informativity. 
+These facts are a mystery for classical views of language as information transfer [e.g., @buhler1934; @shannon1948; @goodman2013]: If language is a tool for transferring information, speakers should be as efficient as possible in their communication to prioritize informativity. 
 Nonetheless, speakers use politeness strategies often, even while arguing [@holtgraves1997]. 
 
 So why do people speak politely? 
@@ -92,7 +92,7 @@ in that children’s comprehension can reveal more abstract representations and 
 Children’s ability to say “please” early on does not necessarily indicate that they understand saying “please” is more polite, nicer and socially apt,
 as children may simply obey or imitate what their caregivers tell them to say without understanding its meaning.
 
-Evidence for children’s comprehension of polite speech is much sparser compared to production, however, and have been largely inconclusive.
+Evidence for children’s comprehension of polite speech is much sparser compared to production, and have been largely inconclusive.
 For example, upon hearing someone making a request (“Please pour me more water”), how might children evaluate this speaker?
 Though there was some initial evidence to suggest that producing a request with “please” is judged to be polite by three years of age [@bates1976; @bates1977], in a later study, the judgment of “please” as being polite was only replicated starting at five years of age, but not younger [@nippold1982]. 
 These initial studies also lacked statistical tests to assess each age group’s performance, and did not systematically manipulate cues other than linguistic markers (e.g., prosody or facial expressions). 
@@ -115,6 +115,7 @@ We also examined whether children need additional cues to politeness such as fac
 # Experiment 1
 
 In Experiment 1, we tested whether 3- to 4-year-old children were able to understand the implications of using simple politeness markers, based on linguistic cues of interest (whether the speaker says "please," "can you") and other cues (facial expressions and prosodic cues) that make polite speech more salient and naturalistic. 
+
 ## Methods
 
 ### Participants
@@ -514,7 +515,9 @@ and that as they get older, children get better in their use of politeness cues 
 
 # Experiment 3
 
-We conducted a third, pre-registered experiment to see whether children are able to evaluate speakers based on linguistic markers only, without any other supporting cues such as prosodic cues or facial expressions.
+We conducted a third, pre-registered experiment to see whether children are able to evaluate speakers based on linguistic markers only, without any other supporting cues such as prosodic cues or facial expressions.  
+\  
+\    
 
 ## Methods
 
@@ -599,7 +602,7 @@ all_lmer_coeff <- lmer_all %>%
 
 ### Experiment 3 
 
-For Experiment 3, we were able to look at how children answered the *polite* and *rude* questions given the same three politeness marker types as before, with three age groups including 2-year-olds. Because we did not see any effect of sample in our mixed-effects logistic regression model, we report on their performances averaged across the two samples (though we do show the data separately in Figure \ \ref{fig:fig_results_placement}).
+For Experiment 3, we were able to look at how children answered the *polite* and *rude* questions given the same three politeness marker types as before, with three age groups including 2-year-olds. Because we did not see any effect of sample in our mixed-effects logistic regression model, we report on their performances averaged across the two samples (the samples are shown separately in Fig. \ \ref{fig:fig_results_placement}).
 
 A mixed-effects logistic regression^[Model structure: `accuracy ~ sample + age x question type x politeness marker type + (1 | item)`] showed improvement with age ($\beta$ = `r v3_lmer_coeff$estimate[3]`, $p =$ `r v3_lmer_coeff$p.val.clean[3]`) as well as better performance for "can you please" than "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[5]`, $p =$ `r v3_lmer_coeff$p.val.clean[5]`), consistent with Experiment 2 results.
 Performance for "please" was also better than for "can you please" and "please" together
@@ -607,14 +610,13 @@ Performance for "please" was also better than for "can you please" and "please" 
 which may be surprising given that we previously did not see the same effect: in Experiments 1 and 2, children tended to be worse with "please" compared to "can you please" marker, even though they had supportive prosodic and/or facial cues.
 One possible explanation is that controlling for prosodic cues in Experiment 3 actually made it *easier* to compare between two utterances. Because we had stripped all the other variations, it may have made the contrast between the presence and absence of the marker "please" *more* salient.
 
-Additionally the regression model showed that children were better with the *polite* questions than *rude* ($\beta$ = `r v3_lmer_coeff$estimate[4]`, $p =$ `r v3_lmer_coeff$p.val.clean[4]`), 
+Additionally, children were better with the *polite* questions than *rude* ($\beta$ = `r v3_lmer_coeff$estimate[4]`, $p =$ `r v3_lmer_coeff$p.val.clean[4]`), 
 and that responses to the *polite* question given the marker "please" were more accurate than the *rude* question given "please" ($\beta$ = `r v3_lmer_coeff$estimate[11]`, $p =$ `r v3_lmer_coeff$p.val.clean[11]`). 
 Finally, children showed a greater improvement with age for "can you please" compared to "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[8]`, $p =$ `r v3_lmer_coeff$p.val.clean[8]`).
 
 ### All experiments 
 
-A mixed-effects logistic regression on all three experiments together^[Model structure: `accuracy ~ sample + experiment x age x question type x politeness marker type + (1 | item)`] showed that with age, children improved in indicating that using "can you please~" was polite ($\beta$ = `r all_lmer_coeff$estimate[32]`, $p =$ `r all_lmer_coeff$p.val.clean[32]`). 
-There was no significant main effect of experiment or interaction between experiment and any other variables, which suggests that children did not rely on facial, and/or prosodic cues (Experiments 1 and 2) more than linguistic cues alone (Experiment 3).
+A mixed-effects logistic regression on all three experiments together^[Model structure: `accuracy ~ sample + experiment x age x question type x politeness marker type + (1 | item)`] showed no significant main effect of experiment or interaction between experiment and any other variables, which suggests that children did not perform more poorly when facial and prosodic cues were unavailable, and they were able to make judgments based on linguistic cues alone. Additionally, across all three experiments, children became better with age in indicating that using "can you please~" was polite ($\beta$ = `r all_lmer_coeff$estimate[32]`, $p =$ `r all_lmer_coeff$p.val.clean[32]`).
 
 # General Discussion
 
