@@ -393,23 +393,47 @@ d_summary2 <- d_plot %>%
   summarise(correct = mean(correct)) %>%
   mutate_if(is.numeric, round, 2)
 
+d_summary3 <- d_plot %>%
+  group_by(expt_regrp, question_type) %>%
+  summarise(correct = mean(correct)) %>%
+  mutate_if(is.numeric, round, 2)
+
+d_summary4 <- d_plot %>%
+  group_by(expt_regrp, request_type) %>%
+  summarise(correct = mean(correct)) %>%
+  mutate_if(is.numeric, round, 2)
+
+d_summary5 <- d_plot %>%
+  group_by(expt_regrp, request_type, age_fct) %>%
+  summarise(correct = mean(correct)) %>%
+  mutate_if(is.numeric, round, 2)
 ```
 
 Looking more closely at responses for each of the question type, 
-the average accuracy for the *polite* question ("Which one was more polite?") was numerically above 50% but statistically did not differ from chance overall ($M_{3y}$ = `r filter(d_summary, expt_regrp == "Expt 1", question_type == "Which one was \nmore polite?", age_fct == "3")$correct`, $M_{4y}$ =  `r filter(d_summary, expt_regrp == "Expt 1", question_type == "Which one was \nmore polite?", age_fct == "4")$correct`).
-For other question types, children's answers varied depending on the politeness marker type and age.
-For the *nice* question, both age groups gave accurate answers given "can you" ($M_{3y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nnicer?", request_type == "can you~", age_fct == "3")$correct`, $M_{4y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nnicer?", request_type == "can you~", age_fct == "4")$correct`)
-and "can you please" ($M_{3y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nnicer?", request_type == "can you please~", age_fct == "3")$correct`, $M_{4y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nnicer?", request_type == "can you please~", age_fct == "4")$correct`).
-For the *rude* and *mean* questions, children of both ages answered correctly given "can you please" ("rude": $M_{3y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nmore rude?", request_type == "can you please~", age_fct == "3")$correct`, $M_{4y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nmore rude?", request_type == "can you please~", age_fct == "4")$correct`; 
-"mean": $M_{3y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nmeaner?", request_type == "can you please~", age_fct == "3")$correct`, $M_{4y}$ = `r filter(d_plot, expt_regrp == "Expt 1", question_type == "Which one was \nmeaner?", request_type == "can you please~", age_fct == "4")$correct`) 
-but only 4-year-olds performed above chance given "can you." 
-For the *play partner* question, children from both age groups successfully indicated the politely-speaking character as their play partner choice for all three markers (except for 4-year-olds who did not perform above chance given "please"). 
-For the *compliance* question, only 4-year-olds answered correctly given all markers. 
+children from both age groups tended to accurately answer *polite*, *nice*, *mean* and *rude* questions overall
+(3-year-olds: $M_{polite}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one was \nmore polite?")$correct`,
+$M_{rude}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one was \nmore rude?")$correct`,
+$M_{nice}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one was \nnicer?")$correct`,
+$M_{mean}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one was \nmeaner?")$correct`,
+$M_{play}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one would you \nrather play with?")$correct`;
+4-year-olds: $M_{polite}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one was \nmore polite?")$correct`,
+$M_{rude}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one was \nmore rude?")$correct`,
+$M_{nice}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one was \nnicer?")$correct`,
+$M_{mean}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one was \nmeaner?")$correct`,
+$M_{play}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one would you \nrather play with?")$correct`), 
+indicating correctly that the speaker who used a politeness marker was more polite and nicer, less mean and rude, and likely a better play partner. 
+For the *compliance* question, 4-year-olds overall answered correctly that the speaker who used politeness marker will likely get what they want from the listener ($M_{4y}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "4", question_type == "Which one [will get \nwhat they want]?")$correct`), but not 3-year-olds ($M_{3y}$ = `r filter(d_summary, expt_regrp == "Expt 1", age_fct == "3", question_type == "Which one [will get \nwhat they want]?")$correct`).
+As for the different politeness marker types, 
+both age groups overall tended to give correct answers based on all three markers, but especially "can you please~" 
+(3-year-olds: $M_{please}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "3", request_type == "please")$correct`,
+$M_{can you}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "3", request_type == "can you~")$correct`,
+$M_{can you please}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "3", request_type == "can you please~")$correct`;
+4-year-olds: $M_{please}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "4", request_type == "please")$correct`,
+$M_{can you}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "4", request_type == "can you~")$correct`,
+$M_{can you please}$ = `r filter(d_summary5, expt_regrp == "Expt 1", age_fct == "4", request_type == "can you please~")$correct`).
 
-As for the different politeness marker types, children overall struggled to give correct answers based on the marker "please"; only 4-year-olds successfully answered the *mean* and *compliance* question but otherwise both age groups failed to answer above chance given "please."
-"Can you please," on the other hand, tended to be judged accurately across both age groups quite consistently.
-
-In sum, in this first experiment, we saw preliminary evidence that children pay attention to and understand some cues to politeness and are able to use these cues to infer whether speakers are relatively polite, rude, nice or mean, and whether speakers are good play partners and are likely to gain what they wanted from their addressees. 4-year-olds answered questions accurately more often compared to 3-year-olds, but both age groups tended to be accurate when all the possible cues were used to signal that one speaker was polite (used "can you please~", spoke with a kind tone and face) and the other speaker wasn't (did not use a politeness marker, spoke with an angry tone and face). 
+In sum, in this first experiment, we saw preliminary evidence that children pay attention to and understand some cues to politeness and are able to use these cues to infer whether speakers are relatively polite, rude, nice or mean, and whether speakers are good play partners and are likely to gain what they wanted from their addressees. 
+4-year-olds answered questions accurately more often compared to 3-year-olds, especially for the  question about addressee's compliance with the speaker's request, but both age groups tended to be accurate when all the possible cues were used to signal that one speaker was polite (used "can you please~", spoke with a kind tone and face) and the other speaker wasn't (did not use a politeness marker, spoke with an angry tone and face). 
 
 However, one possible explanation for the finding in Experiment 1 is that children are not using the linguistic politeness markers (e.g., "please") per se, and rather prosodic and facial cues that accompany these markers. That is, children may have relied on the speaker's kind voice and face rather than their use of "please" to evaluate their niceness or likeability as a play partner.
 Similarly, greater accuracy for some questions over others (e.g., "nice" > "polite") may have been due to greater association between some of the words and prosodic and facial cues (e.g., a kind face may be seen to signal niceness more than politeness), not due to greater understanding for those words or concepts.
@@ -457,16 +481,30 @@ Overall we saw similar patterns of results in Experiment 2 compared to 1 (Figure
 A mixed-effects logistic regression predicting accuracy based on age, question type and politeness marker type showed that again there was an effect of age ($\beta$ = `r v2_lmer_coeff$estimate[2]`, $p =$ `r v2_lmer_coeff$p.val.clean[2]`), and children made accurate judgments more often when the marker used was "can you please" compared to "please" and "can you" together ($\beta$ = `r v2_lmer_coeff$estimate[7]`, $p =$ `r v2_lmer_coeff$p.val.clean[7]`).
 There was no main effect of question type, but there was an interaction between age and question type such that performance for *nice* and *mean* questions saw greater improvement with age than for *polite* and *rude* questions ($\beta$ = `r v2_lmer_coeff$estimate[10]`, $p =$ `r v2_lmer_coeff$p.val.clean[10]`). 
 
-For children's responses to the speaker attribute questions, 
-children still struggled with the *polite* question, with only 3-year-olds answering above chance given "can you" and 4-year-olds given "can you please," 
-but no other age group performing above chance given other markers.
-For the *rude* and *mean* questions, similarly to Experiment 1 results, children of both ages answered correctly given "can you please" (all $p<$.05) but only 4-year-olds performed above chance given "can you." 
-For the *nice* question, unlike in Experiment 1, 3-year-olds did not reach accuracy above chance for any of the markers while 4-year-olds did answer accurately given all three politeness marker types. 
+For children's responses to different question types, 
+3-year-olds' accuracy did not differ from chance level for *nice*, *mean*, and *play partner* questions, but their means numerically exceeded 50% for all question types, 
+and 4-year-olds accurately answered questions of all types
+(3-year-olds: $M_{polite}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one was \nmore polite?")$correct`,
+$M_{rude}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one was \nmore rude?")$correct`,
+$M_{nice}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one was \nnicer?")$correct`,
+$M_{mean}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one was \nmeaner?")$correct`,
+$M_{play}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one would you \nrather play with?")$correct`,
+$M_{compliance}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "3", question_type == "Which one [will get \nwhat they want]?")$correct`;
+4-year-olds: $M_{polite}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one was \nmore polite?")$correct`,
+$M_{rude}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one was \nmore rude?")$correct`,
+$M_{nice}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one was \nnicer?")$correct`,
+$M_{mean}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one was \nmeaner?")$correct`,
+$M_{play}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one would you \nrather play with?")$correct`,
+$M_{compliance}$ = `r filter(d_summary, expt_regrp == "Expt 2", age_fct == "4", question_type == "Which one [will get \nwhat they want]?")$correct`). 
 
-For the social implication questions, results varied slightly:
-whereas both age groups were correct with the *play partner* question for most of the politeness marker types for Experiment 1, 3- nd 4-year-olds were only accurate given "can you please," and only 4-year-olds answered accurately given "can you."
-For the *compliance* question, however, the results shifted such that both age groups answered accurately for all three markers, except for 3-year-olds not differing from chance level.
-Overall, again we saw improvement with age for many of the combinations of question types and markers.
+For politeness marker types, 3-year-olds' performance did not differ from chance for "please" and "can you~",
+but both age groups tended to answer questions about different politeness markers accurately overall 
+(3-year-olds: $M_{please}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "3", request_type == "please")$correct`,
+$M_{can you}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "3", request_type == "can you~")$correct`,
+$M_{can you please}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "3", request_type == "can you please~")$correct`;
+4-year-olds: $M_{please}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "4", request_type == "please")$correct`,
+$M_{can you}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "4", request_type == "can you~")$correct`,
+$M_{can you please}$ = `r filter(d_summary5, expt_regrp == "Expt 2", age_fct == "4", request_type == "can you please~")$correct`).
 
 In sum, across Experiments 1 and 2, we were able to confirm that
 children are able to make accurate judgments about speakers given their use of politeness markers, especially "can you please,"
@@ -573,7 +611,7 @@ Finally, children showed a greater improvement with age for "can you please" com
 ### All experiments 
 
 A mixed-effects logistic regression on all 3 experiments^[Model structure: `accuracy ~ sample + experiment x age x question type x politeness marker type + (1 | item)`] showed that with age, children improved in indicating that the speaker who said "can you please~" was more polite ($\beta$ = `r all_lmer_coeff$estimate[32]`, $p =$ `r all_lmer_coeff$p.val.clean[32]`). 
-There was no significant main effect of experiment or interaction between experiment and any other variables, which means that children do not make better judgments based on facial, prosodic, and linguistic cues combined compared to linguistic cues alone.
+There was no significant main effect of experiment or interaction between experiment and any other variables, which means that children did not rely on facial, prosodic, and linguistic cues combined more than on linguistic cues alone.
 
 # General Discussion
 
