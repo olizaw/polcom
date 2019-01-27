@@ -52,7 +52,7 @@
 % \textwidth 16cm
 % \textheight 21cm
 
-\title{Children's understanding of `please' and other politeness markers}
+\title{Preschool children's understanding of polite requests}
 
 
 \author{{\large \bf } \\ \texttt{} \\  \\}
@@ -63,19 +63,20 @@
 
 \begin{abstract}
 As adults, we use polite speech on a daily basis. What do children
-understand about polite speech? This question has important theoretical
-implications for children's general pragmatic understanding, and
-practical implications for caregivers who want to teach children what it
-means to be polite. Even though children start to produce polite speech
-from early on, there is little known about whether they understand
-intentions behind polite language. Here we show that, with an
-improvement over the age of 2 to 4 years, English-speaking preschool
-children understand that it is more polite and nicer (and less rude and
-mean) to use politeness markers such as ``please'' when making requests,
-and that the use of these politeness markers indicates that the speaker
-is more socially likeable and is more likely to gain compliance from
-their conversational partners. This work can help lay the foundation for
-future work on children's understanding of polite speech.
+understand about polite speech? Looking at children's polite speech
+comprehension can help examine children's pragmatic understanding more
+generally, and can be informative for caregivers who want to teach
+children what it means to be polite. Even though children start to
+produce polite speech from early on, there is little known about whether
+they understand intentions behind polite language. Here we show that,
+with an improvement over the age of 2 to 4 years, English-speaking
+preschool children understand that it is more polite and nicer (and less
+rude and mean) to use politeness markers such as ``please'' when making
+requests, and that the use of these politeness markers indicates that
+the speaker is more socially likeable and is more likely to gain
+compliance from their conversational partners. This work can help lay
+the foundation for future work on children's understanding of polite
+speech and pragmatic development more generally.
 
 \textbf{Keywords:}
 Politeness, pragmatic development, online experiment
@@ -298,7 +299,7 @@ versus a speaker who did not use a politeness marker and spoke meanly
 (Figure~\ref{fig:fig_results_placement}, first row). A mixed-effects
 logistic regression predicting accuracy based on age, question type and
 politeness marker type\footnote{for Experiments 1 and 2, we use this
-  model structure:
+  model structure with a maximal random effect structure that converges:
   \texttt{accuracy\ \textasciitilde{}\ age\ x\ question\ type\ x\ politeness\ marker\ type\ +\ (1\ \textbar{}\ item)},
   where age is continuous, centered and scaled. All categorical
   variables were deviation coded, with specified contrasts of interest
@@ -528,16 +529,22 @@ for ``can you please'' compared to ``please'' and ``can you'' together
 
 \subsubsection{All experiments}\label{all-experiments}
 
-A mixed-effects logistic regression on all three experiments
-together\footnote{Model structure:
-  \texttt{accuracy\ \textasciitilde{}\ sample\ +\ experiment\ x\ age\ x\ question\ type\ x\ politeness\ marker\ type\ +\ (1\ \textbar{}\ item)}}
-showed no significant main effect of experiment or interaction between
-experiment and any other variables, which suggests that children did not
-perform more poorly when facial and prosodic cues were unavailable, and
-they were able to make judgments based on linguistic cues alone.
-Additionally, across all three experiments, children became better with
-age in indicating that using ``can you please\textasciitilde{}'' was
-polite (\(\beta\) = 0.42, \(p =\) 0.019).
+To see any potential effect of experiment on children's performance, we
+conducted an exploratory mixed-effects logistic regression on all three
+experiments together\footnote{Model structure:
+  \texttt{accuracy\ \textasciitilde{}\ sample\ +\ experiment\ +\ age\ x\ question\ type\ x\ politeness\ marker\ type\ +\ (1\ \textbar{}\ item)}}.
+The regression model showed no significant main effect of experiment,
+suggesting that children did not perform more poorly when facial and
+prosodic cues were removed, thus they were able to make judgments based
+on linguistic cues alone. The model also showed that children improved
+with increasing age (\(\beta\) = 0.33, \(p =\) \textless{} .001) and
+that children were more accurate with ``can you please'' than ``please''
+and ``can you'' (\(\beta\) = 0.25, \(p =\) 0.011), confirming results
+from each individual experiment. Additionally, the model showed that
+children became better with age especially for judging the politeness
+marker``can you please'' (\(\beta\) = 0.73, \(p =\) 0.005), and that
+children answered \emph{polite} questions better than \emph{rude}
+questions about the marker ``please'' (\(\beta\) = 0.26, \(p =\) 0.006)
 
 \section{General Discussion}\label{general-discussion}
 
@@ -584,11 +591,12 @@ help children acquire social meanings of polite speech.
 
 There are limitations to the current work that present other
 opportunities for future research. Because this work looked only at the
-behaviors of English-speaking children in the US, it is an open question
-how children with different language and cultural background may develop
-understanding of polite speech. Cross-cultural investigation of what
-markers are present in other languages and cultures, as well as how
-those markers are acquired, will be informative.
+behaviors of English-speaking children with a relatively high
+socioeconomic status in the US, it is an open question how children with
+different language and cultural background may develop understanding of
+polite speech. Cross-cultural investigation of what markers are present
+in other languages, cultures and backgrounds, as well as how those
+markers are acquired, will be informative.
 
 Also, we did not manipulate the social status of speakers or addressees.
 Though not explicitly stated, the visual depiction and narration used
@@ -611,7 +619,7 @@ children become proficient users of language across the wide range of
 social situations that they encounter.
 
 \vspace{1em}
-\fbox{\parbox[b][][c]{7.3cm}{\centering All experiments, data, and analysis codes are available in the public repository for the project: (link will be available upon acceptance)}}
+\fbox{\parbox[b][][c]{7.3cm}{\centering All experiments, data, and analysis code are available in the public repository for the project: (link will be available upon acceptance)}}
 \vspace{1em} \noindent
 
 \section{References}\label{references}

@@ -1,5 +1,5 @@
 ---
-title: "Children's understanding of \'please\' and other politeness markers"
+title: "Preschool children's understanding of polite requests"
 bibliography: polcon_cogsci2019.bib
 csl: apa6.csl
 document-params: "10pt, letterpaper"
@@ -8,7 +8,7 @@ author-information: >
     \author{{\large \bf } \\ \texttt{} \\  \\}
 
 abstract: 
-    "As adults, we use polite speech on a daily basis. What do children understand about polite speech? This question has important theoretical implications for children's general pragmatic understanding, and practical implications for caregivers who want to teach children what it means to be polite. Even though children start to produce polite speech from early on, there is little known about whether they understand intentions behind polite language. Here we show that, with an improvement over the age of 2 to 4 years, English-speaking preschool children understand that it is more polite and nicer (and less rude and mean) to use politeness markers such as \"please\" when making requests, and that the use of these politeness markers indicates that the speaker is more socially likeable and is more likely to gain compliance from their conversational partners. This work can help lay the foundation for future work on children's understanding of polite speech."
+    "As adults, we use polite speech on a daily basis. What do children understand about polite speech? Looking at children's polite speech comprehension can help examine children's pragmatic understanding more generally, and can be informative for caregivers who want to teach children what it means to be polite. Even though children start to produce polite speech from early on, there is little known about whether they understand intentions behind polite language. Here we show that, with an improvement over the age of 2 to 4 years, English-speaking preschool children understand that it is more polite and nicer (and less rude and mean) to use politeness markers such as \"please\" when making requests, and that the use of these politeness markers indicates that the speaker is more socially likeable and is more likely to gain compliance from their conversational partners. This work can help lay the foundation for future work on children's understanding of polite speech and pragmatic development more generally."
     
 keywords:
     "Politeness, pragmatic development, online experiment"
@@ -375,7 +375,7 @@ v1_lmer_coeff <- lmer_v1 %>%
 
 We looked at the proportion of correct responses to various questions to compare between a speaker who used a politeness marker and spoke kindly, versus a speaker who did not use a politeness marker and spoke meanly (Figure\ \ref{fig:fig_results_placement}, first row). 
 A mixed-effects logistic regression predicting accuracy based on age, question type and politeness marker type
-^[for Experiments 1 and 2, we use this model structure: `accuracy ~ age x question type x politeness marker type + (1 | item)`, where age is continuous, centered and scaled. All categorical variables were deviation coded, with specified contrasts of interest for the question type. Significance was calculated using the standard normal approximation to the $t$ distribution [@barr2013].]
+^[for Experiments 1 and 2, we use this model structure with a maximal random effect structure that converges: `accuracy ~ age x question type x politeness marker type + (1 | item)`, where age is continuous, centered and scaled. All categorical variables were deviation coded, with specified contrasts of interest for the question type. Significance was calculated using the standard normal approximation to the $t$ distribution [@barr2013].]
 showed there was an improvement with age ($\beta$ = `r v1_lmer_coeff$estimate[2]`, $p =$ `r v1_lmer_coeff$p.val.clean[2]`).
 The regression model also revealed that children seemed to find some question types easier than others: Responses to *nice* and *mean* questions were more accurate than to *polite* and *rude* questions ($\beta$ = `r v1_lmer_coeff$estimate[4]`, $p =$ `r v1_lmer_coeff$p.val.clean[4]`), whereas social implication questions (*play partner* and *compliance*) were overall more difficult compared to speaker attribute questions (*polite*, *rude*, *nice*, and *mean*; $\beta$ = `r v1_lmer_coeff$estimate[3]`, $p =$ `r v1_lmer_coeff$p.val.clean[3]`). 
 
@@ -586,12 +586,17 @@ contrasts(d_all$expt_regrp)[,2] <- c(-.5, -.5, 1)
 # contrasts(d_all$expt)[,2] <- c(-1/3, -1/3, 1, -1/3)
 # contrasts(d_all$expt)[,3] <- c(-1/3, -1/3, -1/3, 1)
 
-lmer_all <- d_all %>%
-  glmer(correct ~ sample + expt_regrp * scale(age) * question_type * request_type + (1| item),
+# lmer_all <- d_all %>%
+#   glmer(correct ~ sample + expt_regrp * scale(age) * question_type * request_type + (1| item),
+#        family="binomial",
+#        data = .)  
+
+lmer_all_expt_main <- d_all %>%
+  glmer(correct ~ sample + expt_regrp + scale(age) * question_type * request_type + (1| item),
        family="binomial",
        data = .)  
 
-all_lmer_coeff <- lmer_all %>%
+all_lmer_coeff <- lmer_all_expt_main %>%
   broom::tidy() %>%
   filter(group == "fixed") %>%
   mutate(p.val.clean = ifelse(p.value < .001, "< .001", round(p.value, 3)),
@@ -616,7 +621,8 @@ Finally, children showed a greater improvement with age for "can you please" com
 
 ### All experiments 
 
-A mixed-effects logistic regression on all three experiments together^[Model structure: `accuracy ~ sample + experiment x age x question type x politeness marker type + (1 | item)`] showed no significant main effect of experiment or interaction between experiment and any other variables, which suggests that children did not perform more poorly when facial and prosodic cues were unavailable, and they were able to make judgments based on linguistic cues alone. Additionally, across all three experiments, children became better with age in indicating that using "can you please~" was polite ($\beta$ = `r all_lmer_coeff$estimate[32]`, $p =$ `r all_lmer_coeff$p.val.clean[32]`).
+To see any potential effect of experiment on children's performance, we conducted an exploratory mixed-effects logistic regression on all three experiments together^[Model structure: `accuracy ~ sample + experiment + age x question type x politeness marker type + (1 | item)`]. The regression model showed no significant main effect of experiment, suggesting that children did not perform more poorly when facial and prosodic cues were removed, thus they were able to make judgments based on linguistic cues alone. 
+The model also showed that children improved with increasing age ($\beta$ = `r all_lmer_coeff$estimate[5]`, $p =$ `r all_lmer_coeff$p.val.clean[5]`) and that children were more accurate with "can you please" than "please" and "can you" ($\beta$ = `r all_lmer_coeff$estimate[7]`, $p =$ `r all_lmer_coeff$p.val.clean[7]`), confirming results from each individual experiment. Additionally, the model showed that children became better with age especially for judging the politeness marker"can you please" ($\beta$ = `r all_lmer_coeff$estimate[1]`, $p =$ `r all_lmer_coeff$p.val.clean[10]`), and that children answered *polite* questions better than *rude* questions about the marker "please" ($\beta$ = `r all_lmer_coeff$estimate[13]`, $p =$ `r all_lmer_coeff$p.val.clean[13]`)
 
 # General Discussion
 
@@ -638,8 +644,8 @@ Gradually, children may recognize more subtle social processes that are related 
 Future work with corpus data analysis looking at these interactions between children and others may reveal important conversational patterns that help children acquire social meanings of polite speech.
 
 There are limitations to the current work that present other opportunities for future research. 
-Because this work looked only at the behaviors of English-speaking children in the US, it is an open question how children with different language and cultural background may develop understanding of polite speech.
-Cross-cultural investigation of what markers are present in other languages and cultures, as well as how those markers are acquired, will be informative.
+Because this work looked only at the behaviors of English-speaking children with a relatively high socioeconomic status in the US, it is an open question how children with different language and cultural background may develop understanding of polite speech.
+Cross-cultural investigation of what markers are present in other languages, cultures and backgrounds, as well as how those markers are acquired, will be informative.
 
 Also, we did not manipulate the social status of speakers or addressees. 
 Though not explicitly stated, the visual depiction and narration used for the current work suggested that speakers were communicating with their peers only. 
@@ -650,7 +656,7 @@ Thus, future work should examine how children use cues to politeness to judge sp
 In sum, the current work showed that young children understand implications of using simple politeness markers in requests.
 A broader understanding of the emergence of politeness may offer insights into how children become proficient users of language across the wide range of social situations that they encounter.
 
-\vspace{1em} \fbox{\parbox[b][][c]{7.3cm}{\centering All experiments, data, and analysis codes are available in the public repository for the project: (link will be available upon acceptance)}} \vspace{1em}
+\vspace{1em} \fbox{\parbox[b][][c]{7.3cm}{\centering All experiments, data, and analysis code are available in the public repository for the project: (link will be available upon acceptance)}} \vspace{1em}
 \noindent
 
 # References 
