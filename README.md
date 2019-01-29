@@ -26,6 +26,6 @@ devtools::install_github("kemacdonald/cogsci2016")
 
 3) Note the package versions with which the analyses were run:
 
-bindrcpp_0.2.2,   langcog_0.1.9001, here_0.1,         broom_0.4.3,     ggthemes_3.4.0,   brms_2.0.1,       Rcpp_0.12.19,     lme4_1.1-15,     Matrix_1.2-12,    forcats_0.2.0,    stringr_1.3.1,    dplyr_0.7.7,     purrr_0.2.5,      readr_1.1.1,      tidyr_0.7.2,      tibble_1.4.2,    tidyverse_1.2.1,  xtable_1.8-2,     ggplot2_3.0.0,    png_0.1-7,
+bindrcpp_0.2.2,   langcog_0.1.9001, here_0.1,         broom_0.4.3,     ggthemes_3.4.0,   brms_2.0.1,       Rcpp_0.12.19,     lme4_1.1-15,     Matrix_1.2-12,    forcats_0.2.0,    stringr_1.3.1,    dplyr_0.7.7,     purrr_0.2.5,      readr_1.1.1,      tidyr_0.7.2,      tibble_1.4.2,    tidyverse_1.2.1,  xtable_1.8-2,     ggplot2_3.0.0,    png_0.1-7
 
 You do not need to install these particular versions to be able to run the script, but some numerical values may differ (e.g.,  regression model results).
