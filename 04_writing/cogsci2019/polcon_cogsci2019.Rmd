@@ -5,8 +5,8 @@ csl: apa6.csl
 document-params: "10pt, letterpaper"
 
 author-information: > 
-    \author{{\large \bf } \\ \texttt{} \\  \\}
-
+    \author{{\large \bf Erica J. Yoon} \and {\large \bf Michael C. Frank} \\ \{ejyoon, mcfrank\} @stanford.edu \\ Department of Psychology, Stanford University}
+    
 abstract: 
     "As adults, we use polite speech on a daily basis. What do children understand about polite speech? Looking at children's polite speech comprehension can help examine children's pragmatic understanding more generally, and can be informative for caregivers who want to teach children what it means to be polite. Even though children start to produce polite speech from early on, there is little known about whether they understand intentions behind polite language. Here we show that by 3 years, English-speaking preschool children understand that it is more polite and nicer (and less rude and mean) to use politeness markers such as \"please\" when making requests, and by 4 years, they understand that the use of these politeness markers indicates that the speaker is more socially likeable and is more likely to gain compliance from their conversational partners. This work can help lay the foundation for future work on children's understanding of polite speech and pragmatic development more generally."
     
@@ -14,7 +14,7 @@ keywords:
     "Politeness, pragmatic development, online experiment"
     
 output: cogsci2016::cogsci_paper
-#final-submission: \cogscifinalcopy
+final-submission: \cogscifinalcopy
 ---
 
 ```{r global_options, include=FALSE}
