@@ -8,8 +8,43 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 library(childesr); library(here); library(tidyverse); library(magrittr); 
-library(lubridate); library(data.table); library(ggthemes)
+library(lubridate); library(data.table); library(ggthemes); library(stringr); library(stringi); library(ggrepel)
 ```
+
+# Data from CDI 
+
+Data source: wordbank[http://wordbank.stanford.edu]. 
+
+## Production trajectory
+ 
+Takeaway: Polite words are acquired early. They are produced later than “mommy”, but they are produced either earlier or similarly early to “milk”.
+
+```{r cdi}
+cdi_trajectory <- read.csv(here::here("childes/item_trajectory_table.csv")) %>%
+  select(-language, -measure, -form) %>%
+  gather(-age, key=word, value=prop) %>%
+  separate(word, c("word", "word2")) %>%
+  select(-word2)
+
+p_cdi <- ggplot(cdi_trajectory, aes(x=age, y=prop, col=word, label=word)) +
+  geom_point() +
+  geom_smooth(se=F) +
+  theme_few() +
+  scale_color_ptol() +
+  geom_text_repel(data=subset(cdi_trajectory, age == 16), 
+                  aes(x=age, y=prop, col=word, label=word)) +
+  ylab("proportion of children producing") +
+  xlab("age (months)") +
+  guides(col=F)
+
+ggsave(here::here("childes/production_trajectory.png"), width = 6, height = 4)
+```
+
+# Corpus analyses
+
+Data source: childes-db[http://childes-db.stanford.edu/]
+
+preprocess. 
 
 ```{r preprocess}
 #### Here's how to load childes data and create a csv of the entire corpora for NA English:
@@ -19,6 +54,8 @@ library(lubridate); library(data.table); library(ggthemes)
 # 
 # write.csv(english_na_tokens, file=here("childes/english_na_tokens_w_utterance.csv"), row.names = FALSE)
 ```
+
+clean data.
 
 ```{r clean_data}
 # d <- read_csv(here::here("childes/english_na_tokens_w_utterance.csv"))
@@ -63,123 +100,79 @@ library(lubridate); library(data.table); library(ggthemes)
 # write.csv(d, file=here::here("childes/english_na_tokens_w_utterance_cleaned.csv"), row.names = FALSE)
 ```
 
-```{r}
+load cleaned data.
+
+```{r load_data}
 d <- read_csv(here::here("childes/english_na_tokens_w_utterance_cleaned.csv"))
 
 head(d)
 ```
 
-Normalized *word* frequency: word divided by total number of words
-Each point represents average over all samples
+## production frequency
 
-```{r}
-######## 1. Just count all the instances of polite markers (please, can you, sorry, thank) and normalize them by the total number of words a speaker has said at a particular age (of the child)
+Normalized *utterance* frequency: polite utterances divided by total number of utterances. 
 
-# count how many words for each speaker at each age
-rawOverall_stats <-
-  d %>%
-  group_by(speaker_role, target_child_age_years) %>%
-  summarize(total_freq = n())
-
-# count how many of each polite words for each speaker at each age
-rawPlease_stats <-
-  d %>%
-  filter(gloss == "mommy" | gloss == "ball" | gloss == "please" | gloss == "sorry" | gloss == "thank" |  (gloss == "you" & gloss_before == "can")) %>%
-  mutate(gloss = case_when(gloss_before == "can" ~ "can you",
-                           # gloss_before == "thank" ~ "thank you",
-                           TRUE ~ gloss)) %>%
-  group_by(speaker_role, target_child_age_years, gloss) %>%
-  summarize(freq = n())
-
-# Normalize the polite-word count by dividing the polite-word frequency by the total word frequency for each speaker at each age
-rawNormalized_stats <-
-  full_join(rawPlease_stats, rawOverall_stats, by=c("speaker_role", "target_child_age_years")) %>%
-  mutate(relFreq = freq / total_freq, relFreq_ppt = relFreq * 100)
-
-ggplot(rawNormalized_stats %>% filter(speaker_role == "Mother" | speaker_role == "Father" | speaker_role == "Target_Child"), 
-       aes(x=target_child_age_years, y=relFreq_ppt, color=speaker_role)) +
-  geom_point() +
-  geom_line() +
-  facet_wrap(~gloss) +
-  theme_few() +
-  scale_color_ptol()
-
-
-```
-
-Normalized *word* frequency: word divided by total number of words 
-Same as above but each point represents average over each individual
-
-```{r}
-# count how many words for each speaker at each age
-rawOverall_indiv <-
-  d %>%
-  group_by(speaker_role, floor(target_child_age)) %>%
-  summarize(total_freq = n())
-
-# count how many polite word for each speaker at each age
-rawPlease_indiv <-
-  d %>%
-  filter(gloss == "or" | gloss == "please" | gloss == "sorry" | gloss == "thank" |  (gloss == "you" & gloss_before == "can")) %>%
-  mutate(gloss = case_when(gloss_before == "can" ~ "can you",
-                           # gloss_before == "thank" ~ "thank you",
-                           TRUE ~ gloss)) %>%
-  group_by(speaker_role, floor(target_child_age), gloss) %>%
-  summarize(freq = n())
-
-# Normalize the polite-word count by dividing the polite-word frequency by the total word frequency for each speaker at each age
-rawNormalized_indiv <-
-  full_join(rawPlease_indiv, rawOverall_indiv, by=c("speaker_role", "floor(target_child_age)")) %>%
-  mutate(relFreq = freq / total_freq, relFreq_ppt = relFreq * 1000) %>%
-  # mutate(gloss = factor(gloss),
-  #   gloss = fct_relevel(gloss, "ball", "mommy", "please"))
-  mutate(age = `floor(target_child_age)`) %>%
-  mutate(gloss = factor(gloss)) %>%
-  mutate(gloss = fct_relevel(gloss, "or", "please", "sorry", "thank", "can you"))
-
-p <- ggplot(rawNormalized_indiv %>% 
-              filter(speaker_role == "Mother" | speaker_role == "Father" | speaker_role == "Target_Child", !is.na(gloss)), 
-       aes(x=age, y=relFreq_ppt, color=speaker_role)) +
-  geom_point(alpha = 0.3) +
-  geom_smooth(method="loess",size=0.5, span=2) +
-  facet_grid(gloss~.) +
-  theme_few() +
-  scale_color_ptol() +
-  ylim(-.1, 3) +
-  ylab("relative frequency (per mille)") +
-  xlab("child age (months)")
-print(p)
-
-ggsave(here::here("childes/marker_frequency_by_age.png"), width = 5, height = 9)
-
-```
-
-Normalized *utterance* frequency: polite utterances divided by total number of utterances 
-
-```{r}
+```{r production_freq_data}
 # Group the tokens (words) by speaker role and the age of the child, count how many words for each speaker at each age
 rawOverall_indiv <-
   d %>%
   filter(speaker_role == "Mother" | speaker_role == "Father" | speaker_role == "Target_Child", !is.na(gloss)) %>% 
+  mutate(speaker_role = case_when(speaker_role == "Target_Child" ~ "child",
+                                  TRUE ~ "parent")) %>%
   distinct(utterance, .keep_all=T) %>%
   group_by(speaker_role, floor(target_child_age)) %>%
   summarize(total_freq = n())
 
-# count how many polite utterance for each speaker at each age
-rawPlease_indiv <-
-  d %>%
+utt_polite <-   d %>%
   filter(speaker_role == "Mother" | speaker_role == "Father" | speaker_role == "Target_Child", !is.na(gloss)) %>% 
+  mutate(speaker_role = case_when(speaker_role == "Target_Child" ~ "child",
+                                  TRUE ~ "parent")) %>%
   distinct(utterance, .keep_all=T) %>%
-  filter(grepl("please", utterance) | grepl("sorry", utterance)  | grepl("thank", utterance) 
-         | grepl("can you", utterance) | grepl("could you", utterance) | grepl("spoon", utterance)
+  filter(grepl("hi", utterance) | grepl("bye", utterance) | grepl("please", utterance) | grepl("sorry", utterance)  | grepl("thank", utterance) 
+         | grepl("can you", utterance) | grepl("could you", utterance)
          ) %>%
-  mutate(gloss = case_when(grepl("please", utterance) & grepl("can you", utterance) ~ "can you please",
+  mutate(gloss = case_when(
+    grepl("please", utterance) & grepl("can you", utterance) ~ "can you please",
                            grepl("please", utterance) ~ "please",
                            grepl("sorry", utterance) ~ "sorry",
                            grepl("thank", utterance) ~ "thank",
                            grepl("can you", utterance) ~ "can you",
                            grepl("could you", utterance) ~ "can you",
-                           grepl("spoon", utterance) ~ "spoon",
+                           grepl("^hi ", utterance) ~ "hi",
+                           grepl(" hi$", utterance) ~ "hi",
+                           grepl(" hi ", utterance) ~ "hi",
+                           grepl("bye", utterance) ~ "bye",
+                           grepl("milk", utterance) ~ "milk",
+                           grepl("mommy", utterance) ~ "mommy",
+    
+                           TRUE ~ "NA"
+                           ))
+
+
+# count how many polite utterance for each speaker at each age
+rawPlease_indiv <-
+  d %>%
+  filter(speaker_role == "Mother" | speaker_role == "Father" | speaker_role == "Target_Child", !is.na(gloss)) %>% 
+  mutate(speaker_role = case_when(speaker_role == "Target_Child" ~ "child",
+                                  TRUE ~ "parent")) %>%
+  distinct(utterance, .keep_all=T) %>%
+  filter(grepl("hi", utterance) | grepl("bye", utterance) | grepl("please", utterance) | grepl("sorry", utterance)  | grepl("thank", utterance) 
+         | grepl("can you", utterance) | grepl("could you", utterance)
+         ) %>%
+  mutate(gloss = case_when(
+    grepl("please", utterance) & grepl("can you", utterance) ~ "can you please",
+                           grepl("please", utterance) ~ "please",
+                           grepl("sorry", utterance) ~ "sorry",
+                           grepl("thank", utterance) ~ "thank",
+                           grepl("can you", utterance) ~ "can you",
+                           grepl("could you", utterance) ~ "can you",
+                           grepl("^hi ", utterance) ~ "hi",
+                           grepl(" hi$", utterance) ~ "hi",
+                           grepl(" hi ", utterance) ~ "hi",
+                           grepl("bye", utterance) ~ "bye",
+                           grepl("milk", utterance) ~ "milk",
+                           grepl("mommy", utterance) ~ "mommy",
+    
                            TRUE ~ "NA"
                            )) %>%
   group_by(speaker_role, floor(target_child_age), gloss) %>%
@@ -188,87 +181,44 @@ rawPlease_indiv <-
 # Normalize the polite-word count by dividing the connective frequency by the total word frequency for each speaker at each age
 rawNormalized_indiv <-
   full_join(rawPlease_indiv, rawOverall_indiv, by=c("speaker_role", "floor(target_child_age)")) %>%
+  as.data.frame(.) %>%
+  filter(!is.na(gloss)) %>%
   mutate(relFreq = freq / total_freq, relFreq_ppt = relFreq * 1000) %>%
   mutate(age = `floor(target_child_age)`) %>%
-  mutate(gloss = factor(gloss)) %>%
-  mutate(gloss = fct_relevel(gloss, "please", "can you", "can you please", "sorry", "thank", "spoon"
-                             ))
+  mutate(gloss = factor(gloss)) 
+```
 
-p <- ggplot(rawNormalized_indiv %>% filter(!is.na(gloss)), 
+Takeaway: number of utterances containing politeness markers: children produce politeness markers early on (“hi”, “bye”, “please”, “can you”) and parents produce them a lot too. The polite words are produced more often than other baby words like “mommy” and “milk”.
+
+```{r production_freq_plot}
+p <- ggplot(rawNormalized_indiv %>% 
+              filter(gloss != "NA") %>%
+              filter(gloss != "can you please") %>%
+  mutate(gloss = fct_relevel(factor(gloss), "hi", "bye", "please", "can you", "thank", "sorry", "mommy", "milk", "can you please")), 
        aes(x=age, y=relFreq_ppt, color=speaker_role)) +
   geom_point(alpha = 0.3) +
-  geom_smooth(method="loess",size=0.5, span=2) +
-  facet_grid(gloss~., scales="free") +
+  geom_smooth(method="loess",size=0.5, span=1) +
+  # facet_grid(gloss~., scales="free") +
+  facet_grid(.~gloss) +
   theme_few() +
   scale_color_ptol() +
-  # ylim(-.1, 3) +
-  ylab("relative frequency (per thousand utterances)") +
-  xlab("child age (months)")
+  ylim(0, 12) +
+  ylab("relative frequency \n(per thousand utterances)") +
+  xlab("child age (months)") +
+  theme(legend.position="bottom")
 print(p)
 
-ggsave(here::here("childes/marker_utt_frequency_by_age.png"), width = 5, height = 9)
+ggsave(here::here("childes/marker_utt_frequency_by_age.png"), width = 12, height = 3)
+
+  utt_polite %>% select(gloss, speaker_role, utterance) %>% filter(gloss == "sorry")
+
 ```
 
+## Politeness marker position
 
-```{r}
-# looking at utterance before polite utterances
-d_polite <- d %>% 
-  distinct(utterance, .keep_all=T) %>%
-  filter(grepl("please", utterance) | grepl("sorry", utterance)  | 
-           grepl("thank", utterance) | grepl("can you", utterance)  | grepl("could you", utterance) |
-           grepl("please", lag(utterance)) | grepl("sorry", lag(utterance))  | 
-           grepl("thank", lag(utterance)) | grepl("can you", lag(utterance))  | 
-           grepl("could you", lead(utterance)) |
-           grepl("please", lead(utterance)) | grepl("sorry", lead(utterance))  | 
-           grepl("thank", lead(utterance)) | grepl("can you", lead(utterance))  | 
-           grepl("could you", lead(utterance))
-                   ) %>%
-  arrange(target_child_age, utterance_id) %>%
-  select(speaker_role, target_child_age, target_child_name, utterance) %>%
-  mutate(gloss = case_when(grepl("please", utterance) & grepl("can you", utterance) ~ "can you please",
-                           grepl("please", utterance) ~ "please",
-                           grepl("sorry", utterance) ~ "sorry",
-                           grepl("thank", utterance) ~ "thank",
-                           grepl("can you", utterance) ~ "can you",
-                           grepl("could you", utterance) ~ "can you",
-                           TRUE ~ "NA"
-                           ))
-  
-# write.csv(d_polite, file=here::here("childes/polite_utt.csv"), row.names = FALSE)  
-# d_polite <- read_csv(here::here("childes/polite_utt.csv"))
-  
-```
+Where are the politeness markers located in sentences? 
 
-```{r}
-# looking at utterance before polite utterances
-d_polite_mom <- d %>% 
-  distinct(utterance, .keep_all=T) %>%
-  filter((speaker_role == "Mother" | speaker_role == "Father"), dplyr::lead(speaker_role) == "Target_Child") %>% 
-  filter((speaker_role == "Mother" | speaker_role == "Father"),
-         (grepl("please", utterance) | grepl("sorry", utterance)  | 
-           grepl("thank", utterance) | grepl("can you", utterance)  | grepl("could you", utterance)
-                   )) %>%
-  arrange(target_child_age, utterance_id) %>%
-  select(speaker_role, target_child_age, target_child_name, utterance) %>%
-  mutate(gloss = case_when(grepl("please", utterance) & grepl("can you", utterance) ~ "can you please",
-                           grepl("please", utterance) ~ "please",
-                           grepl("sorry", utterance) ~ "sorry",
-                           grepl("thank", utterance) ~ "thank",
-                           grepl("can you", utterance) ~ "can you",
-                           grepl("could you", utterance) ~ "can you",
-                           TRUE ~ "NA"
-                           )) %>%
-  arrange(gloss, target_child_age)
-  
-# write.csv(d_polite_mom, file=here::here("childes/polite_utt_mom.csv"), row.names = FALSE)  
-  
-```
-
-To do: MLU, use of "I" or "you", marker position
-
-## Exploration
-
-```{r}
+```{r position_data}
 # what do utterances look like?
 utterances <-
   d %>%
@@ -284,13 +234,28 @@ utterances <-
                            grepl("please", utterance) ~ "please",
                            grepl("sorry", utterance) ~ "sorry",
                            grepl("thank", utterance) ~ "thank",
+                           grepl("^hi ", utterance) ~ "hi",
+                           grepl(" hi$", utterance) ~ "hi",
+                           grepl(" hi ", utterance) ~ "hi",
+                           grepl("bye", utterance) ~ "bye",
+                           grepl("milk", utterance) ~ "milk",
+                           grepl("mommy", utterance) ~ "mommy",
                            TRUE ~ ""
                            )) 
 
 # marker position: start, middle, or end?
 utterances1 <- utterances %>%
+  mutate(gloss = fct_relevel(gloss, "hi", "bye", "thank", "sorry", "please", "can you", "can you please", "mommy", "milk")) %>%
   mutate(marker_position = case_when(
     gloss == "" ~ "",
+    utterance == "hi" ~ "whole",
+    utterance == "bye" ~ "whole",
+    utterance == "thank you" ~ "whole",
+    utterance == "please" ~ "whole",
+    utterance == "sorry" ~ "whole",
+    utterance == "thank you" ~ "whole",
+    utterance == "can you" ~ "whole",
+    utterance == "could you" ~ "whole",
     grepl("^sorry", utterance) ~ "start",
     grepl("sorry$", utterance) ~ "end",
     grepl("^can you", utterance) ~ "start",
@@ -305,14 +270,20 @@ utterances1 <- utterances %>%
     grepl("thanks$", utterance) ~ "end",
     grepl("^please", utterance) ~ "start",
     grepl("please$", utterance) ~ "end",
-    utterance == "thank you" ~ "whole",
-    utterance == "please" ~ "whole",
-    utterance == "sorry" ~ "whole",
-    utterance == "thank you" ~ "whole",
-    utterance == "can you" ~ "whole",
-    utterance == "could you" ~ "whole",
+    grepl("^hi", utterance) ~ "start",
+    grepl("hi$", utterance) ~ "end",
+    grepl("^bye", utterance) ~ "start",
+    grepl("bye$", utterance) ~ "end",
+    grepl("^milk", utterance) ~ "start",
+    grepl("milk$", utterance) ~ "end",
+    grepl("^mommy", utterance) ~ "start",
+    grepl("mommy$", utterance) ~ "end",
     TRUE ~ "middle"))
+```
 
+Takeaway: children and parents produce politeness markers in similar positions (e.g., “hi” mostly at the start and “please” mostly at the end of sentences).
+
+```{r position_plot}
 utterances1 %>%
   filter(marker_position != "") %>%
   group_by(gloss, speaker_role) %>%
@@ -322,10 +293,60 @@ utterances1 %>%
               group_by(gloss, marker_position, speaker_role) %>%
               summarise(n_marker = n())
 ) %>%
+  as.data.frame(.) %>%
   mutate(prop_position = n_marker/total_n) %>%
+  mutate(marker_position = fct_relevel(marker_position, "start", "middle", "end")) %>%
   ggplot(., aes(x=speaker_role, y=prop_position, fill=marker_position)) +
   geom_col() +
-  facet_grid(.~gloss)
+  facet_grid(.~gloss) +
+  scale_fill_ptol() +
+  theme_few() +
+  ylab("proportion of politeness marker position")
+
+ggsave(here::here("childes/marker_position.png"), width = 10, height = 5)
+
 ```
 
+## Utterance length
+
+How long are utterances containing politeness markers?
+
+```{r lu_data}
+utterances2 <- utterances1 %>%
+  mutate(n_words = stri_count(utterance,regex="\\S+")) %>%
+  filter(gloss != "")
+
+getmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+utterances2_mean <- utterances2 %>% 
+  group_by(speaker_role, gloss) %>%
+  summarise(mean = mean(n_words))
+
+utterances2_mode <- utterances2 %>% 
+  group_by(speaker_role, gloss) %>%
+  summarise(mean = getmode(n_words))
+```
+
+```{r lu_plot}
+p_mlu <- utterances2 %>%
+  filter(n_words <15) %>%
+  mutate(gloss = fct_relevel(gloss, "hi", "bye", "thank", "sorry", "please", "can you", "can you please", "mommy", "milk")) %>%
+  ggplot(., aes(x=n_words, y=..density.., color=speaker_role)) +
+  geom_freqpoly(binwidth = 1) +
+  facet_grid(gloss~.) +
+  scale_x_continuous(breaks=seq(0,15,1)) +
+  # xlim(0, 20) +
+  theme_few() +
+  geom_vline(data=utterances2_mode, aes(xintercept=mean, color=speaker_role),
+            linetype="dashed", size=1, alpha=.5) +
+  scale_color_ptol() +
+  xlab("number of words in the utterance")
+print(p_mlu)
+
+ggsave(here::here("childes/mlu_with_mode2.png"), width = 8, height = 10)
+
+```
 
