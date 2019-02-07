@@ -22,7 +22,7 @@ library(gghighlight)
 load data.
 
 ```{r}
-d <- read_csv(here::here("../data/processed_data/polcon_all_data.csv"))
+d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv"))
 ```
 
 

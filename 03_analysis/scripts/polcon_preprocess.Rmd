@@ -311,8 +311,9 @@ d_tidy <- d_raw %>%
          response_exp_data = gsub("\"Next\"","\\'Next\\'",response_exp_data)
 
          ) %>%
-  select(response_id, response_conditions, child_birthday, child_gender, response_exp_data) %>%
-  rename(subid = response_id) %>%
+  select(child_id, response_conditions, child_birthday, child_gender, response_exp_data) %>%
+  # distinct(child_id, .keep_all = TRUE) %>%
+  rename(subid = child_id) %>%
   mutate(
     # order 1 = cond 0, order 2 = cond 1
     order_practice =
@@ -374,6 +375,7 @@ d <- d_tidy %>%
   filter(!is.na(test6)) %>%
   filter((order_practice == 0 & practice1 == "speaker1" & practice2 == "speaker2") |
            (order_practice == 1 & practice1 == "speaker2" & practice2 == "speaker1")) %>%
+  distinct(subid, .keep_all = TRUE) %>%
   select(-order_practice, -practice1, -practice2) %>%
   gather(trial_num, choice, test1:test12) %>%
   mutate(trial_num = as.numeric(as.character(substr(trial_num, 5, 6)))) %>%

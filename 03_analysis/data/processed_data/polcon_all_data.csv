@@ -3338,975 +3338,975 @@
 "180727-01","v3",3.54,"M","2","10","can you~","polite","toys",NA,3
 "180727-01","v3",3.54,"M","2","11","please","polite","water",NA,3
 "180727-01","v3",3.54,"M","2","12","please","polite","light",NA,3
-"785","v3_lookit",3.55,"M","2","1","please","polite","puzzle",1,3
-"831","v3_lookit",3.46,"M","2","1","please","polite","puzzle",1,3
-"845","v3_lookit",2.1,"F","2","1","please","polite","puzzle",0,2
-"860","v3_lookit",4.82,"F","1","1","please","polite","light",0,4
-"869","v3_lookit",4.56,"M","2","1","please","polite","puzzle",1,4
-"880","v3_lookit",4.1,"F","1","1","please","polite","light",1,4
-"888","v3_lookit",3.28,"F","2","1","please","polite","puzzle",0,3
-"896","v3_lookit",4.56,"F","1","1","please","polite","light",0,4
-"920","v3_lookit",3.72,"M","2","1","please","polite","puzzle",1,3
-"1138","v3_lookit",2.64,"M","2","1","please","polite","puzzle",1,2
-"1154","v3_lookit",3.28,"M","1","1","please","polite","light",0,3
-"1168","v3_lookit",3.81,"M","1","1","please","polite","light",1,3
-"1198","v3_lookit",3.93,"F","2","1","please","polite","puzzle",1,3
-"1202","v3_lookit",3.9,"F","1","1","please","polite","light",1,3
-"1203","v3_lookit",2.35,"F","2","1","please","polite","puzzle",1,2
-"1214","v3_lookit",4.85,"M","2","1","please","polite","puzzle",1,4
-"1222","v3_lookit",3.68,"M","1","1","please","polite","light",1,3
-"1228","v3_lookit",3.91,"F","2","1","please","polite","puzzle",1,3
-"1242","v3_lookit",3.34,"F","1","1","please","polite","light",1,3
-"1245","v3_lookit",3.68,"F","2","1","please","polite","puzzle",1,3
-"1256","v3_lookit",4.27,"M","2","1","please","polite","puzzle",1,4
-"1263","v3_lookit",2.96,"M","2","1","please","polite","puzzle",0,2
-"1264","v3_lookit",4.11,"M","2","1","please","polite","puzzle",1,4
-"1272","v3_lookit",4.6,"M","2","1","please","polite","puzzle",0,4
-"1288","v3_lookit",2.31,"F","1","1","please","polite","light",1,2
-"1293","v3_lookit",2.26,"F","2","1","please","polite","puzzle",1,2
-"1294","v3_lookit",3.67,"F","2","1","please","polite","puzzle",0,3
-"1296","v3_lookit",3.38,"M","2","1","please","polite","puzzle",0,3
-"1298","v3_lookit",2.93,"M","2","1","please","polite","puzzle",0,2
-"1299","v3_lookit",2.93,"M","1","1","please","polite","light",0,2
-"1310","v3_lookit",2.3,"M","2","1","please","polite","puzzle",1,2
-"1314","v3_lookit",4.16,"F","1","1","please","polite","light",0,4
-"1317","v3_lookit",2.13,"M","1","1","please","polite","light",1,2
-"1329","v3_lookit",4.17,"F","1","1","please","polite","light",1,4
-"1335","v3_lookit",2.7,"F","1","1","please","polite","light",0,2
-"1340","v3_lookit",3.44,"M","1","1","please","polite","light",0,3
-"1354","v3_lookit",4.99,"M","1","1","please","polite","light",1,4
-"1367","v3_lookit",4.16,"M","2","1","please","polite","puzzle",1,4
-"1368","v3_lookit",2.24,"F","2","1","please","polite","puzzle",1,2
-"1384","v3_lookit",3.85,"M","2","1","please","polite","puzzle",1,3
-"1392","v3_lookit",3.77,"F","1","1","please","polite","light",0,3
-"1408","v3_lookit",4.37,"F","1","1","please","polite","light",1,4
-"1413","v3_lookit",4.8,"M","1","1","please","polite","light",1,4
-"1426","v3_lookit",4.91,"M","1","1","please","polite","light",0,4
-"1439","v3_lookit",3.06,"M","2","1","please","polite","puzzle",1,3
-"1449","v3_lookit",2.7,"F","2","1","please","polite","puzzle",1,2
-"1450","v3_lookit",4.21,"M","1","1","please","polite","light",0,4
-"1457","v3_lookit",4.5,"M","2","1","please","polite","puzzle",1,4
-"1464","v3_lookit",3.51,"M","2","1","please","polite","puzzle",1,3
-"1466","v3_lookit",2.42,"M","1","1","please","polite","light",0,2
-"1468","v3_lookit",3.79,"F","1","1","please","polite","light",1,3
-"1477","v3_lookit",2.46,"M","1","1","please","polite","light",1,2
-"1478","v3_lookit",2.6,"M","1","1","please","polite","light",0,2
-"1481","v3_lookit",4.41,"F","2","1","please","polite","puzzle",1,4
-"1485","v3_lookit",3.59,"F","2","1","please","polite","puzzle",1,3
-"1488","v3_lookit",4,"F","2","1","please","polite","puzzle",1,4
-"1496","v3_lookit",4.11,"M","2","1","please","polite","puzzle",0,4
-"1502","v3_lookit",3.19,"M","1","1","please","polite","light",0,3
-"1503","v3_lookit",4.39,"F","1","1","please","polite","light",1,4
-"1513","v3_lookit",4.14,"M","1","1","please","polite","light",1,4
-"1518","v3_lookit",3.01,"M","1","1","please","polite","light",1,3
-"1520","v3_lookit",3.94,"F","2","1","please","polite","puzzle",1,3
-"1527","v3_lookit",2.66,"F","2","1","please","polite","puzzle",0,2
-"1528","v3_lookit",4.8,"F","1","1","please","polite","light",1,4
-"1532","v3_lookit",2.28,"F","2","1","please","polite","puzzle",1,2
-"1533","v3_lookit",2.39,"F","2","1","please","polite","puzzle",0,2
-"1534","v3_lookit",2.86,"M","1","1","please","polite","light",1,2
-"1543","v3_lookit",3.97,"F","1","1","please","polite","light",1,3
-"1558","v3_lookit",3.68,"M","1","1","please","polite","light",0,3
-"1565","v3_lookit",3.64,"M","2","1","please","polite","puzzle",1,3
-"1571","v3_lookit",3.26,"F","2","1","please","polite","puzzle",0,3
-"1576","v3_lookit",4.61,"F","2","1","please","polite","puzzle",0,4
-"1618","v3_lookit",3.79,"M","2","1","please","polite","puzzle",1,3
-"1639","v3_lookit",3.9,"F","2","1","please","polite","puzzle",1,3
-"1646","v3_lookit",2.01,"F","2","1","please","polite","puzzle",0,2
-"1661","v3_lookit",2.78,"F","2","1","please","polite","puzzle",0,2
-"1668","v3_lookit",4.78,"M","1","1","please","polite","light",0,4
-"1676","v3_lookit",3.21,"F","2","1","please","polite","puzzle",1,3
-"1691","v3_lookit",2.12,"M","1","1","please","polite","light",1,2
-"1725","v3_lookit",4.44,"M","2","1","please","polite","puzzle",1,4
-"1733","v3_lookit",4.73,"F","2","1","please","polite","puzzle",1,4
-"785","v3_lookit",3.55,"M","2","2","please","rude","no_shouting",1,3
-"831","v3_lookit",3.46,"M","2","2","please","rude","no_shouting",1,3
-"845","v3_lookit",2.1,"F","2","2","please","rude","no_shouting",0,2
-"860","v3_lookit",4.82,"F","1","2","please","polite","water",1,4
-"869","v3_lookit",4.56,"M","2","2","please","rude","no_shouting",0,4
-"880","v3_lookit",4.1,"F","1","2","please","polite","water",1,4
-"888","v3_lookit",3.28,"F","2","2","please","rude","no_shouting",1,3
-"896","v3_lookit",4.56,"F","1","2","please","polite","water",0,4
-"920","v3_lookit",3.72,"M","2","2","please","rude","no_shouting",0,3
-"1138","v3_lookit",2.64,"M","2","2","please","rude","no_shouting",1,2
-"1154","v3_lookit",3.28,"M","1","2","please","polite","water",1,3
-"1168","v3_lookit",3.81,"M","1","2","please","polite","water",1,3
-"1198","v3_lookit",3.93,"F","2","2","please","rude","no_shouting",1,3
-"1202","v3_lookit",3.9,"F","1","2","please","polite","water",1,3
-"1203","v3_lookit",2.35,"F","2","2","please","rude","no_shouting",1,2
-"1214","v3_lookit",4.85,"M","2","2","please","rude","no_shouting",1,4
-"1222","v3_lookit",3.68,"M","1","2","please","polite","water",0,3
-"1228","v3_lookit",3.91,"F","2","2","please","rude","no_shouting",0,3
-"1242","v3_lookit",3.34,"F","1","2","please","polite","water",0,3
-"1245","v3_lookit",3.68,"F","2","2","please","rude","no_shouting",0,3
-"1256","v3_lookit",4.27,"M","2","2","please","rude","no_shouting",0,4
-"1263","v3_lookit",2.96,"M","2","2","please","rude","no_shouting",1,2
-"1264","v3_lookit",4.11,"M","2","2","please","rude","no_shouting",1,4
-"1272","v3_lookit",4.6,"M","2","2","please","rude","no_shouting",0,4
-"1288","v3_lookit",2.31,"F","1","2","please","polite","water",1,2
-"1293","v3_lookit",2.26,"F","2","2","please","rude","no_shouting",1,2
-"1294","v3_lookit",3.67,"F","2","2","please","rude","no_shouting",1,3
-"1296","v3_lookit",3.38,"M","2","2","please","rude","no_shouting",1,3
-"1298","v3_lookit",2.93,"M","2","2","please","rude","no_shouting",1,2
-"1299","v3_lookit",2.93,"M","1","2","please","polite","water",1,2
-"1310","v3_lookit",2.3,"M","2","2","please","rude","no_shouting",1,2
-"1314","v3_lookit",4.16,"F","1","2","please","polite","water",1,4
-"1317","v3_lookit",2.13,"M","1","2","please","polite","water",1,2
-"1329","v3_lookit",4.17,"F","1","2","please","polite","water",1,4
-"1335","v3_lookit",2.7,"F","1","2","please","polite","water",0,2
-"1340","v3_lookit",3.44,"M","1","2","please","polite","water",1,3
-"1354","v3_lookit",4.99,"M","1","2","please","polite","water",1,4
-"1367","v3_lookit",4.16,"M","2","2","please","rude","no_shouting",1,4
-"1368","v3_lookit",2.24,"F","2","2","please","rude","no_shouting",1,2
-"1384","v3_lookit",3.85,"M","2","2","please","rude","no_shouting",1,3
-"1392","v3_lookit",3.77,"F","1","2","please","polite","water",1,3
-"1408","v3_lookit",4.37,"F","1","2","please","polite","water",1,4
-"1413","v3_lookit",4.8,"M","1","2","please","polite","water",1,4
-"1426","v3_lookit",4.91,"M","1","2","please","polite","water",1,4
-"1439","v3_lookit",3.06,"M","2","2","please","rude","no_shouting",0,3
-"1449","v3_lookit",2.7,"F","2","2","please","rude","no_shouting",0,2
-"1450","v3_lookit",4.21,"M","1","2","please","polite","water",1,4
-"1457","v3_lookit",4.5,"M","2","2","please","rude","no_shouting",1,4
-"1464","v3_lookit",3.51,"M","2","2","please","rude","no_shouting",1,3
-"1466","v3_lookit",2.42,"M","1","2","please","polite","water",1,2
-"1468","v3_lookit",3.79,"F","1","2","please","polite","water",1,3
-"1477","v3_lookit",2.46,"M","1","2","please","polite","water",0,2
-"1478","v3_lookit",2.6,"M","1","2","please","polite","water",0,2
-"1481","v3_lookit",4.41,"F","2","2","please","rude","no_shouting",1,4
-"1485","v3_lookit",3.59,"F","2","2","please","rude","no_shouting",1,3
-"1488","v3_lookit",4,"F","2","2","please","rude","no_shouting",1,4
-"1496","v3_lookit",4.11,"M","2","2","please","rude","no_shouting",1,4
-"1502","v3_lookit",3.19,"M","1","2","please","polite","water",0,3
-"1503","v3_lookit",4.39,"F","1","2","please","polite","water",1,4
-"1513","v3_lookit",4.14,"M","1","2","please","polite","water",1,4
-"1518","v3_lookit",3.01,"M","1","2","please","polite","water",1,3
-"1520","v3_lookit",3.94,"F","2","2","please","rude","no_shouting",1,3
-"1527","v3_lookit",2.66,"F","2","2","please","rude","no_shouting",1,2
-"1528","v3_lookit",4.8,"F","1","2","please","polite","water",1,4
-"1532","v3_lookit",2.28,"F","2","2","please","rude","no_shouting",1,2
-"1533","v3_lookit",2.39,"F","2","2","please","rude","no_shouting",1,2
-"1534","v3_lookit",2.86,"M","1","2","please","polite","water",1,2
-"1543","v3_lookit",3.97,"F","1","2","please","polite","water",1,3
-"1558","v3_lookit",3.68,"M","1","2","please","polite","water",0,3
-"1565","v3_lookit",3.64,"M","2","2","please","rude","no_shouting",0,3
-"1571","v3_lookit",3.26,"F","2","2","please","rude","no_shouting",0,3
-"1576","v3_lookit",4.61,"F","2","2","please","rude","no_shouting",1,4
-"1618","v3_lookit",3.79,"M","2","2","please","rude","no_shouting",1,3
-"1639","v3_lookit",3.9,"F","2","2","please","rude","no_shouting",0,3
-"1646","v3_lookit",2.01,"F","2","2","please","rude","no_shouting",0,2
-"1661","v3_lookit",2.78,"F","2","2","please","rude","no_shouting",0,2
-"1668","v3_lookit",4.78,"M","1","2","please","polite","water",1,4
-"1676","v3_lookit",3.21,"F","2","2","please","rude","no_shouting",1,3
-"1691","v3_lookit",2.12,"M","1","2","please","polite","water",1,2
-"1725","v3_lookit",4.44,"M","2","2","please","rude","no_shouting",1,4
-"1733","v3_lookit",4.73,"F","2","2","please","rude","no_shouting",1,4
-"785","v3_lookit",3.55,"M","2","3","can you~","rude","no_running",1,3
-"831","v3_lookit",3.46,"M","2","3","can you~","rude","no_running",0,3
-"845","v3_lookit",2.1,"F","2","3","can you~","rude","no_running",1,2
-"860","v3_lookit",4.82,"F","1","3","can you~","rude","toys",0,4
-"869","v3_lookit",4.56,"M","2","3","can you~","rude","no_running",0,4
-"880","v3_lookit",4.1,"F","1","3","can you~","rude","toys",1,4
-"888","v3_lookit",3.28,"F","2","3","can you~","rude","no_running",1,3
-"896","v3_lookit",4.56,"F","1","3","can you~","rude","toys",1,4
-"920","v3_lookit",3.72,"M","2","3","can you~","rude","no_running",1,3
-"1138","v3_lookit",2.64,"M","2","3","can you~","rude","no_running",1,2
-"1154","v3_lookit",3.28,"M","1","3","can you~","rude","toys",1,3
-"1168","v3_lookit",3.81,"M","1","3","can you~","rude","toys",0,3
-"1198","v3_lookit",3.93,"F","2","3","can you~","rude","no_running",1,3
-"1202","v3_lookit",3.9,"F","1","3","can you~","rude","toys",0,3
-"1203","v3_lookit",2.35,"F","2","3","can you~","rude","no_running",1,2
-"1214","v3_lookit",4.85,"M","2","3","can you~","rude","no_running",1,4
-"1222","v3_lookit",3.68,"M","1","3","can you~","rude","toys",0,3
-"1228","v3_lookit",3.91,"F","2","3","can you~","rude","no_running",1,3
-"1242","v3_lookit",3.34,"F","1","3","can you~","rude","toys",1,3
-"1245","v3_lookit",3.68,"F","2","3","can you~","rude","no_running",0,3
-"1256","v3_lookit",4.27,"M","2","3","can you~","rude","no_running",0,4
-"1263","v3_lookit",2.96,"M","2","3","can you~","rude","no_running",0,2
-"1264","v3_lookit",4.11,"M","2","3","can you~","rude","no_running",0,4
-"1272","v3_lookit",4.6,"M","2","3","can you~","rude","no_running",1,4
-"1288","v3_lookit",2.31,"F","1","3","can you~","rude","toys",1,2
-"1293","v3_lookit",2.26,"F","2","3","can you~","rude","no_running",1,2
-"1294","v3_lookit",3.67,"F","2","3","can you~","rude","no_running",0,3
-"1296","v3_lookit",3.38,"M","2","3","can you~","rude","no_running",1,3
-"1298","v3_lookit",2.93,"M","2","3","can you~","rude","no_running",1,2
-"1299","v3_lookit",2.93,"M","1","3","can you~","rude","toys",1,2
-"1310","v3_lookit",2.3,"M","2","3","can you~","rude","no_running",0,2
-"1314","v3_lookit",4.16,"F","1","3","can you~","rude","toys",0,4
-"1317","v3_lookit",2.13,"M","1","3","can you~","rude","toys",1,2
-"1329","v3_lookit",4.17,"F","1","3","can you~","rude","toys",1,4
-"1335","v3_lookit",2.7,"F","1","3","can you~","rude","toys",0,2
-"1340","v3_lookit",3.44,"M","1","3","can you~","rude","toys",0,3
-"1354","v3_lookit",4.99,"M","1","3","can you~","rude","toys",0,4
-"1367","v3_lookit",4.16,"M","2","3","can you~","rude","no_running",0,4
-"1368","v3_lookit",2.24,"F","2","3","can you~","rude","no_running",1,2
-"1384","v3_lookit",3.85,"M","2","3","can you~","rude","no_running",0,3
-"1392","v3_lookit",3.77,"F","1","3","can you~","rude","toys",1,3
-"1408","v3_lookit",4.37,"F","1","3","can you~","rude","toys",1,4
-"1413","v3_lookit",4.8,"M","1","3","can you~","rude","toys",1,4
-"1426","v3_lookit",4.91,"M","1","3","can you~","rude","toys",1,4
-"1439","v3_lookit",3.06,"M","2","3","can you~","rude","no_running",0,3
-"1449","v3_lookit",2.7,"F","2","3","can you~","rude","no_running",1,2
-"1450","v3_lookit",4.21,"M","1","3","can you~","rude","toys",1,4
-"1457","v3_lookit",4.5,"M","2","3","can you~","rude","no_running",0,4
-"1464","v3_lookit",3.51,"M","2","3","can you~","rude","no_running",0,3
-"1466","v3_lookit",2.42,"M","1","3","can you~","rude","toys",1,2
-"1468","v3_lookit",3.79,"F","1","3","can you~","rude","toys",1,3
-"1477","v3_lookit",2.46,"M","1","3","can you~","rude","toys",1,2
-"1478","v3_lookit",2.6,"M","1","3","can you~","rude","toys",1,2
-"1481","v3_lookit",4.41,"F","2","3","can you~","rude","no_running",1,4
-"1485","v3_lookit",3.59,"F","2","3","can you~","rude","no_running",1,3
-"1488","v3_lookit",4,"F","2","3","can you~","rude","no_running",1,4
-"1496","v3_lookit",4.11,"M","2","3","can you~","rude","no_running",1,4
-"1502","v3_lookit",3.19,"M","1","3","can you~","rude","toys",0,3
-"1503","v3_lookit",4.39,"F","1","3","can you~","rude","toys",0,4
-"1513","v3_lookit",4.14,"M","1","3","can you~","rude","toys",1,4
-"1518","v3_lookit",3.01,"M","1","3","can you~","rude","toys",0,3
-"1520","v3_lookit",3.94,"F","2","3","can you~","rude","no_running",1,3
-"1527","v3_lookit",2.66,"F","2","3","can you~","rude","no_running",1,2
-"1528","v3_lookit",4.8,"F","1","3","can you~","rude","toys",1,4
-"1532","v3_lookit",2.28,"F","2","3","can you~","rude","no_running",1,2
-"1533","v3_lookit",2.39,"F","2","3","can you~","rude","no_running",1,2
-"1534","v3_lookit",2.86,"M","1","3","can you~","rude","toys",1,2
-"1543","v3_lookit",3.97,"F","1","3","can you~","rude","toys",0,3
-"1558","v3_lookit",3.68,"M","1","3","can you~","rude","toys",1,3
-"1565","v3_lookit",3.64,"M","2","3","can you~","rude","no_running",0,3
-"1571","v3_lookit",3.26,"F","2","3","can you~","rude","no_running",1,3
-"1576","v3_lookit",4.61,"F","2","3","can you~","rude","no_running",1,4
-"1618","v3_lookit",3.79,"M","2","3","can you~","rude","no_running",0,3
-"1639","v3_lookit",3.9,"F","2","3","can you~","rude","no_running",1,3
-"1646","v3_lookit",2.01,"F","2","3","can you~","rude","no_running",0,2
-"1661","v3_lookit",2.78,"F","2","3","can you~","rude","no_running",0,2
-"1668","v3_lookit",4.78,"M","1","3","can you~","rude","toys",1,4
-"1676","v3_lookit",3.21,"F","2","3","can you~","rude","no_running",1,3
-"1691","v3_lookit",2.12,"M","1","3","can you~","rude","toys",0,2
-"1725","v3_lookit",4.44,"M","2","3","can you~","rude","no_running",1,4
-"1733","v3_lookit",4.73,"F","2","3","can you~","rude","no_running",1,4
-"785","v3_lookit",3.55,"M","2","4","can you please~","polite","bread",1,3
-"831","v3_lookit",3.46,"M","2","4","can you please~","polite","bread",1,3
-"845","v3_lookit",2.1,"F","2","4","can you please~","polite","bread",1,2
-"860","v3_lookit",4.82,"F","1","4","can you please~","polite","store",1,4
-"869","v3_lookit",4.56,"M","2","4","can you please~","polite","bread",1,4
-"880","v3_lookit",4.1,"F","1","4","can you please~","polite","store",1,4
-"888","v3_lookit",3.28,"F","2","4","can you please~","polite","bread",1,3
-"896","v3_lookit",4.56,"F","1","4","can you please~","polite","store",1,4
-"920","v3_lookit",3.72,"M","2","4","can you please~","polite","bread",0,3
-"1138","v3_lookit",2.64,"M","2","4","can you please~","polite","bread",0,2
-"1154","v3_lookit",3.28,"M","1","4","can you please~","polite","store",0,3
-"1168","v3_lookit",3.81,"M","1","4","can you please~","polite","store",1,3
-"1198","v3_lookit",3.93,"F","2","4","can you please~","polite","bread",1,3
-"1202","v3_lookit",3.9,"F","1","4","can you please~","polite","store",0,3
-"1203","v3_lookit",2.35,"F","2","4","can you please~","polite","bread",1,2
-"1214","v3_lookit",4.85,"M","2","4","can you please~","polite","bread",1,4
-"1222","v3_lookit",3.68,"M","1","4","can you please~","polite","store",1,3
-"1228","v3_lookit",3.91,"F","2","4","can you please~","polite","bread",0,3
-"1242","v3_lookit",3.34,"F","1","4","can you please~","polite","store",1,3
-"1245","v3_lookit",3.68,"F","2","4","can you please~","polite","bread",1,3
-"1256","v3_lookit",4.27,"M","2","4","can you please~","polite","bread",0,4
-"1263","v3_lookit",2.96,"M","2","4","can you please~","polite","bread",0,2
-"1264","v3_lookit",4.11,"M","2","4","can you please~","polite","bread",1,4
-"1272","v3_lookit",4.6,"M","2","4","can you please~","polite","bread",1,4
-"1288","v3_lookit",2.31,"F","1","4","can you please~","polite","store",0,2
-"1293","v3_lookit",2.26,"F","2","4","can you please~","polite","bread",0,2
-"1294","v3_lookit",3.67,"F","2","4","can you please~","polite","bread",0,3
-"1296","v3_lookit",3.38,"M","2","4","can you please~","polite","bread",0,3
-"1298","v3_lookit",2.93,"M","2","4","can you please~","polite","bread",1,2
-"1299","v3_lookit",2.93,"M","1","4","can you please~","polite","store",1,2
-"1310","v3_lookit",2.3,"M","2","4","can you please~","polite","bread",0,2
-"1314","v3_lookit",4.16,"F","1","4","can you please~","polite","store",0,4
-"1317","v3_lookit",2.13,"M","1","4","can you please~","polite","store",0,2
-"1329","v3_lookit",4.17,"F","1","4","can you please~","polite","store",1,4
-"1335","v3_lookit",2.7,"F","1","4","can you please~","polite","store",1,2
-"1340","v3_lookit",3.44,"M","1","4","can you please~","polite","store",0,3
-"1354","v3_lookit",4.99,"M","1","4","can you please~","polite","store",1,4
-"1367","v3_lookit",4.16,"M","2","4","can you please~","polite","bread",1,4
-"1368","v3_lookit",2.24,"F","2","4","can you please~","polite","bread",0,2
-"1384","v3_lookit",3.85,"M","2","4","can you please~","polite","bread",1,3
-"1392","v3_lookit",3.77,"F","1","4","can you please~","polite","store",0,3
-"1408","v3_lookit",4.37,"F","1","4","can you please~","polite","store",0,4
-"1413","v3_lookit",4.8,"M","1","4","can you please~","polite","store",1,4
-"1426","v3_lookit",4.91,"M","1","4","can you please~","polite","store",1,4
-"1439","v3_lookit",3.06,"M","2","4","can you please~","polite","bread",0,3
-"1449","v3_lookit",2.7,"F","2","4","can you please~","polite","bread",1,2
-"1450","v3_lookit",4.21,"M","1","4","can you please~","polite","store",1,4
-"1457","v3_lookit",4.5,"M","2","4","can you please~","polite","bread",1,4
-"1464","v3_lookit",3.51,"M","2","4","can you please~","polite","bread",0,3
-"1466","v3_lookit",2.42,"M","1","4","can you please~","polite","store",1,2
-"1468","v3_lookit",3.79,"F","1","4","can you please~","polite","store",1,3
-"1477","v3_lookit",2.46,"M","1","4","can you please~","polite","store",0,2
-"1478","v3_lookit",2.6,"M","1","4","can you please~","polite","store",0,2
-"1481","v3_lookit",4.41,"F","2","4","can you please~","polite","bread",1,4
-"1485","v3_lookit",3.59,"F","2","4","can you please~","polite","bread",0,3
-"1488","v3_lookit",4,"F","2","4","can you please~","polite","bread",1,4
-"1496","v3_lookit",4.11,"M","2","4","can you please~","polite","bread",1,4
-"1502","v3_lookit",3.19,"M","1","4","can you please~","polite","store",0,3
-"1503","v3_lookit",4.39,"F","1","4","can you please~","polite","store",0,4
-"1513","v3_lookit",4.14,"M","1","4","can you please~","polite","store",0,4
-"1518","v3_lookit",3.01,"M","1","4","can you please~","polite","store",1,3
-"1520","v3_lookit",3.94,"F","2","4","can you please~","polite","bread",1,3
-"1527","v3_lookit",2.66,"F","2","4","can you please~","polite","bread",1,2
-"1528","v3_lookit",4.8,"F","1","4","can you please~","polite","store",1,4
-"1532","v3_lookit",2.28,"F","2","4","can you please~","polite","bread",1,2
-"1533","v3_lookit",2.39,"F","2","4","can you please~","polite","bread",1,2
-"1534","v3_lookit",2.86,"M","1","4","can you please~","polite","store",0,2
-"1543","v3_lookit",3.97,"F","1","4","can you please~","polite","store",0,3
-"1558","v3_lookit",3.68,"M","1","4","can you please~","polite","store",0,3
-"1565","v3_lookit",3.64,"M","2","4","can you please~","polite","bread",1,3
-"1571","v3_lookit",3.26,"F","2","4","can you please~","polite","bread",0,3
-"1576","v3_lookit",4.61,"F","2","4","can you please~","polite","bread",1,4
-"1618","v3_lookit",3.79,"M","2","4","can you please~","polite","bread",0,3
-"1639","v3_lookit",3.9,"F","2","4","can you please~","polite","bread",1,3
-"1646","v3_lookit",2.01,"F","2","4","can you please~","polite","bread",0,2
-"1661","v3_lookit",2.78,"F","2","4","can you please~","polite","bread",1,2
-"1668","v3_lookit",4.78,"M","1","4","can you please~","polite","store",1,4
-"1676","v3_lookit",3.21,"F","2","4","can you please~","polite","bread",1,3
-"1691","v3_lookit",2.12,"M","1","4","can you please~","polite","store",1,2
-"1725","v3_lookit",4.44,"M","2","4","can you please~","polite","bread",1,4
-"1733","v3_lookit",4.73,"F","2","4","can you please~","polite","bread",0,4
-"785","v3_lookit",3.55,"M","2","5","please","rude","game",0,3
-"831","v3_lookit",3.46,"M","2","5","please","rude","game",0,3
-"845","v3_lookit",2.1,"F","2","5","please","rude","game",1,2
-"860","v3_lookit",4.82,"F","1","5","please","rude","chocolate",1,4
-"869","v3_lookit",4.56,"M","2","5","please","rude","game",1,4
-"880","v3_lookit",4.1,"F","1","5","please","rude","chocolate",0,4
-"888","v3_lookit",3.28,"F","2","5","please","rude","game",1,3
-"896","v3_lookit",4.56,"F","1","5","please","rude","chocolate",1,4
-"920","v3_lookit",3.72,"M","2","5","please","rude","game",1,3
-"1138","v3_lookit",2.64,"M","2","5","please","rude","game",1,2
-"1154","v3_lookit",3.28,"M","1","5","please","rude","chocolate",1,3
-"1168","v3_lookit",3.81,"M","1","5","please","rude","chocolate",1,3
-"1198","v3_lookit",3.93,"F","2","5","please","rude","game",0,3
-"1202","v3_lookit",3.9,"F","1","5","please","rude","chocolate",1,3
-"1203","v3_lookit",2.35,"F","2","5","please","rude","game",1,2
-"1214","v3_lookit",4.85,"M","2","5","please","rude","game",1,4
-"1222","v3_lookit",3.68,"M","1","5","please","rude","chocolate",0,3
-"1228","v3_lookit",3.91,"F","2","5","please","rude","game",1,3
-"1242","v3_lookit",3.34,"F","1","5","please","rude","chocolate",0,3
-"1245","v3_lookit",3.68,"F","2","5","please","rude","game",1,3
-"1256","v3_lookit",4.27,"M","2","5","please","rude","game",1,4
-"1263","v3_lookit",2.96,"M","2","5","please","rude","game",0,2
-"1264","v3_lookit",4.11,"M","2","5","please","rude","game",1,4
-"1272","v3_lookit",4.6,"M","2","5","please","rude","game",0,4
-"1288","v3_lookit",2.31,"F","1","5","please","rude","chocolate",1,2
-"1293","v3_lookit",2.26,"F","2","5","please","rude","game",0,2
-"1294","v3_lookit",3.67,"F","2","5","please","rude","game",0,3
-"1296","v3_lookit",3.38,"M","2","5","please","rude","game",0,3
-"1298","v3_lookit",2.93,"M","2","5","please","rude","game",1,2
-"1299","v3_lookit",2.93,"M","1","5","please","rude","chocolate",1,2
-"1310","v3_lookit",2.3,"M","2","5","please","rude","game",0,2
-"1314","v3_lookit",4.16,"F","1","5","please","rude","chocolate",1,4
-"1317","v3_lookit",2.13,"M","1","5","please","rude","chocolate",0,2
-"1329","v3_lookit",4.17,"F","1","5","please","rude","chocolate",1,4
-"1335","v3_lookit",2.7,"F","1","5","please","rude","chocolate",1,2
-"1340","v3_lookit",3.44,"M","1","5","please","rude","chocolate",0,3
-"1354","v3_lookit",4.99,"M","1","5","please","rude","chocolate",1,4
-"1367","v3_lookit",4.16,"M","2","5","please","rude","game",0,4
-"1368","v3_lookit",2.24,"F","2","5","please","rude","game",0,2
-"1384","v3_lookit",3.85,"M","2","5","please","rude","game",1,3
-"1392","v3_lookit",3.77,"F","1","5","please","rude","chocolate",1,3
-"1408","v3_lookit",4.37,"F","1","5","please","rude","chocolate",1,4
-"1413","v3_lookit",4.8,"M","1","5","please","rude","chocolate",1,4
-"1426","v3_lookit",4.91,"M","1","5","please","rude","chocolate",0,4
-"1439","v3_lookit",3.06,"M","2","5","please","rude","game",0,3
-"1449","v3_lookit",2.7,"F","2","5","please","rude","game",0,2
-"1450","v3_lookit",4.21,"M","1","5","please","rude","chocolate",0,4
-"1457","v3_lookit",4.5,"M","2","5","please","rude","game",0,4
-"1464","v3_lookit",3.51,"M","2","5","please","rude","game",0,3
-"1466","v3_lookit",2.42,"M","1","5","please","rude","chocolate",0,2
-"1468","v3_lookit",3.79,"F","1","5","please","rude","chocolate",1,3
-"1477","v3_lookit",2.46,"M","1","5","please","rude","chocolate",1,2
-"1478","v3_lookit",2.6,"M","1","5","please","rude","chocolate",0,2
-"1481","v3_lookit",4.41,"F","2","5","please","rude","game",1,4
-"1485","v3_lookit",3.59,"F","2","5","please","rude","game",0,3
-"1488","v3_lookit",4,"F","2","5","please","rude","game",0,4
-"1496","v3_lookit",4.11,"M","2","5","please","rude","game",1,4
-"1502","v3_lookit",3.19,"M","1","5","please","rude","chocolate",0,3
-"1503","v3_lookit",4.39,"F","1","5","please","rude","chocolate",1,4
-"1513","v3_lookit",4.14,"M","1","5","please","rude","chocolate",1,4
-"1518","v3_lookit",3.01,"M","1","5","please","rude","chocolate",1,3
-"1520","v3_lookit",3.94,"F","2","5","please","rude","game",0,3
-"1527","v3_lookit",2.66,"F","2","5","please","rude","game",1,2
-"1528","v3_lookit",4.8,"F","1","5","please","rude","chocolate",1,4
-"1532","v3_lookit",2.28,"F","2","5","please","rude","game",1,2
-"1533","v3_lookit",2.39,"F","2","5","please","rude","game",1,2
-"1534","v3_lookit",2.86,"M","1","5","please","rude","chocolate",0,2
-"1543","v3_lookit",3.97,"F","1","5","please","rude","chocolate",1,3
-"1558","v3_lookit",3.68,"M","1","5","please","rude","chocolate",0,3
-"1565","v3_lookit",3.64,"M","2","5","please","rude","game",1,3
-"1571","v3_lookit",3.26,"F","2","5","please","rude","game",0,3
-"1576","v3_lookit",4.61,"F","2","5","please","rude","game",0,4
-"1618","v3_lookit",3.79,"M","2","5","please","rude","game",1,3
-"1639","v3_lookit",3.9,"F","2","5","please","rude","game",1,3
-"1646","v3_lookit",2.01,"F","2","5","please","rude","game",1,2
-"1661","v3_lookit",2.78,"F","2","5","please","rude","game",0,2
-"1668","v3_lookit",4.78,"M","1","5","please","rude","chocolate",1,4
-"1676","v3_lookit",3.21,"F","2","5","please","rude","game",1,3
-"1691","v3_lookit",2.12,"M","1","5","please","rude","chocolate",1,2
-"1725","v3_lookit",4.44,"M","2","5","please","rude","game",1,4
-"1733","v3_lookit",4.73,"F","2","5","please","rude","game",1,4
-"785","v3_lookit",3.55,"M","2","6","can you please~","polite","scissors",1,3
-"831","v3_lookit",3.46,"M","2","6","can you please~","polite","scissors",1,3
-"845","v3_lookit",2.1,"F","2","6","can you please~","polite","scissors",0,2
-"860","v3_lookit",4.82,"F","1","6","can you please~","polite","no_singing",1,4
-"869","v3_lookit",4.56,"M","2","6","can you please~","polite","scissors",0,4
-"880","v3_lookit",4.1,"F","1","6","can you please~","polite","no_singing",1,4
-"888","v3_lookit",3.28,"F","2","6","can you please~","polite","scissors",1,3
-"896","v3_lookit",4.56,"F","1","6","can you please~","polite","no_singing",1,4
-"920","v3_lookit",3.72,"M","2","6","can you please~","polite","scissors",1,3
-"1138","v3_lookit",2.64,"M","2","6","can you please~","polite","scissors",1,2
-"1154","v3_lookit",3.28,"M","1","6","can you please~","polite","no_singing",0,3
-"1168","v3_lookit",3.81,"M","1","6","can you please~","polite","no_singing",1,3
-"1198","v3_lookit",3.93,"F","2","6","can you please~","polite","scissors",1,3
-"1202","v3_lookit",3.9,"F","1","6","can you please~","polite","no_singing",1,3
-"1203","v3_lookit",2.35,"F","2","6","can you please~","polite","scissors",0,2
-"1214","v3_lookit",4.85,"M","2","6","can you please~","polite","scissors",1,4
-"1222","v3_lookit",3.68,"M","1","6","can you please~","polite","no_singing",1,3
-"1228","v3_lookit",3.91,"F","2","6","can you please~","polite","scissors",0,3
-"1242","v3_lookit",3.34,"F","1","6","can you please~","polite","no_singing",0,3
-"1245","v3_lookit",3.68,"F","2","6","can you please~","polite","scissors",0,3
-"1256","v3_lookit",4.27,"M","2","6","can you please~","polite","scissors",0,4
-"1263","v3_lookit",2.96,"M","2","6","can you please~","polite","scissors",1,2
-"1264","v3_lookit",4.11,"M","2","6","can you please~","polite","scissors",1,4
-"1272","v3_lookit",4.6,"M","2","6","can you please~","polite","scissors",0,4
-"1288","v3_lookit",2.31,"F","1","6","can you please~","polite","no_singing",1,2
-"1293","v3_lookit",2.26,"F","2","6","can you please~","polite","scissors",0,2
-"1294","v3_lookit",3.67,"F","2","6","can you please~","polite","scissors",1,3
-"1296","v3_lookit",3.38,"M","2","6","can you please~","polite","scissors",1,3
-"1298","v3_lookit",2.93,"M","2","6","can you please~","polite","scissors",1,2
-"1299","v3_lookit",2.93,"M","1","6","can you please~","polite","no_singing",0,2
-"1310","v3_lookit",2.3,"M","2","6","can you please~","polite","scissors",1,2
-"1314","v3_lookit",4.16,"F","1","6","can you please~","polite","no_singing",1,4
-"1317","v3_lookit",2.13,"M","1","6","can you please~","polite","no_singing",0,2
-"1329","v3_lookit",4.17,"F","1","6","can you please~","polite","no_singing",1,4
-"1335","v3_lookit",2.7,"F","1","6","can you please~","polite","no_singing",1,2
-"1340","v3_lookit",3.44,"M","1","6","can you please~","polite","no_singing",0,3
-"1354","v3_lookit",4.99,"M","1","6","can you please~","polite","no_singing",1,4
-"1367","v3_lookit",4.16,"M","2","6","can you please~","polite","scissors",0,4
-"1368","v3_lookit",2.24,"F","2","6","can you please~","polite","scissors",1,2
-"1384","v3_lookit",3.85,"M","2","6","can you please~","polite","scissors",1,3
-"1392","v3_lookit",3.77,"F","1","6","can you please~","polite","no_singing",1,3
-"1408","v3_lookit",4.37,"F","1","6","can you please~","polite","no_singing",1,4
-"1413","v3_lookit",4.8,"M","1","6","can you please~","polite","no_singing",1,4
-"1426","v3_lookit",4.91,"M","1","6","can you please~","polite","no_singing",1,4
-"1439","v3_lookit",3.06,"M","2","6","can you please~","polite","scissors",0,3
-"1449","v3_lookit",2.7,"F","2","6","can you please~","polite","scissors",0,2
-"1450","v3_lookit",4.21,"M","1","6","can you please~","polite","no_singing",0,4
-"1457","v3_lookit",4.5,"M","2","6","can you please~","polite","scissors",0,4
-"1464","v3_lookit",3.51,"M","2","6","can you please~","polite","scissors",0,3
-"1466","v3_lookit",2.42,"M","1","6","can you please~","polite","no_singing",0,2
-"1468","v3_lookit",3.79,"F","1","6","can you please~","polite","no_singing",1,3
-"1477","v3_lookit",2.46,"M","1","6","can you please~","polite","no_singing",0,2
-"1478","v3_lookit",2.6,"M","1","6","can you please~","polite","no_singing",0,2
-"1481","v3_lookit",4.41,"F","2","6","can you please~","polite","scissors",1,4
-"1485","v3_lookit",3.59,"F","2","6","can you please~","polite","scissors",1,3
-"1488","v3_lookit",4,"F","2","6","can you please~","polite","scissors",1,4
-"1496","v3_lookit",4.11,"M","2","6","can you please~","polite","scissors",1,4
-"1502","v3_lookit",3.19,"M","1","6","can you please~","polite","no_singing",0,3
-"1503","v3_lookit",4.39,"F","1","6","can you please~","polite","no_singing",1,4
-"1513","v3_lookit",4.14,"M","1","6","can you please~","polite","no_singing",1,4
-"1518","v3_lookit",3.01,"M","1","6","can you please~","polite","no_singing",0,3
-"1520","v3_lookit",3.94,"F","2","6","can you please~","polite","scissors",1,3
-"1527","v3_lookit",2.66,"F","2","6","can you please~","polite","scissors",1,2
-"1528","v3_lookit",4.8,"F","1","6","can you please~","polite","no_singing",1,4
-"1532","v3_lookit",2.28,"F","2","6","can you please~","polite","scissors",1,2
-"1533","v3_lookit",2.39,"F","2","6","can you please~","polite","scissors",1,2
-"1534","v3_lookit",2.86,"M","1","6","can you please~","polite","no_singing",0,2
-"1543","v3_lookit",3.97,"F","1","6","can you please~","polite","no_singing",1,3
-"1558","v3_lookit",3.68,"M","1","6","can you please~","polite","no_singing",1,3
-"1565","v3_lookit",3.64,"M","2","6","can you please~","polite","scissors",1,3
-"1571","v3_lookit",3.26,"F","2","6","can you please~","polite","scissors",1,3
-"1576","v3_lookit",4.61,"F","2","6","can you please~","polite","scissors",1,4
-"1618","v3_lookit",3.79,"M","2","6","can you please~","polite","scissors",0,3
-"1639","v3_lookit",3.9,"F","2","6","can you please~","polite","scissors",1,3
-"1646","v3_lookit",2.01,"F","2","6","can you please~","polite","scissors",1,2
-"1661","v3_lookit",2.78,"F","2","6","can you please~","polite","scissors",0,2
-"1668","v3_lookit",4.78,"M","1","6","can you please~","polite","no_singing",1,4
-"1676","v3_lookit",3.21,"F","2","6","can you please~","polite","scissors",1,3
-"1691","v3_lookit",2.12,"M","1","6","can you please~","polite","no_singing",1,2
-"1725","v3_lookit",4.44,"M","2","6","can you please~","polite","scissors",1,4
-"1733","v3_lookit",4.73,"F","2","6","can you please~","polite","scissors",1,4
-"785","v3_lookit",3.55,"M","2","7","can you~","rude","no_singing",1,3
-"831","v3_lookit",3.46,"M","2","7","can you~","rude","no_singing",1,3
-"845","v3_lookit",2.1,"F","2","7","can you~","rude","no_singing",1,2
-"860","v3_lookit",4.82,"F","1","7","can you~","polite","no_running",NA,4
-"869","v3_lookit",4.56,"M","2","7","can you~","rude","no_singing",0,4
-"880","v3_lookit",4.1,"F","1","7","can you~","polite","no_running",1,4
-"888","v3_lookit",3.28,"F","2","7","can you~","rude","no_singing",1,3
-"896","v3_lookit",4.56,"F","1","7","can you~","polite","no_running",1,4
-"920","v3_lookit",3.72,"M","2","7","can you~","rude","no_singing",1,3
-"1138","v3_lookit",2.64,"M","2","7","can you~","rude","no_singing",1,2
-"1154","v3_lookit",3.28,"M","1","7","can you~","polite","no_running",1,3
-"1168","v3_lookit",3.81,"M","1","7","can you~","polite","no_running",0,3
-"1198","v3_lookit",3.93,"F","2","7","can you~","rude","no_singing",1,3
-"1202","v3_lookit",3.9,"F","1","7","can you~","polite","no_running",0,3
-"1203","v3_lookit",2.35,"F","2","7","can you~","rude","no_singing",0,2
-"1214","v3_lookit",4.85,"M","2","7","can you~","rude","no_singing",1,4
-"1222","v3_lookit",3.68,"M","1","7","can you~","polite","no_running",1,3
-"1228","v3_lookit",3.91,"F","2","7","can you~","rude","no_singing",1,3
-"1242","v3_lookit",3.34,"F","1","7","can you~","polite","no_running",0,3
-"1245","v3_lookit",3.68,"F","2","7","can you~","rude","no_singing",1,3
-"1256","v3_lookit",4.27,"M","2","7","can you~","rude","no_singing",0,4
-"1263","v3_lookit",2.96,"M","2","7","can you~","rude","no_singing",0,2
-"1264","v3_lookit",4.11,"M","2","7","can you~","rude","no_singing",1,4
-"1272","v3_lookit",4.6,"M","2","7","can you~","rude","no_singing",1,4
-"1288","v3_lookit",2.31,"F","1","7","can you~","polite","no_running",1,2
-"1293","v3_lookit",2.26,"F","2","7","can you~","rude","no_singing",0,2
-"1294","v3_lookit",3.67,"F","2","7","can you~","rude","no_singing",0,3
-"1296","v3_lookit",3.38,"M","2","7","can you~","rude","no_singing",0,3
-"1298","v3_lookit",2.93,"M","2","7","can you~","rude","no_singing",1,2
-"1299","v3_lookit",2.93,"M","1","7","can you~","polite","no_running",0,2
-"1310","v3_lookit",2.3,"M","2","7","can you~","rude","no_singing",1,2
-"1314","v3_lookit",4.16,"F","1","7","can you~","polite","no_running",0,4
-"1317","v3_lookit",2.13,"M","1","7","can you~","polite","no_running",0,2
-"1329","v3_lookit",4.17,"F","1","7","can you~","polite","no_running",1,4
-"1335","v3_lookit",2.7,"F","1","7","can you~","polite","no_running",1,2
-"1340","v3_lookit",3.44,"M","1","7","can you~","polite","no_running",1,3
-"1354","v3_lookit",4.99,"M","1","7","can you~","polite","no_running",1,4
-"1367","v3_lookit",4.16,"M","2","7","can you~","rude","no_singing",1,4
-"1368","v3_lookit",2.24,"F","2","7","can you~","rude","no_singing",1,2
-"1384","v3_lookit",3.85,"M","2","7","can you~","rude","no_singing",1,3
-"1392","v3_lookit",3.77,"F","1","7","can you~","polite","no_running",1,3
-"1408","v3_lookit",4.37,"F","1","7","can you~","polite","no_running",1,4
-"1413","v3_lookit",4.8,"M","1","7","can you~","polite","no_running",1,4
-"1426","v3_lookit",4.91,"M","1","7","can you~","polite","no_running",0,4
-"1439","v3_lookit",3.06,"M","2","7","can you~","rude","no_singing",1,3
-"1449","v3_lookit",2.7,"F","2","7","can you~","rude","no_singing",0,2
-"1450","v3_lookit",4.21,"M","1","7","can you~","polite","no_running",1,4
-"1457","v3_lookit",4.5,"M","2","7","can you~","rude","no_singing",0,4
-"1464","v3_lookit",3.51,"M","2","7","can you~","rude","no_singing",1,3
-"1466","v3_lookit",2.42,"M","1","7","can you~","polite","no_running",0,2
-"1468","v3_lookit",3.79,"F","1","7","can you~","polite","no_running",0,3
-"1477","v3_lookit",2.46,"M","1","7","can you~","polite","no_running",0,2
-"1478","v3_lookit",2.6,"M","1","7","can you~","polite","no_running",0,2
-"1481","v3_lookit",4.41,"F","2","7","can you~","rude","no_singing",1,4
-"1485","v3_lookit",3.59,"F","2","7","can you~","rude","no_singing",1,3
-"1488","v3_lookit",4,"F","2","7","can you~","rude","no_singing",1,4
-"1496","v3_lookit",4.11,"M","2","7","can you~","rude","no_singing",1,4
-"1502","v3_lookit",3.19,"M","1","7","can you~","polite","no_running",0,3
-"1503","v3_lookit",4.39,"F","1","7","can you~","polite","no_running",0,4
-"1513","v3_lookit",4.14,"M","1","7","can you~","polite","no_running",0,4
-"1518","v3_lookit",3.01,"M","1","7","can you~","polite","no_running",1,3
-"1520","v3_lookit",3.94,"F","2","7","can you~","rude","no_singing",1,3
-"1527","v3_lookit",2.66,"F","2","7","can you~","rude","no_singing",1,2
-"1528","v3_lookit",4.8,"F","1","7","can you~","polite","no_running",1,4
-"1532","v3_lookit",2.28,"F","2","7","can you~","rude","no_singing",1,2
-"1533","v3_lookit",2.39,"F","2","7","can you~","rude","no_singing",NA,2
-"1534","v3_lookit",2.86,"M","1","7","can you~","polite","no_running",0,2
-"1543","v3_lookit",3.97,"F","1","7","can you~","polite","no_running",1,3
-"1558","v3_lookit",3.68,"M","1","7","can you~","polite","no_running",1,3
-"1565","v3_lookit",3.64,"M","2","7","can you~","rude","no_singing",0,3
-"1571","v3_lookit",3.26,"F","2","7","can you~","rude","no_singing",0,3
-"1576","v3_lookit",4.61,"F","2","7","can you~","rude","no_singing",1,4
-"1618","v3_lookit",3.79,"M","2","7","can you~","rude","no_singing",0,3
-"1639","v3_lookit",3.9,"F","2","7","can you~","rude","no_singing",1,3
-"1646","v3_lookit",2.01,"F","2","7","can you~","rude","no_singing",1,2
-"1661","v3_lookit",2.78,"F","2","7","can you~","rude","no_singing",0,2
-"1668","v3_lookit",4.78,"M","1","7","can you~","polite","no_running",1,4
-"1676","v3_lookit",3.21,"F","2","7","can you~","rude","no_singing",NA,3
-"1691","v3_lookit",2.12,"M","1","7","can you~","polite","no_running",0,2
-"1725","v3_lookit",4.44,"M","2","7","can you~","rude","no_singing",1,4
-"1733","v3_lookit",4.73,"F","2","7","can you~","rude","no_singing",1,4
-"785","v3_lookit",3.55,"M","2","8","can you please~","polite","chocolate",0,3
-"831","v3_lookit",3.46,"M","2","8","can you please~","polite","chocolate",0,3
-"845","v3_lookit",2.1,"F","2","8","can you please~","polite","chocolate",1,2
-"860","v3_lookit",4.82,"F","1","8","can you please~","rude","bread",NA,4
-"869","v3_lookit",4.56,"M","2","8","can you please~","polite","chocolate",0,4
-"880","v3_lookit",4.1,"F","1","8","can you please~","rude","bread",1,4
-"888","v3_lookit",3.28,"F","2","8","can you please~","polite","chocolate",1,3
-"896","v3_lookit",4.56,"F","1","8","can you please~","rude","bread",1,4
-"920","v3_lookit",3.72,"M","2","8","can you please~","polite","chocolate",1,3
-"1138","v3_lookit",2.64,"M","2","8","can you please~","polite","chocolate",1,2
-"1154","v3_lookit",3.28,"M","1","8","can you please~","rude","bread",1,3
-"1168","v3_lookit",3.81,"M","1","8","can you please~","rude","bread",1,3
-"1198","v3_lookit",3.93,"F","2","8","can you please~","polite","chocolate",1,3
-"1202","v3_lookit",3.9,"F","1","8","can you please~","rude","bread",1,3
-"1203","v3_lookit",2.35,"F","2","8","can you please~","polite","chocolate",0,2
-"1214","v3_lookit",4.85,"M","2","8","can you please~","polite","chocolate",1,4
-"1222","v3_lookit",3.68,"M","1","8","can you please~","rude","bread",0,3
-"1228","v3_lookit",3.91,"F","2","8","can you please~","polite","chocolate",0,3
-"1242","v3_lookit",3.34,"F","1","8","can you please~","rude","bread",0,3
-"1245","v3_lookit",3.68,"F","2","8","can you please~","polite","chocolate",1,3
-"1256","v3_lookit",4.27,"M","2","8","can you please~","polite","chocolate",1,4
-"1263","v3_lookit",2.96,"M","2","8","can you please~","polite","chocolate",0,2
-"1264","v3_lookit",4.11,"M","2","8","can you please~","polite","chocolate",1,4
-"1272","v3_lookit",4.6,"M","2","8","can you please~","polite","chocolate",0,4
-"1288","v3_lookit",2.31,"F","1","8","can you please~","rude","bread",1,2
-"1293","v3_lookit",2.26,"F","2","8","can you please~","polite","chocolate",1,2
-"1294","v3_lookit",3.67,"F","2","8","can you please~","polite","chocolate",0,3
-"1296","v3_lookit",3.38,"M","2","8","can you please~","polite","chocolate",1,3
-"1298","v3_lookit",2.93,"M","2","8","can you please~","polite","chocolate",0,2
-"1299","v3_lookit",2.93,"M","1","8","can you please~","rude","bread",1,2
-"1310","v3_lookit",2.3,"M","2","8","can you please~","polite","chocolate",0,2
-"1314","v3_lookit",4.16,"F","1","8","can you please~","rude","bread",1,4
-"1317","v3_lookit",2.13,"M","1","8","can you please~","rude","bread",0,2
-"1329","v3_lookit",4.17,"F","1","8","can you please~","rude","bread",1,4
-"1335","v3_lookit",2.7,"F","1","8","can you please~","rude","bread",1,2
-"1340","v3_lookit",3.44,"M","1","8","can you please~","rude","bread",1,3
-"1354","v3_lookit",4.99,"M","1","8","can you please~","rude","bread",1,4
-"1367","v3_lookit",4.16,"M","2","8","can you please~","polite","chocolate",1,4
-"1368","v3_lookit",2.24,"F","2","8","can you please~","polite","chocolate",0,2
-"1384","v3_lookit",3.85,"M","2","8","can you please~","polite","chocolate",1,3
-"1392","v3_lookit",3.77,"F","1","8","can you please~","rude","bread",1,3
-"1408","v3_lookit",4.37,"F","1","8","can you please~","rude","bread",1,4
-"1413","v3_lookit",4.8,"M","1","8","can you please~","rude","bread",1,4
-"1426","v3_lookit",4.91,"M","1","8","can you please~","rude","bread",1,4
-"1439","v3_lookit",3.06,"M","2","8","can you please~","polite","chocolate",1,3
-"1449","v3_lookit",2.7,"F","2","8","can you please~","polite","chocolate",0,2
-"1450","v3_lookit",4.21,"M","1","8","can you please~","rude","bread",1,4
-"1457","v3_lookit",4.5,"M","2","8","can you please~","polite","chocolate",0,4
-"1464","v3_lookit",3.51,"M","2","8","can you please~","polite","chocolate",0,3
-"1466","v3_lookit",2.42,"M","1","8","can you please~","rude","bread",0,2
-"1468","v3_lookit",3.79,"F","1","8","can you please~","rude","bread",1,3
-"1477","v3_lookit",2.46,"M","1","8","can you please~","rude","bread",0,2
-"1478","v3_lookit",2.6,"M","1","8","can you please~","rude","bread",0,2
-"1481","v3_lookit",4.41,"F","2","8","can you please~","polite","chocolate",0,4
-"1485","v3_lookit",3.59,"F","2","8","can you please~","polite","chocolate",1,3
-"1488","v3_lookit",4,"F","2","8","can you please~","polite","chocolate",1,4
-"1496","v3_lookit",4.11,"M","2","8","can you please~","polite","chocolate",1,4
-"1502","v3_lookit",3.19,"M","1","8","can you please~","rude","bread",0,3
-"1503","v3_lookit",4.39,"F","1","8","can you please~","rude","bread",1,4
-"1513","v3_lookit",4.14,"M","1","8","can you please~","rude","bread",1,4
-"1518","v3_lookit",3.01,"M","1","8","can you please~","rude","bread",1,3
-"1520","v3_lookit",3.94,"F","2","8","can you please~","polite","chocolate",1,3
-"1527","v3_lookit",2.66,"F","2","8","can you please~","polite","chocolate",0,2
-"1528","v3_lookit",4.8,"F","1","8","can you please~","rude","bread",1,4
-"1532","v3_lookit",2.28,"F","2","8","can you please~","polite","chocolate",1,2
-"1533","v3_lookit",2.39,"F","2","8","can you please~","polite","chocolate",NA,2
-"1534","v3_lookit",2.86,"M","1","8","can you please~","rude","bread",0,2
-"1543","v3_lookit",3.97,"F","1","8","can you please~","rude","bread",1,3
-"1558","v3_lookit",3.68,"M","1","8","can you please~","rude","bread",1,3
-"1565","v3_lookit",3.64,"M","2","8","can you please~","polite","chocolate",0,3
-"1571","v3_lookit",3.26,"F","2","8","can you please~","polite","chocolate",0,3
-"1576","v3_lookit",4.61,"F","2","8","can you please~","polite","chocolate",1,4
-"1618","v3_lookit",3.79,"M","2","8","can you please~","polite","chocolate",0,3
-"1639","v3_lookit",3.9,"F","2","8","can you please~","polite","chocolate",1,3
-"1646","v3_lookit",2.01,"F","2","8","can you please~","polite","chocolate",0,2
-"1661","v3_lookit",2.78,"F","2","8","can you please~","polite","chocolate",1,2
-"1668","v3_lookit",4.78,"M","1","8","can you please~","rude","bread",1,4
-"1676","v3_lookit",3.21,"F","2","8","can you please~","polite","chocolate",NA,3
-"1691","v3_lookit",2.12,"M","1","8","can you please~","rude","bread",1,2
-"1725","v3_lookit",4.44,"M","2","8","can you please~","polite","chocolate",1,4
-"1733","v3_lookit",4.73,"F","2","8","can you please~","polite","chocolate",1,4
-"785","v3_lookit",3.55,"M","2","9","can you please~","rude","store",0,3
-"831","v3_lookit",3.46,"M","2","9","can you please~","rude","store",1,3
-"845","v3_lookit",2.1,"F","2","9","can you please~","rude","store",1,2
-"860","v3_lookit",4.82,"F","1","9","can you please~","rude","scissors",NA,4
-"869","v3_lookit",4.56,"M","2","9","can you please~","rude","store",1,4
-"880","v3_lookit",4.1,"F","1","9","can you please~","rude","scissors",1,4
-"888","v3_lookit",3.28,"F","2","9","can you please~","rude","store",1,3
-"896","v3_lookit",4.56,"F","1","9","can you please~","rude","scissors",1,4
-"920","v3_lookit",3.72,"M","2","9","can you please~","rude","store",NA,3
-"1138","v3_lookit",2.64,"M","2","9","can you please~","rude","store",0,2
-"1154","v3_lookit",3.28,"M","1","9","can you please~","rude","scissors",1,3
-"1168","v3_lookit",3.81,"M","1","9","can you please~","rude","scissors",1,3
-"1198","v3_lookit",3.93,"F","2","9","can you please~","rude","store",1,3
-"1202","v3_lookit",3.9,"F","1","9","can you please~","rude","scissors",0,3
-"1203","v3_lookit",2.35,"F","2","9","can you please~","rude","store",1,2
-"1214","v3_lookit",4.85,"M","2","9","can you please~","rude","store",1,4
-"1222","v3_lookit",3.68,"M","1","9","can you please~","rude","scissors",1,3
-"1228","v3_lookit",3.91,"F","2","9","can you please~","rude","store",1,3
-"1242","v3_lookit",3.34,"F","1","9","can you please~","rude","scissors",0,3
-"1245","v3_lookit",3.68,"F","2","9","can you please~","rude","store",1,3
-"1256","v3_lookit",4.27,"M","2","9","can you please~","rude","store",0,4
-"1263","v3_lookit",2.96,"M","2","9","can you please~","rude","store",0,2
-"1264","v3_lookit",4.11,"M","2","9","can you please~","rude","store",1,4
-"1272","v3_lookit",4.6,"M","2","9","can you please~","rude","store",0,4
-"1288","v3_lookit",2.31,"F","1","9","can you please~","rude","scissors",0,2
-"1293","v3_lookit",2.26,"F","2","9","can you please~","rude","store",1,2
-"1294","v3_lookit",3.67,"F","2","9","can you please~","rude","store",0,3
-"1296","v3_lookit",3.38,"M","2","9","can you please~","rude","store",0,3
-"1298","v3_lookit",2.93,"M","2","9","can you please~","rude","store",1,2
-"1299","v3_lookit",2.93,"M","1","9","can you please~","rude","scissors",0,2
-"1310","v3_lookit",2.3,"M","2","9","can you please~","rude","store",NA,2
-"1314","v3_lookit",4.16,"F","1","9","can you please~","rude","scissors",1,4
-"1317","v3_lookit",2.13,"M","1","9","can you please~","rude","scissors",1,2
-"1329","v3_lookit",4.17,"F","1","9","can you please~","rude","scissors",1,4
-"1335","v3_lookit",2.7,"F","1","9","can you please~","rude","scissors",0,2
-"1340","v3_lookit",3.44,"M","1","9","can you please~","rude","scissors",0,3
-"1354","v3_lookit",4.99,"M","1","9","can you please~","rude","scissors",1,4
-"1367","v3_lookit",4.16,"M","2","9","can you please~","rude","store",1,4
-"1368","v3_lookit",2.24,"F","2","9","can you please~","rude","store",1,2
-"1384","v3_lookit",3.85,"M","2","9","can you please~","rude","store",1,3
-"1392","v3_lookit",3.77,"F","1","9","can you please~","rude","scissors",0,3
-"1408","v3_lookit",4.37,"F","1","9","can you please~","rude","scissors",1,4
-"1413","v3_lookit",4.8,"M","1","9","can you please~","rude","scissors",1,4
-"1426","v3_lookit",4.91,"M","1","9","can you please~","rude","scissors",1,4
-"1439","v3_lookit",3.06,"M","2","9","can you please~","rude","store",0,3
-"1449","v3_lookit",2.7,"F","2","9","can you please~","rude","store",1,2
-"1450","v3_lookit",4.21,"M","1","9","can you please~","rude","scissors",1,4
-"1457","v3_lookit",4.5,"M","2","9","can you please~","rude","store",1,4
-"1464","v3_lookit",3.51,"M","2","9","can you please~","rude","store",0,3
-"1466","v3_lookit",2.42,"M","1","9","can you please~","rude","scissors",0,2
-"1468","v3_lookit",3.79,"F","1","9","can you please~","rude","scissors",1,3
-"1477","v3_lookit",2.46,"M","1","9","can you please~","rude","scissors",1,2
-"1478","v3_lookit",2.6,"M","1","9","can you please~","rude","scissors",NA,2
-"1481","v3_lookit",4.41,"F","2","9","can you please~","rude","store",1,4
-"1485","v3_lookit",3.59,"F","2","9","can you please~","rude","store",1,3
-"1488","v3_lookit",4,"F","2","9","can you please~","rude","store",1,4
-"1496","v3_lookit",4.11,"M","2","9","can you please~","rude","store",1,4
-"1502","v3_lookit",3.19,"M","1","9","can you please~","rude","scissors",0,3
-"1503","v3_lookit",4.39,"F","1","9","can you please~","rude","scissors",0,4
-"1513","v3_lookit",4.14,"M","1","9","can you please~","rude","scissors",1,4
-"1518","v3_lookit",3.01,"M","1","9","can you please~","rude","scissors",0,3
-"1520","v3_lookit",3.94,"F","2","9","can you please~","rude","store",1,3
-"1527","v3_lookit",2.66,"F","2","9","can you please~","rude","store",1,2
-"1528","v3_lookit",4.8,"F","1","9","can you please~","rude","scissors",1,4
-"1532","v3_lookit",2.28,"F","2","9","can you please~","rude","store",1,2
-"1533","v3_lookit",2.39,"F","2","9","can you please~","rude","store",NA,2
-"1534","v3_lookit",2.86,"M","1","9","can you please~","rude","scissors",1,2
-"1543","v3_lookit",3.97,"F","1","9","can you please~","rude","scissors",1,3
-"1558","v3_lookit",3.68,"M","1","9","can you please~","rude","scissors",1,3
-"1565","v3_lookit",3.64,"M","2","9","can you please~","rude","store",0,3
-"1571","v3_lookit",3.26,"F","2","9","can you please~","rude","store",1,3
-"1576","v3_lookit",4.61,"F","2","9","can you please~","rude","store",1,4
-"1618","v3_lookit",3.79,"M","2","9","can you please~","rude","store",0,3
-"1639","v3_lookit",3.9,"F","2","9","can you please~","rude","store",1,3
-"1646","v3_lookit",2.01,"F","2","9","can you please~","rude","store",1,2
-"1661","v3_lookit",2.78,"F","2","9","can you please~","rude","store",1,2
-"1668","v3_lookit",4.78,"M","1","9","can you please~","rude","scissors",1,4
-"1676","v3_lookit",3.21,"F","2","9","can you please~","rude","store",NA,3
-"1691","v3_lookit",2.12,"M","1","9","can you please~","rude","scissors",0,2
-"1725","v3_lookit",4.44,"M","2","9","can you please~","rude","store",1,4
-"1733","v3_lookit",4.73,"F","2","9","can you please~","rude","store",0,4
-"785","v3_lookit",3.55,"M","2","10","can you~","polite","toys",0,3
-"831","v3_lookit",3.46,"M","2","10","can you~","polite","toys",0,3
-"845","v3_lookit",2.1,"F","2","10","can you~","polite","toys",0,2
-"860","v3_lookit",4.82,"F","1","10","can you~","polite","puzzle",NA,4
-"869","v3_lookit",4.56,"M","2","10","can you~","polite","toys",0,4
-"880","v3_lookit",4.1,"F","1","10","can you~","polite","puzzle",1,4
-"888","v3_lookit",3.28,"F","2","10","can you~","polite","toys",0,3
-"896","v3_lookit",4.56,"F","1","10","can you~","polite","puzzle",1,4
-"920","v3_lookit",3.72,"M","2","10","can you~","polite","toys",NA,3
-"1138","v3_lookit",2.64,"M","2","10","can you~","polite","toys",NA,2
-"1154","v3_lookit",3.28,"M","1","10","can you~","polite","puzzle",1,3
-"1168","v3_lookit",3.81,"M","1","10","can you~","polite","puzzle",1,3
-"1198","v3_lookit",3.93,"F","2","10","can you~","polite","toys",0,3
-"1202","v3_lookit",3.9,"F","1","10","can you~","polite","puzzle",1,3
-"1203","v3_lookit",2.35,"F","2","10","can you~","polite","toys",0,2
-"1214","v3_lookit",4.85,"M","2","10","can you~","polite","toys",0,4
-"1222","v3_lookit",3.68,"M","1","10","can you~","polite","puzzle",1,3
-"1228","v3_lookit",3.91,"F","2","10","can you~","polite","toys",0,3
-"1242","v3_lookit",3.34,"F","1","10","can you~","polite","puzzle",0,3
-"1245","v3_lookit",3.68,"F","2","10","can you~","polite","toys",1,3
-"1256","v3_lookit",4.27,"M","2","10","can you~","polite","toys",1,4
-"1263","v3_lookit",2.96,"M","2","10","can you~","polite","toys",0,2
-"1264","v3_lookit",4.11,"M","2","10","can you~","polite","toys",1,4
-"1272","v3_lookit",4.6,"M","2","10","can you~","polite","toys",1,4
-"1288","v3_lookit",2.31,"F","1","10","can you~","polite","puzzle",0,2
-"1293","v3_lookit",2.26,"F","2","10","can you~","polite","toys",1,2
-"1294","v3_lookit",3.67,"F","2","10","can you~","polite","toys",0,3
-"1296","v3_lookit",3.38,"M","2","10","can you~","polite","toys",1,3
-"1298","v3_lookit",2.93,"M","2","10","can you~","polite","toys",1,2
-"1299","v3_lookit",2.93,"M","1","10","can you~","polite","puzzle",1,2
-"1310","v3_lookit",2.3,"M","2","10","can you~","polite","toys",NA,2
-"1314","v3_lookit",4.16,"F","1","10","can you~","polite","puzzle",1,4
-"1317","v3_lookit",2.13,"M","1","10","can you~","polite","puzzle",1,2
-"1329","v3_lookit",4.17,"F","1","10","can you~","polite","puzzle",1,4
-"1335","v3_lookit",2.7,"F","1","10","can you~","polite","puzzle",0,2
-"1340","v3_lookit",3.44,"M","1","10","can you~","polite","puzzle",0,3
-"1354","v3_lookit",4.99,"M","1","10","can you~","polite","puzzle",1,4
-"1367","v3_lookit",4.16,"M","2","10","can you~","polite","toys",0,4
-"1368","v3_lookit",2.24,"F","2","10","can you~","polite","toys",0,2
-"1384","v3_lookit",3.85,"M","2","10","can you~","polite","toys",0,3
-"1392","v3_lookit",3.77,"F","1","10","can you~","polite","puzzle",1,3
-"1408","v3_lookit",4.37,"F","1","10","can you~","polite","puzzle",1,4
-"1413","v3_lookit",4.8,"M","1","10","can you~","polite","puzzle",1,4
-"1426","v3_lookit",4.91,"M","1","10","can you~","polite","puzzle",0,4
-"1439","v3_lookit",3.06,"M","2","10","can you~","polite","toys",0,3
-"1449","v3_lookit",2.7,"F","2","10","can you~","polite","toys",0,2
-"1450","v3_lookit",4.21,"M","1","10","can you~","polite","puzzle",0,4
-"1457","v3_lookit",4.5,"M","2","10","can you~","polite","toys",0,4
-"1464","v3_lookit",3.51,"M","2","10","can you~","polite","toys",0,3
-"1466","v3_lookit",2.42,"M","1","10","can you~","polite","puzzle",0,2
-"1468","v3_lookit",3.79,"F","1","10","can you~","polite","puzzle",1,3
-"1477","v3_lookit",2.46,"M","1","10","can you~","polite","puzzle",1,2
-"1478","v3_lookit",2.6,"M","1","10","can you~","polite","puzzle",NA,2
-"1481","v3_lookit",4.41,"F","2","10","can you~","polite","toys",1,4
-"1485","v3_lookit",3.59,"F","2","10","can you~","polite","toys",0,3
-"1488","v3_lookit",4,"F","2","10","can you~","polite","toys",0,4
-"1496","v3_lookit",4.11,"M","2","10","can you~","polite","toys",1,4
-"1502","v3_lookit",3.19,"M","1","10","can you~","polite","puzzle",0,3
-"1503","v3_lookit",4.39,"F","1","10","can you~","polite","puzzle",1,4
-"1513","v3_lookit",4.14,"M","1","10","can you~","polite","puzzle",1,4
-"1518","v3_lookit",3.01,"M","1","10","can you~","polite","puzzle",1,3
-"1520","v3_lookit",3.94,"F","2","10","can you~","polite","toys",0,3
-"1527","v3_lookit",2.66,"F","2","10","can you~","polite","toys",1,2
-"1528","v3_lookit",4.8,"F","1","10","can you~","polite","puzzle",1,4
-"1532","v3_lookit",2.28,"F","2","10","can you~","polite","toys",1,2
-"1533","v3_lookit",2.39,"F","2","10","can you~","polite","toys",NA,2
-"1534","v3_lookit",2.86,"M","1","10","can you~","polite","puzzle",1,2
-"1543","v3_lookit",3.97,"F","1","10","can you~","polite","puzzle",0,3
-"1558","v3_lookit",3.68,"M","1","10","can you~","polite","puzzle",1,3
-"1565","v3_lookit",3.64,"M","2","10","can you~","polite","toys",0,3
-"1571","v3_lookit",3.26,"F","2","10","can you~","polite","toys",0,3
-"1576","v3_lookit",4.61,"F","2","10","can you~","polite","toys",0,4
-"1618","v3_lookit",3.79,"M","2","10","can you~","polite","toys",0,3
-"1639","v3_lookit",3.9,"F","2","10","can you~","polite","toys",1,3
-"1646","v3_lookit",2.01,"F","2","10","can you~","polite","toys",1,2
-"1661","v3_lookit",2.78,"F","2","10","can you~","polite","toys",1,2
-"1668","v3_lookit",4.78,"M","1","10","can you~","polite","puzzle",1,4
-"1676","v3_lookit",3.21,"F","2","10","can you~","polite","toys",NA,3
-"1691","v3_lookit",2.12,"M","1","10","can you~","polite","puzzle",1,2
-"1725","v3_lookit",4.44,"M","2","10","can you~","polite","toys",0,4
-"1733","v3_lookit",4.73,"F","2","10","can you~","polite","toys",1,4
-"785","v3_lookit",3.55,"M","2","11","please","rude","water",1,3
-"831","v3_lookit",3.46,"M","2","11","please","rude","water",0,3
-"845","v3_lookit",2.1,"F","2","11","please","rude","water",0,2
-"860","v3_lookit",4.82,"F","1","11","please","rude","no_shouting",NA,4
-"869","v3_lookit",4.56,"M","2","11","please","rude","water",0,4
-"880","v3_lookit",4.1,"F","1","11","please","rude","no_shouting",1,4
-"888","v3_lookit",3.28,"F","2","11","please","rude","water",0,3
-"896","v3_lookit",4.56,"F","1","11","please","rude","no_shouting",1,4
-"920","v3_lookit",3.72,"M","2","11","please","rude","water",NA,3
-"1138","v3_lookit",2.64,"M","2","11","please","rude","water",NA,2
-"1154","v3_lookit",3.28,"M","1","11","please","rude","no_shouting",0,3
-"1168","v3_lookit",3.81,"M","1","11","please","rude","no_shouting",1,3
-"1198","v3_lookit",3.93,"F","2","11","please","rude","water",1,3
-"1202","v3_lookit",3.9,"F","1","11","please","rude","no_shouting",1,3
-"1203","v3_lookit",2.35,"F","2","11","please","rude","water",1,2
-"1214","v3_lookit",4.85,"M","2","11","please","rude","water",1,4
-"1222","v3_lookit",3.68,"M","1","11","please","rude","no_shouting",1,3
-"1228","v3_lookit",3.91,"F","2","11","please","rude","water",0,3
-"1242","v3_lookit",3.34,"F","1","11","please","rude","no_shouting",0,3
-"1245","v3_lookit",3.68,"F","2","11","please","rude","water",1,3
-"1256","v3_lookit",4.27,"M","2","11","please","rude","water",0,4
-"1263","v3_lookit",2.96,"M","2","11","please","rude","water",1,2
-"1264","v3_lookit",4.11,"M","2","11","please","rude","water",1,4
-"1272","v3_lookit",4.6,"M","2","11","please","rude","water",0,4
-"1288","v3_lookit",2.31,"F","1","11","please","rude","no_shouting",0,2
-"1293","v3_lookit",2.26,"F","2","11","please","rude","water",1,2
-"1294","v3_lookit",3.67,"F","2","11","please","rude","water",1,3
-"1296","v3_lookit",3.38,"M","2","11","please","rude","water",1,3
-"1298","v3_lookit",2.93,"M","2","11","please","rude","water",0,2
-"1299","v3_lookit",2.93,"M","1","11","please","rude","no_shouting",1,2
-"1310","v3_lookit",2.3,"M","2","11","please","rude","water",NA,2
-"1314","v3_lookit",4.16,"F","1","11","please","rude","no_shouting",0,4
-"1317","v3_lookit",2.13,"M","1","11","please","rude","no_shouting",0,2
-"1329","v3_lookit",4.17,"F","1","11","please","rude","no_shouting",1,4
-"1335","v3_lookit",2.7,"F","1","11","please","rude","no_shouting",1,2
-"1340","v3_lookit",3.44,"M","1","11","please","rude","no_shouting",0,3
-"1354","v3_lookit",4.99,"M","1","11","please","rude","no_shouting",1,4
-"1367","v3_lookit",4.16,"M","2","11","please","rude","water",1,4
-"1368","v3_lookit",2.24,"F","2","11","please","rude","water",1,2
-"1384","v3_lookit",3.85,"M","2","11","please","rude","water",1,3
-"1392","v3_lookit",3.77,"F","1","11","please","rude","no_shouting",1,3
-"1408","v3_lookit",4.37,"F","1","11","please","rude","no_shouting",1,4
-"1413","v3_lookit",4.8,"M","1","11","please","rude","no_shouting",1,4
-"1426","v3_lookit",4.91,"M","1","11","please","rude","no_shouting",1,4
-"1439","v3_lookit",3.06,"M","2","11","please","rude","water",0,3
-"1449","v3_lookit",2.7,"F","2","11","please","rude","water",0,2
-"1450","v3_lookit",4.21,"M","1","11","please","rude","no_shouting",1,4
-"1457","v3_lookit",4.5,"M","2","11","please","rude","water",0,4
-"1464","v3_lookit",3.51,"M","2","11","please","rude","water",1,3
-"1466","v3_lookit",2.42,"M","1","11","please","rude","no_shouting",1,2
-"1468","v3_lookit",3.79,"F","1","11","please","rude","no_shouting",1,3
-"1477","v3_lookit",2.46,"M","1","11","please","rude","no_shouting",1,2
-"1478","v3_lookit",2.6,"M","1","11","please","rude","no_shouting",NA,2
-"1481","v3_lookit",4.41,"F","2","11","please","rude","water",0,4
-"1485","v3_lookit",3.59,"F","2","11","please","rude","water",1,3
-"1488","v3_lookit",4,"F","2","11","please","rude","water",1,4
-"1496","v3_lookit",4.11,"M","2","11","please","rude","water",0,4
-"1502","v3_lookit",3.19,"M","1","11","please","rude","no_shouting",1,3
-"1503","v3_lookit",4.39,"F","1","11","please","rude","no_shouting",1,4
-"1513","v3_lookit",4.14,"M","1","11","please","rude","no_shouting",1,4
-"1518","v3_lookit",3.01,"M","1","11","please","rude","no_shouting",1,3
-"1520","v3_lookit",3.94,"F","2","11","please","rude","water",1,3
-"1527","v3_lookit",2.66,"F","2","11","please","rude","water",1,2
-"1528","v3_lookit",4.8,"F","1","11","please","rude","no_shouting",1,4
-"1532","v3_lookit",2.28,"F","2","11","please","rude","water",0,2
-"1533","v3_lookit",2.39,"F","2","11","please","rude","water",NA,2
-"1534","v3_lookit",2.86,"M","1","11","please","rude","no_shouting",0,2
-"1543","v3_lookit",3.97,"F","1","11","please","rude","no_shouting",1,3
-"1558","v3_lookit",3.68,"M","1","11","please","rude","no_shouting",1,3
-"1565","v3_lookit",3.64,"M","2","11","please","rude","water",1,3
-"1571","v3_lookit",3.26,"F","2","11","please","rude","water",0,3
-"1576","v3_lookit",4.61,"F","2","11","please","rude","water",1,4
-"1618","v3_lookit",3.79,"M","2","11","please","rude","water",0,3
-"1639","v3_lookit",3.9,"F","2","11","please","rude","water",0,3
-"1646","v3_lookit",2.01,"F","2","11","please","rude","water",NA,2
-"1661","v3_lookit",2.78,"F","2","11","please","rude","water",0,2
-"1668","v3_lookit",4.78,"M","1","11","please","rude","no_shouting",1,4
-"1676","v3_lookit",3.21,"F","2","11","please","rude","water",NA,3
-"1691","v3_lookit",2.12,"M","1","11","please","rude","no_shouting",0,2
-"1725","v3_lookit",4.44,"M","2","11","please","rude","water",1,4
-"1733","v3_lookit",4.73,"F","2","11","please","rude","water",1,4
-"785","v3_lookit",3.55,"M","2","12","can you~","polite","light",0,3
-"831","v3_lookit",3.46,"M","2","12","can you~","polite","light",1,3
-"845","v3_lookit",2.1,"F","2","12","can you~","polite","light",NA,2
-"860","v3_lookit",4.82,"F","1","12","can you~","rude","game",NA,4
-"869","v3_lookit",4.56,"M","2","12","can you~","polite","light",0,4
-"880","v3_lookit",4.1,"F","1","12","can you~","rude","game",0,4
-"888","v3_lookit",3.28,"F","2","12","can you~","polite","light",1,3
-"896","v3_lookit",4.56,"F","1","12","can you~","rude","game",1,4
-"920","v3_lookit",3.72,"M","2","12","can you~","polite","light",NA,3
-"1138","v3_lookit",2.64,"M","2","12","can you~","polite","light",NA,2
-"1154","v3_lookit",3.28,"M","1","12","can you~","rude","game",0,3
-"1168","v3_lookit",3.81,"M","1","12","can you~","rude","game",1,3
-"1198","v3_lookit",3.93,"F","2","12","can you~","polite","light",0,3
-"1202","v3_lookit",3.9,"F","1","12","can you~","rude","game",1,3
-"1203","v3_lookit",2.35,"F","2","12","can you~","polite","light",1,2
-"1214","v3_lookit",4.85,"M","2","12","can you~","polite","light",1,4
-"1222","v3_lookit",3.68,"M","1","12","can you~","rude","game",0,3
-"1228","v3_lookit",3.91,"F","2","12","can you~","polite","light",0,3
-"1242","v3_lookit",3.34,"F","1","12","can you~","rude","game",0,3
-"1245","v3_lookit",3.68,"F","2","12","can you~","polite","light",1,3
-"1256","v3_lookit",4.27,"M","2","12","can you~","polite","light",1,4
-"1263","v3_lookit",2.96,"M","2","12","can you~","polite","light",0,2
-"1264","v3_lookit",4.11,"M","2","12","can you~","polite","light",1,4
-"1272","v3_lookit",4.6,"M","2","12","can you~","polite","light",1,4
-"1288","v3_lookit",2.31,"F","1","12","can you~","rude","game",0,2
-"1293","v3_lookit",2.26,"F","2","12","can you~","polite","light",1,2
-"1294","v3_lookit",3.67,"F","2","12","can you~","polite","light",0,3
-"1296","v3_lookit",3.38,"M","2","12","can you~","polite","light",0,3
-"1298","v3_lookit",2.93,"M","2","12","can you~","polite","light",0,2
-"1299","v3_lookit",2.93,"M","1","12","can you~","rude","game",1,2
-"1310","v3_lookit",2.3,"M","2","12","can you~","polite","light",NA,2
-"1314","v3_lookit",4.16,"F","1","12","can you~","rude","game",0,4
-"1317","v3_lookit",2.13,"M","1","12","can you~","rude","game",0,2
-"1329","v3_lookit",4.17,"F","1","12","can you~","rude","game",0,4
-"1335","v3_lookit",2.7,"F","1","12","can you~","rude","game",NA,2
-"1340","v3_lookit",3.44,"M","1","12","can you~","rude","game",1,3
-"1354","v3_lookit",4.99,"M","1","12","can you~","rude","game",1,4
-"1367","v3_lookit",4.16,"M","2","12","can you~","polite","light",1,4
-"1368","v3_lookit",2.24,"F","2","12","can you~","polite","light",1,2
-"1384","v3_lookit",3.85,"M","2","12","can you~","polite","light",1,3
-"1392","v3_lookit",3.77,"F","1","12","can you~","rude","game",1,3
-"1408","v3_lookit",4.37,"F","1","12","can you~","rude","game",1,4
-"1413","v3_lookit",4.8,"M","1","12","can you~","rude","game",1,4
-"1426","v3_lookit",4.91,"M","1","12","can you~","rude","game",1,4
-"1439","v3_lookit",3.06,"M","2","12","can you~","polite","light",0,3
-"1449","v3_lookit",2.7,"F","2","12","can you~","polite","light",0,2
-"1450","v3_lookit",4.21,"M","1","12","can you~","rude","game",1,4
-"1457","v3_lookit",4.5,"M","2","12","can you~","polite","light",0,4
-"1464","v3_lookit",3.51,"M","2","12","can you~","polite","light",0,3
-"1466","v3_lookit",2.42,"M","1","12","can you~","rude","game",0,2
-"1468","v3_lookit",3.79,"F","1","12","can you~","rude","game",1,3
-"1477","v3_lookit",2.46,"M","1","12","can you~","rude","game",0,2
-"1478","v3_lookit",2.6,"M","1","12","can you~","rude","game",NA,2
-"1481","v3_lookit",4.41,"F","2","12","can you~","polite","light",1,4
-"1485","v3_lookit",3.59,"F","2","12","can you~","polite","light",1,3
-"1488","v3_lookit",4,"F","2","12","can you~","polite","light",1,4
-"1496","v3_lookit",4.11,"M","2","12","can you~","polite","light",1,4
-"1502","v3_lookit",3.19,"M","1","12","can you~","rude","game",1,3
-"1503","v3_lookit",4.39,"F","1","12","can you~","rude","game",0,4
-"1513","v3_lookit",4.14,"M","1","12","can you~","rude","game",1,4
-"1518","v3_lookit",3.01,"M","1","12","can you~","rude","game",1,3
-"1520","v3_lookit",3.94,"F","2","12","can you~","polite","light",1,3
-"1527","v3_lookit",2.66,"F","2","12","can you~","polite","light",1,2
-"1528","v3_lookit",4.8,"F","1","12","can you~","rude","game",0,4
-"1532","v3_lookit",2.28,"F","2","12","can you~","polite","light",1,2
-"1533","v3_lookit",2.39,"F","2","12","can you~","polite","light",NA,2
-"1534","v3_lookit",2.86,"M","1","12","can you~","rude","game",0,2
-"1543","v3_lookit",3.97,"F","1","12","can you~","rude","game",0,3
-"1558","v3_lookit",3.68,"M","1","12","can you~","rude","game",1,3
-"1565","v3_lookit",3.64,"M","2","12","can you~","polite","light",0,3
-"1571","v3_lookit",3.26,"F","2","12","can you~","polite","light",1,3
-"1576","v3_lookit",4.61,"F","2","12","can you~","polite","light",1,4
-"1618","v3_lookit",3.79,"M","2","12","can you~","polite","light",0,3
-"1639","v3_lookit",3.9,"F","2","12","can you~","polite","light",0,3
-"1646","v3_lookit",2.01,"F","2","12","can you~","polite","light",NA,2
-"1661","v3_lookit",2.78,"F","2","12","can you~","polite","light",0,2
-"1668","v3_lookit",4.78,"M","1","12","can you~","rude","game",0,4
-"1676","v3_lookit",3.21,"F","2","12","can you~","polite","light",NA,3
-"1691","v3_lookit",2.12,"M","1","12","can you~","rude","game",0,2
-"1725","v3_lookit",4.44,"M","2","12","can you~","polite","light",1,4
-"1733","v3_lookit",4.73,"F","2","12","can you~","polite","light",0,4
+"3695","v3_lookit",3.55,"M","2","1","please","polite","puzzle",1,3
+"2398","v3_lookit",3.46,"M","2","1","please","polite","puzzle",1,3
+"3545","v3_lookit",2.1,"F","2","1","please","polite","puzzle",0,2
+"3621","v3_lookit",4.82,"F","1","1","please","polite","light",0,4
+"3900","v3_lookit",4.56,"M","2","1","please","polite","puzzle",1,4
+"3903","v3_lookit",4.1,"F","1","1","please","polite","light",1,4
+"3897","v3_lookit",3.28,"F","2","1","please","polite","puzzle",0,3
+"3906","v3_lookit",4.56,"F","1","1","please","polite","light",0,4
+"3914","v3_lookit",3.72,"M","2","1","please","polite","puzzle",1,3
+"3963","v3_lookit",2.64,"M","2","1","please","polite","puzzle",1,2
+"4037","v3_lookit",3.28,"M","1","1","please","polite","light",0,3
+"4038","v3_lookit",3.81,"M","1","1","please","polite","light",1,3
+"3979","v3_lookit",3.93,"F","2","1","please","polite","puzzle",1,3
+"4068","v3_lookit",3.9,"F","1","1","please","polite","light",1,3
+"4069","v3_lookit",2.35,"F","2","1","please","polite","puzzle",1,2
+"4075","v3_lookit",4.85,"M","2","1","please","polite","puzzle",1,4
+"4020","v3_lookit",3.68,"M","1","1","please","polite","light",1,3
+"4079","v3_lookit",3.91,"F","2","1","please","polite","puzzle",1,3
+"4095","v3_lookit",3.34,"F","1","1","please","polite","light",1,3
+"4120","v3_lookit",3.68,"F","2","1","please","polite","puzzle",1,3
+"3956","v3_lookit",4.27,"M","2","1","please","polite","puzzle",1,4
+"4139","v3_lookit",2.96,"M","2","1","please","polite","puzzle",0,2
+"4145","v3_lookit",4.11,"M","2","1","please","polite","puzzle",1,4
+"4138","v3_lookit",4.6,"M","2","1","please","polite","puzzle",0,4
+"4153","v3_lookit",2.31,"F","1","1","please","polite","light",1,2
+"4201","v3_lookit",2.26,"F","2","1","please","polite","puzzle",1,2
+"4200","v3_lookit",3.67,"F","2","1","please","polite","puzzle",0,3
+"4072","v3_lookit",3.38,"M","2","1","please","polite","puzzle",0,3
+"4210","v3_lookit",2.93,"M","2","1","please","polite","puzzle",0,2
+"4211","v3_lookit",2.93,"M","1","1","please","polite","light",0,2
+"4219","v3_lookit",2.3,"M","2","1","please","polite","puzzle",1,2
+"4217","v3_lookit",4.16,"F","1","1","please","polite","light",0,4
+"4204","v3_lookit",2.13,"M","1","1","please","polite","light",1,2
+"4226","v3_lookit",4.17,"F","1","1","please","polite","light",1,4
+"3957","v3_lookit",2.7,"F","1","1","please","polite","light",0,2
+"4224","v3_lookit",3.44,"M","1","1","please","polite","light",0,3
+"4244","v3_lookit",4.99,"M","1","1","please","polite","light",1,4
+"4253","v3_lookit",4.16,"M","2","1","please","polite","puzzle",1,4
+"4121","v3_lookit",2.24,"F","2","1","please","polite","puzzle",1,2
+"4263","v3_lookit",3.85,"M","2","1","please","polite","puzzle",1,3
+"4266","v3_lookit",3.77,"F","1","1","please","polite","light",0,3
+"4273","v3_lookit",4.37,"F","1","1","please","polite","light",1,4
+"4286","v3_lookit",4.8,"M","1","1","please","polite","light",1,4
+"4316","v3_lookit",4.91,"M","1","1","please","polite","light",0,4
+"4356","v3_lookit",3.06,"M","2","1","please","polite","puzzle",1,3
+"4353","v3_lookit",2.7,"F","2","1","please","polite","puzzle",1,2
+"4351","v3_lookit",4.21,"M","1","1","please","polite","light",0,4
+"4333","v3_lookit",4.5,"M","2","1","please","polite","puzzle",1,4
+"4359","v3_lookit",3.51,"M","2","1","please","polite","puzzle",1,3
+"4360","v3_lookit",2.42,"M","1","1","please","polite","light",0,2
+"4172","v3_lookit",3.79,"F","1","1","please","polite","light",1,3
+"4321","v3_lookit",2.46,"M","1","1","please","polite","light",1,2
+"4369","v3_lookit",2.6,"M","1","1","please","polite","light",0,2
+"4373","v3_lookit",4.41,"F","2","1","please","polite","puzzle",1,4
+"4378","v3_lookit",3.59,"F","2","1","please","polite","puzzle",1,3
+"4379","v3_lookit",4,"F","2","1","please","polite","puzzle",1,4
+"4395","v3_lookit",4.11,"M","2","1","please","polite","puzzle",0,4
+"4340","v3_lookit",3.19,"M","1","1","please","polite","light",0,3
+"4339","v3_lookit",4.39,"F","1","1","please","polite","light",1,4
+"4412","v3_lookit",4.14,"M","1","1","please","polite","light",1,4
+"4423","v3_lookit",3.01,"M","1","1","please","polite","light",1,3
+"4425","v3_lookit",3.94,"F","2","1","please","polite","puzzle",1,3
+"4433","v3_lookit",2.66,"F","2","1","please","polite","puzzle",0,2
+"4429","v3_lookit",4.8,"F","1","1","please","polite","light",1,4
+"4409","v3_lookit",2.28,"F","2","1","please","polite","puzzle",1,2
+"4300","v3_lookit",2.39,"F","2","1","please","polite","puzzle",0,2
+"4440","v3_lookit",2.86,"M","1","1","please","polite","light",1,2
+"4447","v3_lookit",3.97,"F","1","1","please","polite","light",1,3
+"4475","v3_lookit",3.68,"M","1","1","please","polite","light",0,3
+"4450","v3_lookit",3.64,"M","2","1","please","polite","puzzle",1,3
+"4481","v3_lookit",3.26,"F","2","1","please","polite","puzzle",0,3
+"4434","v3_lookit",4.61,"F","2","1","please","polite","puzzle",0,4
+"4476","v3_lookit",3.79,"M","2","1","please","polite","puzzle",1,3
+"3210","v3_lookit",3.9,"F","2","1","please","polite","puzzle",1,3
+"2338","v3_lookit",2.01,"F","2","1","please","polite","puzzle",0,2
+"4352","v3_lookit",2.78,"F","2","1","please","polite","puzzle",0,2
+"4505","v3_lookit",4.78,"M","1","1","please","polite","light",0,4
+"4511","v3_lookit",3.21,"F","2","1","please","polite","puzzle",1,3
+"4518","v3_lookit",2.12,"M","1","1","please","polite","light",1,2
+"3995","v3_lookit",4.44,"M","2","1","please","polite","puzzle",1,4
+"4534","v3_lookit",4.73,"F","2","1","please","polite","puzzle",1,4
+"3695","v3_lookit",3.55,"M","2","2","please","rude","no_shouting",1,3
+"2398","v3_lookit",3.46,"M","2","2","please","rude","no_shouting",1,3
+"3545","v3_lookit",2.1,"F","2","2","please","rude","no_shouting",0,2
+"3621","v3_lookit",4.82,"F","1","2","please","polite","water",1,4
+"3900","v3_lookit",4.56,"M","2","2","please","rude","no_shouting",0,4
+"3903","v3_lookit",4.1,"F","1","2","please","polite","water",1,4
+"3897","v3_lookit",3.28,"F","2","2","please","rude","no_shouting",1,3
+"3906","v3_lookit",4.56,"F","1","2","please","polite","water",0,4
+"3914","v3_lookit",3.72,"M","2","2","please","rude","no_shouting",0,3
+"3963","v3_lookit",2.64,"M","2","2","please","rude","no_shouting",1,2
+"4037","v3_lookit",3.28,"M","1","2","please","polite","water",1,3
+"4038","v3_lookit",3.81,"M","1","2","please","polite","water",1,3
+"3979","v3_lookit",3.93,"F","2","2","please","rude","no_shouting",1,3
+"4068","v3_lookit",3.9,"F","1","2","please","polite","water",1,3
+"4069","v3_lookit",2.35,"F","2","2","please","rude","no_shouting",1,2
+"4075","v3_lookit",4.85,"M","2","2","please","rude","no_shouting",1,4
+"4020","v3_lookit",3.68,"M","1","2","please","polite","water",0,3
+"4079","v3_lookit",3.91,"F","2","2","please","rude","no_shouting",0,3
+"4095","v3_lookit",3.34,"F","1","2","please","polite","water",0,3
+"4120","v3_lookit",3.68,"F","2","2","please","rude","no_shouting",0,3
+"3956","v3_lookit",4.27,"M","2","2","please","rude","no_shouting",0,4
+"4139","v3_lookit",2.96,"M","2","2","please","rude","no_shouting",1,2
+"4145","v3_lookit",4.11,"M","2","2","please","rude","no_shouting",1,4
+"4138","v3_lookit",4.6,"M","2","2","please","rude","no_shouting",0,4
+"4153","v3_lookit",2.31,"F","1","2","please","polite","water",1,2
+"4201","v3_lookit",2.26,"F","2","2","please","rude","no_shouting",1,2
+"4200","v3_lookit",3.67,"F","2","2","please","rude","no_shouting",1,3
+"4072","v3_lookit",3.38,"M","2","2","please","rude","no_shouting",1,3
+"4210","v3_lookit",2.93,"M","2","2","please","rude","no_shouting",1,2
+"4211","v3_lookit",2.93,"M","1","2","please","polite","water",1,2
+"4219","v3_lookit",2.3,"M","2","2","please","rude","no_shouting",1,2
+"4217","v3_lookit",4.16,"F","1","2","please","polite","water",1,4
+"4204","v3_lookit",2.13,"M","1","2","please","polite","water",1,2
+"4226","v3_lookit",4.17,"F","1","2","please","polite","water",1,4
+"3957","v3_lookit",2.7,"F","1","2","please","polite","water",0,2
+"4224","v3_lookit",3.44,"M","1","2","please","polite","water",1,3
+"4244","v3_lookit",4.99,"M","1","2","please","polite","water",1,4
+"4253","v3_lookit",4.16,"M","2","2","please","rude","no_shouting",1,4
+"4121","v3_lookit",2.24,"F","2","2","please","rude","no_shouting",1,2
+"4263","v3_lookit",3.85,"M","2","2","please","rude","no_shouting",1,3
+"4266","v3_lookit",3.77,"F","1","2","please","polite","water",1,3
+"4273","v3_lookit",4.37,"F","1","2","please","polite","water",1,4
+"4286","v3_lookit",4.8,"M","1","2","please","polite","water",1,4
+"4316","v3_lookit",4.91,"M","1","2","please","polite","water",1,4
+"4356","v3_lookit",3.06,"M","2","2","please","rude","no_shouting",0,3
+"4353","v3_lookit",2.7,"F","2","2","please","rude","no_shouting",0,2
+"4351","v3_lookit",4.21,"M","1","2","please","polite","water",1,4
+"4333","v3_lookit",4.5,"M","2","2","please","rude","no_shouting",1,4
+"4359","v3_lookit",3.51,"M","2","2","please","rude","no_shouting",1,3
+"4360","v3_lookit",2.42,"M","1","2","please","polite","water",1,2
+"4172","v3_lookit",3.79,"F","1","2","please","polite","water",1,3
+"4321","v3_lookit",2.46,"M","1","2","please","polite","water",0,2
+"4369","v3_lookit",2.6,"M","1","2","please","polite","water",0,2
+"4373","v3_lookit",4.41,"F","2","2","please","rude","no_shouting",1,4
+"4378","v3_lookit",3.59,"F","2","2","please","rude","no_shouting",1,3
+"4379","v3_lookit",4,"F","2","2","please","rude","no_shouting",1,4
+"4395","v3_lookit",4.11,"M","2","2","please","rude","no_shouting",1,4
+"4340","v3_lookit",3.19,"M","1","2","please","polite","water",0,3
+"4339","v3_lookit",4.39,"F","1","2","please","polite","water",1,4
+"4412","v3_lookit",4.14,"M","1","2","please","polite","water",1,4
+"4423","v3_lookit",3.01,"M","1","2","please","polite","water",1,3
+"4425","v3_lookit",3.94,"F","2","2","please","rude","no_shouting",1,3
+"4433","v3_lookit",2.66,"F","2","2","please","rude","no_shouting",1,2
+"4429","v3_lookit",4.8,"F","1","2","please","polite","water",1,4
+"4409","v3_lookit",2.28,"F","2","2","please","rude","no_shouting",1,2
+"4300","v3_lookit",2.39,"F","2","2","please","rude","no_shouting",1,2
+"4440","v3_lookit",2.86,"M","1","2","please","polite","water",1,2
+"4447","v3_lookit",3.97,"F","1","2","please","polite","water",1,3
+"4475","v3_lookit",3.68,"M","1","2","please","polite","water",0,3
+"4450","v3_lookit",3.64,"M","2","2","please","rude","no_shouting",0,3
+"4481","v3_lookit",3.26,"F","2","2","please","rude","no_shouting",0,3
+"4434","v3_lookit",4.61,"F","2","2","please","rude","no_shouting",1,4
+"4476","v3_lookit",3.79,"M","2","2","please","rude","no_shouting",1,3
+"3210","v3_lookit",3.9,"F","2","2","please","rude","no_shouting",0,3
+"2338","v3_lookit",2.01,"F","2","2","please","rude","no_shouting",0,2
+"4352","v3_lookit",2.78,"F","2","2","please","rude","no_shouting",0,2
+"4505","v3_lookit",4.78,"M","1","2","please","polite","water",1,4
+"4511","v3_lookit",3.21,"F","2","2","please","rude","no_shouting",1,3
+"4518","v3_lookit",2.12,"M","1","2","please","polite","water",1,2
+"3995","v3_lookit",4.44,"M","2","2","please","rude","no_shouting",1,4
+"4534","v3_lookit",4.73,"F","2","2","please","rude","no_shouting",1,4
+"3695","v3_lookit",3.55,"M","2","3","can you~","rude","no_running",1,3
+"2398","v3_lookit",3.46,"M","2","3","can you~","rude","no_running",0,3
+"3545","v3_lookit",2.1,"F","2","3","can you~","rude","no_running",1,2
+"3621","v3_lookit",4.82,"F","1","3","can you~","rude","toys",0,4
+"3900","v3_lookit",4.56,"M","2","3","can you~","rude","no_running",0,4
+"3903","v3_lookit",4.1,"F","1","3","can you~","rude","toys",1,4
+"3897","v3_lookit",3.28,"F","2","3","can you~","rude","no_running",1,3
+"3906","v3_lookit",4.56,"F","1","3","can you~","rude","toys",1,4
+"3914","v3_lookit",3.72,"M","2","3","can you~","rude","no_running",1,3
+"3963","v3_lookit",2.64,"M","2","3","can you~","rude","no_running",1,2
+"4037","v3_lookit",3.28,"M","1","3","can you~","rude","toys",1,3
+"4038","v3_lookit",3.81,"M","1","3","can you~","rude","toys",0,3
+"3979","v3_lookit",3.93,"F","2","3","can you~","rude","no_running",1,3
+"4068","v3_lookit",3.9,"F","1","3","can you~","rude","toys",0,3
+"4069","v3_lookit",2.35,"F","2","3","can you~","rude","no_running",1,2
+"4075","v3_lookit",4.85,"M","2","3","can you~","rude","no_running",1,4
+"4020","v3_lookit",3.68,"M","1","3","can you~","rude","toys",0,3
+"4079","v3_lookit",3.91,"F","2","3","can you~","rude","no_running",1,3
+"4095","v3_lookit",3.34,"F","1","3","can you~","rude","toys",1,3
+"4120","v3_lookit",3.68,"F","2","3","can you~","rude","no_running",0,3
+"3956","v3_lookit",4.27,"M","2","3","can you~","rude","no_running",0,4
+"4139","v3_lookit",2.96,"M","2","3","can you~","rude","no_running",0,2
+"4145","v3_lookit",4.11,"M","2","3","can you~","rude","no_running",0,4
+"4138","v3_lookit",4.6,"M","2","3","can you~","rude","no_running",1,4
+"4153","v3_lookit",2.31,"F","1","3","can you~","rude","toys",1,2
+"4201","v3_lookit",2.26,"F","2","3","can you~","rude","no_running",1,2
+"4200","v3_lookit",3.67,"F","2","3","can you~","rude","no_running",0,3
+"4072","v3_lookit",3.38,"M","2","3","can you~","rude","no_running",1,3
+"4210","v3_lookit",2.93,"M","2","3","can you~","rude","no_running",1,2
+"4211","v3_lookit",2.93,"M","1","3","can you~","rude","toys",1,2
+"4219","v3_lookit",2.3,"M","2","3","can you~","rude","no_running",0,2
+"4217","v3_lookit",4.16,"F","1","3","can you~","rude","toys",0,4
+"4204","v3_lookit",2.13,"M","1","3","can you~","rude","toys",1,2
+"4226","v3_lookit",4.17,"F","1","3","can you~","rude","toys",1,4
+"3957","v3_lookit",2.7,"F","1","3","can you~","rude","toys",0,2
+"4224","v3_lookit",3.44,"M","1","3","can you~","rude","toys",0,3
+"4244","v3_lookit",4.99,"M","1","3","can you~","rude","toys",0,4
+"4253","v3_lookit",4.16,"M","2","3","can you~","rude","no_running",0,4
+"4121","v3_lookit",2.24,"F","2","3","can you~","rude","no_running",1,2
+"4263","v3_lookit",3.85,"M","2","3","can you~","rude","no_running",0,3
+"4266","v3_lookit",3.77,"F","1","3","can you~","rude","toys",1,3
+"4273","v3_lookit",4.37,"F","1","3","can you~","rude","toys",1,4
+"4286","v3_lookit",4.8,"M","1","3","can you~","rude","toys",1,4
+"4316","v3_lookit",4.91,"M","1","3","can you~","rude","toys",1,4
+"4356","v3_lookit",3.06,"M","2","3","can you~","rude","no_running",0,3
+"4353","v3_lookit",2.7,"F","2","3","can you~","rude","no_running",1,2
+"4351","v3_lookit",4.21,"M","1","3","can you~","rude","toys",1,4
+"4333","v3_lookit",4.5,"M","2","3","can you~","rude","no_running",0,4
+"4359","v3_lookit",3.51,"M","2","3","can you~","rude","no_running",0,3
+"4360","v3_lookit",2.42,"M","1","3","can you~","rude","toys",1,2
+"4172","v3_lookit",3.79,"F","1","3","can you~","rude","toys",1,3
+"4321","v3_lookit",2.46,"M","1","3","can you~","rude","toys",1,2
+"4369","v3_lookit",2.6,"M","1","3","can you~","rude","toys",1,2
+"4373","v3_lookit",4.41,"F","2","3","can you~","rude","no_running",1,4
+"4378","v3_lookit",3.59,"F","2","3","can you~","rude","no_running",1,3
+"4379","v3_lookit",4,"F","2","3","can you~","rude","no_running",1,4
+"4395","v3_lookit",4.11,"M","2","3","can you~","rude","no_running",1,4
+"4340","v3_lookit",3.19,"M","1","3","can you~","rude","toys",0,3
+"4339","v3_lookit",4.39,"F","1","3","can you~","rude","toys",0,4
+"4412","v3_lookit",4.14,"M","1","3","can you~","rude","toys",1,4
+"4423","v3_lookit",3.01,"M","1","3","can you~","rude","toys",0,3
+"4425","v3_lookit",3.94,"F","2","3","can you~","rude","no_running",1,3
+"4433","v3_lookit",2.66,"F","2","3","can you~","rude","no_running",1,2
+"4429","v3_lookit",4.8,"F","1","3","can you~","rude","toys",1,4
+"4409","v3_lookit",2.28,"F","2","3","can you~","rude","no_running",1,2
+"4300","v3_lookit",2.39,"F","2","3","can you~","rude","no_running",1,2
+"4440","v3_lookit",2.86,"M","1","3","can you~","rude","toys",1,2
+"4447","v3_lookit",3.97,"F","1","3","can you~","rude","toys",0,3
+"4475","v3_lookit",3.68,"M","1","3","can you~","rude","toys",1,3
+"4450","v3_lookit",3.64,"M","2","3","can you~","rude","no_running",0,3
+"4481","v3_lookit",3.26,"F","2","3","can you~","rude","no_running",1,3
+"4434","v3_lookit",4.61,"F","2","3","can you~","rude","no_running",1,4
+"4476","v3_lookit",3.79,"M","2","3","can you~","rude","no_running",0,3
+"3210","v3_lookit",3.9,"F","2","3","can you~","rude","no_running",1,3
+"2338","v3_lookit",2.01,"F","2","3","can you~","rude","no_running",0,2
+"4352","v3_lookit",2.78,"F","2","3","can you~","rude","no_running",0,2
+"4505","v3_lookit",4.78,"M","1","3","can you~","rude","toys",1,4
+"4511","v3_lookit",3.21,"F","2","3","can you~","rude","no_running",1,3
+"4518","v3_lookit",2.12,"M","1","3","can you~","rude","toys",0,2
+"3995","v3_lookit",4.44,"M","2","3","can you~","rude","no_running",1,4
+"4534","v3_lookit",4.73,"F","2","3","can you~","rude","no_running",1,4
+"3695","v3_lookit",3.55,"M","2","4","can you please~","polite","bread",1,3
+"2398","v3_lookit",3.46,"M","2","4","can you please~","polite","bread",1,3
+"3545","v3_lookit",2.1,"F","2","4","can you please~","polite","bread",1,2
+"3621","v3_lookit",4.82,"F","1","4","can you please~","polite","store",1,4
+"3900","v3_lookit",4.56,"M","2","4","can you please~","polite","bread",1,4
+"3903","v3_lookit",4.1,"F","1","4","can you please~","polite","store",1,4
+"3897","v3_lookit",3.28,"F","2","4","can you please~","polite","bread",1,3
+"3906","v3_lookit",4.56,"F","1","4","can you please~","polite","store",1,4
+"3914","v3_lookit",3.72,"M","2","4","can you please~","polite","bread",0,3
+"3963","v3_lookit",2.64,"M","2","4","can you please~","polite","bread",0,2
+"4037","v3_lookit",3.28,"M","1","4","can you please~","polite","store",0,3
+"4038","v3_lookit",3.81,"M","1","4","can you please~","polite","store",1,3
+"3979","v3_lookit",3.93,"F","2","4","can you please~","polite","bread",1,3
+"4068","v3_lookit",3.9,"F","1","4","can you please~","polite","store",0,3
+"4069","v3_lookit",2.35,"F","2","4","can you please~","polite","bread",1,2
+"4075","v3_lookit",4.85,"M","2","4","can you please~","polite","bread",1,4
+"4020","v3_lookit",3.68,"M","1","4","can you please~","polite","store",1,3
+"4079","v3_lookit",3.91,"F","2","4","can you please~","polite","bread",0,3
+"4095","v3_lookit",3.34,"F","1","4","can you please~","polite","store",1,3
+"4120","v3_lookit",3.68,"F","2","4","can you please~","polite","bread",1,3
+"3956","v3_lookit",4.27,"M","2","4","can you please~","polite","bread",0,4
+"4139","v3_lookit",2.96,"M","2","4","can you please~","polite","bread",0,2
+"4145","v3_lookit",4.11,"M","2","4","can you please~","polite","bread",1,4
+"4138","v3_lookit",4.6,"M","2","4","can you please~","polite","bread",1,4
+"4153","v3_lookit",2.31,"F","1","4","can you please~","polite","store",0,2
+"4201","v3_lookit",2.26,"F","2","4","can you please~","polite","bread",0,2
+"4200","v3_lookit",3.67,"F","2","4","can you please~","polite","bread",0,3
+"4072","v3_lookit",3.38,"M","2","4","can you please~","polite","bread",0,3
+"4210","v3_lookit",2.93,"M","2","4","can you please~","polite","bread",1,2
+"4211","v3_lookit",2.93,"M","1","4","can you please~","polite","store",1,2
+"4219","v3_lookit",2.3,"M","2","4","can you please~","polite","bread",0,2
+"4217","v3_lookit",4.16,"F","1","4","can you please~","polite","store",0,4
+"4204","v3_lookit",2.13,"M","1","4","can you please~","polite","store",0,2
+"4226","v3_lookit",4.17,"F","1","4","can you please~","polite","store",1,4
+"3957","v3_lookit",2.7,"F","1","4","can you please~","polite","store",1,2
+"4224","v3_lookit",3.44,"M","1","4","can you please~","polite","store",0,3
+"4244","v3_lookit",4.99,"M","1","4","can you please~","polite","store",1,4
+"4253","v3_lookit",4.16,"M","2","4","can you please~","polite","bread",1,4
+"4121","v3_lookit",2.24,"F","2","4","can you please~","polite","bread",0,2
+"4263","v3_lookit",3.85,"M","2","4","can you please~","polite","bread",1,3
+"4266","v3_lookit",3.77,"F","1","4","can you please~","polite","store",0,3
+"4273","v3_lookit",4.37,"F","1","4","can you please~","polite","store",0,4
+"4286","v3_lookit",4.8,"M","1","4","can you please~","polite","store",1,4
+"4316","v3_lookit",4.91,"M","1","4","can you please~","polite","store",1,4
+"4356","v3_lookit",3.06,"M","2","4","can you please~","polite","bread",0,3
+"4353","v3_lookit",2.7,"F","2","4","can you please~","polite","bread",1,2
+"4351","v3_lookit",4.21,"M","1","4","can you please~","polite","store",1,4
+"4333","v3_lookit",4.5,"M","2","4","can you please~","polite","bread",1,4
+"4359","v3_lookit",3.51,"M","2","4","can you please~","polite","bread",0,3
+"4360","v3_lookit",2.42,"M","1","4","can you please~","polite","store",1,2
+"4172","v3_lookit",3.79,"F","1","4","can you please~","polite","store",1,3
+"4321","v3_lookit",2.46,"M","1","4","can you please~","polite","store",0,2
+"4369","v3_lookit",2.6,"M","1","4","can you please~","polite","store",0,2
+"4373","v3_lookit",4.41,"F","2","4","can you please~","polite","bread",1,4
+"4378","v3_lookit",3.59,"F","2","4","can you please~","polite","bread",0,3
+"4379","v3_lookit",4,"F","2","4","can you please~","polite","bread",1,4
+"4395","v3_lookit",4.11,"M","2","4","can you please~","polite","bread",1,4
+"4340","v3_lookit",3.19,"M","1","4","can you please~","polite","store",0,3
+"4339","v3_lookit",4.39,"F","1","4","can you please~","polite","store",0,4
+"4412","v3_lookit",4.14,"M","1","4","can you please~","polite","store",0,4
+"4423","v3_lookit",3.01,"M","1","4","can you please~","polite","store",1,3
+"4425","v3_lookit",3.94,"F","2","4","can you please~","polite","bread",1,3
+"4433","v3_lookit",2.66,"F","2","4","can you please~","polite","bread",1,2
+"4429","v3_lookit",4.8,"F","1","4","can you please~","polite","store",1,4
+"4409","v3_lookit",2.28,"F","2","4","can you please~","polite","bread",1,2
+"4300","v3_lookit",2.39,"F","2","4","can you please~","polite","bread",1,2
+"4440","v3_lookit",2.86,"M","1","4","can you please~","polite","store",0,2
+"4447","v3_lookit",3.97,"F","1","4","can you please~","polite","store",0,3
+"4475","v3_lookit",3.68,"M","1","4","can you please~","polite","store",0,3
+"4450","v3_lookit",3.64,"M","2","4","can you please~","polite","bread",1,3
+"4481","v3_lookit",3.26,"F","2","4","can you please~","polite","bread",0,3
+"4434","v3_lookit",4.61,"F","2","4","can you please~","polite","bread",1,4
+"4476","v3_lookit",3.79,"M","2","4","can you please~","polite","bread",0,3
+"3210","v3_lookit",3.9,"F","2","4","can you please~","polite","bread",1,3
+"2338","v3_lookit",2.01,"F","2","4","can you please~","polite","bread",0,2
+"4352","v3_lookit",2.78,"F","2","4","can you please~","polite","bread",1,2
+"4505","v3_lookit",4.78,"M","1","4","can you please~","polite","store",1,4
+"4511","v3_lookit",3.21,"F","2","4","can you please~","polite","bread",1,3
+"4518","v3_lookit",2.12,"M","1","4","can you please~","polite","store",1,2
+"3995","v3_lookit",4.44,"M","2","4","can you please~","polite","bread",1,4
+"4534","v3_lookit",4.73,"F","2","4","can you please~","polite","bread",0,4
+"3695","v3_lookit",3.55,"M","2","5","please","rude","game",0,3
+"2398","v3_lookit",3.46,"M","2","5","please","rude","game",0,3
+"3545","v3_lookit",2.1,"F","2","5","please","rude","game",1,2
+"3621","v3_lookit",4.82,"F","1","5","please","rude","chocolate",1,4
+"3900","v3_lookit",4.56,"M","2","5","please","rude","game",1,4
+"3903","v3_lookit",4.1,"F","1","5","please","rude","chocolate",0,4
+"3897","v3_lookit",3.28,"F","2","5","please","rude","game",1,3
+"3906","v3_lookit",4.56,"F","1","5","please","rude","chocolate",1,4
+"3914","v3_lookit",3.72,"M","2","5","please","rude","game",1,3
+"3963","v3_lookit",2.64,"M","2","5","please","rude","game",1,2
+"4037","v3_lookit",3.28,"M","1","5","please","rude","chocolate",1,3
+"4038","v3_lookit",3.81,"M","1","5","please","rude","chocolate",1,3
+"3979","v3_lookit",3.93,"F","2","5","please","rude","game",0,3
+"4068","v3_lookit",3.9,"F","1","5","please","rude","chocolate",1,3
+"4069","v3_lookit",2.35,"F","2","5","please","rude","game",1,2
+"4075","v3_lookit",4.85,"M","2","5","please","rude","game",1,4
+"4020","v3_lookit",3.68,"M","1","5","please","rude","chocolate",0,3
+"4079","v3_lookit",3.91,"F","2","5","please","rude","game",1,3
+"4095","v3_lookit",3.34,"F","1","5","please","rude","chocolate",0,3
+"4120","v3_lookit",3.68,"F","2","5","please","rude","game",1,3
+"3956","v3_lookit",4.27,"M","2","5","please","rude","game",1,4
+"4139","v3_lookit",2.96,"M","2","5","please","rude","game",0,2
+"4145","v3_lookit",4.11,"M","2","5","please","rude","game",1,4
+"4138","v3_lookit",4.6,"M","2","5","please","rude","game",0,4
+"4153","v3_lookit",2.31,"F","1","5","please","rude","chocolate",1,2
+"4201","v3_lookit",2.26,"F","2","5","please","rude","game",0,2
+"4200","v3_lookit",3.67,"F","2","5","please","rude","game",0,3
+"4072","v3_lookit",3.38,"M","2","5","please","rude","game",0,3
+"4210","v3_lookit",2.93,"M","2","5","please","rude","game",1,2
+"4211","v3_lookit",2.93,"M","1","5","please","rude","chocolate",1,2
+"4219","v3_lookit",2.3,"M","2","5","please","rude","game",0,2
+"4217","v3_lookit",4.16,"F","1","5","please","rude","chocolate",1,4
+"4204","v3_lookit",2.13,"M","1","5","please","rude","chocolate",0,2
+"4226","v3_lookit",4.17,"F","1","5","please","rude","chocolate",1,4
+"3957","v3_lookit",2.7,"F","1","5","please","rude","chocolate",1,2
+"4224","v3_lookit",3.44,"M","1","5","please","rude","chocolate",0,3
+"4244","v3_lookit",4.99,"M","1","5","please","rude","chocolate",1,4
+"4253","v3_lookit",4.16,"M","2","5","please","rude","game",0,4
+"4121","v3_lookit",2.24,"F","2","5","please","rude","game",0,2
+"4263","v3_lookit",3.85,"M","2","5","please","rude","game",1,3
+"4266","v3_lookit",3.77,"F","1","5","please","rude","chocolate",1,3
+"4273","v3_lookit",4.37,"F","1","5","please","rude","chocolate",1,4
+"4286","v3_lookit",4.8,"M","1","5","please","rude","chocolate",1,4
+"4316","v3_lookit",4.91,"M","1","5","please","rude","chocolate",0,4
+"4356","v3_lookit",3.06,"M","2","5","please","rude","game",0,3
+"4353","v3_lookit",2.7,"F","2","5","please","rude","game",0,2
+"4351","v3_lookit",4.21,"M","1","5","please","rude","chocolate",0,4
+"4333","v3_lookit",4.5,"M","2","5","please","rude","game",0,4
+"4359","v3_lookit",3.51,"M","2","5","please","rude","game",0,3
+"4360","v3_lookit",2.42,"M","1","5","please","rude","chocolate",0,2
+"4172","v3_lookit",3.79,"F","1","5","please","rude","chocolate",1,3
+"4321","v3_lookit",2.46,"M","1","5","please","rude","chocolate",1,2
+"4369","v3_lookit",2.6,"M","1","5","please","rude","chocolate",0,2
+"4373","v3_lookit",4.41,"F","2","5","please","rude","game",1,4
+"4378","v3_lookit",3.59,"F","2","5","please","rude","game",0,3
+"4379","v3_lookit",4,"F","2","5","please","rude","game",0,4
+"4395","v3_lookit",4.11,"M","2","5","please","rude","game",1,4
+"4340","v3_lookit",3.19,"M","1","5","please","rude","chocolate",0,3
+"4339","v3_lookit",4.39,"F","1","5","please","rude","chocolate",1,4
+"4412","v3_lookit",4.14,"M","1","5","please","rude","chocolate",1,4
+"4423","v3_lookit",3.01,"M","1","5","please","rude","chocolate",1,3
+"4425","v3_lookit",3.94,"F","2","5","please","rude","game",0,3
+"4433","v3_lookit",2.66,"F","2","5","please","rude","game",1,2
+"4429","v3_lookit",4.8,"F","1","5","please","rude","chocolate",1,4
+"4409","v3_lookit",2.28,"F","2","5","please","rude","game",1,2
+"4300","v3_lookit",2.39,"F","2","5","please","rude","game",1,2
+"4440","v3_lookit",2.86,"M","1","5","please","rude","chocolate",0,2
+"4447","v3_lookit",3.97,"F","1","5","please","rude","chocolate",1,3
+"4475","v3_lookit",3.68,"M","1","5","please","rude","chocolate",0,3
+"4450","v3_lookit",3.64,"M","2","5","please","rude","game",1,3
+"4481","v3_lookit",3.26,"F","2","5","please","rude","game",0,3
+"4434","v3_lookit",4.61,"F","2","5","please","rude","game",0,4
+"4476","v3_lookit",3.79,"M","2","5","please","rude","game",1,3
+"3210","v3_lookit",3.9,"F","2","5","please","rude","game",1,3
+"2338","v3_lookit",2.01,"F","2","5","please","rude","game",1,2
+"4352","v3_lookit",2.78,"F","2","5","please","rude","game",0,2
+"4505","v3_lookit",4.78,"M","1","5","please","rude","chocolate",1,4
+"4511","v3_lookit",3.21,"F","2","5","please","rude","game",1,3
+"4518","v3_lookit",2.12,"M","1","5","please","rude","chocolate",1,2
+"3995","v3_lookit",4.44,"M","2","5","please","rude","game",1,4
+"4534","v3_lookit",4.73,"F","2","5","please","rude","game",1,4
+"3695","v3_lookit",3.55,"M","2","6","can you please~","polite","scissors",1,3
+"2398","v3_lookit",3.46,"M","2","6","can you please~","polite","scissors",1,3
+"3545","v3_lookit",2.1,"F","2","6","can you please~","polite","scissors",0,2
+"3621","v3_lookit",4.82,"F","1","6","can you please~","polite","no_singing",1,4
+"3900","v3_lookit",4.56,"M","2","6","can you please~","polite","scissors",0,4
+"3903","v3_lookit",4.1,"F","1","6","can you please~","polite","no_singing",1,4
+"3897","v3_lookit",3.28,"F","2","6","can you please~","polite","scissors",1,3
+"3906","v3_lookit",4.56,"F","1","6","can you please~","polite","no_singing",1,4
+"3914","v3_lookit",3.72,"M","2","6","can you please~","polite","scissors",1,3
+"3963","v3_lookit",2.64,"M","2","6","can you please~","polite","scissors",1,2
+"4037","v3_lookit",3.28,"M","1","6","can you please~","polite","no_singing",0,3
+"4038","v3_lookit",3.81,"M","1","6","can you please~","polite","no_singing",1,3
+"3979","v3_lookit",3.93,"F","2","6","can you please~","polite","scissors",1,3
+"4068","v3_lookit",3.9,"F","1","6","can you please~","polite","no_singing",1,3
+"4069","v3_lookit",2.35,"F","2","6","can you please~","polite","scissors",0,2
+"4075","v3_lookit",4.85,"M","2","6","can you please~","polite","scissors",1,4
+"4020","v3_lookit",3.68,"M","1","6","can you please~","polite","no_singing",1,3
+"4079","v3_lookit",3.91,"F","2","6","can you please~","polite","scissors",0,3
+"4095","v3_lookit",3.34,"F","1","6","can you please~","polite","no_singing",0,3
+"4120","v3_lookit",3.68,"F","2","6","can you please~","polite","scissors",0,3
+"3956","v3_lookit",4.27,"M","2","6","can you please~","polite","scissors",0,4
+"4139","v3_lookit",2.96,"M","2","6","can you please~","polite","scissors",1,2
+"4145","v3_lookit",4.11,"M","2","6","can you please~","polite","scissors",1,4
+"4138","v3_lookit",4.6,"M","2","6","can you please~","polite","scissors",0,4
+"4153","v3_lookit",2.31,"F","1","6","can you please~","polite","no_singing",1,2
+"4201","v3_lookit",2.26,"F","2","6","can you please~","polite","scissors",0,2
+"4200","v3_lookit",3.67,"F","2","6","can you please~","polite","scissors",1,3
+"4072","v3_lookit",3.38,"M","2","6","can you please~","polite","scissors",1,3
+"4210","v3_lookit",2.93,"M","2","6","can you please~","polite","scissors",1,2
+"4211","v3_lookit",2.93,"M","1","6","can you please~","polite","no_singing",0,2
+"4219","v3_lookit",2.3,"M","2","6","can you please~","polite","scissors",1,2
+"4217","v3_lookit",4.16,"F","1","6","can you please~","polite","no_singing",1,4
+"4204","v3_lookit",2.13,"M","1","6","can you please~","polite","no_singing",0,2
+"4226","v3_lookit",4.17,"F","1","6","can you please~","polite","no_singing",1,4
+"3957","v3_lookit",2.7,"F","1","6","can you please~","polite","no_singing",1,2
+"4224","v3_lookit",3.44,"M","1","6","can you please~","polite","no_singing",0,3
+"4244","v3_lookit",4.99,"M","1","6","can you please~","polite","no_singing",1,4
+"4253","v3_lookit",4.16,"M","2","6","can you please~","polite","scissors",0,4
+"4121","v3_lookit",2.24,"F","2","6","can you please~","polite","scissors",1,2
+"4263","v3_lookit",3.85,"M","2","6","can you please~","polite","scissors",1,3
+"4266","v3_lookit",3.77,"F","1","6","can you please~","polite","no_singing",1,3
+"4273","v3_lookit",4.37,"F","1","6","can you please~","polite","no_singing",1,4
+"4286","v3_lookit",4.8,"M","1","6","can you please~","polite","no_singing",1,4
+"4316","v3_lookit",4.91,"M","1","6","can you please~","polite","no_singing",1,4
+"4356","v3_lookit",3.06,"M","2","6","can you please~","polite","scissors",0,3
+"4353","v3_lookit",2.7,"F","2","6","can you please~","polite","scissors",0,2
+"4351","v3_lookit",4.21,"M","1","6","can you please~","polite","no_singing",0,4
+"4333","v3_lookit",4.5,"M","2","6","can you please~","polite","scissors",0,4
+"4359","v3_lookit",3.51,"M","2","6","can you please~","polite","scissors",0,3
+"4360","v3_lookit",2.42,"M","1","6","can you please~","polite","no_singing",0,2
+"4172","v3_lookit",3.79,"F","1","6","can you please~","polite","no_singing",1,3
+"4321","v3_lookit",2.46,"M","1","6","can you please~","polite","no_singing",0,2
+"4369","v3_lookit",2.6,"M","1","6","can you please~","polite","no_singing",0,2
+"4373","v3_lookit",4.41,"F","2","6","can you please~","polite","scissors",1,4
+"4378","v3_lookit",3.59,"F","2","6","can you please~","polite","scissors",1,3
+"4379","v3_lookit",4,"F","2","6","can you please~","polite","scissors",1,4
+"4395","v3_lookit",4.11,"M","2","6","can you please~","polite","scissors",1,4
+"4340","v3_lookit",3.19,"M","1","6","can you please~","polite","no_singing",0,3
+"4339","v3_lookit",4.39,"F","1","6","can you please~","polite","no_singing",1,4
+"4412","v3_lookit",4.14,"M","1","6","can you please~","polite","no_singing",1,4
+"4423","v3_lookit",3.01,"M","1","6","can you please~","polite","no_singing",0,3
+"4425","v3_lookit",3.94,"F","2","6","can you please~","polite","scissors",1,3
+"4433","v3_lookit",2.66,"F","2","6","can you please~","polite","scissors",1,2
+"4429","v3_lookit",4.8,"F","1","6","can you please~","polite","no_singing",1,4
+"4409","v3_lookit",2.28,"F","2","6","can you please~","polite","scissors",1,2
+"4300","v3_lookit",2.39,"F","2","6","can you please~","polite","scissors",1,2
+"4440","v3_lookit",2.86,"M","1","6","can you please~","polite","no_singing",0,2
+"4447","v3_lookit",3.97,"F","1","6","can you please~","polite","no_singing",1,3
+"4475","v3_lookit",3.68,"M","1","6","can you please~","polite","no_singing",1,3
+"4450","v3_lookit",3.64,"M","2","6","can you please~","polite","scissors",1,3
+"4481","v3_lookit",3.26,"F","2","6","can you please~","polite","scissors",1,3
+"4434","v3_lookit",4.61,"F","2","6","can you please~","polite","scissors",1,4
+"4476","v3_lookit",3.79,"M","2","6","can you please~","polite","scissors",0,3
+"3210","v3_lookit",3.9,"F","2","6","can you please~","polite","scissors",1,3
+"2338","v3_lookit",2.01,"F","2","6","can you please~","polite","scissors",1,2
+"4352","v3_lookit",2.78,"F","2","6","can you please~","polite","scissors",0,2
+"4505","v3_lookit",4.78,"M","1","6","can you please~","polite","no_singing",1,4
+"4511","v3_lookit",3.21,"F","2","6","can you please~","polite","scissors",1,3
+"4518","v3_lookit",2.12,"M","1","6","can you please~","polite","no_singing",1,2
+"3995","v3_lookit",4.44,"M","2","6","can you please~","polite","scissors",1,4
+"4534","v3_lookit",4.73,"F","2","6","can you please~","polite","scissors",1,4
+"3695","v3_lookit",3.55,"M","2","7","can you~","rude","no_singing",1,3
+"2398","v3_lookit",3.46,"M","2","7","can you~","rude","no_singing",1,3
+"3545","v3_lookit",2.1,"F","2","7","can you~","rude","no_singing",1,2
+"3621","v3_lookit",4.82,"F","1","7","can you~","polite","no_running",NA,4
+"3900","v3_lookit",4.56,"M","2","7","can you~","rude","no_singing",0,4
+"3903","v3_lookit",4.1,"F","1","7","can you~","polite","no_running",1,4
+"3897","v3_lookit",3.28,"F","2","7","can you~","rude","no_singing",1,3
+"3906","v3_lookit",4.56,"F","1","7","can you~","polite","no_running",1,4
+"3914","v3_lookit",3.72,"M","2","7","can you~","rude","no_singing",1,3
+"3963","v3_lookit",2.64,"M","2","7","can you~","rude","no_singing",1,2
+"4037","v3_lookit",3.28,"M","1","7","can you~","polite","no_running",1,3
+"4038","v3_lookit",3.81,"M","1","7","can you~","polite","no_running",0,3
+"3979","v3_lookit",3.93,"F","2","7","can you~","rude","no_singing",1,3
+"4068","v3_lookit",3.9,"F","1","7","can you~","polite","no_running",0,3
+"4069","v3_lookit",2.35,"F","2","7","can you~","rude","no_singing",0,2
+"4075","v3_lookit",4.85,"M","2","7","can you~","rude","no_singing",1,4
+"4020","v3_lookit",3.68,"M","1","7","can you~","polite","no_running",1,3
+"4079","v3_lookit",3.91,"F","2","7","can you~","rude","no_singing",1,3
+"4095","v3_lookit",3.34,"F","1","7","can you~","polite","no_running",0,3
+"4120","v3_lookit",3.68,"F","2","7","can you~","rude","no_singing",1,3
+"3956","v3_lookit",4.27,"M","2","7","can you~","rude","no_singing",0,4
+"4139","v3_lookit",2.96,"M","2","7","can you~","rude","no_singing",0,2
+"4145","v3_lookit",4.11,"M","2","7","can you~","rude","no_singing",1,4
+"4138","v3_lookit",4.6,"M","2","7","can you~","rude","no_singing",1,4
+"4153","v3_lookit",2.31,"F","1","7","can you~","polite","no_running",1,2
+"4201","v3_lookit",2.26,"F","2","7","can you~","rude","no_singing",0,2
+"4200","v3_lookit",3.67,"F","2","7","can you~","rude","no_singing",0,3
+"4072","v3_lookit",3.38,"M","2","7","can you~","rude","no_singing",0,3
+"4210","v3_lookit",2.93,"M","2","7","can you~","rude","no_singing",1,2
+"4211","v3_lookit",2.93,"M","1","7","can you~","polite","no_running",0,2
+"4219","v3_lookit",2.3,"M","2","7","can you~","rude","no_singing",1,2
+"4217","v3_lookit",4.16,"F","1","7","can you~","polite","no_running",0,4
+"4204","v3_lookit",2.13,"M","1","7","can you~","polite","no_running",0,2
+"4226","v3_lookit",4.17,"F","1","7","can you~","polite","no_running",1,4
+"3957","v3_lookit",2.7,"F","1","7","can you~","polite","no_running",1,2
+"4224","v3_lookit",3.44,"M","1","7","can you~","polite","no_running",1,3
+"4244","v3_lookit",4.99,"M","1","7","can you~","polite","no_running",1,4
+"4253","v3_lookit",4.16,"M","2","7","can you~","rude","no_singing",1,4
+"4121","v3_lookit",2.24,"F","2","7","can you~","rude","no_singing",1,2
+"4263","v3_lookit",3.85,"M","2","7","can you~","rude","no_singing",1,3
+"4266","v3_lookit",3.77,"F","1","7","can you~","polite","no_running",1,3
+"4273","v3_lookit",4.37,"F","1","7","can you~","polite","no_running",1,4
+"4286","v3_lookit",4.8,"M","1","7","can you~","polite","no_running",1,4
+"4316","v3_lookit",4.91,"M","1","7","can you~","polite","no_running",0,4
+"4356","v3_lookit",3.06,"M","2","7","can you~","rude","no_singing",1,3
+"4353","v3_lookit",2.7,"F","2","7","can you~","rude","no_singing",0,2
+"4351","v3_lookit",4.21,"M","1","7","can you~","polite","no_running",1,4
+"4333","v3_lookit",4.5,"M","2","7","can you~","rude","no_singing",0,4
+"4359","v3_lookit",3.51,"M","2","7","can you~","rude","no_singing",1,3
+"4360","v3_lookit",2.42,"M","1","7","can you~","polite","no_running",0,2
+"4172","v3_lookit",3.79,"F","1","7","can you~","polite","no_running",0,3
+"4321","v3_lookit",2.46,"M","1","7","can you~","polite","no_running",0,2
+"4369","v3_lookit",2.6,"M","1","7","can you~","polite","no_running",0,2
+"4373","v3_lookit",4.41,"F","2","7","can you~","rude","no_singing",1,4
+"4378","v3_lookit",3.59,"F","2","7","can you~","rude","no_singing",1,3
+"4379","v3_lookit",4,"F","2","7","can you~","rude","no_singing",1,4
+"4395","v3_lookit",4.11,"M","2","7","can you~","rude","no_singing",1,4
+"4340","v3_lookit",3.19,"M","1","7","can you~","polite","no_running",0,3
+"4339","v3_lookit",4.39,"F","1","7","can you~","polite","no_running",0,4
+"4412","v3_lookit",4.14,"M","1","7","can you~","polite","no_running",0,4
+"4423","v3_lookit",3.01,"M","1","7","can you~","polite","no_running",1,3
+"4425","v3_lookit",3.94,"F","2","7","can you~","rude","no_singing",1,3
+"4433","v3_lookit",2.66,"F","2","7","can you~","rude","no_singing",1,2
+"4429","v3_lookit",4.8,"F","1","7","can you~","polite","no_running",1,4
+"4409","v3_lookit",2.28,"F","2","7","can you~","rude","no_singing",1,2
+"4300","v3_lookit",2.39,"F","2","7","can you~","rude","no_singing",NA,2
+"4440","v3_lookit",2.86,"M","1","7","can you~","polite","no_running",0,2
+"4447","v3_lookit",3.97,"F","1","7","can you~","polite","no_running",1,3
+"4475","v3_lookit",3.68,"M","1","7","can you~","polite","no_running",1,3
+"4450","v3_lookit",3.64,"M","2","7","can you~","rude","no_singing",0,3
+"4481","v3_lookit",3.26,"F","2","7","can you~","rude","no_singing",0,3
+"4434","v3_lookit",4.61,"F","2","7","can you~","rude","no_singing",1,4
+"4476","v3_lookit",3.79,"M","2","7","can you~","rude","no_singing",0,3
+"3210","v3_lookit",3.9,"F","2","7","can you~","rude","no_singing",1,3
+"2338","v3_lookit",2.01,"F","2","7","can you~","rude","no_singing",1,2
+"4352","v3_lookit",2.78,"F","2","7","can you~","rude","no_singing",0,2
+"4505","v3_lookit",4.78,"M","1","7","can you~","polite","no_running",1,4
+"4511","v3_lookit",3.21,"F","2","7","can you~","rude","no_singing",NA,3
+"4518","v3_lookit",2.12,"M","1","7","can you~","polite","no_running",0,2
+"3995","v3_lookit",4.44,"M","2","7","can you~","rude","no_singing",1,4
+"4534","v3_lookit",4.73,"F","2","7","can you~","rude","no_singing",1,4
+"3695","v3_lookit",3.55,"M","2","8","can you please~","polite","chocolate",0,3
+"2398","v3_lookit",3.46,"M","2","8","can you please~","polite","chocolate",0,3
+"3545","v3_lookit",2.1,"F","2","8","can you please~","polite","chocolate",1,2
+"3621","v3_lookit",4.82,"F","1","8","can you please~","rude","bread",NA,4
+"3900","v3_lookit",4.56,"M","2","8","can you please~","polite","chocolate",0,4
+"3903","v3_lookit",4.1,"F","1","8","can you please~","rude","bread",1,4
+"3897","v3_lookit",3.28,"F","2","8","can you please~","polite","chocolate",1,3
+"3906","v3_lookit",4.56,"F","1","8","can you please~","rude","bread",1,4
+"3914","v3_lookit",3.72,"M","2","8","can you please~","polite","chocolate",1,3
+"3963","v3_lookit",2.64,"M","2","8","can you please~","polite","chocolate",1,2
+"4037","v3_lookit",3.28,"M","1","8","can you please~","rude","bread",1,3
+"4038","v3_lookit",3.81,"M","1","8","can you please~","rude","bread",1,3
+"3979","v3_lookit",3.93,"F","2","8","can you please~","polite","chocolate",1,3
+"4068","v3_lookit",3.9,"F","1","8","can you please~","rude","bread",1,3
+"4069","v3_lookit",2.35,"F","2","8","can you please~","polite","chocolate",0,2
+"4075","v3_lookit",4.85,"M","2","8","can you please~","polite","chocolate",1,4
+"4020","v3_lookit",3.68,"M","1","8","can you please~","rude","bread",0,3
+"4079","v3_lookit",3.91,"F","2","8","can you please~","polite","chocolate",0,3
+"4095","v3_lookit",3.34,"F","1","8","can you please~","rude","bread",0,3
+"4120","v3_lookit",3.68,"F","2","8","can you please~","polite","chocolate",1,3
+"3956","v3_lookit",4.27,"M","2","8","can you please~","polite","chocolate",1,4
+"4139","v3_lookit",2.96,"M","2","8","can you please~","polite","chocolate",0,2
+"4145","v3_lookit",4.11,"M","2","8","can you please~","polite","chocolate",1,4
+"4138","v3_lookit",4.6,"M","2","8","can you please~","polite","chocolate",0,4
+"4153","v3_lookit",2.31,"F","1","8","can you please~","rude","bread",1,2
+"4201","v3_lookit",2.26,"F","2","8","can you please~","polite","chocolate",1,2
+"4200","v3_lookit",3.67,"F","2","8","can you please~","polite","chocolate",0,3
+"4072","v3_lookit",3.38,"M","2","8","can you please~","polite","chocolate",1,3
+"4210","v3_lookit",2.93,"M","2","8","can you please~","polite","chocolate",0,2
+"4211","v3_lookit",2.93,"M","1","8","can you please~","rude","bread",1,2
+"4219","v3_lookit",2.3,"M","2","8","can you please~","polite","chocolate",0,2
+"4217","v3_lookit",4.16,"F","1","8","can you please~","rude","bread",1,4
+"4204","v3_lookit",2.13,"M","1","8","can you please~","rude","bread",0,2
+"4226","v3_lookit",4.17,"F","1","8","can you please~","rude","bread",1,4
+"3957","v3_lookit",2.7,"F","1","8","can you please~","rude","bread",1,2
+"4224","v3_lookit",3.44,"M","1","8","can you please~","rude","bread",1,3
+"4244","v3_lookit",4.99,"M","1","8","can you please~","rude","bread",1,4
+"4253","v3_lookit",4.16,"M","2","8","can you please~","polite","chocolate",1,4
+"4121","v3_lookit",2.24,"F","2","8","can you please~","polite","chocolate",0,2
+"4263","v3_lookit",3.85,"M","2","8","can you please~","polite","chocolate",1,3
+"4266","v3_lookit",3.77,"F","1","8","can you please~","rude","bread",1,3
+"4273","v3_lookit",4.37,"F","1","8","can you please~","rude","bread",1,4
+"4286","v3_lookit",4.8,"M","1","8","can you please~","rude","bread",1,4
+"4316","v3_lookit",4.91,"M","1","8","can you please~","rude","bread",1,4
+"4356","v3_lookit",3.06,"M","2","8","can you please~","polite","chocolate",1,3
+"4353","v3_lookit",2.7,"F","2","8","can you please~","polite","chocolate",0,2
+"4351","v3_lookit",4.21,"M","1","8","can you please~","rude","bread",1,4
+"4333","v3_lookit",4.5,"M","2","8","can you please~","polite","chocolate",0,4
+"4359","v3_lookit",3.51,"M","2","8","can you please~","polite","chocolate",0,3
+"4360","v3_lookit",2.42,"M","1","8","can you please~","rude","bread",0,2
+"4172","v3_lookit",3.79,"F","1","8","can you please~","rude","bread",1,3
+"4321","v3_lookit",2.46,"M","1","8","can you please~","rude","bread",0,2
+"4369","v3_lookit",2.6,"M","1","8","can you please~","rude","bread",0,2
+"4373","v3_lookit",4.41,"F","2","8","can you please~","polite","chocolate",0,4
+"4378","v3_lookit",3.59,"F","2","8","can you please~","polite","chocolate",1,3
+"4379","v3_lookit",4,"F","2","8","can you please~","polite","chocolate",1,4
+"4395","v3_lookit",4.11,"M","2","8","can you please~","polite","chocolate",1,4
+"4340","v3_lookit",3.19,"M","1","8","can you please~","rude","bread",0,3
+"4339","v3_lookit",4.39,"F","1","8","can you please~","rude","bread",1,4
+"4412","v3_lookit",4.14,"M","1","8","can you please~","rude","bread",1,4
+"4423","v3_lookit",3.01,"M","1","8","can you please~","rude","bread",1,3
+"4425","v3_lookit",3.94,"F","2","8","can you please~","polite","chocolate",1,3
+"4433","v3_lookit",2.66,"F","2","8","can you please~","polite","chocolate",0,2
+"4429","v3_lookit",4.8,"F","1","8","can you please~","rude","bread",1,4
+"4409","v3_lookit",2.28,"F","2","8","can you please~","polite","chocolate",1,2
+"4300","v3_lookit",2.39,"F","2","8","can you please~","polite","chocolate",NA,2
+"4440","v3_lookit",2.86,"M","1","8","can you please~","rude","bread",0,2
+"4447","v3_lookit",3.97,"F","1","8","can you please~","rude","bread",1,3
+"4475","v3_lookit",3.68,"M","1","8","can you please~","rude","bread",1,3
+"4450","v3_lookit",3.64,"M","2","8","can you please~","polite","chocolate",0,3
+"4481","v3_lookit",3.26,"F","2","8","can you please~","polite","chocolate",0,3
+"4434","v3_lookit",4.61,"F","2","8","can you please~","polite","chocolate",1,4
+"4476","v3_lookit",3.79,"M","2","8","can you please~","polite","chocolate",0,3
+"3210","v3_lookit",3.9,"F","2","8","can you please~","polite","chocolate",1,3
+"2338","v3_lookit",2.01,"F","2","8","can you please~","polite","chocolate",0,2
+"4352","v3_lookit",2.78,"F","2","8","can you please~","polite","chocolate",1,2
+"4505","v3_lookit",4.78,"M","1","8","can you please~","rude","bread",1,4
+"4511","v3_lookit",3.21,"F","2","8","can you please~","polite","chocolate",NA,3
+"4518","v3_lookit",2.12,"M","1","8","can you please~","rude","bread",1,2
+"3995","v3_lookit",4.44,"M","2","8","can you please~","polite","chocolate",1,4
+"4534","v3_lookit",4.73,"F","2","8","can you please~","polite","chocolate",1,4
+"3695","v3_lookit",3.55,"M","2","9","can you please~","rude","store",0,3
+"2398","v3_lookit",3.46,"M","2","9","can you please~","rude","store",1,3
+"3545","v3_lookit",2.1,"F","2","9","can you please~","rude","store",1,2
+"3621","v3_lookit",4.82,"F","1","9","can you please~","rude","scissors",NA,4
+"3900","v3_lookit",4.56,"M","2","9","can you please~","rude","store",1,4
+"3903","v3_lookit",4.1,"F","1","9","can you please~","rude","scissors",1,4
+"3897","v3_lookit",3.28,"F","2","9","can you please~","rude","store",1,3
+"3906","v3_lookit",4.56,"F","1","9","can you please~","rude","scissors",1,4
+"3914","v3_lookit",3.72,"M","2","9","can you please~","rude","store",NA,3
+"3963","v3_lookit",2.64,"M","2","9","can you please~","rude","store",0,2
+"4037","v3_lookit",3.28,"M","1","9","can you please~","rude","scissors",1,3
+"4038","v3_lookit",3.81,"M","1","9","can you please~","rude","scissors",1,3
+"3979","v3_lookit",3.93,"F","2","9","can you please~","rude","store",1,3
+"4068","v3_lookit",3.9,"F","1","9","can you please~","rude","scissors",0,3
+"4069","v3_lookit",2.35,"F","2","9","can you please~","rude","store",1,2
+"4075","v3_lookit",4.85,"M","2","9","can you please~","rude","store",1,4
+"4020","v3_lookit",3.68,"M","1","9","can you please~","rude","scissors",1,3
+"4079","v3_lookit",3.91,"F","2","9","can you please~","rude","store",1,3
+"4095","v3_lookit",3.34,"F","1","9","can you please~","rude","scissors",0,3
+"4120","v3_lookit",3.68,"F","2","9","can you please~","rude","store",1,3
+"3956","v3_lookit",4.27,"M","2","9","can you please~","rude","store",0,4
+"4139","v3_lookit",2.96,"M","2","9","can you please~","rude","store",0,2
+"4145","v3_lookit",4.11,"M","2","9","can you please~","rude","store",1,4
+"4138","v3_lookit",4.6,"M","2","9","can you please~","rude","store",0,4
+"4153","v3_lookit",2.31,"F","1","9","can you please~","rude","scissors",0,2
+"4201","v3_lookit",2.26,"F","2","9","can you please~","rude","store",1,2
+"4200","v3_lookit",3.67,"F","2","9","can you please~","rude","store",0,3
+"4072","v3_lookit",3.38,"M","2","9","can you please~","rude","store",0,3
+"4210","v3_lookit",2.93,"M","2","9","can you please~","rude","store",1,2
+"4211","v3_lookit",2.93,"M","1","9","can you please~","rude","scissors",0,2
+"4219","v3_lookit",2.3,"M","2","9","can you please~","rude","store",NA,2
+"4217","v3_lookit",4.16,"F","1","9","can you please~","rude","scissors",1,4
+"4204","v3_lookit",2.13,"M","1","9","can you please~","rude","scissors",1,2
+"4226","v3_lookit",4.17,"F","1","9","can you please~","rude","scissors",1,4
+"3957","v3_lookit",2.7,"F","1","9","can you please~","rude","scissors",0,2
+"4224","v3_lookit",3.44,"M","1","9","can you please~","rude","scissors",0,3
+"4244","v3_lookit",4.99,"M","1","9","can you please~","rude","scissors",1,4
+"4253","v3_lookit",4.16,"M","2","9","can you please~","rude","store",1,4
+"4121","v3_lookit",2.24,"F","2","9","can you please~","rude","store",1,2
+"4263","v3_lookit",3.85,"M","2","9","can you please~","rude","store",1,3
+"4266","v3_lookit",3.77,"F","1","9","can you please~","rude","scissors",0,3
+"4273","v3_lookit",4.37,"F","1","9","can you please~","rude","scissors",1,4
+"4286","v3_lookit",4.8,"M","1","9","can you please~","rude","scissors",1,4
+"4316","v3_lookit",4.91,"M","1","9","can you please~","rude","scissors",1,4
+"4356","v3_lookit",3.06,"M","2","9","can you please~","rude","store",0,3
+"4353","v3_lookit",2.7,"F","2","9","can you please~","rude","store",1,2
+"4351","v3_lookit",4.21,"M","1","9","can you please~","rude","scissors",1,4
+"4333","v3_lookit",4.5,"M","2","9","can you please~","rude","store",1,4
+"4359","v3_lookit",3.51,"M","2","9","can you please~","rude","store",0,3
+"4360","v3_lookit",2.42,"M","1","9","can you please~","rude","scissors",0,2
+"4172","v3_lookit",3.79,"F","1","9","can you please~","rude","scissors",1,3
+"4321","v3_lookit",2.46,"M","1","9","can you please~","rude","scissors",1,2
+"4369","v3_lookit",2.6,"M","1","9","can you please~","rude","scissors",NA,2
+"4373","v3_lookit",4.41,"F","2","9","can you please~","rude","store",1,4
+"4378","v3_lookit",3.59,"F","2","9","can you please~","rude","store",1,3
+"4379","v3_lookit",4,"F","2","9","can you please~","rude","store",1,4
+"4395","v3_lookit",4.11,"M","2","9","can you please~","rude","store",1,4
+"4340","v3_lookit",3.19,"M","1","9","can you please~","rude","scissors",0,3
+"4339","v3_lookit",4.39,"F","1","9","can you please~","rude","scissors",0,4
+"4412","v3_lookit",4.14,"M","1","9","can you please~","rude","scissors",1,4
+"4423","v3_lookit",3.01,"M","1","9","can you please~","rude","scissors",0,3
+"4425","v3_lookit",3.94,"F","2","9","can you please~","rude","store",1,3
+"4433","v3_lookit",2.66,"F","2","9","can you please~","rude","store",1,2
+"4429","v3_lookit",4.8,"F","1","9","can you please~","rude","scissors",1,4
+"4409","v3_lookit",2.28,"F","2","9","can you please~","rude","store",1,2
+"4300","v3_lookit",2.39,"F","2","9","can you please~","rude","store",NA,2
+"4440","v3_lookit",2.86,"M","1","9","can you please~","rude","scissors",1,2
+"4447","v3_lookit",3.97,"F","1","9","can you please~","rude","scissors",1,3
+"4475","v3_lookit",3.68,"M","1","9","can you please~","rude","scissors",1,3
+"4450","v3_lookit",3.64,"M","2","9","can you please~","rude","store",0,3
+"4481","v3_lookit",3.26,"F","2","9","can you please~","rude","store",1,3
+"4434","v3_lookit",4.61,"F","2","9","can you please~","rude","store",1,4
+"4476","v3_lookit",3.79,"M","2","9","can you please~","rude","store",0,3
+"3210","v3_lookit",3.9,"F","2","9","can you please~","rude","store",1,3
+"2338","v3_lookit",2.01,"F","2","9","can you please~","rude","store",1,2
+"4352","v3_lookit",2.78,"F","2","9","can you please~","rude","store",1,2
+"4505","v3_lookit",4.78,"M","1","9","can you please~","rude","scissors",1,4
+"4511","v3_lookit",3.21,"F","2","9","can you please~","rude","store",NA,3
+"4518","v3_lookit",2.12,"M","1","9","can you please~","rude","scissors",0,2
+"3995","v3_lookit",4.44,"M","2","9","can you please~","rude","store",1,4
+"4534","v3_lookit",4.73,"F","2","9","can you please~","rude","store",0,4
+"3695","v3_lookit",3.55,"M","2","10","can you~","polite","toys",0,3
+"2398","v3_lookit",3.46,"M","2","10","can you~","polite","toys",0,3
+"3545","v3_lookit",2.1,"F","2","10","can you~","polite","toys",0,2
+"3621","v3_lookit",4.82,"F","1","10","can you~","polite","puzzle",NA,4
+"3900","v3_lookit",4.56,"M","2","10","can you~","polite","toys",0,4
+"3903","v3_lookit",4.1,"F","1","10","can you~","polite","puzzle",1,4
+"3897","v3_lookit",3.28,"F","2","10","can you~","polite","toys",0,3
+"3906","v3_lookit",4.56,"F","1","10","can you~","polite","puzzle",1,4
+"3914","v3_lookit",3.72,"M","2","10","can you~","polite","toys",NA,3
+"3963","v3_lookit",2.64,"M","2","10","can you~","polite","toys",NA,2
+"4037","v3_lookit",3.28,"M","1","10","can you~","polite","puzzle",1,3
+"4038","v3_lookit",3.81,"M","1","10","can you~","polite","puzzle",1,3
+"3979","v3_lookit",3.93,"F","2","10","can you~","polite","toys",0,3
+"4068","v3_lookit",3.9,"F","1","10","can you~","polite","puzzle",1,3
+"4069","v3_lookit",2.35,"F","2","10","can you~","polite","toys",0,2
+"4075","v3_lookit",4.85,"M","2","10","can you~","polite","toys",0,4
+"4020","v3_lookit",3.68,"M","1","10","can you~","polite","puzzle",1,3
+"4079","v3_lookit",3.91,"F","2","10","can you~","polite","toys",0,3
+"4095","v3_lookit",3.34,"F","1","10","can you~","polite","puzzle",0,3
+"4120","v3_lookit",3.68,"F","2","10","can you~","polite","toys",1,3
+"3956","v3_lookit",4.27,"M","2","10","can you~","polite","toys",1,4
+"4139","v3_lookit",2.96,"M","2","10","can you~","polite","toys",0,2
+"4145","v3_lookit",4.11,"M","2","10","can you~","polite","toys",1,4
+"4138","v3_lookit",4.6,"M","2","10","can you~","polite","toys",1,4
+"4153","v3_lookit",2.31,"F","1","10","can you~","polite","puzzle",0,2
+"4201","v3_lookit",2.26,"F","2","10","can you~","polite","toys",1,2
+"4200","v3_lookit",3.67,"F","2","10","can you~","polite","toys",0,3
+"4072","v3_lookit",3.38,"M","2","10","can you~","polite","toys",1,3
+"4210","v3_lookit",2.93,"M","2","10","can you~","polite","toys",1,2
+"4211","v3_lookit",2.93,"M","1","10","can you~","polite","puzzle",1,2
+"4219","v3_lookit",2.3,"M","2","10","can you~","polite","toys",NA,2
+"4217","v3_lookit",4.16,"F","1","10","can you~","polite","puzzle",1,4
+"4204","v3_lookit",2.13,"M","1","10","can you~","polite","puzzle",1,2
+"4226","v3_lookit",4.17,"F","1","10","can you~","polite","puzzle",1,4
+"3957","v3_lookit",2.7,"F","1","10","can you~","polite","puzzle",0,2
+"4224","v3_lookit",3.44,"M","1","10","can you~","polite","puzzle",0,3
+"4244","v3_lookit",4.99,"M","1","10","can you~","polite","puzzle",1,4
+"4253","v3_lookit",4.16,"M","2","10","can you~","polite","toys",0,4
+"4121","v3_lookit",2.24,"F","2","10","can you~","polite","toys",0,2
+"4263","v3_lookit",3.85,"M","2","10","can you~","polite","toys",0,3
+"4266","v3_lookit",3.77,"F","1","10","can you~","polite","puzzle",1,3
+"4273","v3_lookit",4.37,"F","1","10","can you~","polite","puzzle",1,4
+"4286","v3_lookit",4.8,"M","1","10","can you~","polite","puzzle",1,4
+"4316","v3_lookit",4.91,"M","1","10","can you~","polite","puzzle",0,4
+"4356","v3_lookit",3.06,"M","2","10","can you~","polite","toys",0,3
+"4353","v3_lookit",2.7,"F","2","10","can you~","polite","toys",0,2
+"4351","v3_lookit",4.21,"M","1","10","can you~","polite","puzzle",0,4
+"4333","v3_lookit",4.5,"M","2","10","can you~","polite","toys",0,4
+"4359","v3_lookit",3.51,"M","2","10","can you~","polite","toys",0,3
+"4360","v3_lookit",2.42,"M","1","10","can you~","polite","puzzle",0,2
+"4172","v3_lookit",3.79,"F","1","10","can you~","polite","puzzle",1,3
+"4321","v3_lookit",2.46,"M","1","10","can you~","polite","puzzle",1,2
+"4369","v3_lookit",2.6,"M","1","10","can you~","polite","puzzle",NA,2
+"4373","v3_lookit",4.41,"F","2","10","can you~","polite","toys",1,4
+"4378","v3_lookit",3.59,"F","2","10","can you~","polite","toys",0,3
+"4379","v3_lookit",4,"F","2","10","can you~","polite","toys",0,4
+"4395","v3_lookit",4.11,"M","2","10","can you~","polite","toys",1,4
+"4340","v3_lookit",3.19,"M","1","10","can you~","polite","puzzle",0,3
+"4339","v3_lookit",4.39,"F","1","10","can you~","polite","puzzle",1,4
+"4412","v3_lookit",4.14,"M","1","10","can you~","polite","puzzle",1,4
+"4423","v3_lookit",3.01,"M","1","10","can you~","polite","puzzle",1,3
+"4425","v3_lookit",3.94,"F","2","10","can you~","polite","toys",0,3
+"4433","v3_lookit",2.66,"F","2","10","can you~","polite","toys",1,2
+"4429","v3_lookit",4.8,"F","1","10","can you~","polite","puzzle",1,4
+"4409","v3_lookit",2.28,"F","2","10","can you~","polite","toys",1,2
+"4300","v3_lookit",2.39,"F","2","10","can you~","polite","toys",NA,2
+"4440","v3_lookit",2.86,"M","1","10","can you~","polite","puzzle",1,2
+"4447","v3_lookit",3.97,"F","1","10","can you~","polite","puzzle",0,3
+"4475","v3_lookit",3.68,"M","1","10","can you~","polite","puzzle",1,3
+"4450","v3_lookit",3.64,"M","2","10","can you~","polite","toys",0,3
+"4481","v3_lookit",3.26,"F","2","10","can you~","polite","toys",0,3
+"4434","v3_lookit",4.61,"F","2","10","can you~","polite","toys",0,4
+"4476","v3_lookit",3.79,"M","2","10","can you~","polite","toys",0,3
+"3210","v3_lookit",3.9,"F","2","10","can you~","polite","toys",1,3
+"2338","v3_lookit",2.01,"F","2","10","can you~","polite","toys",1,2
+"4352","v3_lookit",2.78,"F","2","10","can you~","polite","toys",1,2
+"4505","v3_lookit",4.78,"M","1","10","can you~","polite","puzzle",1,4
+"4511","v3_lookit",3.21,"F","2","10","can you~","polite","toys",NA,3
+"4518","v3_lookit",2.12,"M","1","10","can you~","polite","puzzle",1,2
+"3995","v3_lookit",4.44,"M","2","10","can you~","polite","toys",0,4
+"4534","v3_lookit",4.73,"F","2","10","can you~","polite","toys",1,4
+"3695","v3_lookit",3.55,"M","2","11","please","rude","water",1,3
+"2398","v3_lookit",3.46,"M","2","11","please","rude","water",0,3
+"3545","v3_lookit",2.1,"F","2","11","please","rude","water",0,2
+"3621","v3_lookit",4.82,"F","1","11","please","rude","no_shouting",NA,4
+"3900","v3_lookit",4.56,"M","2","11","please","rude","water",0,4
+"3903","v3_lookit",4.1,"F","1","11","please","rude","no_shouting",1,4
+"3897","v3_lookit",3.28,"F","2","11","please","rude","water",0,3
+"3906","v3_lookit",4.56,"F","1","11","please","rude","no_shouting",1,4
+"3914","v3_lookit",3.72,"M","2","11","please","rude","water",NA,3
+"3963","v3_lookit",2.64,"M","2","11","please","rude","water",NA,2
+"4037","v3_lookit",3.28,"M","1","11","please","rude","no_shouting",0,3
+"4038","v3_lookit",3.81,"M","1","11","please","rude","no_shouting",1,3
+"3979","v3_lookit",3.93,"F","2","11","please","rude","water",1,3
+"4068","v3_lookit",3.9,"F","1","11","please","rude","no_shouting",1,3
+"4069","v3_lookit",2.35,"F","2","11","please","rude","water",1,2
+"4075","v3_lookit",4.85,"M","2","11","please","rude","water",1,4
+"4020","v3_lookit",3.68,"M","1","11","please","rude","no_shouting",1,3
+"4079","v3_lookit",3.91,"F","2","11","please","rude","water",0,3
+"4095","v3_lookit",3.34,"F","1","11","please","rude","no_shouting",0,3
+"4120","v3_lookit",3.68,"F","2","11","please","rude","water",1,3
+"3956","v3_lookit",4.27,"M","2","11","please","rude","water",0,4
+"4139","v3_lookit",2.96,"M","2","11","please","rude","water",1,2
+"4145","v3_lookit",4.11,"M","2","11","please","rude","water",1,4
+"4138","v3_lookit",4.6,"M","2","11","please","rude","water",0,4
+"4153","v3_lookit",2.31,"F","1","11","please","rude","no_shouting",0,2
+"4201","v3_lookit",2.26,"F","2","11","please","rude","water",1,2
+"4200","v3_lookit",3.67,"F","2","11","please","rude","water",1,3
+"4072","v3_lookit",3.38,"M","2","11","please","rude","water",1,3
+"4210","v3_lookit",2.93,"M","2","11","please","rude","water",0,2
+"4211","v3_lookit",2.93,"M","1","11","please","rude","no_shouting",1,2
+"4219","v3_lookit",2.3,"M","2","11","please","rude","water",NA,2
+"4217","v3_lookit",4.16,"F","1","11","please","rude","no_shouting",0,4
+"4204","v3_lookit",2.13,"M","1","11","please","rude","no_shouting",0,2
+"4226","v3_lookit",4.17,"F","1","11","please","rude","no_shouting",1,4
+"3957","v3_lookit",2.7,"F","1","11","please","rude","no_shouting",1,2
+"4224","v3_lookit",3.44,"M","1","11","please","rude","no_shouting",0,3
+"4244","v3_lookit",4.99,"M","1","11","please","rude","no_shouting",1,4
+"4253","v3_lookit",4.16,"M","2","11","please","rude","water",1,4
+"4121","v3_lookit",2.24,"F","2","11","please","rude","water",1,2
+"4263","v3_lookit",3.85,"M","2","11","please","rude","water",1,3
+"4266","v3_lookit",3.77,"F","1","11","please","rude","no_shouting",1,3
+"4273","v3_lookit",4.37,"F","1","11","please","rude","no_shouting",1,4
+"4286","v3_lookit",4.8,"M","1","11","please","rude","no_shouting",1,4
+"4316","v3_lookit",4.91,"M","1","11","please","rude","no_shouting",1,4
+"4356","v3_lookit",3.06,"M","2","11","please","rude","water",0,3
+"4353","v3_lookit",2.7,"F","2","11","please","rude","water",0,2
+"4351","v3_lookit",4.21,"M","1","11","please","rude","no_shouting",1,4
+"4333","v3_lookit",4.5,"M","2","11","please","rude","water",0,4
+"4359","v3_lookit",3.51,"M","2","11","please","rude","water",1,3
+"4360","v3_lookit",2.42,"M","1","11","please","rude","no_shouting",1,2
+"4172","v3_lookit",3.79,"F","1","11","please","rude","no_shouting",1,3
+"4321","v3_lookit",2.46,"M","1","11","please","rude","no_shouting",1,2
+"4369","v3_lookit",2.6,"M","1","11","please","rude","no_shouting",NA,2
+"4373","v3_lookit",4.41,"F","2","11","please","rude","water",0,4
+"4378","v3_lookit",3.59,"F","2","11","please","rude","water",1,3
+"4379","v3_lookit",4,"F","2","11","please","rude","water",1,4
+"4395","v3_lookit",4.11,"M","2","11","please","rude","water",0,4
+"4340","v3_lookit",3.19,"M","1","11","please","rude","no_shouting",1,3
+"4339","v3_lookit",4.39,"F","1","11","please","rude","no_shouting",1,4
+"4412","v3_lookit",4.14,"M","1","11","please","rude","no_shouting",1,4
+"4423","v3_lookit",3.01,"M","1","11","please","rude","no_shouting",1,3
+"4425","v3_lookit",3.94,"F","2","11","please","rude","water",1,3
+"4433","v3_lookit",2.66,"F","2","11","please","rude","water",1,2
+"4429","v3_lookit",4.8,"F","1","11","please","rude","no_shouting",1,4
+"4409","v3_lookit",2.28,"F","2","11","please","rude","water",0,2
+"4300","v3_lookit",2.39,"F","2","11","please","rude","water",NA,2
+"4440","v3_lookit",2.86,"M","1","11","please","rude","no_shouting",0,2
+"4447","v3_lookit",3.97,"F","1","11","please","rude","no_shouting",1,3
+"4475","v3_lookit",3.68,"M","1","11","please","rude","no_shouting",1,3
+"4450","v3_lookit",3.64,"M","2","11","please","rude","water",1,3
+"4481","v3_lookit",3.26,"F","2","11","please","rude","water",0,3
+"4434","v3_lookit",4.61,"F","2","11","please","rude","water",1,4
+"4476","v3_lookit",3.79,"M","2","11","please","rude","water",0,3
+"3210","v3_lookit",3.9,"F","2","11","please","rude","water",0,3
+"2338","v3_lookit",2.01,"F","2","11","please","rude","water",NA,2
+"4352","v3_lookit",2.78,"F","2","11","please","rude","water",0,2
+"4505","v3_lookit",4.78,"M","1","11","please","rude","no_shouting",1,4
+"4511","v3_lookit",3.21,"F","2","11","please","rude","water",NA,3
+"4518","v3_lookit",2.12,"M","1","11","please","rude","no_shouting",0,2
+"3995","v3_lookit",4.44,"M","2","11","please","rude","water",1,4
+"4534","v3_lookit",4.73,"F","2","11","please","rude","water",1,4
+"3695","v3_lookit",3.55,"M","2","12","can you~","polite","light",0,3
+"2398","v3_lookit",3.46,"M","2","12","can you~","polite","light",1,3
+"3545","v3_lookit",2.1,"F","2","12","can you~","polite","light",NA,2
+"3621","v3_lookit",4.82,"F","1","12","can you~","rude","game",NA,4
+"3900","v3_lookit",4.56,"M","2","12","can you~","polite","light",0,4
+"3903","v3_lookit",4.1,"F","1","12","can you~","rude","game",0,4
+"3897","v3_lookit",3.28,"F","2","12","can you~","polite","light",1,3
+"3906","v3_lookit",4.56,"F","1","12","can you~","rude","game",1,4
+"3914","v3_lookit",3.72,"M","2","12","can you~","polite","light",NA,3
+"3963","v3_lookit",2.64,"M","2","12","can you~","polite","light",NA,2
+"4037","v3_lookit",3.28,"M","1","12","can you~","rude","game",0,3
+"4038","v3_lookit",3.81,"M","1","12","can you~","rude","game",1,3
+"3979","v3_lookit",3.93,"F","2","12","can you~","polite","light",0,3
+"4068","v3_lookit",3.9,"F","1","12","can you~","rude","game",1,3
+"4069","v3_lookit",2.35,"F","2","12","can you~","polite","light",1,2
+"4075","v3_lookit",4.85,"M","2","12","can you~","polite","light",1,4
+"4020","v3_lookit",3.68,"M","1","12","can you~","rude","game",0,3
+"4079","v3_lookit",3.91,"F","2","12","can you~","polite","light",0,3
+"4095","v3_lookit",3.34,"F","1","12","can you~","rude","game",0,3
+"4120","v3_lookit",3.68,"F","2","12","can you~","polite","light",1,3
+"3956","v3_lookit",4.27,"M","2","12","can you~","polite","light",1,4
+"4139","v3_lookit",2.96,"M","2","12","can you~","polite","light",0,2
+"4145","v3_lookit",4.11,"M","2","12","can you~","polite","light",1,4
+"4138","v3_lookit",4.6,"M","2","12","can you~","polite","light",1,4
+"4153","v3_lookit",2.31,"F","1","12","can you~","rude","game",0,2
+"4201","v3_lookit",2.26,"F","2","12","can you~","polite","light",1,2
+"4200","v3_lookit",3.67,"F","2","12","can you~","polite","light",0,3
+"4072","v3_lookit",3.38,"M","2","12","can you~","polite","light",0,3
+"4210","v3_lookit",2.93,"M","2","12","can you~","polite","light",0,2
+"4211","v3_lookit",2.93,"M","1","12","can you~","rude","game",1,2
+"4219","v3_lookit",2.3,"M","2","12","can you~","polite","light",NA,2
+"4217","v3_lookit",4.16,"F","1","12","can you~","rude","game",0,4
+"4204","v3_lookit",2.13,"M","1","12","can you~","rude","game",0,2
+"4226","v3_lookit",4.17,"F","1","12","can you~","rude","game",0,4
+"3957","v3_lookit",2.7,"F","1","12","can you~","rude","game",NA,2
+"4224","v3_lookit",3.44,"M","1","12","can you~","rude","game",1,3
+"4244","v3_lookit",4.99,"M","1","12","can you~","rude","game",1,4
+"4253","v3_lookit",4.16,"M","2","12","can you~","polite","light",1,4
+"4121","v3_lookit",2.24,"F","2","12","can you~","polite","light",1,2
+"4263","v3_lookit",3.85,"M","2","12","can you~","polite","light",1,3
+"4266","v3_lookit",3.77,"F","1","12","can you~","rude","game",1,3
+"4273","v3_lookit",4.37,"F","1","12","can you~","rude","game",1,4
+"4286","v3_lookit",4.8,"M","1","12","can you~","rude","game",1,4
+"4316","v3_lookit",4.91,"M","1","12","can you~","rude","game",1,4
+"4356","v3_lookit",3.06,"M","2","12","can you~","polite","light",0,3
+"4353","v3_lookit",2.7,"F","2","12","can you~","polite","light",0,2
+"4351","v3_lookit",4.21,"M","1","12","can you~","rude","game",1,4
+"4333","v3_lookit",4.5,"M","2","12","can you~","polite","light",0,4
+"4359","v3_lookit",3.51,"M","2","12","can you~","polite","light",0,3
+"4360","v3_lookit",2.42,"M","1","12","can you~","rude","game",0,2
+"4172","v3_lookit",3.79,"F","1","12","can you~","rude","game",1,3
+"4321","v3_lookit",2.46,"M","1","12","can you~","rude","game",0,2
+"4369","v3_lookit",2.6,"M","1","12","can you~","rude","game",NA,2
+"4373","v3_lookit",4.41,"F","2","12","can you~","polite","light",1,4
+"4378","v3_lookit",3.59,"F","2","12","can you~","polite","light",1,3
+"4379","v3_lookit",4,"F","2","12","can you~","polite","light",1,4
+"4395","v3_lookit",4.11,"M","2","12","can you~","polite","light",1,4
+"4340","v3_lookit",3.19,"M","1","12","can you~","rude","game",1,3
+"4339","v3_lookit",4.39,"F","1","12","can you~","rude","game",0,4
+"4412","v3_lookit",4.14,"M","1","12","can you~","rude","game",1,4
+"4423","v3_lookit",3.01,"M","1","12","can you~","rude","game",1,3
+"4425","v3_lookit",3.94,"F","2","12","can you~","polite","light",1,3
+"4433","v3_lookit",2.66,"F","2","12","can you~","polite","light",1,2
+"4429","v3_lookit",4.8,"F","1","12","can you~","rude","game",0,4
+"4409","v3_lookit",2.28,"F","2","12","can you~","polite","light",1,2
+"4300","v3_lookit",2.39,"F","2","12","can you~","polite","light",NA,2
+"4440","v3_lookit",2.86,"M","1","12","can you~","rude","game",0,2
+"4447","v3_lookit",3.97,"F","1","12","can you~","rude","game",0,3
+"4475","v3_lookit",3.68,"M","1","12","can you~","rude","game",1,3
+"4450","v3_lookit",3.64,"M","2","12","can you~","polite","light",0,3
+"4481","v3_lookit",3.26,"F","2","12","can you~","polite","light",1,3
+"4434","v3_lookit",4.61,"F","2","12","can you~","polite","light",1,4
+"4476","v3_lookit",3.79,"M","2","12","can you~","polite","light",0,3
+"3210","v3_lookit",3.9,"F","2","12","can you~","polite","light",0,3
+"2338","v3_lookit",2.01,"F","2","12","can you~","polite","light",NA,2
+"4352","v3_lookit",2.78,"F","2","12","can you~","polite","light",0,2
+"4505","v3_lookit",4.78,"M","1","12","can you~","rude","game",0,4
+"4511","v3_lookit",3.21,"F","2","12","can you~","polite","light",NA,3
+"4518","v3_lookit",2.12,"M","1","12","can you~","rude","game",0,2
+"3995","v3_lookit",4.44,"M","2","12","can you~","polite","light",1,4
+"4534","v3_lookit",4.73,"F","2","12","can you~","polite","light",0,4

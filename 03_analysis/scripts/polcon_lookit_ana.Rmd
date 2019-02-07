@@ -1,0 +1,248 @@
+---
+title: "polcon_lookit_ana"
+author: "Erica Yoon"
+date: "2/6/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse); library(viridis); library(ggthemes)
+```
+
+```{r load_data}
+d <- read_csv(here::here("03_analysis/data/processed_data/polcon_all_data.csv")) %>%
+  mutate_if(is.character, as.factor)
+```
+
+```{r join_log}
+## script to write processed log
+
+# log <- read_csv(here::here("03_analysis/data/info/v3/lookit_demographics.csv")) %>%
+#   select(contains("pk"), contains("demographics"), -pk, -demographics.pk) %>%
+#   gather(child0.pk:child6.pk, key="child", value = "subid") %>%
+#   select(-child) %>%
+#   rename_all(funs(stringr::str_replace_all(., 'demographics.', ''))) %>%
+#   select(subid, age, annual_income, country, density, education_level,
+#          languages_spoken_at_home, number_of_books, number_of_children, number_of_guardians,
+#          race_identification, spouse_education_level, state)
+# 
+# write.csv(log,here::here(paste("03_analysis/data/info/v3/lookit_demographics_processed.csv",sep="")),
+#            row.names=FALSE)
+
+log_lookit <- read_csv(here::here("03_analysis/data/info/v3/lookit_demographics_processed.csv")) %>%
+  mutate(subid = as.factor(as.character(subid))) %>%
+  rename(parent_age = age)
+
+d <- d %>%
+  filter(expt == "v3_lookit") %>%
+  left_join(., log_lookit)
+  
+```
+
+Region density: No systematic variation depending on how dense the population is.
+
+```{r}
+d_density <- d %>%
+  group_by(age, request_type, question_type, density, subid) %>%
+  summarise(correct = mean(correct, na.rm = T))
+
+p_density <- ggplot(data=d_density %>%
+                      filter(!is.na(density)),
+       aes(x=age, y=correct, col=density)) +
+  geom_point(size=1, position = position_dodge(width = .1), alpha=.8) +
+  geom_smooth(span=1) +
+  facet_grid(request_type~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="density")
+
+print(p_density)
+```
+
+Education level: no effect of educ level.
+
+```{r}
+d_educ <- d %>%
+  mutate(education_level = fct_recode(education_level,
+                                      "low" = "some",
+                                      "low" = "col",
+                                      "low" = "assoc",
+                                      "high" = "bach",
+                                      "high" = "grad",
+                                      "high" = "prof"
+                                      )) %>% # need to check if this coding is right!
+  group_by(age, request_type, question_type, education_level, subid) %>%
+  summarise(correct = mean(correct, na.rm = T))
+
+p_educ <- ggplot(data=d_educ %>%
+                      filter(!is.na(education_level)),
+       aes(x=age, y=correct, col=education_level)) +
+  geom_point(size=1, position = position_dodge(width = .1), alpha=.8) +
+  geom_smooth(span=1) +
+  facet_grid(request_type~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="education level")
+
+print(p_educ)
+```
+
+number of children: number of children in the family does not influence judgments.
+
+```{r}
+d_child <- d %>%
+  mutate(nchild = case_when(
+    number_of_children < 3 ~ "one or two",
+    TRUE ~ "more than two")) %>% # need to check if this coding is right!
+  group_by(age, request_type, question_type, nchild, subid) %>%
+  summarise(correct = mean(correct, na.rm = T))
+
+p_child <- ggplot(data=d_child %>%
+                      filter(!is.na(nchild)),
+       aes(x=age, y=correct, col=nchild)) +
+  geom_point(size=1, position = position_dodge(width = .1), alpha=.8) +
+  geom_smooth(span=1) +
+  facet_grid(request_type~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="number of children")
+
+print(p_child)
+```
+
+```{r}
+# no empirical test of state politeness, just based on https://www.inc.com/bill-murphy-jr/50-us-states-ranked-in-ascending-order-of-politeness-according-to-canadian-research.html
+d_state <- d %>%
+  mutate(state_polite = case_when(
+   state == "TN" ~ "1",
+state == "UT" ~ "1",
+state == "MS" ~ "2",
+state == "NH" ~ "2",
+state == "WV" ~ "3",
+state == "NJ" ~ "3",
+state == "IL" ~ "3",
+state == "DE" ~ "3",
+state == "NY" ~ "4",
+state == "NE" ~ "4",
+state == "AZ" ~ "4",
+state == "SD" ~ "5",
+state == "NM" ~ "5",
+state == "VT" ~ "5",
+state == "PA" ~ "5",
+state == "MT" ~ "5",
+state == "IN" ~ "5",
+state == "LA" ~ "5",
+state == "ID" ~ "5",
+state == "MI" ~ "6",
+state == "ME" ~ "6",
+state == "VA" ~ "6",
+state == "KY" ~ "6",
+state == "CT" ~ "7",
+state == "MO" ~ "7",
+state == "FL" ~ "7",
+state == "HI" ~ "7",
+state == "AK" ~ "7",
+state == "CA" ~ "7",
+state == "CT" ~ "7",
+state == "SA" ~ "7",
+state == "SC" ~ "7",
+state == "OR" ~ "7",
+state == "MD" ~ "7",
+state == "AR" ~ "7",
+state == "IA" ~ "7",
+state == "NV" ~ "8",
+state == "ND" ~ "8",
+state == "KS" ~ "9",
+state == "WY" ~ "9",
+state == "GA" ~ "9",
+state == "WA" ~ "9",
+state == "CO" ~ "10",
+state == "TX" ~ "10",
+state == "MN" ~ "10",
+state == "NC" ~ "10",
+state == "WI" ~ "11",
+state == "MA" ~ "12",
+state == "RI" ~ "13",
+state == "OH" ~ "14",
+state == "AL" ~ "15",
+state == "OK" ~ "16"
+  )) %>%
+  mutate(state_polite = as.numeric(state_polite)) %>%
+  group_by(age, request_type, question_type, state_polite, subid) %>%
+  summarise(correct = mean(correct, na.rm = T))
+
+p_state <- ggplot(data=d_state %>%
+                      filter(!is.na(state_polite)),
+       aes(x=age, y=correct, col=state_polite)) +
+  geom_point(size=1.5, position = position_dodge(width = .1), alpha=.8) +
+  facet_grid(request_type~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  # scale_color_ptol() +
+  scale_color_viridis() +  
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="State politeness")
+
+print(p_state)
+```
+
+```{r}
+d_race <- d %>%
+  mutate(race = case_when(
+    grepl("hisp", race_identification) ~ "hispanic",
+    grepl("black", race_identification) ~ "black",
+    grepl("mideast", race_identification) ~ "mideast",
+    grepl("asian", race_identification) ~ "asian",
+    grepl("other", race_identification) ~ "other",
+    grepl("white", race_identification) ~ "white"
+    )) %>% 
+  group_by(age, request_type, question_type, race, subid) %>%
+  summarise(correct = mean(correct, na.rm = T))
+
+p_race <- ggplot(data=d_race %>%
+                      filter(!is.na(race)),
+       aes(x=age, y=correct, col=race)) +
+  geom_point(size=1, position = position_dodge(width = .1), alpha=.8) +
+  geom_smooth(span=1) +
+  facet_grid(request_type~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="number of children")
+
+print(p_race)
+```
+
