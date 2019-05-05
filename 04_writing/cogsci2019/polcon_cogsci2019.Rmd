@@ -38,6 +38,9 @@ library(broom)
 
 library(here)
 library(langcog)
+
+# format numbers so that leading zero before decimal doesn't show up
+numformat <- function(val) { sub("^(-?)0.", "\\1.", val) }
 ```
 
 ```{r load_data}
@@ -211,9 +214,14 @@ ms_demog <- left_join(subj, subj_female) %>%
 3-year-old  ($n=$ `r filter(ms_demog, expt_age == "v1_3")$n`; `r filter(ms_demog, expt_age == "v1_3")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v1_3")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v1_3")$sd_age`) and 4-year-old children ($n=$ `r filter(ms_demog, expt_age == "v1_4")$n`; `r filter(ms_demog, expt_age == "v1_4")$n_f` F, $M_{age}$ = `r filter(ms_demog, expt_age == "v1_4")$m` years, $SD_{age}$ = `r filter(ms_demog, expt_age == "v1_4")$sd_age`) were recruited from a local preschool. 
 An additional 3 children were tested but excluded due to failure on the practice questions ($n=$ 2) or completion of fewer than half of the test trials ($n=$ `r subj_v1_too_few_trials_count$n`).
 
+```{r fig_example_placement, fig.env = "figure*", fig.pos = "h", fig.width=7, fig.height=5, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Example story."}
+png::readPNG(here::here(image_path, "example.png")) %>%
+  grid::grid.raster()
+```
+
 ### Stimuli and design
 
-We designed a picture book with twelve stories in which a protagonist is approached by two speakers, one of whom makes a request by producing an utterance with a politeness marker (e.g., "Please pour me more water"), and the other produces an utterance without ("Pour me more water"). 
+We designed a picture book (see Figure\ \ref{fig:fig_example_placement}) with twelve stories in which a protagonist is approached by two speakers, one of whom makes a request by producing an utterance with a politeness marker (e.g., "Please pour me more water"), and the other produces an utterance without ("Pour me more water"). 
 There were three types of politeness marker that could be used: "please" (as in "Please pour me more water"), "can you" ("Can you pour me more water"), and "can you please" ("Can you please pour me more water"). 
 
 We designed six question types to ask participants following the presentation of the stories: four *speaker attribute* questions (*polite*: "Which one was more polite?"; *rude*: "Which one was more rude?"; *nice*: "Which one was nicer?"; *mean*: "Which one was meaner?") and two *social implication* questions (*play partner*: "Which one would you rather play with?"; *compliance*: "Which one will [get what they want]?"). Each participant would be asked one of the four speaker attribute questions, followed by one of the two social implication questions.
@@ -268,8 +276,8 @@ d_plot <- d_ana %>%
   multi_boot_standard(col = "correct", na.rm = T) %>%
   rename(correct = mean)
 
-p_all <- ggplot(data=d_plot,
-       aes(x=age_fct, y=correct, col=request_type, shape = sample, group=interaction(sample,request_type))) +
+p_all <- ggplot(data=d_plot %>% filter(expt_regrp == "Expt 1" | expt_regrp == "Expt 2"),
+       aes(x=age_fct, y=correct, col=request_type, group=request_type)) +
   geom_line(alpha=.3) +
   geom_pointrange(aes(ymin = ci_lower, ymax = ci_upper),
                   position = position_dodge(width = .1), alpha=.3, fatten = 3) +
@@ -284,14 +292,13 @@ p_all <- ggplot(data=d_plot,
   theme(
         legend.position="top",
         legend.box = "vertical") +
-  labs(color="Marker used by polite speaker",
-       shape = "Sample")
+  labs(color="Marker used by polite speaker")
 
-ggsave(p_all, file=here::here("04_writing/cogsci2019/figs/fig_results.png"), width=9, height=5)
+ggsave(p_all, file=here::here("04_writing/cogsci2019/figs/fig_results.png"), width=9, height=4)
 ```
 
-```{r fig_results_placement, fig.env = "figure*", fig.pos = "h", fig.width=7, fig.height=5, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Bottom right: Story example. Top, left: Results. Proportion of correct responses to questions comparing between a speaker who used a politeness marker (where blue indicates \"please\", yellow \"can you\", and red \"can you please\") versus a speaker who did not. Data are binned into one-year age groups. Each row represents data from a different Experiment. Columns represent different questions asked. Dashed line represents chance level at 50\\% (i.e., if participant were guessing at random)."}
-png::readPNG(here::here(image_path, "fig_results_edit.png")) %>%
+```{r fig_results_placement, fig.env = "figure*", fig.pos = "h", fig.width=7, fig.height=5, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Experiment 1 and 2 results. Proportion of correct responses to questions comparing between a speaker who used a politeness marker (where blue indicates \"please\", yellow \"can you\", and red \"can you please\") versus a speaker who did not. Data are binned into one-year age groups. Each row represents data from a different Experiment. Columns represent different questions asked. Dashed line represents chance level at 50\\% (i.e., if participant were guessing at random)."}
+png::readPNG(here::here(image_path, "fig_results.png")) %>%
   grid::grid.raster()
 ```
 
@@ -375,11 +382,11 @@ v1_lmer_coeff <- lmer_v1 %>%
          estimate = round(estimate, 2))
 ```
 
-We looked at the proportion of correct responses to various questions comparing speakers who used a politeness marker and spoke kindly, and speakers who did not use a politeness marker and spoke meanly (Figure\ \ref{fig:fig_results_placement}, first row). 
+We looked at the proportion of correct responses to various questions comparing speakers who used a politeness marker and spoke kindly, and speakers who did not use a politeness marker and spoke meanly (Figure\ \ref{fig:fig_results_placement}, top row). 
 A mixed-effects logistic regression predicting accuracy based on age, question type and politeness marker type
 ^[for Experiments 1 and 2, we use this model structure with a maximal random effect structure that converges: `accuracy ~ age x question type x politeness marker type + (1 | item)`, where age is continuous, centered and scaled. All categorical variables were deviation coded, with specified contrasts of interest for the question type. Significance was calculated using the standard normal approximation to the $t$ distribution [@barr2013].]
-showed there was an improvement with age ($\beta$ = `r v1_lmer_coeff$estimate[2]`, $p =$ `r v1_lmer_coeff$p.val.clean[2]`).
-The regression model also revealed that children seemed to find some question types easier than others: Responses to *nice* and *mean* questions were more accurate than to *polite* and *rude* questions ($\beta$ = `r v1_lmer_coeff$estimate[4]`, $p =$ `r v1_lmer_coeff$p.val.clean[4]`), whereas social implication questions (*play partner* and *compliance*) were overall more difficult compared to speaker attribute questions (*polite*, *rude*, *nice*, and *mean*; $\beta$ = `r v1_lmer_coeff$estimate[3]`, $p =$ `r v1_lmer_coeff$p.val.clean[3]`). 
+showed there was an improvement with age ($\beta$ = `r v1_lmer_coeff$estimate[2]`, $p =$ `r numformat(v1_lmer_coeff$p.val.clean[2])`).
+The regression model also revealed that children seemed to find some question types easier than others: Responses to *nice* and *mean* questions were more accurate than to *polite* and *rude* questions ($\beta$ = `r v1_lmer_coeff$estimate[4]`, $p =$ `r numformat(v1_lmer_coeff$p.val.clean[4])`), whereas social implication questions (*play partner* and *compliance*) were overall more difficult compared to speaker attribute questions (*polite*, *rude*, *nice*, and *mean*; $\beta$ = `r v1_lmer_coeff$estimate[3]`, $p =$ `r numformat(v1_lmer_coeff$p.val.clean[3])`). 
 
 ```{r}
 d_plot <- d_plot %>%
@@ -455,7 +462,7 @@ An additional `r subj_v2_failed_practice_count$n` children were tested but exclu
 
 ### Stimuli and design
 
-The design was identical to Experiment 1. Stimuli were the same as Experiment 1 except two changes: (1) Instead of a picture book, we presented the stories on a tablet; (2) the speakers' utterances were now presented as recorded voiceovers. The voiceovers were recorded by native English speakers, and contained prosodic cues that matched the presence/absence of a politeness marker (e.g., "Please pour me more water" was recorded with a kind voice and "pour me more water" with an angry voice).
+The design was identical to Experiment 1. Stimuli were the same as Experiment 1 except two changes: (1) Instead of a picture book, we presented the stories on a tablet; (2) the speakers' utterances were now presented as recorded voiceovers. The voiceovers were recorded by native English speakers, and contained prosodic cues that matched the presence/absence of a politeness marker (e.g., the speakers were instructed to record "Please pour me more water" with a "kind voice"" and "pour me more water" with an "angry voice").
 
 ### Procedure
 
@@ -480,9 +487,9 @@ v2_lmer_coeff <- lmer_v2 %>%
          estimate = round(estimate, 2))
 ```
 
-Overall we saw similar patterns of results in Experiment 2 (Figure\ \ref{fig:fig_results_placement}, second row) compared to Exp. 1. 
-A mixed-effects logistic regression predicting accuracy based on age, question type and politeness marker type showed that accuracy improved with age ($\beta$ = `r v2_lmer_coeff$estimate[2]`, $p =$ `r v2_lmer_coeff$p.val.clean[2]`), and children made accurate judgments more often when the politeness marker was "can you please" than when the marker was "please" or "can you"  ($\beta$ = `r v2_lmer_coeff$estimate[7]`, $p =$ `r v2_lmer_coeff$p.val.clean[7]`).
-There was no main effect of question type, but there was an interaction between age and question type such that performance for *nice* and *mean* questions saw greater improvement with age than for *polite* and *rude* questions ($\beta$ = `r v2_lmer_coeff$estimate[10]`, $p =$ `r v2_lmer_coeff$p.val.clean[10]`). 
+Overall we saw similar patterns of results in Experiment 2 (Figure\ \ref{fig:fig_results_placement}, bottom row) compared to Exp. 1. 
+A mixed-effects logistic regression predicting accuracy based on age, question type and politeness marker type showed that accuracy improved with age ($\beta$ = `r v2_lmer_coeff$estimate[2]`, $p =$ `r numformat(v2_lmer_coeff$p.val.clean[2])`), and children made accurate judgments more often when the politeness marker was "can you please" than when the marker was "please" or "can you"  ($\beta$ = `r v2_lmer_coeff$estimate[7]`, $p =$ `r numformat(v2_lmer_coeff$p.val.clean[7])`).
+There was no main effect of question type, but there was an interaction between age and question type such that performance for *nice* and *mean* questions saw greater improvement with age than for *polite* and *rude* questions ($\beta$ = `r v2_lmer_coeff$estimate[10]`, $p =$ `r numformat(v2_lmer_coeff$p.val.clean[10])`). 
 
 For children's responses to different question types, 
 3-year-olds' accuracy did not differ from chance level for *nice*, *mean*, and *play partner* questions, but their means numerically exceeded 50% for all question types, 
@@ -504,7 +511,7 @@ and children get better with age in their use of politeness cues to respond to q
 
 # Experiment 3
 
-We conducted a third, pre-registered experiment to see whether children are able to evaluate speakers based on linguistic markers only, without any other supporting cues such as prosodic cues or facial expressions.  
+We conducted a third, preregistered experiment to see whether children are able to evaluate speakers based on linguistic markers only, without any other supporting cues such as prosodic cues or facial expressions.  
 
 ## Methods
 
@@ -524,6 +531,34 @@ For the online sample, the procedure was similar except that parents and childre
 which specifically asked the parents to not tell their children correct answers for the questions. 
 
 ## Results and Discussion
+
+```{r fig_e3_results}
+p_e3 <- ggplot(data=d_plot %>% filter(expt_regrp == "Expt 3"),
+       aes(x=age_fct, y=correct, col=request_type, shape = sample, group=interaction(sample,request_type))) +
+  geom_line(alpha=.3) +
+  geom_pointrange(aes(ymin = ci_lower, ymax = ci_upper),
+                  position = position_dodge(width = .1), alpha=.3, fatten = 4) +
+  geom_point(size=5, position = position_dodge(width = .1), alpha=.8) +
+  facet_grid(.~question_type, scales = "fixed", space = "fixed") +
+  theme_few() +
+  ylab("Proportion correct") +
+  xlab("Age (years)") +
+  scale_color_ptol() +
+  geom_hline(yintercept =.5, lty=2) +
+  ylim(c(.25,1.1)) +
+  theme(
+        legend.position="top",
+        legend.box = "vertical") +
+  labs(color="Marker used by polite speaker",
+       shape = "Sample")
+
+ggsave(p_e3, file=here::here("04_writing/cogsci2019/figs/fig_results_e3.png"), width=6.5, height=4)
+```
+
+```{r fig_e3results_placement, fig.env = "figure*", fig.pos = "h", fig.width=7, fig.height=5, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Experiment 3 results. Conventions are identical to Figure 2."}
+png::readPNG(here::here(image_path, "fig_results_e3.png")) %>%
+  grid::grid.raster()
+```
 
 ```{r v3_results}
 d_v3 <- d %>% 
@@ -593,22 +628,22 @@ all_lmer_coeff <- lmer_all_expt_main %>%
 
 ### Experiment 3 
 
-For Experiment 3, we were able to look at how children answered the *polite* and *rude* questions given the same three politeness marker types as in Experiments 1 and 2, with three age groups including 2-year-olds. (Fig. \ \ref{fig:fig_results_placement}, third row).
+For Experiment 3, we were able to look at how children answered the *polite* and *rude* questions given the same three politeness marker types as in Experiments 1 and 2, with three age groups including 2-year-olds. (Fig. \ \ref{fig:fig_e3results_placement}).
 
-A mixed-effects logistic regression controlling for the effect of sample^[Model structure: `accuracy ~ sample + age x question type x politeness marker type + (1 | item)`] showed improvement with age ($\beta$ = `r v3_lmer_coeff$estimate[3]`, $p =$ `r v3_lmer_coeff$p.val.clean[3]`) as well as better performance for "can you please" than "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[5]`, $p =$ `r v3_lmer_coeff$p.val.clean[5]`), consistent with Experiment 2 results.
-Performance for "please" was also better than for "can you please" and "please" together
-($\beta$ = `r v3_lmer_coeff$estimate[6]`, $p =$ `r v3_lmer_coeff$p.val.clean[6]`),
+A mixed-effects logistic regression controlling for the effect of sample^[Model structure: `accuracy ~ sample + age x question type x politeness marker type + (1 | item)`] showed improvement with age ($\beta$ = `r v3_lmer_coeff$estimate[3]`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[3])`) as well as better performance for "can you please" than "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[5]`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[5])`), consistent with Experiment 2 results.
+Performance for "please" was also better than for "can you please" and "can you" together
+($\beta$ = `r numformat(v3_lmer_coeff$estimate[6])`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[6])`),
 which may be surprising given that we previously did not see the same effect in Experiments 1 and 2.
 One possible explanation is that controlling for prosodic cues in Experiment 3 actually made it *easier* to use "please" as a politeness cue. Because we had stripped all the other variations, it may have made the contrast between the presence and absence of the marker "please" *more* salient.
 
-Additionally, children were better with the *polite* questions than *rude*  overall ($\beta$ = `r v3_lmer_coeff$estimate[4]`, $p =$ `r v3_lmer_coeff$p.val.clean[4]`), 
-but especially given "please" ($\beta$ = `r v3_lmer_coeff$estimate[11]`, $p =$ `r v3_lmer_coeff$p.val.clean[11]`). 
-Finally, children showed a greater improvement with age for "can you please" compared to "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[8]`, $p =$ `r v3_lmer_coeff$p.val.clean[8]`).
+Additionally, children were better with the *polite* questions than *rude*  overall ($\beta$ = `r v3_lmer_coeff$estimate[4]`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[4])`), 
+but especially given "please" ($\beta$ = `r numformat(v3_lmer_coeff$estimate[11])`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[11])`). 
+Finally, children showed a greater improvement with age for "can you please" compared to "please" and "can you" together ($\beta$ = `r v3_lmer_coeff$estimate[8]`, $p =$ `r numformat(v3_lmer_coeff$p.val.clean[8])`).
 
 ### All experiments 
 
 Did children perform better given facial and/or prosodic cues, or were linguistic politeness markers sufficient? To see any potential effect of experiment on children's performance, we conducted an exploratory mixed-effects logistic regression on all three experiments together^[Model structure: `accuracy ~ sample + experiment + age x question type x politeness marker type + (1 | item)`]. The regression model showed no significant main effect of experiment, suggesting that children did not perform more poorly when facial and prosodic cues were removed, and they were able to make accurate judgments based on linguistic cues alone. 
-The model also showed that children improved with increasing age ($\beta$ = `r all_lmer_coeff$estimate[5]`, $p$ `r all_lmer_coeff$p.val.clean[5]`) and that children were more accurate with "can you please" than "please" and "can you" ($\beta$ = `r all_lmer_coeff$estimate[7]`, $p =$ `r all_lmer_coeff$p.val.clean[7]`), confirming results from each individual experiment. Additionally, the model showed that children became better at judging the politeness marker "can you please" with age ($\beta$ = `r all_lmer_coeff$estimate[1]`, $p =$ `r all_lmer_coeff$p.val.clean[10]`), and that children answered *polite* questions better than *rude* questions about the marker "please" ($\beta$ = `r all_lmer_coeff$estimate[13]`, $p =$ `r all_lmer_coeff$p.val.clean[13]`)
+The model also showed that children improved with increasing age ($\beta$ = `r all_lmer_coeff$estimate[5]`, $p$ `r all_lmer_coeff$p.val.clean[5]`) and that children were more accurate with "can you please" than "please" and "can you" ($\beta$ = `r all_lmer_coeff$estimate[7]`, $p =$ `r numformat(all_lmer_coeff$p.val.clean[7])`), confirming results from each individual experiment. Additionally, the model showed that children became better at judging the politeness marker "can you please" with age ($\beta$ = `r all_lmer_coeff$estimate[1]`, $p =$ `r numformat(all_lmer_coeff$p.val.clean[10])`), and that children answered *polite* questions better than *rude* questions about the marker "please" ($\beta$ = `r all_lmer_coeff$estimate[13]`, $p =$ `r numformat(all_lmer_coeff$p.val.clean[13])`)
 
 # General Discussion
 
