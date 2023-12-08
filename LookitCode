@@ -1,0 +1,1187 @@
+{
+    "frames": {
+        "exit-survey": {
+            "id": "exit-survey",
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "In this study, we were looking at what children understand about words related to politeness, and how that understanding changes with age. Your child's responses give us an idea of what he or she thinks it means to be polite. For example, is it all about saying 'please,' or do tone of voice and phrasing matter too? And do they expect being polite to result in other people being nicer in return?\n\nIt’s normal for the questions in this study to be very challenging for kids! Plus, kids are often influenced by things like a character’s name or appearance, so their responses don’t always reflect what they know. That’s why we randomize the questions and put together responses from lots of kids.\n\nOf course, actually BEING polite is a bigger challenge! It’s very common in childhood to see a gap between competence (knowing how to do something) and performance (actually doing it). For practical advice about age-appropriate ways to work on polite behavior, check out this article from Family Education: https://www.familyeducation.com/life/manners/how-rude-age-age-guide-teaching-kids-manners\n\n For a related research finding, check out this 2015 study by Felix Warneken and Emily Orlins at Harvard: did you know that around age 5-7, your child might start telling white lies to make others feel better? https://pdfs.semanticscholar.org/883f/c2d17a4b5ca504817a92f5fb8cfc02665cb9.pdf \n\n To thank you for your participation, we will be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check he or she is in the age range for this study. (If you dont hear from us by then, feel free to reach out!). If you participate again with another child in the age range, you'll receive one gift card per child.",
+                "title": "Thank you!"
+            }
+        },
+        "introduction": {
+            "id": "introduction",
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "images": [
+                        {
+                            "id": "protagonist",
+                            "src": "PROTAGONISTFACELEFT",
+                            "left": "50",
+                            "bottom": "2",
+                            "height": "60",
+                            "animate": "fadein"
+                        },
+                        {
+                            "id": "speaker1",
+                            "src": "SPEAKER1IMG",
+                            "left": "25",
+                            "bottom": "2",
+                            "height": "60",
+                            "animate": "fadein"
+                        },
+                        {
+                            "id": "speaker2",
+                            "src": "SPEAKER2IMG",
+                            "left": "75",
+                            "bottom": "2",
+                            "height": "60",
+                            "animate": "fadein"
+                        }
+                    ],
+                    "autoProceed": false,
+                    "doRecording": false,
+                    "audioSources": [
+                        {
+                            "audioId": "firstAudio",
+                            "sources": [
+                                {
+                                    "stub": "INTROAUDIO"
+                                }
+                            ]
+                        }
+                    ],
+                    "parentTextBlock": {
+                        "css": {
+                            "font-size": "medium"
+                        },
+                        "text": "Parents: Once the instructions are done, click Next or press Enter to continue.\nReminders for you will appear here.\nYou can always press Replay to hear audio again if your child was distracted.",
+                        "title": "Listen to the introduction"
+                    }
+                }
+            ],
+            "parameterSets": [
+                {
+                    "INTROAUDIO": "intro",
+                    "SPEAKER1IMG": "order1_test7_speaker1.png",
+                    "SPEAKER2IMG": "order1_test7_speaker2.png",
+                    "BACKGROUNDIMG": "order1_test7_background.png",
+                    "PROTAGONISTFACELEFT": "order1_test7_listener1.png"
+                },
+                {
+                    "INTROAUDIO": "intro",
+                    "SPEAKER1IMG": "order2_test10_speaker1.png",
+                    "SPEAKER2IMG": "order2_test10_speaker2.png",
+                    "BACKGROUNDIMG": "order2_test10_background.png",
+                    "PROTAGONISTFACELEFT": "order2_test10_listener1.png"
+                }
+            ],
+            "parameterSetWeights": [
+                1,
+                1
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-dialogue-page",
+                "baseDir": "https://github.com/polcom/02_experiments/v3-lookit",
+                "audioTypes": [
+                    "mp3",
+                    "ogg"
+                ],
+                "doRecording": true,
+                "backgroundImage": "BACKGROUNDIMG"
+            }
+        },
+        "video-config": {
+            "id": "video-config",
+            "kind": "exp-video-config"
+        },
+        "nested-trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 1,
+                            "INTROAUDIO": "INTROAUDIO_1",
+                            "SPEAKER1IMG": "SPEAKER1IMG_1",
+                            "SPEAKER2IMG": "SPEAKER2IMG_1",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 1 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_1",
+                            "FIRSTQUESTION": "FIRSTQUESTION_1",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_1",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_1",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_1",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_1",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_1",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_1",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_1",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_1"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 2,
+                            "INTROAUDIO": "INTROAUDIO_2",
+                            "SPEAKER1IMG": "SPEAKER1IMG_2",
+                            "SPEAKER2IMG": "SPEAKER2IMG_2",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 2 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_2",
+                            "FIRSTQUESTION": "FIRSTQUESTION_2",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_2",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_2",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_2",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_2",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_2",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_2",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_2",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_2"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 3,
+                            "INTROAUDIO": "INTROAUDIO_3",
+                            "SPEAKER1IMG": "SPEAKER1IMG_3",
+                            "SPEAKER2IMG": "SPEAKER2IMG_3",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 3 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_3",
+                            "FIRSTQUESTION": "FIRSTQUESTION_3",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_3",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_3",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_3",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_3",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_3",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_3",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_3",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_3"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 4,
+                            "INTROAUDIO": "INTROAUDIO_4",
+                            "SPEAKER1IMG": "SPEAKER1IMG_4",
+                            "SPEAKER2IMG": "SPEAKER2IMG_4",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 4 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_4",
+                            "FIRSTQUESTION": "FIRSTQUESTION_4",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_4",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_4",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_4",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_4",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_4",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_4",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_4",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_4"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 5,
+                            "INTROAUDIO": "INTROAUDIO_5",
+                            "SPEAKER1IMG": "SPEAKER1IMG_5",
+                            "SPEAKER2IMG": "SPEAKER2IMG_5",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 5 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_5",
+                            "FIRSTQUESTION": "FIRSTQUESTION_5",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_5",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_5",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_5",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_5",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_5",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_5",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_5",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_5"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 6,
+                            "INTROAUDIO": "INTROAUDIO_6",
+                            "SPEAKER1IMG": "SPEAKER1IMG_6",
+                            "SPEAKER2IMG": "SPEAKER2IMG_6",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 6 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_6",
+                            "FIRSTQUESTION": "FIRSTQUESTION_6",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_6",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_6",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_6",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_6",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_6",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_6",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_6",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_6"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 7,
+                            "INTROAUDIO": "INTROAUDIO_7",
+                            "SPEAKER1IMG": "SPEAKER1IMG_7",
+                            "SPEAKER2IMG": "SPEAKER2IMG_7",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 7 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_7",
+                            "FIRSTQUESTION": "FIRSTQUESTION_7",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_7",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_7",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_7",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_7",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_7",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_7",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_7",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_7"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 8,
+                            "INTROAUDIO": "INTROAUDIO_8",
+                            "SPEAKER1IMG": "SPEAKER1IMG_8",
+                            "SPEAKER2IMG": "SPEAKER2IMG_8",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 8 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_8",
+                            "FIRSTQUESTION": "FIRSTQUESTION_8",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_8",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_8",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_8",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_8",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_8",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_8",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_8",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_8"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 9,
+                            "INTROAUDIO": "INTROAUDIO_9",
+                            "SPEAKER1IMG": "SPEAKER1IMG_9",
+                            "SPEAKER2IMG": "SPEAKER2IMG_9",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 9 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_9",
+                            "FIRSTQUESTION": "FIRSTQUESTION_9",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_9",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_9",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_9",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_9",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_9",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_9",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_9",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_9"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 10,
+                            "INTROAUDIO": "INTROAUDIO_10",
+                            "SPEAKER1IMG": "SPEAKER1IMG_10",
+                            "SPEAKER2IMG": "SPEAKER2IMG_10",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 10 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_10",
+                            "FIRSTQUESTION": "FIRSTQUESTION_10",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_10",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_10",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_10",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_10",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_10",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_10",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_10",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_10"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 11,
+                            "INTROAUDIO": "INTROAUDIO_11",
+                            "SPEAKER1IMG": "SPEAKER1IMG_11",
+                            "SPEAKER2IMG": "SPEAKER2IMG_11",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was question 11 of 12.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_11",
+                            "FIRSTQUESTION": "FIRSTQUESTION_11",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_11",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_11",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_11",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_11",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_11",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_11",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_11",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_11"
+                        }
+                    ]
+                },
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 12,
+                            "INTROAUDIO": "INTROAUDIO_12",
+                            "SPEAKER1IMG": "SPEAKER1IMG_12",
+                            "SPEAKER2IMG": "SPEAKER2IMG_12",
+                            "THANKYOUTEXT": {
+                                "emph": true,
+                                "text": "That was the last question.",
+                                "title": "Thank you!"
+                            },
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_12",
+                            "FIRSTQUESTION": "FIRSTQUESTION_12",
+                            "TRIALENDAUDIO": "trialendaudio_final",
+                            "SECONDQUESTION": "SECONDQUESTION_12",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_12",
+                            "SPEAKER1UTTERANCE": "SPEAKER1UTTERANCE_12",
+                            "SPEAKER2UTTERANCE": "SPEAKER2UTTERANCE_12",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_12",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_12",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_12",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_12"
+                        }
+                    ]
+                }
+            ],
+            "parameterSets": [
+                {
+                    "INTROAUDIO_1": "order1_test1_intro0",
+                    "INTROAUDIO_2": "order1_test2_intro0",
+                    "INTROAUDIO_3": "order1_test3_intro0",
+                    "INTROAUDIO_4": "order1_test4_intro0",
+                    "INTROAUDIO_5": "order1_test5_intro0",
+                    "INTROAUDIO_6": "order1_test6_intro0",
+                    "INTROAUDIO_7": "order1_test7_intro0",
+                    "INTROAUDIO_8": "order1_test8_intro0",
+                    "INTROAUDIO_9": "order1_test9_intro0",
+                    "INTROAUDIO_10": "order1_test10_intro0",
+                    "INTROAUDIO_11": "order1_test11_intro0",
+                    "INTROAUDIO_12": "order1_test12_intro0",
+                    "SPEAKER1IMG_1": "order1_test1_speaker1.png",
+                    "SPEAKER1IMG_2": "order1_test2_speaker1.png",
+                    "SPEAKER1IMG_3": "order1_test3_speaker1.png",
+                    "SPEAKER1IMG_4": "order1_test4_speaker1.png",
+                    "SPEAKER1IMG_5": "order1_test5_speaker1.png",
+                    "SPEAKER1IMG_6": "order1_test6_speaker1.png",
+                    "SPEAKER1IMG_7": "order1_test7_speaker1.png",
+                    "SPEAKER1IMG_8": "order1_test8_speaker1.png",
+                    "SPEAKER1IMG_9": "order1_test9_speaker1.png",
+                    "SPEAKER2IMG_1": "order1_test1_speaker2.png",
+                    "SPEAKER2IMG_2": "order1_test2_speaker2.png",
+                    "SPEAKER2IMG_3": "order1_test3_speaker2.png",
+                    "SPEAKER2IMG_4": "order1_test4_speaker2.png",
+                    "SPEAKER2IMG_5": "order1_test5_speaker2.png",
+                    "SPEAKER2IMG_6": "order1_test6_speaker2.png",
+                    "SPEAKER2IMG_7": "order1_test7_speaker2.png",
+                    "SPEAKER2IMG_8": "order1_test8_speaker2.png",
+                    "SPEAKER2IMG_9": "order1_test9_speaker2.png",
+                    "SPEAKER1IMG_10": "order1_test10_speaker1.png",
+                    "SPEAKER1IMG_11": "order1_test11_speaker1.png",
+                    "SPEAKER1IMG_12": "order1_test12_speaker1.png",
+                    "SPEAKER2IMG_10": "order1_test10_speaker2.png",
+                    "SPEAKER2IMG_11": "order1_test11_speaker2.png",
+                    "SPEAKER2IMG_12": "order1_test12_speaker2.png",
+                    "BACKGROUNDIMG_1": "order1_test1_background.png",
+                    "BACKGROUNDIMG_2": "order1_test2_background.png",
+                    "BACKGROUNDIMG_3": "order1_test3_background.png",
+                    "BACKGROUNDIMG_4": "order1_test4_background.png",
+                    "BACKGROUNDIMG_5": "order1_test5_background.png",
+                    "BACKGROUNDIMG_6": "order1_test6_background.png",
+                    "BACKGROUNDIMG_7": "order1_test7_background.png",
+                    "BACKGROUNDIMG_8": "order1_test8_background.png",
+                    "BACKGROUNDIMG_9": "order1_test9_background.png",
+                    "FIRSTQUESTION_1": "order1_test1_question1",
+                    "FIRSTQUESTION_2": "order1_test2_question1",
+                    "FIRSTQUESTION_3": "order1_test3_question1",
+                    "FIRSTQUESTION_4": "order1_test4_question1",
+                    "FIRSTQUESTION_5": "order1_test5_question1",
+                    "FIRSTQUESTION_6": "order1_test6_question1",
+                    "FIRSTQUESTION_7": "order1_test7_question1",
+                    "FIRSTQUESTION_8": "order1_test8_question1",
+                    "FIRSTQUESTION_9": "order1_test9_question1",
+                    "BACKGROUNDIMG_10": "order1_test10_background.png",
+                    "BACKGROUNDIMG_11": "order1_test11_background.png",
+                    "BACKGROUNDIMG_12": "order1_test12_background.png",
+                    "FIRSTQUESTION_10": "order1_test10_question1",
+                    "FIRSTQUESTION_11": "order1_test11_question1",
+                    "FIRSTQUESTION_12": "order1_test12_question1",
+                    "SECONDQUESTION_1": "order1_test1_question2",
+                    "SECONDQUESTION_2": "order1_test2_question2",
+                    "SECONDQUESTION_3": "order1_test3_question2",
+                    "SECONDQUESTION_4": "order1_test4_question2",
+                    "SECONDQUESTION_5": "order1_test5_question2",
+                    "SECONDQUESTION_6": "order1_test6_question2",
+                    "SECONDQUESTION_7": "order1_test7_question2",
+                    "SECONDQUESTION_8": "order1_test8_question2",
+                    "SECONDQUESTION_9": "order1_test9_question2",
+                    "QUESTION_REVIEW_1": "order1_test1_review",
+                    "QUESTION_REVIEW_2": "order1_test2_review",
+                    "QUESTION_REVIEW_3": "order1_test3_review",
+                    "QUESTION_REVIEW_4": "order1_test4_review",
+                    "QUESTION_REVIEW_5": "order1_test5_review",
+                    "QUESTION_REVIEW_6": "order1_test6_review",
+                    "QUESTION_REVIEW_7": "order1_test7_review",
+                    "QUESTION_REVIEW_8": "order1_test8_review",
+                    "QUESTION_REVIEW_9": "order1_test9_review",
+                    "SECONDQUESTION_10": "order1_test10_question2",
+                    "SECONDQUESTION_11": "order1_test11_question2",
+                    "SECONDQUESTION_12": "order1_test12_question2",
+                    "QUESTION_REVIEW_10": "order1_test10_review",
+                    "QUESTION_REVIEW_11": "order1_test11_review",
+                    "QUESTION_REVIEW_12": "order1_test12_review",
+                    "SPEAKER1UTTERANCE_1": "order1_test1_speaker1",
+                    "SPEAKER1UTTERANCE_2": "order1_test2_speaker1",
+                    "SPEAKER1UTTERANCE_3": "order1_test3_speaker1",
+                    "SPEAKER1UTTERANCE_4": "order1_test4_speaker1",
+                    "SPEAKER1UTTERANCE_5": "order1_test5_speaker1",
+                    "SPEAKER1UTTERANCE_6": "order1_test6_speaker1",
+                    "SPEAKER1UTTERANCE_7": "order1_test7_speaker1",
+                    "SPEAKER1UTTERANCE_8": "order1_test8_speaker1",
+                    "SPEAKER1UTTERANCE_9": "order1_test9_speaker1",
+                    "SPEAKER2UTTERANCE_1": "order1_test1_speaker2",
+                    "SPEAKER2UTTERANCE_2": "order1_test2_speaker2",
+                    "SPEAKER2UTTERANCE_3": "order1_test3_speaker2",
+                    "SPEAKER2UTTERANCE_4": "order1_test4_speaker2",
+                    "SPEAKER2UTTERANCE_5": "order1_test5_speaker2",
+                    "SPEAKER2UTTERANCE_6": "order1_test6_speaker2",
+                    "SPEAKER2UTTERANCE_7": "order1_test7_speaker2",
+                    "SPEAKER2UTTERANCE_8": "order1_test8_speaker2",
+                    "SPEAKER2UTTERANCE_9": "order1_test9_speaker2",
+                    "SPEAKER1UTTERANCE_10": "order1_test10_speaker1",
+                    "SPEAKER1UTTERANCE_11": "order1_test11_speaker1",
+                    "SPEAKER1UTTERANCE_12": "order1_test12_speaker1",
+                    "SPEAKER2UTTERANCE_10": "order1_test10_speaker2",
+                    "SPEAKER2UTTERANCE_11": "order1_test11_speaker2",
+                    "SPEAKER2UTTERANCE_12": "order1_test12_speaker2",
+                    "FIRSTQUESTION_INTRO_1": "order1_test1_intro1",
+                    "FIRSTQUESTION_INTRO_2": "order1_test2_intro1",
+                    "FIRSTQUESTION_INTRO_3": "order1_test3_intro1",
+                    "FIRSTQUESTION_INTRO_4": "order1_test4_intro1",
+                    "FIRSTQUESTION_INTRO_5": "order1_test5_intro1",
+                    "FIRSTQUESTION_INTRO_6": "order1_test6_intro1",
+                    "FIRSTQUESTION_INTRO_7": "order1_test7_intro1",
+                    "FIRSTQUESTION_INTRO_8": "order1_test8_intro1",
+                    "FIRSTQUESTION_INTRO_9": "order1_test9_intro1",
+                    "PROTAGONISTFACELEFT_1": "order1_test1_listener1.png",
+                    "PROTAGONISTFACELEFT_2": "order1_test2_listener1.png",
+                    "PROTAGONISTFACELEFT_3": "order1_test3_listener1.png",
+                    "PROTAGONISTFACELEFT_4": "order1_test4_listener1.png",
+                    "PROTAGONISTFACELEFT_5": "order1_test5_listener1.png",
+                    "PROTAGONISTFACELEFT_6": "order1_test6_listener1.png",
+                    "PROTAGONISTFACELEFT_7": "order1_test7_listener1.png",
+                    "PROTAGONISTFACELEFT_8": "order1_test8_listener1.png",
+                    "PROTAGONISTFACELEFT_9": "order1_test9_listener1.png",
+                    "FIRSTQUESTION_INTRO_10": "order1_test10_intro1",
+                    "FIRSTQUESTION_INTRO_11": "order1_test11_intro1",
+                    "FIRSTQUESTION_INTRO_12": "order1_test12_intro1",
+                    "PROTAGONISTFACELEFT_10": "order1_test10_listener1.png",
+                    "PROTAGONISTFACELEFT_11": "order1_test11_listener1.png",
+                    "PROTAGONISTFACELEFT_12": "order1_test12_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order1_test1_listener2.png",
+                    "PROTAGONISTFACERIGHT_2": "order1_test2_listener2.png",
+                    "PROTAGONISTFACERIGHT_3": "order1_test3_listener2.png",
+                    "PROTAGONISTFACERIGHT_4": "order1_test4_listener2.png",
+                    "PROTAGONISTFACERIGHT_5": "order1_test5_listener2.png",
+                    "PROTAGONISTFACERIGHT_6": "order1_test6_listener2.png",
+                    "PROTAGONISTFACERIGHT_7": "order1_test7_listener2.png",
+                    "PROTAGONISTFACERIGHT_8": "order1_test8_listener2.png",
+                    "PROTAGONISTFACERIGHT_9": "order1_test9_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order1_test1_intro2",
+                    "SECONDQUESTION_INTRO_2": "order1_test2_intro2",
+                    "SECONDQUESTION_INTRO_3": "order1_test3_intro2",
+                    "SECONDQUESTION_INTRO_4": "order1_test4_intro2",
+                    "SECONDQUESTION_INTRO_5": "order1_test5_intro2",
+                    "SECONDQUESTION_INTRO_6": "order1_test6_intro2",
+                    "SECONDQUESTION_INTRO_7": "order1_test7_intro2",
+                    "SECONDQUESTION_INTRO_8": "order1_test8_intro2",
+                    "SECONDQUESTION_INTRO_9": "order1_test9_intro2",
+                    "PROTAGONISTFACERIGHT_10": "order1_test10_listener2.png",
+                    "PROTAGONISTFACERIGHT_11": "order1_test11_listener2.png",
+                    "PROTAGONISTFACERIGHT_12": "order1_test12_listener2.png",
+                    "SECONDQUESTION_INTRO_10": "order1_test10_intro2",
+                    "SECONDQUESTION_INTRO_11": "order1_test11_intro2",
+                    "SECONDQUESTION_INTRO_12": "order1_test12_intro2"
+                },
+                {
+                    "INTROAUDIO_1": "order2_test1_intro0",
+                    "INTROAUDIO_2": "order2_test2_intro0",
+                    "INTROAUDIO_3": "order2_test3_intro0",
+                    "INTROAUDIO_4": "order2_test4_intro0",
+                    "INTROAUDIO_5": "order2_test5_intro0",
+                    "INTROAUDIO_6": "order2_test6_intro0",
+                    "INTROAUDIO_7": "order2_test7_intro0",
+                    "INTROAUDIO_8": "order2_test8_intro0",
+                    "INTROAUDIO_9": "order2_test9_intro0",
+                    "INTROAUDIO_10": "order2_test10_intro0",
+                    "INTROAUDIO_11": "order2_test11_intro0",
+                    "INTROAUDIO_12": "order2_test12_intro0",
+                    "SPEAKER1IMG_1": "order2_test1_speaker1.png",
+                    "SPEAKER1IMG_2": "order2_test2_speaker1.png",
+                    "SPEAKER1IMG_3": "order2_test3_speaker1.png",
+                    "SPEAKER1IMG_4": "order2_test4_speaker1.png",
+                    "SPEAKER1IMG_5": "order2_test5_speaker1.png",
+                    "SPEAKER1IMG_6": "order2_test6_speaker1.png",
+                    "SPEAKER1IMG_7": "order2_test7_speaker1.png",
+                    "SPEAKER1IMG_8": "order2_test8_speaker1.png",
+                    "SPEAKER1IMG_9": "order2_test9_speaker1.png",
+                    "SPEAKER2IMG_1": "order2_test1_speaker2.png",
+                    "SPEAKER2IMG_2": "order2_test2_speaker2.png",
+                    "SPEAKER2IMG_3": "order2_test3_speaker2.png",
+                    "SPEAKER2IMG_4": "order2_test4_speaker2.png",
+                    "SPEAKER2IMG_5": "order2_test5_speaker2.png",
+                    "SPEAKER2IMG_6": "order2_test6_speaker2.png",
+                    "SPEAKER2IMG_7": "order2_test7_speaker2.png",
+                    "SPEAKER2IMG_8": "order2_test8_speaker2.png",
+                    "SPEAKER2IMG_9": "order2_test9_speaker2.png",
+                    "SPEAKER1IMG_10": "order2_test10_speaker1.png",
+                    "SPEAKER1IMG_11": "order2_test11_speaker1.png",
+                    "SPEAKER1IMG_12": "order2_test12_speaker1.png",
+                    "SPEAKER2IMG_10": "order2_test10_speaker2.png",
+                    "SPEAKER2IMG_11": "order2_test11_speaker2.png",
+                    "SPEAKER2IMG_12": "order2_test12_speaker2.png",
+                    "BACKGROUNDIMG_1": "order2_test1_background.png",
+                    "BACKGROUNDIMG_2": "order2_test2_background.png",
+                    "BACKGROUNDIMG_3": "order2_test3_background.png",
+                    "BACKGROUNDIMG_4": "order2_test4_background.png",
+                    "BACKGROUNDIMG_5": "order2_test5_background.png",
+                    "BACKGROUNDIMG_6": "order2_test6_background.png",
+                    "BACKGROUNDIMG_7": "order2_test7_background.png",
+                    "BACKGROUNDIMG_8": "order2_test8_background.png",
+                    "BACKGROUNDIMG_9": "order2_test9_background.png",
+                    "FIRSTQUESTION_1": "order2_test1_question1",
+                    "FIRSTQUESTION_2": "order2_test2_question1",
+                    "FIRSTQUESTION_3": "order2_test3_question1",
+                    "FIRSTQUESTION_4": "order2_test4_question1",
+                    "FIRSTQUESTION_5": "order2_test5_question1",
+                    "FIRSTQUESTION_6": "order2_test6_question1",
+                    "FIRSTQUESTION_7": "order2_test7_question1",
+                    "FIRSTQUESTION_8": "order2_test8_question1",
+                    "FIRSTQUESTION_9": "order2_test9_question1",
+                    "BACKGROUNDIMG_10": "order2_test10_background.png",
+                    "BACKGROUNDIMG_11": "order2_test11_background.png",
+                    "BACKGROUNDIMG_12": "order2_test12_background.png",
+                    "FIRSTQUESTION_10": "order2_test10_question1",
+                    "FIRSTQUESTION_11": "order2_test11_question1",
+                    "FIRSTQUESTION_12": "order2_test12_question1",
+                    "SECONDQUESTION_1": "order2_test1_question2",
+                    "SECONDQUESTION_2": "order2_test2_question2",
+                    "SECONDQUESTION_3": "order2_test3_question2",
+                    "SECONDQUESTION_4": "order2_test4_question2",
+                    "SECONDQUESTION_5": "order2_test5_question2",
+                    "SECONDQUESTION_6": "order2_test6_question2",
+                    "SECONDQUESTION_7": "order2_test7_question2",
+                    "SECONDQUESTION_8": "order2_test8_question2",
+                    "SECONDQUESTION_9": "order2_test9_question2",
+                    "QUESTION_REVIEW_1": "order2_test1_review",
+                    "QUESTION_REVIEW_2": "order2_test2_review",
+                    "QUESTION_REVIEW_3": "order2_test3_review",
+                    "QUESTION_REVIEW_4": "order2_test4_review",
+                    "QUESTION_REVIEW_5": "order2_test5_review",
+                    "QUESTION_REVIEW_6": "order2_test6_review",
+                    "QUESTION_REVIEW_7": "order2_test7_review",
+                    "QUESTION_REVIEW_8": "order2_test8_review",
+                    "QUESTION_REVIEW_9": "order2_test9_review",
+                    "SECONDQUESTION_10": "order2_test10_question2",
+                    "SECONDQUESTION_11": "order2_test11_question2",
+                    "SECONDQUESTION_12": "order2_test12_question2",
+                    "QUESTION_REVIEW_10": "order2_test10_review",
+                    "QUESTION_REVIEW_11": "order2_test11_review",
+                    "QUESTION_REVIEW_12": "order2_test12_review",
+                    "SPEAKER1UTTERANCE_1": "order2_test1_speaker1",
+                    "SPEAKER1UTTERANCE_2": "order2_test2_speaker1",
+                    "SPEAKER1UTTERANCE_3": "order2_test3_speaker1",
+                    "SPEAKER1UTTERANCE_4": "order2_test4_speaker1",
+                    "SPEAKER1UTTERANCE_5": "order2_test5_speaker1",
+                    "SPEAKER1UTTERANCE_6": "order2_test6_speaker1",
+                    "SPEAKER1UTTERANCE_7": "order2_test7_speaker1",
+                    "SPEAKER1UTTERANCE_8": "order2_test8_speaker1",
+                    "SPEAKER1UTTERANCE_9": "order2_test9_speaker1",
+                    "SPEAKER2UTTERANCE_1": "order2_test1_speaker2",
+                    "SPEAKER2UTTERANCE_2": "order2_test2_speaker2",
+                    "SPEAKER2UTTERANCE_3": "order2_test3_speaker2",
+                    "SPEAKER2UTTERANCE_4": "order2_test4_speaker2",
+                    "SPEAKER2UTTERANCE_5": "order2_test5_speaker2",
+                    "SPEAKER2UTTERANCE_6": "order2_test6_speaker2",
+                    "SPEAKER2UTTERANCE_7": "order2_test7_speaker2",
+                    "SPEAKER2UTTERANCE_8": "order2_test8_speaker2",
+                    "SPEAKER2UTTERANCE_9": "order2_test9_speaker2",
+                    "SPEAKER1UTTERANCE_10": "order2_test10_speaker1",
+                    "SPEAKER1UTTERANCE_11": "order2_test11_speaker1",
+                    "SPEAKER1UTTERANCE_12": "order2_test12_speaker1",
+                    "SPEAKER2UTTERANCE_10": "order2_test10_speaker2",
+                    "SPEAKER2UTTERANCE_11": "order2_test11_speaker2",
+                    "SPEAKER2UTTERANCE_12": "order2_test12_speaker2",
+                    "FIRSTQUESTION_INTRO_1": "order2_test1_intro1",
+                    "FIRSTQUESTION_INTRO_2": "order2_test2_intro1",
+                    "FIRSTQUESTION_INTRO_3": "order2_test3_intro1",
+                    "FIRSTQUESTION_INTRO_4": "order2_test4_intro1",
+                    "FIRSTQUESTION_INTRO_5": "order2_test5_intro1",
+                    "FIRSTQUESTION_INTRO_6": "order2_test6_intro1",
+                    "FIRSTQUESTION_INTRO_7": "order2_test7_intro1",
+                    "FIRSTQUESTION_INTRO_8": "order2_test8_intro1",
+                    "FIRSTQUESTION_INTRO_9": "order2_test9_intro1",
+                    "PROTAGONISTFACELEFT_1": "order2_test1_listener1.png",
+                    "PROTAGONISTFACELEFT_2": "order2_test2_listener1.png",
+                    "PROTAGONISTFACELEFT_3": "order2_test3_listener1.png",
+                    "PROTAGONISTFACELEFT_4": "order2_test4_listener1.png",
+                    "PROTAGONISTFACELEFT_5": "order2_test5_listener1.png",
+                    "PROTAGONISTFACELEFT_6": "order2_test6_listener1.png",
+                    "PROTAGONISTFACELEFT_7": "order2_test7_listener1.png",
+                    "PROTAGONISTFACELEFT_8": "order2_test8_listener1.png",
+                    "PROTAGONISTFACELEFT_9": "order2_test9_listener1.png",
+                    "FIRSTQUESTION_INTRO_10": "order2_test10_intro1",
+                    "FIRSTQUESTION_INTRO_11": "order2_test11_intro1",
+                    "FIRSTQUESTION_INTRO_12": "order2_test12_intro1",
+                    "PROTAGONISTFACELEFT_10": "order2_test10_listener1.png",
+                    "PROTAGONISTFACELEFT_11": "order2_test11_listener1.png",
+                    "PROTAGONISTFACELEFT_12": "order2_test12_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order2_test1_listener2.png",
+                    "PROTAGONISTFACERIGHT_2": "order2_test2_listener2.png",
+                    "PROTAGONISTFACERIGHT_3": "order2_test3_listener2.png",
+                    "PROTAGONISTFACERIGHT_4": "order2_test4_listener2.png",
+                    "PROTAGONISTFACERIGHT_5": "order2_test5_listener2.png",
+                    "PROTAGONISTFACERIGHT_6": "order2_test6_listener2.png",
+                    "PROTAGONISTFACERIGHT_7": "order2_test7_listener2.png",
+                    "PROTAGONISTFACERIGHT_8": "order2_test8_listener2.png",
+                    "PROTAGONISTFACERIGHT_9": "order2_test9_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order2_test1_intro2",
+                    "SECONDQUESTION_INTRO_2": "order2_test2_intro2",
+                    "SECONDQUESTION_INTRO_3": "order2_test3_intro2",
+                    "SECONDQUESTION_INTRO_4": "order2_test4_intro2",
+                    "SECONDQUESTION_INTRO_5": "order2_test5_intro2",
+                    "SECONDQUESTION_INTRO_6": "order2_test6_intro2",
+                    "SECONDQUESTION_INTRO_7": "order2_test7_intro2",
+                    "SECONDQUESTION_INTRO_8": "order2_test8_intro2",
+                    "SECONDQUESTION_INTRO_9": "order2_test9_intro2",
+                    "PROTAGONISTFACERIGHT_10": "order2_test10_listener2.png",
+                    "PROTAGONISTFACERIGHT_11": "order2_test11_listener2.png",
+                    "PROTAGONISTFACERIGHT_12": "order2_test12_listener2.png",
+                    "SECONDQUESTION_INTRO_10": "order2_test10_intro2",
+                    "SECONDQUESTION_INTRO_11": "order2_test11_intro2",
+                    "SECONDQUESTION_INTRO_12": "order2_test12_intro2"
+                }
+            ],
+            "parameterSetWeights": [
+                1,
+                1
+            ],
+            "commonFrameProperties": {
+                "kind": "choice",
+                "sampler": "random-parameter-set",
+                "frameList": [
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACELEFT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "fadein"
+                            }
+                        ],
+                        "nPhase": 0,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "INTROAUDIO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "",
+                            "title": "Listen to the story"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACELEFT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker1",
+                                "src": "SPEAKER1IMG",
+                                "left": "25",
+                                "text": "Click to hear what they said!",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyleft",
+                                "imageAudio": [
+                                    {
+                                        "stub": "SPEAKER1UTTERANCE"
+                                    }
+                                ],
+                                "requireAudio": true
+                            }
+                        ],
+                        "nPhase": 1,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "FIRSTQUESTION_INTRO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Please don't give away how you feel about this character's manners! But it's fine to talk with your child - for example, you can say 'Let's click and hear what they said!'",
+                            "title": "Parents: Click to hear what the person said"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACERIGHT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker2",
+                                "src": "SPEAKER2IMG",
+                                "left": "75",
+                                "text": "Click to hear what they said!",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyright",
+                                "imageAudio": [
+                                    {
+                                        "stub": "SPEAKER2UTTERANCE"
+                                    }
+                                ],
+                                "requireAudio": true
+                            }
+                        ],
+                        "nPhase": 2,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "SECONDQUESTION_INTRO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Please don't give away how you feel about this character's manners! But it's fine to talk with your child - for example, you can say 'Let's click and hear what they said!'",
+                            "title": "Parents: Click to hear what the person said"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACERIGHT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "fadeout"
+                            },
+                            {
+                                "id": "speaker1",
+                                "src": "SPEAKER1IMG",
+                                "left": "25",
+                                "text": "Click to hear what they said!",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyleft",
+                                "imageAudio": [
+                                    {
+                                        "stub": "SPEAKER1UTTERANCE"
+                                    }
+                                ],
+                                "requireAudio": true
+                            },
+                            {
+                                "id": "speaker2",
+                                "src": "SPEAKER2IMG",
+                                "left": "75",
+                                "text": "Click to hear what they said!",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyright",
+                                "imageAudio": [
+                                    {
+                                        "stub": "SPEAKER2UTTERANCE"
+                                    }
+                                ],
+                                "requireAudio": true
+                            }
+                        ],
+                        "nPhase": 3,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "QUESTION_REVIEW"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Please don't give away whether you think they're being polite or not! But it's fine to talk with your child - for example, you can ask 'who do you want to hear? shall we click this one?'",
+                            "title": "Parents: Click each person to hear what they said again."
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "speaker1",
+                                "src": "SPEAKER1IMG",
+                                "left": "25",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker2",
+                                "src": "SPEAKER2IMG",
+                                "left": "75",
+                                "bottom": "2",
+                                "height": "60"
+                            }
+                        ],
+                        "nPhase": 4,
+                        "autoProceed": false,
+                        "doRecording": true,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "FIRSTQUESTION"
+                                    }
+                                ]
+                            }
+                        ],
+                        "isChoiceFrame": true,
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Please don't say what you think the answer is or point to either option yourself! It's fine to encourage your child to answer if he or she isn't sure, though.\nOnce your child answers, please respond with a neutral 'Okay! Let's keep going.'",
+                            "title": "Parents: Click the character your child selects"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "speaker1",
+                                "src": "SPEAKER1IMG",
+                                "left": "25",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker2",
+                                "src": "SPEAKER2IMG",
+                                "left": "75",
+                                "bottom": "2",
+                                "height": "60"
+                            }
+                        ],
+                        "nPhase": 5,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "trialEndAudio",
+                                "sources": [
+                                    {
+                                        "stub": "TRIALENDAUDIO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": "THANKYOUTEXT"
+                    }
+                ],
+                "commonFrameProperties": {
+                    "kind": "exp-lookit-dialogue-page",
+                    "nTrial": "NTRIAL",
+                    "baseDir": "https://github.com/polcom/02_experiments/v3-lookit",
+                    "audioTypes": [
+                        "mp3",
+                        "ogg"
+                    ],
+                    "doRecording": true,
+                    "backgroundImage": "BACKGROUNDIMG"
+                }
+            }
+        },
+        "video-consent": {
+            "id": "video-consent",
+            "kind": "exp-lookit-video-consent",
+            "blocks": [
+                {
+                    "text": "Observing your child's behavior during this experimental session will help us to understand how infants and children use evidence to learn and make predictions about the world.",
+                    "title": "About the study"
+                },
+                {
+                    "text": "Your and your child's participation in this session are completely voluntary. If you and your child choose to participate, you may stop the session at any point with no penalty. Please pause or stop the session if your child becomes very fussy or does not want to participate. If this is a study with multiple sessions, there are no penalties for not completing all sessions.",
+                    "title": "Participation"
+                },
+                {
+                    "text": "During the session, you and your child will be recorded via your computer's webcam and microphone while watching a video or completing an activity. Video recordings and other data you enter are sent securely to our lab. At the end of the session, or when you end it early, you will be prompted to choose a privacy level for your webcam recordings.",
+                    "title": "Webcam recording"
+                },
+                {
+                    "text": "Recordings and survey responses will be stored on a password-protected server and accessed only by the Lookit researchers working on this study and any other groups you allow when selecting a privacy level. Lookit researchers may include collaborators from other universities. \n \n A researcher may transcribe responses or record information such as where you or your child is looking. Data will not be used to identify you or your child. The results of the research may be presented at scientific meetings or published in scientific journals, but no video clips will be shared unless you allow this when selecting a privacy level.\n\nRaw data may also be published when it can not identify children; for instance, we may publish children’s looking times to the left versus right of the screen, or parent comments with children’s names removed. We may also study your child’s responses in connection with his or her previous responses to this or other studies, siblings’ responses, or demographic survey responses. We never publish children’s birthdates or names, and we never publish your demographic data in conjunction with your child’s video.",
+                    "title": "Use of data"
+                },
+                {
+                    "text": "If you or your child have any questions or concerns about this research, you may contact Professor Laura Schulz: lschulz@mit.edu or (617) 324-4859.",
+                    "title": "Contact information"
+                }
+            ],
+            "prompt": "\"I have read and understand the consent document. I am this child's parent or legal guardian and we both agree to participate in this study.\""
+        },
+        "practice-trial": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "parameterSets": [
+                        {
+                            "NTRIAL": 0,
+                            "INTROAUDIO": "INTROAUDIO_1",
+                            "SPEAKER1IMG": "SPEAKER1IMG_1",
+                            "SPEAKER2IMG": "SPEAKER2IMG_1",
+                            "BACKGROUNDIMG": "BACKGROUNDIMG_1",
+                            "FIRSTQUESTION": "FIRSTQUESTION_1",
+                            "TRIALENDAUDIO": "trialendaudio_standard",
+                            "SECONDQUESTION": "SECONDQUESTION_1",
+                            "QUESTION_REVIEW": "QUESTION_REVIEW_1",
+                            "FIRSTQUESTION_INTRO": "FIRSTQUESTION_INTRO_1",
+                            "PROTAGONISTFACELEFT": "PROTAGONISTFACELEFT_1",
+                            "PROTAGONISTFACERIGHT": "PROTAGONISTFACERIGHT_1",
+                            "SECONDQUESTION_INTRO": "SECONDQUESTION_INTRO_1"
+                        }
+                    ]
+                }
+            ],
+            "parameterSets": [
+                {
+                    "INTROAUDIO_1": "order1_practice1_intro0",
+                    "SPEAKER1IMG_1": "order1_practice1_speaker1.png",
+                    "SPEAKER2IMG_1": "order1_practice1_speaker2.png",
+                    "BACKGROUNDIMG_1": "order1_practice1_background.png",
+                    "FIRSTQUESTION_1": "order1_practice1_question1",
+                    "SECONDQUESTION_1": "order1_practice1_question2",
+                    "QUESTION_REVIEW_1": "order1_practice1_review",
+                    "FIRSTQUESTION_INTRO_1": "order1_practice1_intro1",
+                    "PROTAGONISTFACELEFT_1": "order1_practice1_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order1_practice1_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order1_practice1_intro2"
+                },
+                {
+                    "INTROAUDIO_1": "order2_practice1_intro0",
+                    "SPEAKER1IMG_1": "order2_practice1_speaker1.png",
+                    "SPEAKER2IMG_1": "order2_practice1_speaker2.png",
+                    "BACKGROUNDIMG_1": "order2_practice1_background.png",
+                    "FIRSTQUESTION_1": "order2_practice1_question1",
+                    "SECONDQUESTION_1": "order2_practice1_question2",
+                    "QUESTION_REVIEW_1": "order2_practice1_review",
+                    "FIRSTQUESTION_INTRO_1": "order2_practice1_intro1",
+                    "PROTAGONISTFACELEFT_1": "order2_practice1_listener1.png",
+                    "PROTAGONISTFACERIGHT_1": "order2_practice1_listener2.png",
+                    "SECONDQUESTION_INTRO_1": "order2_practice1_intro2"
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "choice",
+                "sampler": "random-parameter-set",
+                "frameList": [
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACELEFT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "fadein"
+                            }
+                        ],
+                        "nPhase": 0,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "INTROAUDIO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Parents: please don't discuss yet whether you think these actions are nice or mean!",
+                            "title": "Listen to the story"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACELEFT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker1",
+                                "src": "SPEAKER1IMG",
+                                "left": "25",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyleft"
+                            }
+                        ],
+                        "nPhase": 1,
+                        "autoProceed": false,
+                        "doRecording": false,
+                        "audioSources": [
+                            {
+                                "audioId": "firstAudio",
+                                "sources": [
+                                    {
+                                        "stub": "FIRSTQUESTION_INTRO"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parentTextBlock": {
+                            "css": {
+                                "font-size": "medium"
+                            },
+                            "text": "Parents: please don't discuss yet whether you think these actions are nice or mean!",
+                            "title": "Listen to the story"
+                        }
+                    },
+                    {
+                        "images": [
+                            {
+                                "id": "protagonist",
+                                "src": "PROTAGONISTFACERIGHT",
+                                "left": "50",
+                                "bottom": "2",
+                                "height": "60"
+                            },
+                            {
+                                "id": "speaker2",
+                                "src": "SPEAKER2IMG",
+                                "left": "75",
+                                "bottom": "2",
+                                "height": "60",
+                                "animate": "flyright"
+                            }
+                        ],
+                        "nPhase": 2,
+                        "autoProceed": false,
+                        "doRecording": false,
